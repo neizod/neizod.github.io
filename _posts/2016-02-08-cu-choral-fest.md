@@ -12,9 +12,7 @@ date: 2016-02-08 05:14:45 +0700
 Adiemus ที่วง Harmonic Noises นำมาเสนอมากๆ จนอยากตะโกนร้องว่าบราโว่ตอนจบเลย
 (จริงๆ วงที่มีหลายคนต้องต้องตะโกนว่าบราวี่สิ...)
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/DmQAqxJoURM" frameborder="0" allowfullscreen></iframe>
-
-(ยืมวิดีโอเก่ามาแปะไว้ตรงนี้ก่อนนะ เดี๋ยวถ้าเห็นใครอัพวิดีโอใหม่จากงานนี้แล้วค่อยเปลี่ยน)
+<iframe width="853" height="480" src="https://www.youtube.com/embed/1f4NjLZHjlA" frameborder="0" allowfullscreen></iframe>
 
 เจอเพลงนี้เข้าไปเพลงเดียว นั่งสตั๊นท์ตลอดคอนเสิร์ตเลย เพลงอื่นๆ แทบหาสมาธิฟังไม่เจอ
 ใจมันลอยไปกับความอิ่มเอมกับเพลงนั้นเรียบร้อย 555
