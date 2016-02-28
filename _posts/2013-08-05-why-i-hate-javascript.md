@@ -17,7 +17,7 @@ console> {} + {}
 NaN
 {% endhighlight %}
 
-จาก [@garybernhardt]
+จาก [@garybernhardt][]
 
 ก่อนหน้านี้เคยคิดว่าการเปรียบ `==` ประหลาดพอแล้วนะ (ยังดีที่มี `===` ช่วยชีวิต) แต่พอเจอแบบนี้ก็ทำเอาเสียหลักเลยทีเดียว
 
@@ -28,6 +28,7 @@ NaN
  เมื่อเอามาดำเนินการทางคณิตศาสตร์ครับ
 
 เฮ้อ จะเขียน JavaScript แต่ละทีมันเหนื่อย (ใจ) จริงๆ
+
 
 [@garybernhardt]: https://www.destroyallsoftware.com/talks/wat
 [NaN]: http://en.wikipedia.org/wiki/NaN

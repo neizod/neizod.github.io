@@ -3,6 +3,7 @@ title: "La Marche de l'empereur"
 tags: Advertisment, Movie, Classical Music
 date: 2016-02-12 12:02:12 +0700
 ---
+
 การสวนสนามของจักรพรรดิ (ฝรั่งเศส La Marche de l'empereur) ถ้าบอกว่านี่เป็นชื่อภาพยนต์ แค่ได้ยินแล้วก็รู้สึกว่ามันต้องยิ่งใหญ่แน่ๆ ... และนี่คือโฆษณาของภาพยนต์เรื่องนี้จากช่อง Canal+
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/qNd_hUqEEl4" frameborder="0" allowfullscreen></iframe>
