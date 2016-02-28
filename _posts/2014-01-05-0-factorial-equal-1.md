@@ -1,6 +1,7 @@
 ---
 title: $ 0! = 1 $
-tags: Mathematics
+tags:
+- Mathematics
 date: 2014-01-05 20:02:00 +0700
 ---
 

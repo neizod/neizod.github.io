@@ -1,6 +1,8 @@
 ---
 title: "Cogito ergo sum"
-tags: Philosophy, René Descartes
+tags:
+- Philosophy
+- René Descartes
 date: 2016-02-15 12:59:48 +0700
 ---
 

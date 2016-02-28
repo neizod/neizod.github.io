@@ -1,6 +1,10 @@
 ---
 title: AI รู้ตัวเองหรือไม่ว่าเป็น AI?
-tags: Philosophy, Thought, Artificial Intelligence, Go (board game)
+tags:
+- Philosophy
+- Thought
+- Artificial Intelligence
+- Go (board game)
 date: 2016-02-27 21:56:27 +0700
 ---
 
