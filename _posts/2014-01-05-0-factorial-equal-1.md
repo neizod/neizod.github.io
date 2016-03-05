@@ -72,7 +72,7 @@ $$
   - ${n \choose 0}$ (เลือกของ $0$ ชิ้นจากของ $n$ ชิ้นได้กี่วิธี) ซึ่งก็ยังเข้าใจได้เพราะการไม่เลือกของซักชิ้นเลยอาจเป็นข้อถกเถียง
   - ${n \choose n}$ (เลือกของ $n$ ชิ้นจากของ $n$ ชิ้นได้กี่วิธี) อันนี้เริ่มแปลกๆ แล้ว ทำไมเลือกของทุกชิ้นต้องมีข้อยกเว้นด้วยหละ?
 
-- การหาค่า [e][] จาก[การกระจายเทย์เลอร์][taylor series] จากเดิมที่เราสามารถสรุปสั้นๆ อย่างสวยงามได้ว่ามันคือ
+- การหาค่า [$e$][] จาก[การกระจายเทย์เลอร์][taylor series] จากเดิมที่เราสามารถสรุปสั้นๆ อย่างสวยงามได้ว่ามันคือ
 
   $$
     e = \sum\limits_{k=0}^{\infty} \frac{1}{k!}
@@ -95,5 +95,5 @@ $$
 [pascal's triangle]: http://en.wikipedia.org/wiki/Pascal's_triangle
 [permutation]: http://en.wikipedia.org/wiki/Permutation
 [combination]: http://en.wikipedia.org/wiki/Combination
-[e]: http://en.wikipedia.org/wiki/%E2%84%AF
+[$e$]: https://en.wikipedia.org/wiki/E_(mathematical_constant)
 [taylor series]: http://en.wikipedia.org/wiki/Taylor_series
