@@ -1,3 +1,24 @@
+# Identity Setting
+# ================
+# you should change this to suit your own preference.
+
 title: Polar
 description: White-Clean Jekyll Theme
 baseurl: "/polar"
+
+
+# Engine Setting
+# ==============
+# you shouldn't change this unless you really know what you're doing.
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
