@@ -7,6 +7,13 @@ description: White-Clean Jekyll Theme
 baseurl: "/polar"
 
 
+# Layout Setting
+# ==============
+# you may change this to suit your own preference.
+
+timezone: Asia/Bangkok
+
+
 # Engine Setting
 # ==============
 # you shouldn't change this unless you really know what you're doing.
