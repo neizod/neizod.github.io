@@ -3,4 +3,11 @@
 
 @charset "utf-8";
 
+$background-color: #fff;
+$font-color: #222;
+$font-head: sans-serif;
+$font-body: serif;
+
+
 @import "normalize";
+@import "base";

@@ -1,0 +1,32 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+html {
+    font: 100% $font-body;
+}
+
+
+body {
+    background: $background-color;
+    color: $font-color;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 1em;
+    padding: 0;
+    color: $font-color;
+    font-family: $font-head;
+    line-height: 1.7;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
