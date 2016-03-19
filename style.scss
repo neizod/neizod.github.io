@@ -8,6 +8,9 @@ $font-color: #222;
 $font-head: sans-serif;
 $font-body: serif;
 
+$content-width: 720px;
+
 
 @import "normalize";
 @import "base";
+@import "container";

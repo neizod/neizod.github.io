@@ -1,0 +1,17 @@
+.container {
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 100%;
+    max-width: $content-width;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
