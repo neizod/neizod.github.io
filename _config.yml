@@ -6,6 +6,10 @@ title: Polar
 description: White-Clean Jekyll Theme
 baseurl: "/polar"
 
+# also don't forget to check:
+# - `/favicon.png`
+# - `/images/logo.png`
+
 
 # Layout Setting
 # ==============
