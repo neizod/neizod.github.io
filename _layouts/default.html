@@ -4,12 +4,7 @@
     <title>{{ site.title }}</title>
   </head>
   <body>
-    <header>
-      <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.png" /></a>
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-      <h2>{{ site.description }}</h2>
-    </header>
-
+    {% include header.html %}
     {{ content }}
   </body>
 </html>
