@@ -3,6 +3,8 @@
 
 @charset "utf-8";
 
+$major-color: lightblue;
+$minor-color: lightgray;
 $background-color: #fff;
 $font-color: #222;
 $font-head: sans-serif;
@@ -14,3 +16,4 @@ $content-width: 720px;
 @import "normalize";
 @import "base";
 @import "container";
+@import "header";
