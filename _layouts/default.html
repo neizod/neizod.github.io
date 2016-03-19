@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ site.title }}</title>
-    <link rel="icon" href="{{ "/favicon.png" | prepend: site.baseurl }}" />
-    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}" />
+    {% include meta.html %}
   </head>
   <body>
     {% include header.html %}
