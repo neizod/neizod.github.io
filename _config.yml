@@ -5,6 +5,7 @@
 title: Polar
 description: White-Clean Jekyll Theme
 baseurl: "/polar"
+url: "https://neizod.github.io"
 
 # also don't forget to check:
 # - `/favicon.png`
