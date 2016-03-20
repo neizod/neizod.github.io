@@ -31,3 +31,17 @@ header {
         }
     }
 }
+
+
+@include mobile {
+    header {
+        text-align: center;
+
+        .logo,
+        .info {
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

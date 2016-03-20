@@ -11,9 +11,11 @@ $font-head: sans-serif;
 $font-body: serif;
 
 $content-width: 720px;
+$mobile-width: 640px;
 
 
 @import "normalize";
+@import "breakpoint";
 @import "base";
 @import "container";
 @import "header";
