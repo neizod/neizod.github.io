@@ -1,9 +1,24 @@
 ---
-title: Blog Posts
+feature:
+  posts:
+    latest: true
+    list:
+      - "/2016/03/19/markdown-examples"
 ---
 
-<ul>
-{% for post in site.posts %}
-  <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+{% if page.feature %}
+  {% if page.feature.posts %}
+    <h1>Feature Posts</h1>
+    {% for post in site.posts %}
+      {% if page.feature.posts.list contains post.id or
+            (forloop.first and page.feature.posts.latest) %}
+        <article class="post">
+          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <div class="excerpt entry">
+            {{ post.excerpt | strip_html }}
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
