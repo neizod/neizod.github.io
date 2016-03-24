@@ -1,0 +1,15 @@
+<script>
+var cb = function() {
+  var f = ["//fonts.googleapis.com/css?family=Lora",
+           "//fonts.googleapis.com/css?family=Raleway:300"];
+  var h = document.getElementsByTagName('head')[0];
+  for (var i=0; i<f.length; i++) {
+    var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = f[i];
+    h.parentNode.insertBefore(l, h);
+  }
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(cb);
+else window.addEventListener('load', cb);
+</script>
