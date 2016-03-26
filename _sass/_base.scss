@@ -1,12 +1,25 @@
-*, *:before, *:after {
+*, *::before, *::after {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
 
 
+::-moz-selection {
+    color: black;
+    background: $major-color;
+}
+
+
+::selection {
+    color: black;
+    background: $major-color;
+}
+
+
 html {
     font: 100% $font-body;
+    font-variant-ligatures: common-ligatures;
 }
 
 
@@ -22,6 +35,19 @@ h1, h2, h3, h4, h5, h6 {
     color: $font-color;
     font-family: $font-head;
     line-height: 1.7;
+    a {
+        color: inherit;
+    }
+}
+
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover, &:active {
+        color: $link-color;
+    }
 }
 
 
