@@ -10,6 +10,8 @@ url: "https://neizod.github.io"
 author: neizod
 rights: All Right Reserved
 
+google_analytics:
+
 # also don't forget to check:
 # - `/favicon.png`
 # - `/images/logo.png`
