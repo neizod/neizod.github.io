@@ -1,11 +1,12 @@
 ---
 title: All Blog Posts
+article: false
 ---
 
 <div class="posts">
 {% for post in site.posts %}
   <article class="excerpt post">
-    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
     <div class="excerpt entry">
       {{ post.excerpt | strip_html }}
     </div>
