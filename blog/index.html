@@ -1,0 +1,29 @@
+---
+title: All Blog Posts
+article: false
+---
+
+<div class="posts">
+{% for post in paginator.posts %}
+  <article class="excerpt post">
+    <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+    <div class="excerpt entry">
+      {{ post.excerpt | strip_html }}
+    </div>
+  </article>
+{% endfor %}
+</div>
+
+<div class="pagination clearfix">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Prev</a>
+  {% else %}
+    <span class="previous transparent">Prev</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
+  {% else %}
+    <span class="next transparent">Next</span>
+  {% endif %}
+</div>

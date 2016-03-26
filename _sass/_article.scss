@@ -26,3 +26,23 @@
     padding-bottom: 1em;
     border-bottom: none;
 }
+
+
+.pagination {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid $border-color;
+    text-align: center;
+
+    .transparent {
+        opacity: 0;
+    }
+
+    .previous {
+        float: left;
+    }
+
+    .next {
+        float: right;
+    }
+}
