@@ -13,7 +13,16 @@ feature:
       {% if page.feature.posts.list contains post.id or
             (forloop.first and page.feature.posts.latest) %}
         <article class="excerpt post">
-          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <div class="feature-title">
+            <div class="feature">
+              {% if forloop.first and page.feature.posts.latest %}
+                Latest Post
+              {% else %}
+                Feature Post
+              {% endif %}
+            </div>
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          </div>
           <div class="excerpt entry">
             {{ post.excerpt | strip_html }}
           </div>

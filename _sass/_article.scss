@@ -1,3 +1,24 @@
+.feature-title {
+    display: inline;
+
+    .feature {
+        float: right;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+}
+
+
+@include mobile {
+    .feature-title {
+        .feature {
+            float: none;
+            margin-top: 1em;
+        }
+    }
+}
+
+
 .posts > .excerpt.post {
     padding-bottom: 2em;
     border-bottom: 1px solid $border-color;
