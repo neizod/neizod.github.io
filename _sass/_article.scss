@@ -1,0 +1,8 @@
+.posts > .excerpt.post {
+    padding-bottom: 2em;
+    border-bottom: 1px solid $border-color;
+}
+.posts > .excerpt.post:last-child {
+    padding-bottom: 1em;
+    border-bottom: none;
+}

@@ -6,13 +6,13 @@ feature:
       - "/2016/03/19/markdown-examples"
 ---
 
+<div class="posts">
 {% if page.feature %}
   {% if page.feature.posts %}
-    <h1>Feature Posts</h1>
     {% for post in site.posts %}
       {% if page.feature.posts.list contains post.id or
             (forloop.first and page.feature.posts.latest) %}
-        <article class="post">
+        <article class="excerpt post">
           <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
           <div class="excerpt entry">
             {{ post.excerpt | strip_html }}
@@ -22,3 +22,4 @@ feature:
     {% endfor %}
   {% endif %}
 {% endif %}
+</div>
