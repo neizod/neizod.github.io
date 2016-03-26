@@ -1,0 +1,21 @@
+<div class="container">
+  <footer>
+    <h5>
+      {{ site.author }} &copy;
+      {% if site.posts %}
+        {% capture latest_year %}{{ site.posts.first.date | date: "%Y" }}{% endcapture %}
+        {% capture early_year %}{{ site.posts.last.date | date: "%Y" }}{% endcapture %}
+        {% if latest_year == early_year %}
+          {{ latest_year }}
+        {% else %}
+          {{ early_year }}-{{ latest_year }}
+        {% endif %}
+      {% else %}
+        {{ site.time | date: "%Y" }}
+      {% endif %}
+      {{ site.rights }},
+      <a href="{{ site.baseurl }}/feed.xml">subscribe</a>.
+    </h5>
+    <h6><a href="//github.com/neizod/polar">Powered by cute little Polar Bear</a></h6>
+  </footer>
+</div>

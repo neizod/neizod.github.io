@@ -3,13 +3,13 @@
 
 @charset "utf-8";
 
-$major-color: lightblue;
-$minor-color: lightgray;
+$major-color: lighten(lightblue, 10%);
+$minor-color: lighten(lightgray, 10%);
 $border-color: gainsboro;
 $background-color: white;
 
-$font-color: #222;
-$link-color: deepskyblue;
+$font-color: lighten(black, 15%);
+$link-color: darken(deepskyblue, 20%);
 $font-head: "Raleway", sans-serif;
 $font-body: "Lora", serif;
 
@@ -22,4 +22,5 @@ $mobile-width: 640px;
 @import "base";
 @import "container";
 @import "header";
+@import "footer";
 @import "highlight";

@@ -24,8 +24,15 @@ html {
 
 
 body {
-    background: $background-color;
+    background: $major-color;
     color: $font-color;
+}
+
+
+div.mainmatter {
+    background: $background-color;
+    padding-bottom: 3em;
+    border-bottom: 1px solid $border-color;
 }
 
 

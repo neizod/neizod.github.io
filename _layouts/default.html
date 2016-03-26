@@ -6,8 +6,11 @@
     {% include mathjax.html %}
   </head>
   <body>
-    {% include header.html %}
-    {{ content }}
+    <div class="mainmatter">
+      {% include header.html %}
+      {{ content }}
+    </div>
+    {% include footer.html %}
     {% include non_critical_css.html %}
   </body>
 </html>
