@@ -1,3 +1,10 @@
+.mainmatter {
+    background: $background-color;
+    padding-bottom: 3em;
+    border-bottom: 1px solid $border-color;
+}
+
+
 .container {
     margin: 0 auto;
     padding: 0 1em;
@@ -14,4 +21,21 @@
 }
 .clearfix:after {
     clear: both;
+}
+
+
+.flex {
+    display: -ms-flex;
+    display:     flex;
+}
+
+.flex.mobile-column {
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+
+.flexitem.fill {
+    flex: 1;
 }
