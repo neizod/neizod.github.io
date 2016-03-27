@@ -9,6 +9,9 @@
     </div>
     <nav>
       <a href="{{ site.baseurl }}/blog">Blog</a> &sdot;
+      {% if site.projects.size != 0 %}
+        <a href="{{ site.baseurl }}/projects">Projects</a> &sdot;
+      {% endif %}
       <a href="{{ site.baseurl }}/about.html">About</a>
     </nav>
   </header>

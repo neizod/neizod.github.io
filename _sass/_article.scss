@@ -46,3 +46,31 @@
         float: right;
     }
 }
+
+
+.project .info {
+    display: -ms-flex;
+    display:     flex;
+
+    div {
+        display: inline-block;
+        padding: 0.33em;
+        flex: 1;
+        text-align: center;
+    }
+
+    .demo {
+        background: $major-color;
+    }
+
+    .source {
+        background: $minor-color;
+    }
+}
+
+
+@include mobile {
+    .project .info {
+        flex-direction: column;
+    }
+}

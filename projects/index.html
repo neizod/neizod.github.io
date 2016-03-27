@@ -1,0 +1,15 @@
+---
+title: Projects
+article: false
+---
+
+<div class="posts">
+{% for project in site.projects %}
+  <article class="excerpt post">
+    <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
+    <div class="excerpt entry">
+      {{ project.excerpt | strip_html }}
+    </div>
+  </article>
+{% endfor %}
+</div>

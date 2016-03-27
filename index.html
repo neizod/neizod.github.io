@@ -5,6 +5,9 @@ feature:
     latest: true
     list:
       - "/2016/03/19/markdown-examples"
+  projects:
+    list:
+      - "/projects/polar"
 ---
 
 <div class="posts">
@@ -26,6 +29,23 @@ feature:
           </div>
           <div class="excerpt entry">
             {{ post.excerpt | strip_html }}
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% if page.feature.projects %}
+    {% for project in site.projects %}
+      {% if page.feature.projects.list contains project.id %}
+        <article class="excerpt post">
+          <div class="feature-title">
+            <div class="feature">
+              Feature Project
+            </div>
+            <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
+          </div>
+          <div class="excerpt entry">
+            {{ project.excerpt | strip_html }}
           </div>
         </article>
       {% endif %}

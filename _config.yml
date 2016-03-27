@@ -25,12 +25,15 @@ timezone: Asia/Bangkok
 paginate: 5
 mathjax: true
 
-
 # Engine Setting
 # ==============
 # you shouldn't change this unless you really know what you're doing.
 
 paginate_path: "/blog/page:num"
+
+collections:
+  projects:
+    output: true
 
 defaults:
   - scope:
@@ -44,6 +47,11 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
 
 sass:
   sass_dir: "_sass/"
