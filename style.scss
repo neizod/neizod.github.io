@@ -18,9 +18,9 @@ $mobile-width: 640px;
 
 
 @import "normalize";
-@import "breakpoint";
+@import "mixins";
 @import "base";
-@import "container";
+@import "classes";
 @import "header";
 @import "article";
 @import "footer";
