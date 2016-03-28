@@ -29,7 +29,7 @@ mathjax: true
 # ==============
 # you shouldn't change this unless you really know what you're doing.
 
-paginate_path: "/blog/page:num"
+paginate_path: "/posts/page:num"
 
 collections:
   projects:
