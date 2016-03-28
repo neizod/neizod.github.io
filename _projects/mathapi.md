@@ -1,6 +1,8 @@
 ---
 title: Math API
 source: //github.com/neizod/mathapi
+date: 2012-08-29
+display_date: 2012-2013
 ---
 
 Digging into <http://projecteuler.net>, I discover many interesting

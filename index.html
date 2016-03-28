@@ -21,7 +21,7 @@ feature:
             <div class="flexitem fill">
               <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
             </div>
-            <div class="feature flexitem mobile-first">
+            <div class="mark feature flexitem mobile-first">
               {% if forloop.first and page.feature.posts.latest %}
                 Latest Post
               {% else %}
@@ -44,7 +44,7 @@ feature:
             <div class="flexitem fill">
               <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
             </div>
-            <div class="feature flexitem mobile-first">
+            <div class="mark feature flexitem mobile-first">
               Feature Project
             </div>
           </div>

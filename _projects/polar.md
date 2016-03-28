@@ -2,6 +2,8 @@
 title: Polar Theme
 source: //github.com/neizod/polar
 demo: //neizod.github.io/polar
+date: 2016-03-19
+display_date: March 2016
 ---
 
 Polar is a white-clean design theme, hence name *Polar* as in [polar bear][].

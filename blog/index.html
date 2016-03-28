@@ -10,6 +10,9 @@ article: false
       <div class="flexitem fill">
         <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
       </div>
+      <div class="mark flexitem mobile-first">
+        {{ post.date | date: "%B %e, %Y" }}
+      </div>
     </div>
     <div class="excerpt entry">
       {{ post.excerpt | strip_html }}

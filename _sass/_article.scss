@@ -1,6 +1,10 @@
-.feature {
+.mark {
     padding: 0.33em;
     font-style: italic;
+    background: $minor-color;
+}
+
+.mark.feature {
     background: $major-color;
 }
 
