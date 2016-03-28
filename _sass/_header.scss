@@ -3,19 +3,12 @@ header {
     border-bottom: 1px solid $border-color;
 
     .logo {
-        float: left;
-        width: 72px;
-        height: 72px;
-        margin-right: 1em;
-
-        img {
-            background: $minor-color;
-            border-radius: 8px;
-        }
+        background: $minor-color;
+        border-radius: 8px;
     }
 
     .info {
-        float: left;
+        margin: 0 1em;
 
         h1 {
             margin: 0;
@@ -32,8 +25,6 @@ header {
     }
 
     nav {
-        margin: 1.5em 0;
-        float: right;
         font-family: $font-head;
 
         a {
@@ -46,13 +37,5 @@ header {
 @include mobile {
     header {
         text-align: center;
-
-        .logo,
-        .info,
-        nav {
-            float: none;
-            display: block;
-            margin: 0 auto;
-        }
     }
 }
