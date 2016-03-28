@@ -33,6 +33,12 @@
     }
 }
 
+.flex.mobile-column.align-center {
+    @include mobile {
+        text-align: center;
+    }
+}
+
 
 .flexitem.fill {
     flex: 1;
