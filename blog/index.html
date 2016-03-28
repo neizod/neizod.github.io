@@ -6,7 +6,11 @@ article: false
 <div class="posts">
 {% for post in paginator.posts %}
   <article class="excerpt post">
-    <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+    <div class="flex align-center mobile-column">
+      <div class="flexitem fill">
+        <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+      </div>
+    </div>
     <div class="excerpt entry">
       {{ post.excerpt | strip_html }}
     </div>
