@@ -13,7 +13,11 @@ layout: default
       {{ content }}
     </div>
     <div class="date">
-      Written on {{ page.date | date: "%H:%m %A, %B %e, %Y" }}.
+      {% if site.show_time %}
+        Written on {{ page.date | date: "%H:%m %A, %B %e, %Y" }}.
+      {% else %}
+        Written on {{ page.date | date: "%B %e, %Y" }}.
+      {% endif %}
     </div>
     <div class="comment">
       {% include disqus.html %}
