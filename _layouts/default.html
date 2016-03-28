@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include force_https.html %}
+    {% include meta.html %}
+    {% include mathjax.html %}
+  </head>
+  <body>
+    <div class="mainmatter">
+      {% include header.html %}
+      {{ content }}
+    </div>
+    {% include footer.html %}
+    {% include analytics.html %}
+    {% include non_critical_css.html %}
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.mark {
+    padding: 0.33em;
+    font-style: italic;
+    background: $minor-color;
+}
+
+.mark.feature {
+    background: $major-color;
+}
+
+
+.posts > .excerpt.post {
+    padding-bottom: 2em;
+    border-bottom: 1px solid $border-color;
+}
+.posts > .excerpt.post:last-child {
+    padding-bottom: 1em;
+    border-bottom: none;
+}
+
+
+.pagination {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid $border-color;
+    text-align: center;
+}
+
+
+.project .info {
+    div {
+        padding: 0.33em;
+        text-align: center;
+    }
+
+    .demo {
+        background: $major-color;
+    }
+
+    .source {
+        background: $minor-color;
+    }
+}

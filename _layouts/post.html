@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="container">
+  <article class="post">
+    <div class="flex align-center mobile-column">
+      <div class="flexitem fill">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+    <div class="entry">
+      {{ content }}
+    </div>
+    <div class="date">
+      {% if site.show_time %}
+        Written on {{ page.date | date: "%H:%m %A, %B %e, %Y" }}.
+      {% else %}
+        Written on {{ page.date | date: "%B %e, %Y" }}.
+      {% endif %}
+    </div>
+    <div class="comment">
+      {% include disqus.html %}
+    </div>
+  </article>
+</div>

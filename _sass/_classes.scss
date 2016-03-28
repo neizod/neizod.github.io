@@ -1,0 +1,57 @@
+.mainmatter {
+    background: $background-color;
+    padding-bottom: 3em;
+    border-bottom: 1px solid $border-color;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 100%;
+    max-width: $content-width;
+}
+
+
+.transparent {
+    opacity: 0;
+}
+
+
+.flex {
+    display: -ms-flex;
+    display:     flex;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.mobile-column {
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.flex.mobile-column.align-center {
+    @include mobile {
+        text-align: center;
+    }
+}
+
+
+.flexitem.fill {
+    flex: 1;
+}
+
+.flexitem.mobile-first {
+    @include mobile {
+        order: -1;
+    }
+}
+
+
+.MathJax_Display {
+    overflow: auto;
+    padding: 0.5em;
+}

@@ -1,0 +1,20 @@
+<div class="container">
+  <header class="flex align-center mobile-column">
+    <div class="logo">
+      <a href="{{ site.baseurl }}/">
+        <img src="{{ site.logo | prepend: site.baseurl }}" width="72" height="72" />
+      </a>
+    </div>
+    <div class="info flexitem fill">
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <h2>{{ site.description }}</h2>
+    </div>
+    <nav>
+      <a href="{{ site.baseurl }}/posts">Posts</a> &sdot;
+      {% if site.projects.size != 0 %}
+        <a href="{{ site.baseurl }}/projects">Projects</a> &sdot;
+      {% endif %}
+      <a href="{{ site.baseurl }}/about.html">About</a>
+    </nav>
+  </header>
+</div>

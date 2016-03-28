@@ -1,0 +1,67 @@
+# Identity Setting
+# ================
+# you should change this to suit your own preference.
+
+title:       neizod
+description: insufficient data for meaningful answer
+logo:        "/images/logo.png"
+
+baseurl:     ""
+url:         "https://neizod.github.io"
+
+author: neizod
+rights: CC-BY
+
+google_analytics: UA-2498230-6
+disqus:           neizod
+
+
+# Layout Setting
+# ==============
+# you may change this to suit your own preference.
+
+timezone:  Asia/Bangkok
+show_time: true
+
+paginate:  5
+mathjax:   true
+
+
+# Engine Setting
+# ==============
+# you shouldn't change this unless you really know what you're doing.
+
+paginate_path: "/posts/page:num"
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      article: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+sass:
+  sass_dir: "_sass/"
+  style: compressed
+
+exclude:
+  - README.md
+  - LICENSE.txt
+
+gems:
+  - jekyll-paginate

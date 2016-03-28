@@ -1,0 +1,109 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+@include selection {
+    color: invert($font-color);
+    background: invert($major-color);
+}
+
+
+html {
+    font: 100% $font-body;
+    font-variant-ligatures: common-ligatures;
+}
+
+
+body {
+    background: $major-color;
+    color: $font-color;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 0.5em;
+    padding: 0;
+    color: $font-color;
+    font-family: $font-head;
+    line-height: 1.7;
+    a {
+        color: inherit;
+    }
+}
+
+
+@include mobile {
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2;
+        margin: 0.5em 0 0;
+    }
+}
+
+
+a {
+    transition: 0.25s;
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover, &:active {
+        color: $link-color;
+    }
+    &:not([href]) {
+        color: $font-color;
+        cursor: default;
+        pointer-events: none;
+    }
+}
+
+
+table {
+    width: 100%;
+
+    th, td {
+        padding: 0.25em;
+    }
+}
+th {
+    background: $major-color;
+}
+td {
+    border-bottom: 1px solid $border-color;
+}
+
+
+blockquote {
+    margin: 0;
+    padding: 0 1.5em;
+    border-left: 0.25em solid $major-color;
+}
+
+
+code {
+    padding: 0 0.33em;
+    background: $minor-color;
+}
+
+
+pre {
+    padding: 1em;
+    background: $minor-color;
+    code {
+        padding: 0;
+        background: none;
+    }
+}
+
+
+figure {
+    margin: auto;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}

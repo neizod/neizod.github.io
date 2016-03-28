@@ -1,0 +1,14 @@
+{% if site.mathjax %}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [["$","$"]],
+    displayMath: [["$$","$$"]],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+{% endif %}

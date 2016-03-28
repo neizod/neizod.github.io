@@ -1,0 +1,46 @@
+---
+title: All Blog Posts
+article: false
+---
+
+<div class="posts">
+{% for post in paginator.posts %}
+  <article class="excerpt post">
+    <div class="flex align-center mobile-column">
+      <div class="flexitem fill">
+        <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+      </div>
+      <div class="mark flexitem mobile-first">
+        {{ post.date | date: "%B %e, %Y" }}
+      </div>
+    </div>
+    <div class="excerpt entry">
+      {{ post.excerpt | strip_html }}
+    </div>
+  </article>
+{% endfor %}
+</div>
+
+<div class="pagination flex align-center">
+  <div>
+    <a {% if paginator.previous_page %}
+         href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
+       {% else %}
+         class="transparent"
+       {% endif %}>
+      Prev
+    </a>
+  </div>
+  <div class="flexitem fill">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </div>
+  <div>
+    <a {% if paginator.next_page %}
+         href="{{ paginator.next_page_path | prepend: site.baseurl }}"
+       {% else %}
+         class="transparent"
+       {% endif %}>
+      Next
+    </a>
+  </div>
+</div>
