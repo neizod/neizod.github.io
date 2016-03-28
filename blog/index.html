@@ -18,16 +18,22 @@ article: false
 {% endfor %}
 </div>
 
-<div class="pagination clearfix">
+<div class="pagination flex align-center">
+  <div>
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Prev</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Prev</a>
   {% else %}
-    <span class="previous transparent">Prev</span>
+    <span class="transparent">Prev</span>
   {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </div>
+  <div class="flexitem fill">
+    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </div>
+  <div>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
   {% else %}
-    <span class="next transparent">Next</span>
+    <span class="transparent">Next</span>
   {% endif %}
+  </div>
 </div>
