@@ -49,6 +49,11 @@ a {
     &:hover, &:active {
         color: $link-color;
     }
+    &:not([href]) {
+        color: $font-color;
+        cursor: default;
+        pointer-events: none;
+    }
 }
 
 
