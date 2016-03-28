@@ -2,7 +2,7 @@
 title: About Me
 ---
 
-![Picture from Wikimedia -- Polar Bear - Alaska.]({{ site.baseurl }}/images/avatar.jpg)
+![Picture from Wikimedia -- Polar Bear - Alaska.]({{ site.baseurl }}/images/polar-bear-alaska.jpg)
 
 Hi, I'm a Polar Bear. Nice to meet you!
 

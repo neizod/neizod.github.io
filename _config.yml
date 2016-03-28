@@ -4,6 +4,7 @@
 
 title: Polar
 description: White-Clean Jekyll Theme
+logo: "/images/logo.png"
 baseurl: "/polar"
 url: "https://neizod.github.io"
 
@@ -11,10 +12,6 @@ author: neizod
 rights: All Right Reserved
 
 google_analytics:
-
-# also don't forget to check:
-# - `/favicon.png`
-# - `/images/logo.png`
 
 
 # Layout Setting
