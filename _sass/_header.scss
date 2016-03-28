@@ -32,3 +32,10 @@ header {
         }
     }
 }
+
+
+@include mobile {
+    header .info h2 {
+        margin: 0.125em 0;
+    }
+}
