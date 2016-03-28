@@ -17,15 +17,17 @@ feature:
       {% if page.feature.posts.list contains post.id or
             (forloop.first and page.feature.posts.latest) %}
         <article class="excerpt post">
-          <div class="feature-title">
-            <div class="feature">
+          <div class="flex align-center mobile-column">
+            <div class="flexitem fill">
+              <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+            </div>
+            <div class="feature flexitem mobile-first">
               {% if forloop.first and page.feature.posts.latest %}
                 Latest Post
               {% else %}
                 Feature Post
               {% endif %}
             </div>
-            <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
           </div>
           <div class="excerpt entry">
             {{ post.excerpt | strip_html }}
@@ -38,11 +40,13 @@ feature:
     {% for project in site.projects %}
       {% if page.feature.projects.list contains project.id %}
         <article class="excerpt post">
-          <div class="feature-title">
-            <div class="feature">
+          <div class="flex align-center mobile-column">
+            <div class="flexitem fill">
+              <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
+            </div>
+            <div class="feature flexitem mobile-first">
               Feature Project
             </div>
-            <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
           </div>
           <div class="excerpt entry">
             {{ project.excerpt | strip_html }}

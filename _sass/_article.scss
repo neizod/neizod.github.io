@@ -1,20 +1,7 @@
-.feature-title {
-    display: inline;
-
-    .feature {
-        float: right;
-        font-style: italic;
-        margin-top: 1em;
-    }
-}
-
-
-@include mobile {
-    .feature-title {
-        .feature {
-            float: none;
-        }
-    }
+.feature {
+    padding: 0.33em;
+    font-style: italic;
+    background: $major-color;
 }
 
 

@@ -29,6 +29,10 @@
     display:     flex;
 }
 
+.flex.align-center {
+    align-items: center;
+}
+
 .flex.mobile-column {
     @include mobile {
         flex-direction: column;
@@ -38,4 +42,10 @@
 
 .flexitem.fill {
     flex: 1;
+}
+
+.flexitem.mobile-first {
+    @include mobile {
+        order: -1;
+    }
 }
