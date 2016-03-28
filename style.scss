@@ -3,15 +3,15 @@
 
 @charset "utf-8";
 
-$major-color: lighten(lightblue, 10%);
+$major-color: lighten(yellow, 30%);
 $minor-color: lighten(lightgray, 10%);
 $border-color: gainsboro;
 $background-color: white;
 
 $font-color: lighten(black, 15%);
-$link-color: darken(deepskyblue, 20%);
-$font-head: "Raleway", sans-serif;
-$font-body: "Lora", serif;
+$link-color: darken(darkorange, 10%);
+$font-head: "Raleway", "Kanit", sans-serif;
+$font-body: "Lora", "Noto Sans Thai", serif;
 
 $content-width: 720px;
 $mobile-width: 640px;

@@ -2,29 +2,29 @@
 # ================
 # you should change this to suit your own preference.
 
-title:       Polar                      #TODO title of this site
-description: White-Clean Jekyll Theme   #TODO short description
-logo:        "/images/logo.png"         #TODO logo, recommended 256x256
+title:       neizod
+description: insufficient data for meaningful answer
+logo:        "/images/logo.png"
 
-baseurl: "/polar"                       #TODO leaves blank if already root
-url:     "https://neizod.github.io"     #TODO canonical url w/ protocol
+baseurl:     ""
+url:         "https://neizod.github.io"
 
-author: neizod                          #TODO single author only
-rights: All Right Reserved              #TODO rights statement
+author: neizod
+rights: CC-BY
 
-google_analytics:                       #TODO e.g. U-8152342-4
-disqus:                                 #TODO if polar.disqus.com, then polar
+google_analytics: UA-2498230-6
+disqus:           neizod
 
 
 # Layout Setting
 # ==============
 # you may change this to suit your own preference.
 
-timezone:  Asia/Bangkok                 #TODO post time offset
-show_time: true                         #TODO show time alongside date?
+timezone:  Asia/Bangkok
+show_time: true
 
-paginate:  5                            #TODO nos of excerpt post per page
-mathjax:   true                         #TODO if true, write $ with \\$
+paginate:  5
+mathjax:   true
 
 
 # Engine Setting
