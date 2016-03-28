@@ -6,8 +6,8 @@
 
 
 @include selection {
-    color: black;
-    background: $major-color;
+    color: invert($font-color);
+    background: invert($major-color);
 }
 
 
@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 a {
+    transition: 0.25s;
     color: $link-color;
     text-decoration: none;
     cursor: pointer;
