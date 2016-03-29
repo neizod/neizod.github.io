@@ -32,6 +32,7 @@ feature:
           </div>
           <div class="excerpt entry">
             {{ post.excerpt | strip_html }}
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ site.readmore }}</a>
           </div>
         </article>
       {% endif %}
@@ -51,6 +52,7 @@ feature:
           </div>
           <div class="excerpt entry">
             {{ project.excerpt | strip_html }}
+            <a href="{{ project.url | prepend: site.baseurl }}">{{ site.readmore }}</a>
           </div>
         </article>
       {% endif %}

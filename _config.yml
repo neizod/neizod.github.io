@@ -23,6 +23,8 @@ disqus:           neizod
 timezone:  Asia/Bangkok
 show_time: true
 
+readmore:  Read More
+
 paginate:  5
 mathjax:   true
 
