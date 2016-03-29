@@ -16,6 +16,7 @@ article: false
     </div>
     <div class="excerpt entry">
       {{ post.excerpt | strip_html }}
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.readmore }}</a>
     </div>
   </article>
 {% endfor %}

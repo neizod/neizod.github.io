@@ -23,6 +23,8 @@ disqus:                                 #TODO if polar.disqus.com, then polar
 timezone:  Asia/Bangkok                 #TODO post time offset
 show_time: true                         #TODO show time alongside date?
 
+readmore:  Read More                    #TODO read more text
+
 paginate:  5                            #TODO nos of excerpt post per page
 mathjax:   true                         #TODO if true, write $ with \\$
 
