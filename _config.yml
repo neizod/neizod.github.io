@@ -23,7 +23,8 @@ disqus:           neizod
 timezone:  Asia/Bangkok
 show_time: true
 
-readmore:  Read More
+title_separator: "~"
+readmore:        Read More
 
 paginate:  5
 mathjax:   true
@@ -66,4 +67,5 @@ exclude:
   - LICENSE.txt
 
 gems:
+  - jekyll-sitemap
   - jekyll-paginate
