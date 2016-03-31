@@ -1,15 +1,15 @@
 ---
-title: ทำ Optional Argument แบบ LaTeX ใน Python
+title: ทำ Optional Argument แบบ $\LaTeX$ ใน Python
 tags:
 - Object-Oriented
 - Functional
 - Mathematics
 - Python
 - LaTeX
-date: 2013-01-02 03:58:49 +0700
+date: 2013-01-02 03:58:00 +0700
 ---
 
-command ใน LaTeX นั้นมีวิธีเรียกใช้ที่ต่างจากภาษาโดยทั่วไปอยู่บ้าง ลองดู
+command ใน $\LaTeX$ นั้นมีวิธีเรียกใช้ที่ต่างจากภาษาโดยทั่วไปอยู่บ้าง ลองดู
 
 {% highlight latex %}
 \sqrt{x}
