@@ -14,7 +14,7 @@ layout: default
     </div>
     <div class="date">
       {% if site.show_time %}
-        Written on {{ page.date | date: "%H:%m %A, %B %e, %Y" }}.
+        Written on {{ page.date | date: "%R %A, %B %e, %Y" }}.
       {% else %}
         Written on {{ page.date | date: "%B %e, %Y" }}.
       {% endif %}
