@@ -26,7 +26,7 @@ show_time: true
 title_separator: "~"
 readmore:        Read More
 
-paginate:  5
+paginate:  10
 mathjax:   true
 
 
