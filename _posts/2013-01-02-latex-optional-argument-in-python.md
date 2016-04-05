@@ -1,11 +1,11 @@
 ---
 title: ทำ Optional Argument แบบ $\LaTeX$ ใน Python
 tags:
-- Object-Oriented
-- Functional
-- Mathematics
-- Python
-- LaTeX
+  - Object-Oriented
+  - Functional
+  - Mathematics
+  - Python
+  - LaTeX
 date: 2013-01-02 03:58:00 +0700
 ---
 

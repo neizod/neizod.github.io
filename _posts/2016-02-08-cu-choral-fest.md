@@ -1,9 +1,9 @@
 ---
-title: "เทศกาลดนตรี CU Choral Fest 2016"
+title: เทศกาลดนตรี CU Choral Fest 2016
 tags:
-- Concert
-- Diary
-- Choir
+  - Concert
+  - Diary
+  - Choir
 date: 2016-02-08 05:14:45 +0700
 ---
 

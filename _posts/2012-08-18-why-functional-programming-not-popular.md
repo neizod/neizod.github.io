@@ -1,12 +1,12 @@
 ---
 title: ทำไม Functional Programming ถึงไม่ได้รับความนิยม
 tags:
-- Programming
-- Functional
-- Ruby
-- Python
-- Haskell
-- Shell
+  - Programming
+  - Functional
+  - Ruby
+  - Python
+  - Haskell
+  - Shell
 date: 2012-08-18 00:18:00 +0700
 ---
 

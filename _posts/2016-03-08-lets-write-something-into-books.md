@@ -1,8 +1,8 @@
 ---
 title: มาขีดเขียนหนังสือกันเถอะ!
 tags:
-- Thought
-- Book
+  - Thought
+  - Book
 date: 2016-03-08 15:03:30 +0700
 ---
 

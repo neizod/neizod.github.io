@@ -1,10 +1,10 @@
 ---
 title: ใบเฟิร์น Barnsley
 tags:
-- Mathematics
-- Recursive
-- Python
-- Thought
+  - Mathematics
+  - Recursive
+  - Python
+  - Thought
 date: 2016-03-23 06:43:08 +0700
 ---
 

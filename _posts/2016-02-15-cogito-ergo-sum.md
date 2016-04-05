@@ -1,9 +1,9 @@
 ---
-title: "Cogito ergo sum"
+title: Cogito ergo sum
 tags:
-- Philosophy
-- René Descartes
-- Paradox
+  - Philosophy
+  - René Descartes
+  - Paradox
 date: 2016-02-15 12:59:48 +0700
 ---
 
