@@ -16,7 +16,7 @@ article: false
     </div>
     <div class="excerpt entry">
       {{ post.excerpt | strip_html }}
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.readmore }}</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
     </div>
   </article>
 {% endfor %}
@@ -29,11 +29,11 @@ article: false
        {% else %}
          class="transparent"
        {% endif %}>
-      Prev
+      {{ site.text.prev_page }}
     </a>
   </div>
   <div class="flexitem fill">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    {{ site.text.at_page }}{{ paginator.page }}{{ site.text.of_page }}{{ paginator.total_pages }}
   </div>
   <div>
     <a {% if paginator.next_page %}
@@ -41,7 +41,7 @@ article: false
        {% else %}
          class="transparent"
        {% endif %}>
-      Next
+      {{ site.text.next_page }}
     </a>
   </div>
 </div>

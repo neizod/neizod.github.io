@@ -23,11 +23,21 @@ disqus:                                 #TODO if polar.disqus.com, then polar
 timezone:  Asia/Bangkok                 #TODO post time offset
 show_time: true                         #TODO show time alongside date?
 
-title_separator: "|"                    #TODO <post-title> <sep> <site-title>
-readmore:        Read More              #TODO read more text
-
 paginate:  5                            #TODO nos of excerpt post per page
 mathjax:   true                         #TODO if true, write $ with \\$
+
+text:
+  latest_post:  Latest Post             #TODO settings for top-right label
+  feature_post: Feature Post            #TODO of excerpt post on index page
+  feature_proj: Feature Project         #TODO _______________________________
+  proj_demo:    Live Demo!              #TODO settings for project demo/source
+  proj_source:  Source Code             #TODO _______________________________
+  at_page:      "Page: "                #TODO settings for pagination text,
+  of_page:      " of "                  #TODO example layout render:
+  prev_page:    « Prev                  #TODO <prev>   <at> 2 <of> 3   <next>
+  next_page:    Next »                  #TODO _______________________________
+  title_sep:    "|"                     #TODO <post-title> <sep> <site-title>
+  read_more:    Read More               #TODO read more text
 
 
 # Engine Setting

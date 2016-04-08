@@ -23,15 +23,15 @@ feature:
             </div>
             <div class="mark feature flexitem mobile-first">
               {% if forloop.first and page.feature.posts.latest %}
-                Latest Post
+                {{ site.text.latest_post }}
               {% else %}
-                Feature Post
+                {{ site.text.feature_post }}
               {% endif %}
             </div>
           </div>
           <div class="excerpt entry">
             {{ post.excerpt | strip_html }}
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ site.readmore }}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
           </div>
         </article>
       {% endif %}
@@ -46,12 +46,12 @@ feature:
               <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
             </div>
             <div class="mark feature flexitem mobile-first">
-              Feature Project
+              {{ site.text.feature_proj }}
             </div>
           </div>
           <div class="excerpt entry">
             {{ project.excerpt | strip_html }}
-            <a href="{{ project.url | prepend: site.baseurl }}">{{ site.readmore }}</a>
+            <a href="{{ project.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
           </div>
         </article>
       {% endif %}
