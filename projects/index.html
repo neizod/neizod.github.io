@@ -19,6 +19,12 @@ article: false
     <div class="excerpt entry">
       {{ project.excerpt | strip_html }}
       <a href="{{ project.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
+      {% if project.demo %}
+        / <a href="{{ project.demo }}">{{ site.text.proj_demo }}</a>
+      {% endif %}
+      {% if project.source %}
+        / <a href="{{ project.source }}">{{ site.text.proj_source }}</a>
+      {% endif %}
     </div>
   </article>
 {% endfor %}
