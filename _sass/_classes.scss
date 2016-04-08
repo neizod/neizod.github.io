@@ -1,7 +1,11 @@
 .mainmatter {
     background: $background-color;
-    padding-bottom: 3em;
     border-bottom: 1px solid $border-color;
+}
+.mainmatter::after {
+    display: block;
+    content: "";
+    height: 3em;
 }
 
 
@@ -21,6 +25,10 @@
 .flex {
     display: -ms-flex;
     display:     flex;
+}
+
+.flex.column {
+    flex-direction: column;
 }
 
 .flex.align-center {
