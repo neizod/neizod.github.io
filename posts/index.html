@@ -23,25 +23,21 @@ article: false
 </div>
 
 <div class="pagination flex align-center">
-  <div>
-    <a {% if paginator.previous_page %}
-         href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
-       {% else %}
-         class="transparent"
-       {% endif %}>
+  <div class="flexitem fill text-left">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
       {{ site.text.prev_page }}
     </a>
+    {% endif %}
   </div>
   <div class="flexitem fill">
     {{ site.text.at_page }}{{ paginator.page }}{{ site.text.of_page }}{{ paginator.total_pages }}
   </div>
-  <div>
-    <a {% if paginator.next_page %}
-         href="{{ paginator.next_page_path | prepend: site.baseurl }}"
-       {% else %}
-         class="transparent"
-       {% endif %}>
+  <div class="flexitem fill text-right">
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">
       {{ site.text.next_page }}
     </a>
+    {% endif %}
   </div>
 </div>
