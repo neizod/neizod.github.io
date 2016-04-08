@@ -11,14 +11,19 @@ layout: default
     </div>
     <div class="info flex mobile-column">
       {% if page.demo %}
-        <div class="demo flexitem fill"><a href="{{ page.demo }}">Live Demo!</a></div>
+        <div class="demo flexitem fill">
+          <a href="{{ page.demo }}">{{ site.text.proj_demo }}</a>
+        </div>
       {% endif %}
       {% if page.source %}
-        <div class="source flexitem fill"><a href="{{ page.source }}">Source</a></div>
+        <div class="source flexitem fill">
+          <a href="{{ page.source }}">{{ site.text.proj_source }}</a>
+        </div>
       {% endif %}
     </div>
     <div class="entry">
       {{ content }}
     </div>
+    {% include paginate_per_post.html %}
   </article>
 </div>

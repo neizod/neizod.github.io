@@ -16,32 +16,9 @@ article: false
     </div>
     <div class="excerpt entry">
       {{ post.excerpt | strip_html }}
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.readmore }}</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
     </div>
   </article>
 {% endfor %}
 </div>
-
-<div class="pagination flex align-center">
-  <div>
-    <a {% if paginator.previous_page %}
-         href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
-       {% else %}
-         class="transparent"
-       {% endif %}>
-      Prev
-    </a>
-  </div>
-  <div class="flexitem fill">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </div>
-  <div>
-    <a {% if paginator.next_page %}
-         href="{{ paginator.next_page_path | prepend: site.baseurl }}"
-       {% else %}
-         class="transparent"
-       {% endif %}>
-      Next
-    </a>
-  </div>
-</div>
+{% include paginate_all_posts.html %}

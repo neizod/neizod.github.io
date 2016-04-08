@@ -23,11 +23,24 @@ disqus:           neizod
 timezone:  Asia/Bangkok
 show_time: true
 
-title_separator: "~"
-readmore:        Read More
+older_left: false
+paginate:   10
+mathjax:    true
 
-paginate:  10
-mathjax:   true
+text:
+  latest_post:  Latest Post
+  feature_post: Feature Post
+  feature_proj: Feature Project
+  proj_demo:    Live Demo!
+  proj_source:  Source Code
+  left_sym:     «
+  right_sym:    »
+  at_page:      "Page: "
+  of_page:      " of "
+  prev_page:    Prev
+  next_page:    Next
+  title_sep:    "~"
+  read_more:    Read More
 
 
 # Engine Setting

@@ -11,6 +11,11 @@
 }
 
 
+html, body {
+    height: 100%;
+}
+
+
 html {
     font: 100% $font-body;
     font-variant-ligatures: common-ligatures;
@@ -56,6 +61,14 @@ a {
         cursor: default;
         pointer-events: none;
     }
+}
+
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 75%;
+    background: $border-color;
 }
 
 
