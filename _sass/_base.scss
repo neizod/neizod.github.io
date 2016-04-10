@@ -73,10 +73,11 @@ hr {
 
 
 table {
-    width: 100%;
+    margin: auto;
+    max-width: 100%;
 
     th, td {
-        padding: 0.25em;
+        padding: 0.25em 1em;
     }
 }
 th {
@@ -106,6 +107,24 @@ pre {
     code {
         padding: 0;
         background: none;
+    }
+}
+
+
+pre code table {
+    margin: 0;
+    padding: 0;
+    td {
+        margin: 0;
+        padding: 0;
+        border-bottom: 0;
+        pre {
+            margin: 0;
+            padding: 0 1em;
+        }
+    }
+    td:first-child {
+        border-right: 1px solid $border-color;
     }
 }
 
