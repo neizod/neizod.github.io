@@ -25,5 +25,8 @@ layout: default
       {{ content }}
     </div>
     {% include paginate_per_post.html %}
+    <div class="comment">
+      {% include disqus.html %}
+    </div>
   </article>
 </div>
