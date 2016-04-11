@@ -3,20 +3,7 @@
 
 @charset "utf-8";
 
-$major-color: lighten(lightblue, 10%);
-$minor-color: lighten(lightgray, 10%);
-$border-color: gainsboro;
-$background-color: white;
-
-$font-color: lighten(black, 15%);
-$link-color: darken(deepskyblue, 20%);
-$font-head: "Raleway", sans-serif;
-$font-body: "Lora", serif;
-
-$content-width: 720px;
-$mobile-width: 640px;
-
-
+@import "variables";
 @import "normalize";
 @import "mixins";
 @import "base";
