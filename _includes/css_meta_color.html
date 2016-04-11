@@ -1,15 +1,7 @@
-<script>
-(function(d,t,c,i,b) {
-  c = d.styleSheets[0].rules || d.styleSheets[0].cssRules;
-  for (i=0; i<c.length; i++) {
-    if (c[i].selectorText == "body") {
-      b = c[i].style.backgroundColor;
-      if (b.length) {
-        var m = d.createElement(t); m.name = 'theme-color'; m.content = b;
-        d.getElementsByTagName(t)[0].parentNode.appendChild(m);
-        break;
-      }
-    }
-  }
-}(document,'meta'));
-</script>
+{% capture css-theme-color %}
+@import "variables";
+* {
+  color: $major-color;
+}
+{% endcapture %}
+<meta name="theme-color" content="{{ css-theme-color | scssify | slice: 8, 7 }}" />
