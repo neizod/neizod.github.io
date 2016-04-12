@@ -6,13 +6,38 @@ tags:
 date: 2016-03-19 05:25:32 +0700
 ---
 
-This post show result from various Markdown techniques. To learn more, see file at `_post/2016-03-19-markdown-examples.md` for source.
+This post show various results from Markdown techniques. Specifily, it's [kramdown][] plus [GFM][]! And you need to calm down if you only know just Standard Markdown, because you can use it right away without changing you old code.
 
+But if you want to learn more, see this file source[^filepath] for more information on the syntax.
+
+---
+
+
+Table of Contents
+-----------------
+
+0. TOC
+{:toc}
+
+
+Heading
+-------
+
+This page will not render example for heading (except H2 for all title sections in this page), since its will corrupt the table of contents. However, this is the heading syntax:
+
+``` markdown
+# H1 (should not use, reserved for title)
+## H2 (also newline with lots of `----` under heading text)
+### H3
+#### H4
+##### H5 (a little bit smaller than normal text from now on)
+###### H6
+```
 
 Text
 ----
 
-**Lorem ipsum** dolor sit amet, consectetur adipiscing *elit*. Proin blandit eros sapien, ***pharetra egestas justo pellentesque vel***. Ut rutrum, `ex vel fringilla interdum`, arcu turpis euismod odio, id molestie lectus lectus sit amet velit. <del>Donec suscipit consectetur sagittis.</del> Praesent quis varius nibh, vel luctus metus. Praesent egestas nisl eget nisl tempus molestie. Cras at finibus purus. Aenean porttitor efficitur dui ut iaculis.
+__Lorem ipsum__ dolor sit amet, consectetur _adipiscing elit_. Proin blandit eros sapien, pharetra egestas justo pellentesque vel. Ut rutrum, ___ex vel fringilla interdum___, arcu turpis euismod odio, id molestie lectus lectus sit amet velit. ~~Donec suscipit consectetur sagittis.~~ Praesent quis varius nibh, vel luctus metus. Praesent egestas nisl eget nisl tempus molestie. Cras at finibus purus. Aenean `porttitor` efficitur dui ut iaculis.
 
 
 Quotes
@@ -28,31 +53,57 @@ List
 ----
 
 1. Fusce sodales eros ac sagittis fermentum.
-  0. Etiam hendrerit urna nec velit gravida, sit amet facilisis diam hendrerit.
-  0. Duis eu est tristique, sollicitudin velit lobortis, tincidunt orci.
+    0. Etiam hendrerit urna nec velit gravida, sit amet facilisis diam hendrerit.
+    0. Duis eu est tristique, sollicitudin velit lobortis, tincidunt orci.
 2. Morbi et nibh eu nulla pretium aliquet.
 3. Nam posuere arcu et congue commodo.
-  - Donec ultrices odio vitae consectetur tempor.
-  - Donec blandit dolor et arcu hendrerit ultricies.
-  - Donec ac mi a enim iaculis luctus sed a felis.
+    - Donec ultrices odio vitae consectetur tempor.
+    - Donec blandit dolor et arcu hendrerit ultricies.
+    - Donec ac mi a enim iaculis luctus sed a felis.
 4. Quisque non mauris feugiat, tempus lectus sed, hendrerit odio.
+
+
+Definition
+----------
+
+Polar
+
+: _adj._ of or relating to the North or South Pole.
+
+: _adj._ having electrical or magnetic polarity.
+
+: _n._ the straight line joining the two points at which tangents from a fixed point touch a conic section.
 
 
 Link
 ----
 
-- <https://example.com>
+- Quick link <https://example.com>
 - [Example][]
 - [Another Example][Example]
 - [Yet Another Example](https://example.com)
+- This bookmark will jump you to previous [Text section](#text) in this page.
+- You can also insert footnote[^footnote] too.
 
-[Example]: https://example.com  "haha gotcha!"
+[^footnote]: footnote is kramdown specification.
+[Example]: https://example.com  "link title"
+
+
+---
 
 
 Image
 -----
 
 ![800px x400px]({{ site.baseurl }}/images/800x400.png)
+
+![100px x100px]({{ site.baseurl }}/images/100x100.png){: .float-right}
+This above image is _not_ displayed at the width of 800 pixel, but will take up horizontal spaces as much as the width of content wrapper.
+
+While on the rightside is a floating image. If you want it to stop consuming float area, make a paragraph with class `clear-float`, where you want to shift next elements down.
+
+{: .clear-float}
+An image without floating attribute will align itself to the center of the current page.
 
 
 Table
@@ -63,18 +114,53 @@ Table
 | Alpha  | libero et diam facilisis. |  23 |
 | Beta   | vulputate quam ac.        |  42 |
 | Pi     | semper eget sit amet mi.  | 314 |
+| ====== | ========================= | === |
+| Omega  | summa                     | 379 |
 
 
 Code
 ----
 
-{% highlight haskell %}
+Code without language specify will not be highlighted.
+
+```
+1.to 3 do |number|
+    puts "I can count to #{number}."
+end
+```
+
+Compare to code with language specify.
+
+``` haskell
 factorial :: Integer -> Integer
 factorial =
     let tailfact acc 0 = acc
         tailfact acc n = tailfact (n * acc) (n - 1)
     in  tailfact 1
-{% endhighlight %}
+```
+
+Since GFM doesn't directly support line numbering[^linenos], add this class to call JavaScript to decorate code block with line numbers instead:
+
+{: .linenos}
+``` javascript
+window.onload = function() {
+  var ln = document.getElementsByClassName('linenos');
+  for (var i=0; i<ln.length; i++) {
+    ln[i].className += " flex";
+    var p1 = ln[i].getElementsByTagName('pre')[0];
+        p1.className += " flexitem fill";
+    var c1 = p1.getElementsByTagName('code')[0];
+    var ta = new Array((c1.innerHTML.match(/\n/g)||[]).length);
+        for (var j=0; j<ta.length; j++) { ta[j] = j+1; }
+    var p0 = document.createElement('pre');
+        p0.className = "highlight text-right sep-right";
+    var c0 = document.createElement('code');
+        c0.innerHTML = ta.join('\n');
+        p0.appendChild(c0)
+    ln[i].insertBefore(p0, p1);
+  }
+}
+```
 
 
 Math
@@ -85,3 +171,21 @@ Inline math $ e^{\pi i} + 1 = 0 $, and display math:
 $$
     \sum\limits_{k=0}^{n-1} e^{2\pi ik/n} = 0
 $$
+
+Since math use \\$ symbol at start/end of math input, to display \\$ outside of code block, use two backslash to escape it, i.e. `\\$`.
+
+
+---
+
+
+Footnotes
+---------
+
+_Note: if you need this footnote section text, you have to include it by your self at the end of each page._
+
+[^filepath]: path to this file: `{{ page.path }}`
+[^linenos]: please do not use `{% raw %}{% highlight <lang> [linenos] %}{% endraw %}`.
+
+
+[kramdown]: //kramdown.gettalong.org/syntax.html
+[GFM]: //github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
