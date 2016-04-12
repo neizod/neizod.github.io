@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include force_https.html %}
     {% include meta.html %}
-    {% include mathjax.html %}
   </head>
   <body class="flex column">
     <div class="mainmatter flexitem fill">
@@ -11,7 +9,7 @@
       {{ content }}
     </div>
     {% include footer.html %}
-    {% include analytics.html %}
-    {% include non_critical_css.html %}
+    {% include script/analytics.html %}
+    {% include style/non_critical.html %}
   </body>
 </html>
