@@ -29,7 +29,7 @@ mathjax:    true                        #TODO if true, write $ with \\$
 
 theme:
   palette:   north-pole                 #TODO set these to null to define your
-  highlight: trac                       #TODO own color palette and highlight
+  highlight: github                     #TODO own color palette and highlight
 
 text:
   latest_post:  Latest Post             #TODO settings for top-right label
