@@ -19,7 +19,7 @@ layout: default
         Written on {{ page.date | date: "%B %e, %Y" }}.
       {% endif %}
     </div>
-    {% include paginate_per_post.html %}
+    {% include paginate/single.html %}
     <div class="comment">
       {% include script/disqus.html %}
     </div>
