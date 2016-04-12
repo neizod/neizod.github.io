@@ -99,35 +99,17 @@ blockquote {
 
 
 code {
+    @extend .highlight;
+    font-size: 0.9em;
     padding: 0 0.33em;
-    background: $minor-color;
 }
 
 
 pre {
     padding: 1em;
-    background: $minor-color;
     code {
         padding: 0;
         background: none;
-    }
-}
-
-
-pre code table {
-    margin: 0;
-    padding: 0;
-    td {
-        margin: 0;
-        padding: 0;
-        border-bottom: 0;
-        pre {
-            margin: 0;
-            padding: 0 1em;
-        }
-    }
-    td:first-child {
-        border-right: 1px solid $border-color;
     }
 }
 

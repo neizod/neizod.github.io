@@ -26,6 +26,11 @@
 }
 
 
+.sep-right {
+    border-right: 1px solid $border-color;
+}
+
+
 .flex {
     display: -ms-flex;
     display:     flex;
