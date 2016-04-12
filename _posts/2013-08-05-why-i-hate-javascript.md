@@ -33,5 +33,5 @@ NaN
 เฮ้อ จะเขียน JavaScript แต่ละทีมันเหนื่อย (ใจ) จริงๆ
 
 
-[@garybernhardt]: https://www.destroyallsoftware.com/talks/wat
-[NaN]: http://en.wikipedia.org/wiki/NaN
+[@garybernhardt]: //www.destroyallsoftware.com/talks/wat
+[NaN]: //en.wikipedia.org/wiki/NaN

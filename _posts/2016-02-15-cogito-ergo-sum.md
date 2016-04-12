@@ -30,4 +30,4 @@ date: 2016-02-15 12:59:48 +0700
 ถึงตอนนี้ก็พอจะเข้าใจะแล้วว่า ทำไมนักปรัชญาหลายคนเป็นบ้ากัน 555
 
 
-[Cogito ergo sum]: https://en.wikipedia.org/wiki/Cogito_ergo_sum
+[Cogito ergo sum]: //en.wikipedia.org/wiki/Cogito_ergo_sum

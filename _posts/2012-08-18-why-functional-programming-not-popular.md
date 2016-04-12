@@ -49,4 +49,4 @@ print (join " " . reverse . sort . splitOn " ") "hello to the old world"
 ส่วนเรื่องอื่นๆ อย่าง immutable คงไม่มีปัญหาเท่าไหร่ อันที่จริงถ้าไม่สนว่าจะ optimize กันสุดๆ ไม่ว่าจะเขียนด้วยภาษาอะไรก็ควรยึดเรื่องนี้ไว้หน่อย มันทำให้ bug งี่เง่าหายไปได้หลายตัวเลยหละ :3
 
 
-[@lewcpe]: http://twitter.com/lewcpe
+[@lewcpe]: //twitter.com/lewcpe

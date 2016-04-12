@@ -95,7 +95,7 @@ fractal ยังมีรูปร่างอื่นๆ อีกมาก�
 อีกนัยหนึ่ง พื้นฐานความรู้ที่ลึกเกินไปอาจเป็นสิ่งไม่จำเป็น หรือยิ่งไปกว่านั้น มันอาจเป็นตัวถ่วงให้เราไม่กล้าที่จะเดินหน้าสำรวจโลกใหม่ๆ ก็เป็นได้
 
 
-[fractal]: https://en.wikipedia.org/wiki/Fractal
-[recursion]: https://en.wikipedia.org/wiki/Recursion
-[สามเหลี่ยม Sierpinski]: https://en.wikipedia.org/wiki/Sierpinski_triangle
-[เซ็ต Mandelbrot]: https://en.wikipedia.org/wiki/Mandelbrot_set
+[fractal]: //en.wikipedia.org/wiki/Fractal
+[recursion]: //en.wikipedia.org/wiki/Recursion
+[สามเหลี่ยม Sierpinski]: //en.wikipedia.org/wiki/Sierpinski_triangle
+[เซ็ต Mandelbrot]: //en.wikipedia.org/wiki/Mandelbrot_set

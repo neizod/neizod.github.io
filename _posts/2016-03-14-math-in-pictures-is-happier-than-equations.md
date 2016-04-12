@@ -50,5 +50,5 @@ $$ \begin{align}
 
 ฝากไว้เป็นการบ้านให้ลองกลับไปวาดรูปเล่นกันดูครับ :3
 
-[NutSnC]: https://twitter.com/NutSnC
-[Proof Without Words]: https://www.goodreads.com/book/show/365666.Proofs_Without_Words
+[NutSnC]: //twitter.com/NutSnC
+[Proof Without Words]: //www.goodreads.com/book/show/365666.Proofs_Without_Words

@@ -61,6 +61,6 @@ tau = sigma[0]
 ก็ย่อมได้
 
 
-[currying]: http://en.wikipedia.org/wiki/Currying
-[divisor function]: http://en.wikipedia.org/wiki/Divisor_function
-[self-ref infinite list]: http://neizod.blogspot.com/2012/08/infinity-list-python.html
+[currying]: //en.wikipedia.org/wiki/Currying
+[divisor function]: //en.wikipedia.org/wiki/Divisor_function
+[self-ref infinite list]: //neizod.blogspot.com/2012/08/infinity-list-python.html

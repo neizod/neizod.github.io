@@ -37,6 +37,6 @@ date: 2016-02-27 21:56:27 +0700
 ถามบ้าบออะไรเนี่ย ชาตินี้ถึงตายก็ตอบไม่ได้หรอก ... ไม่ได้เกิดเป็น AI เล่นโกะตัวนั้นนี่หน่า :v
 
 
-[AlphaGo ชนะคน]: https://www.blognone.com/node/77188
-[go game possibilities]: https://en.wikipedia.org/wiki/Go_and_mathematics
-[xkcd tic-tac-toe]: https://xkcd.com/832/
+[AlphaGo ชนะคน]: //www.blognone.com/node/77188
+[go game possibilities]: //en.wikipedia.org/wiki/Go_and_mathematics
+[xkcd tic-tac-toe]: //xkcd.com/832/

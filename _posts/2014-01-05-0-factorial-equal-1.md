@@ -87,13 +87,13 @@ $$
 เพราะคณิตศาสตร์คือความสวยงามครับ :)
 
 
-[gamma function]: http://en.wikipedia.org/wiki/Gamma_function
-[recursion integral]: http://neizod.blogspot.com/2012/09/recursion-integral.html
-[gamma plot]: http://en.wikipedia.org/wiki/File:Gamma_plot.svg
-[paradox]: http://en.wikipedia.org/wiki/Paradox
-[binomial theorem]: http://en.wikipedia.org/wiki/Binomial_theorem
-[pascal's triangle]: http://en.wikipedia.org/wiki/Pascal's_triangle
-[permutation]: http://en.wikipedia.org/wiki/Permutation
-[combination]: http://en.wikipedia.org/wiki/Combination
-[$e$]: https://en.wikipedia.org/wiki/E_(mathematical_constant)
-[taylor series]: http://en.wikipedia.org/wiki/Taylor_series
+[gamma function]: //en.wikipedia.org/wiki/Gamma_function
+[recursion integral]: //neizod.blogspot.com/2012/09/recursion-integral.html
+[gamma plot]: //en.wikipedia.org/wiki/File:Gamma_plot.svg
+[paradox]: //en.wikipedia.org/wiki/Paradox
+[binomial theorem]: //en.wikipedia.org/wiki/Binomial_theorem
+[pascal's triangle]: //en.wikipedia.org/wiki/Pascal's_triangle
+[permutation]: //en.wikipedia.org/wiki/Permutation
+[combination]: //en.wikipedia.org/wiki/Combination
+[$e$]: //en.wikipedia.org/wiki/E_(mathematical_constant)
+[taylor series]: //en.wikipedia.org/wiki/Taylor_series
