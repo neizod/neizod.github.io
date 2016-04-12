@@ -27,6 +27,10 @@ older_left: false
 paginate:   10
 mathjax:    true
 
+theme:
+  palette:
+  highlight: github
+
 text:
   latest_post:  Latest Post
   feature_post: Feature Post

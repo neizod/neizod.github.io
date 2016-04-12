@@ -1,6 +1,6 @@
 .mainmatter {
+    @extend .sep-bottom;
     background: $background-color;
-    border-bottom: 1px solid $border-color;
 }
 .mainmatter::after {
     display: block;
@@ -17,12 +17,41 @@
 }
 
 
+.float-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.float-right {
+    float: right;
+    margin-left: 1em;
+}
+
+.clear-float {
+    clear: both;
+    overflow: auto;
+}
+
+
 .text-left {
     text-align: left;
 }
 
 .text-right {
     text-align: right;
+}
+
+
+.sep-right {
+    border-right: 1px solid $border-color;
+}
+
+.sep-top {
+    border-top: 1px solid $border-color;
+}
+
+.sep-bottom {
+    border-bottom: 1px solid $border-color;
 }
 
 
@@ -66,4 +95,9 @@
 .MathJax_Display {
     overflow: auto;
     padding: 0.75em 0.5em;
+}
+
+
+.highlight.flexitem {
+    overflow-y: hidden;
 }

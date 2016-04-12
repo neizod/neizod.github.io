@@ -10,8 +10,8 @@
 
 
 .posts > .excerpt.post {
+    @extend .sep-bottom;
     padding-bottom: 2em;
-    border-bottom: 1px solid $border-color;
 }
 .posts > .excerpt.post:last-child {
     padding-bottom: 1em;
@@ -20,9 +20,9 @@
 
 
 .pagination {
+    @extend .sep-top;
     margin-top: 1em;
     padding-top: 1em;
-    border-top: 1px solid $border-color;
     text-align: center;
 }
 
