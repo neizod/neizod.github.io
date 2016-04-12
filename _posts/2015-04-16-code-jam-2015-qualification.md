@@ -22,7 +22,7 @@ date: 2015-04-16 08:00:00 +0700
 
 ส่วน code ก็ประมาณ
 
-{% highlight haskell %}
+``` haskell
 import Text.Printf (printf)
 import Data.List.Split (splitOn)
 
@@ -40,7 +40,7 @@ test t = do
 main = do
     loop <- getLine
     sequence_ [test t | t <- [1..read loop :: Integer]]
-{% endhighlight %}
+```
 
 (อย่างไรก็ตาม เท่าที่เคยไปคอนเสิร์ตหลายครั้ง
 รู้สึกว่าคนไทยจะมีค่าความอายเป็น infinity นะ)
@@ -111,7 +111,7 @@ $$
 
 หรือพูดจาภาษา code ก็คือ
 
-{% highlight python %}
+``` python
 def correct_misspelling(ijks, x):
     x = min(x, 12+(x%4))
     accumulate = Quaternion('+1')
@@ -129,7 +129,7 @@ for case in range(int(input())):
     ijks = input().strip()
     ans = 'YES' if correct_misspelling(ijks, x) else 'NO'
     print('Case #{}: {}'.format(case+1, ans))
-{% endhighlight %}
+```
 
 ข้อนี้ถ้าจะ optimize เพิ่มก็ยังทำได้อีก (code จริงที่เอาไปส่งก็เขียนสวยน้อยกว่านี้เพราะมัวแต่ optimize มากเกินไป) โดยเรามีข้อสังเกตดังนี้
 

@@ -40,7 +40,7 @@ f_3(x, y) &= \begin{bmatrix} -0.15 & 0.28 \\ 0.26 & 0.24 \end{bmatrix}
 
 ผมแนบโค้ดในภาษา Python มาให้ด้วยสำหรับใครที่ต้องการนำไปเล่นต่อ ซึ่งวิธีการที่แนบนี้เป็นการสร้างแบบ recursive ต่อยอดออกไปเรื่อยๆ ตามแนวทางขั้นตอนวิธีที่ได้กล่าวไว้ข้างต้น หากไปค้นดูวิธีอื่นเพิ่มเติมจะพบว่าวิธีการสุ่มเลือกจุดจะให้ผลลัพธ์ที่รวดเร็วกว่า
 
-{% highlight python %}
+``` python
 from PIL import Image, ImageDraw
 
 def transform(matrix, xy):
@@ -80,7 +80,7 @@ class BarnsleyFern(object):
         self.draw.line(self.linespec(xy0, xy1), fill='#0C3')
         for affine in self.affines:
             self.iterate(xy0, xy1, depth-1, affine)
-{% endhighlight %}
+```
 
 ---
 

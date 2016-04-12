@@ -9,7 +9,7 @@ date: 2013-08-05 09:58:00 +0700
 
 ลองเปิด JavaScript Console ของ browser แล้วป้อนคำสั่งเหล่านี้ลงไปดูครับ ...
 
-{% highlight javascript %}
+``` javascript
 console> [] + []
 ""
 console> [] + {}
@@ -18,7 +18,7 @@ console> {} + []
 0
 console> {} + {}
 NaN
-{% endhighlight %}
+```
 
 จาก [@garybernhardt][]
 

@@ -16,29 +16,29 @@ date: 2012-08-18 00:18:00 +0700
 
 Shell:
 
-{% highlight shell %}
+``` shell
 echo 'hello to the old world' | tr ' ' '\n' | sort -r | paste -sd ' '
-{% endhighlight %}
+```
 
 Ruby:
 
-{% highlight ruby %}
+``` ruby
 puts 'hello to the old world'.split.sort.reverse.join ' '
-{% endhighlight %}
+```
 
 แต่ในการเขียนโปรแกรมแบบ functional programming เวลาคิดถึงการทำงานจะเป็นในทิศทาง `ซ้าย <- ขวา` แทน ซึ่งขัดกับความรู้สึกของเรา
 
 Python:
 
-{% highlight python %}
+``` python
 print(' '.join(reversed(sorted('hello to the old world'.split()))))
-{% endhighlight %}
+```
 
 Haskell:
 
-{% highlight haskell %}
+``` haskell
 print (join " " . reverse . sort . splitOn " ") "hello to the old world"
-{% endhighlight %}
+```
 
 เอาเป็นว่าถ้าไม่รู้มาก่อนว่าเจอโปรแกรมแบบนี้แล้วให้อ่านจากขวามาซ้าย รับรองว่างานนี้มีงงแน่ๆ
 
