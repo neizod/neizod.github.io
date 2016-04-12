@@ -3,6 +3,8 @@
 
 @charset "utf-8";
 
+$palette: "{{ site.theme.palette }}";
+
 @import "variables";
 @import "normalize";
 @import "mixins";
@@ -11,4 +13,4 @@
 @import "header";
 @import "article";
 @import "footer";
-@import "highlight";
+@import "{{ site.theme.highlight | default: 'custom' | prepend: 'highlight/' }}";
