@@ -80,8 +80,11 @@ table {
         padding: 0.25em 1em;
     }
 }
-th {
+thead {
     background: $major-color;
+}
+tfoot {
+    background: $minor-color;
 }
 td {
     border-bottom: 1px solid $border-color;

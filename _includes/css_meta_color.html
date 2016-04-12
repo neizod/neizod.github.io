@@ -1,7 +1,9 @@
-{% capture css-theme-color %}
+{% capture color %}
 @import "variables";
 * {
   color: $major-color;
 }
 {% endcapture %}
-<meta name="theme-color" content="{{ css-theme-color | scssify | slice: 8, 7 }}" />
+{% assign color = color | scssify | strip %}
+{% assign color-size = color | size | minus: 9 %}
+<meta name="theme-color" content="{{ color | slice: 8, color-size }}" />
