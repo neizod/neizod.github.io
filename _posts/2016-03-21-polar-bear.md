@@ -10,24 +10,23 @@ Polar bear is a cute white creature live in North Pole. To survive extream cold 
 
 ![Picture from Wikimedia -- Ursus maritimus posture]({{ site.baseurl }}/images/polar-bear-posture.png)
 
+---
+
 > *The content of this article is excerpted from [Wikipedia][wiki polar bear]. It exist here as a placeholder for layout development purpose.*
 
 The **polar bear** (*Ursus maritimus*) is a carnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is a large bear, approximately the same size as the omnivorous Kodiak bear (Ursus arctos middendorffi). A boar (adult male) weighs around 350–700 kg (772–1,543 lb), while a sow (adult female) is about half that size. Although it is the sister species of the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice, and open water, and for hunting seals, which make up most of its diet. Although most polar bears are born on land, they spend most of their time on the sea ice. Their scientific name means "maritime bear", and derives from this fact. Polar bears hunt their preferred food of seals from the edge of sea ice, often living off fat reserves when no sea ice is present. Because of their dependence on the sea ice, polar bears are classified as marine mammals.
 
 Because of expected habitat loss caused by climate change, the polar bear is classified as a vulnerable species, and at least three of the nineteen polar bear subpopulations are currently in decline. For decades, large-scale hunting raised international concern for the future of the species but populations rebounded after controls and quotas began to take effect. For thousands of years, the polar bear has been a key figure in the material, spiritual, and cultural life of circumpolar peoples, and polar bears remain important in their cultures.
 
-Naming and etymology
-====================
+## Naming and etymology
 
 Constantine John Phipps was the first to describe the polar bear as a distinct species in 1774. He chose the scientific name Ursus maritimus, the Latin for 'maritime bear', due to the animal's native habitat. The Inuit refer to the animal as nanook (transliterated as nanuq in the Inupiat language). The Yupik also refer to the bear as nanuuk in Siberian Yupik. The bear is umka in the Chukchi language. In Russian, it is usually called бе́лый медве́дь (bélyj medvédj, the white bear), though an older word still in use is ошку́й (Oshkúj, which comes from the Komi oski, "bear"). In French, the polar bear is referred to as ours blanc ("white bear") or ours polaire ("polar bear"). In the Norwegian-administered Svalbard archipelago, the polar bear is referred to as Isbjørn ("ice bear").
 
 The polar bear was previously considered to be in its own genus, Thalarctos. However, evidence of hybrids between polar bears and brown bears, and of the recent evolutionary divergence of the two species, does not support the establishment of this separate genus, and the accepted scientific name is now therefore Ursus maritimus, as Phipps originally proposed.
 
-Biology and behaviour
-=====================
+## Biology and behaviour
 
-Physical characteristics
-------------------------
+### Physical characteristics
 
 The only other bear of a similar size to the polar bear is the Kodiak bear, which is a subspecies of brown bear. Adult male polar bears weigh 350–700 kg (772–1,543 lb) and measure 2.4–3 metres (7 ft 10 in–9 ft 10 in) in total length. The Guinness Book of World Records listed the average male as having a body mass of 385 to 410 kg (849 to 904 lb) and a shoulder height of 133 cm (4 ft 4 in), slightly smaller than the average male Kodiak bears. Around the Beaufort Sea, however, mature males reportedly average 450 kg (992 lb). Adult females are roughly half the size of males and normally weigh 150–250 kg (331–551 lb), measuring 1.8–2.4 metres (5 ft 11 in–7 ft 10 in) in length. Elsewhere, a slightly larger estimated average weight of 260 kg (573 lb) was claimed for adult females. When pregnant, however, females can weigh as much as 500 kg (1,102 lb). The polar bear is among the most sexually dimorphic of mammals, surpassed only by the pinnipeds such as elephant seals. The largest polar bear on record, reportedly weighing 1,002 kg (2,209 lb), was a male shot at Kotzebue Sound in northwestern Alaska in 1960. This specimen, when mounted, stood 3.39 m (11 ft 1 in) tall on its hindlegs. The shoulder height of an adult polar bear is 122 to 160 cm (4 ft 0 in to 5 ft 3 in). While all bears are short-tailed, the polar bear's tail is relatively the shortest amongst living bears, ranging from 7 to 13 cm (2.8 to 5.1 in) in length.
 
@@ -43,8 +42,7 @@ The polar bear has an extremely well developed sense of smell, being able to det
 
 The polar bear is an excellent swimmer and often will swim for days. One bear swam continuously for 9 days in the frigid Bering Sea for 400 mi (687 km) to reach ice far from land. She then travelled another 1,100 mi (1,800 km). During the swim, the bear lost 22% of her body mass and her yearling cub died. With its body fat providing buoyancy, the bear swims in a dog paddle fashion using its large forepaws for propulsion. Polar bears can swim 10 km/h (6 mph). When walking, the polar bear tends to have a lumbering gait and maintains an average speed of around 5.6 km/h (3.5 mph). When sprinting, they can reach up to 40 km/h (25 mph).
 
-Hunting and diet
-----------------
+### Hunting and diet
 
 The polar bear is the most carnivorous member of the bear family, and throughout most of its range, its diet primarily consists of ringed (Pusa hispida) and bearded seals (Erignathus barbatus). The Arctic is home to millions of seals, which become prey when they surface in holes in the ice in order to breathe, or when they haul out on the ice to rest. Polar bears hunt primarily at the interface between ice, water, and air; they only rarely catch seals on land or in open water.
 
@@ -60,8 +58,7 @@ With the exception of pregnant females, polar bears are active year-round, altho
 
 Being both curious animals and scavengers, polar bears investigate and consume garbage where they come into contact with humans. Polar bears may attempt to consume almost anything they can find, including hazardous substances such as styrofoam, plastic, car batteries, ethylene glycol, hydraulic fluid, and motor oil. The dump in Churchill, Manitoba was closed in 2006 to protect bears, and waste is now recycled or transported to Thompson, Manitoba.
 
-Dietary flexibility
--------------------
+### Dietary flexibility
 
 Although seal predation is the primary and an indispensable way of life for most polar bears, when alternatives are present they are quite flexible. Polar bears will consume a wide variety of other wild foods, including muskox (Ovibos moschatus), reindeer (Rangifer tarandus), birds, eggs, rodents, crabs, other crustaceans and other polar bears. They may also eat plants, including berries, roots, and kelp, however none of these are a significant part of their diet, except that beachcast marine mammal carcasses are an exception. When stalking land animals, such as muskox, reindeer, and even willow ptarmigan (Lagopus lagopus), polar bears appear to make use of vegetative cover and wind direction to bring them as close to their prey as possible before attacking. Polar bears have been observed to hunt the small Svalbard reindeer (R. t. platyrhynchus), which weigh only 40 to 60 kg (90 to 130 lb) as adults, as well as the barren-ground caribou (R. t. groenlandicus), which is about twice as heavy as that. Adult muskox, which can weigh 450 kg (1,000 lb) or more, are a more formidable quarry. Although ungulates are not typical prey, the killing of one during the summer months can greatly increase the odds of survival during that lean period. Like the brown bear, most ungulate prey of polar bears is likely to be young, sickly or injured specimens rather than healthy adults. The polar bear's biology is specialized to require large amounts of fat from marine mammals, and it cannot derive sufficient caloric intake from terrestrial food.
 

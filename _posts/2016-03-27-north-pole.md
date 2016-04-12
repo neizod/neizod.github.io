@@ -8,6 +8,8 @@ date: 2016-03-27 06:12:13 +0700
 
 North Pole is where the polar bear live. The temperatures is in range from -50 to -13 °C. Within one year, the sun will stay on the sky for 6 months, and another 6 months will be night time. You can easily see the aurora light from January to March around this area.
 
+---
+
 > *The content of this article is excerpted from [Wikipedia][wiki north pole]. It exist here as a placeholder for layout development purpose.*
 
 The North Pole, also known as the Geographic North Pole or Terrestrial North Pole, is (subject to the caveats explained below) defined as the point in the Northern Hemisphere where the Earth's axis of rotation meets its surface. It should not be confused with the North Magnetic Pole.
