@@ -1,6 +1,6 @@
 .mainmatter {
+    @extend .sep-bottom;
     background: $background-color;
-    border-bottom: 1px solid $border-color;
 }
 .mainmatter::after {
     display: block;
@@ -28,6 +28,14 @@
 
 .sep-right {
     border-right: 1px solid $border-color;
+}
+
+.sep-top {
+    border-top: 1px solid $border-color;
+}
+
+.sep-bottom {
+    border-bottom: 1px solid $border-color;
 }
 
 
