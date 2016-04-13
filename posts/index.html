@@ -16,7 +16,7 @@ article: false
     </div>
     <div class="excerpt entry">
       {{ post.excerpt | strip_html }}
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.data.theme.text.read_more }}</a>
     </div>
   </article>
 {% endfor %}

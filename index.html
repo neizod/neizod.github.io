@@ -23,15 +23,15 @@ feature:
             </div>
             <div class="mark feature flexitem mobile-first">
               {% if forloop.first and page.feature.posts.latest %}
-                {{ site.text.latest_post }}
+                {{ site.data.theme.text.latest_post }}
               {% else %}
-                {{ site.text.feature_post }}
+                {{ site.data.theme.text.feature_post }}
               {% endif %}
             </div>
           </div>
           <div class="excerpt entry">
             {{ post.excerpt | strip_html }}
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ site.data.theme.text.read_more }}</a>
           </div>
         </article>
       {% endif %}
@@ -46,17 +46,17 @@ feature:
               <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
             </div>
             <div class="mark feature flexitem mobile-first">
-              {{ site.text.feature_proj }}
+              {{ site.data.theme.text.feature_proj }}
             </div>
           </div>
           <div class="excerpt entry">
             {{ project.excerpt | strip_html }}
-            <a href="{{ project.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
+            <a href="{{ project.url | prepend: site.baseurl }}">{{ site.data.theme.text.read_more }}</a>
             {% if project.demo %}
-              / <a href="{{ project.demo }}">{{ site.text.proj_demo }}</a>
+              / <a href="{{ project.demo }}">{{ site.data.theme.text.proj_demo }}</a>
             {% endif %}
             {% if project.source %}
-              / <a href="{{ project.source }}">{{ site.text.proj_source }}</a>
+              / <a href="{{ project.source }}">{{ site.data.theme.text.proj_source }}</a>
             {% endif %}
           </div>
         </article>

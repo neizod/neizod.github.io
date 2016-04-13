@@ -3,7 +3,7 @@
 
 @charset "utf-8";
 
-$palette: "{{ site.theme.palette }}";
+$palette: "{{ site.data.theme.color.palette }}";
 
 @import "variables";
 @import "normalize";
@@ -13,4 +13,4 @@ $palette: "{{ site.theme.palette }}";
 @import "header";
 @import "article";
 @import "footer";
-@import "{{ site.theme.highlight | default: 'custom' | prepend: 'highlight/' }}";
+@import "{{ site.data.theme.color.highlight | default: 'custom' | prepend: 'highlight/' }}";

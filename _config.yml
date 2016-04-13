@@ -27,25 +27,6 @@ older_left: false                       #TODO show older link on leftside?
 paginate:   3                           #TODO nos of excerpt post per page
 mathjax:    true                        #TODO if true, write $ with \\$
 
-theme:
-  palette:   north-pole                 #TODO set these to null to define your
-  highlight: github                     #TODO own color palette and highlight
-
-text:
-  latest_post:  Latest Post             #TODO settings for top-right label
-  feature_post: Feature Post            #TODO of excerpt post on index page
-  feature_proj: Feature Project         #TODO _______________________________
-  proj_demo:    Live Demo!              #TODO settings for project demo/source
-  proj_source:  Source Code             #TODO _______________________________
-  left_sym:     «                       #TODO settings for left/right symbol
-  right_sym:    »                       #TODO _______________________________
-  at_page:      "Page: "                #TODO settings for pagination text,
-  of_page:      " of "                  #TODO example layout render:
-  prev_page:    Prev                    #TODO <ls,prev>  <at>2<of>3  <next,rs>
-  next_page:    Next                    #TODO _______________________________
-  title_sep:    "|"                     #TODO <post-title> <sep> <site-title>
-  read_more:    Read More               #TODO read more text
-
 
 # Engine Setting
 # ==============

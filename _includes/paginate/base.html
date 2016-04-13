@@ -2,7 +2,7 @@
   <div class="flexitem fill text-left">
     {% if left_path %}
       <a href="{{ left_path | prepend: site.baseurl }}">
-        {{ site.text.left_sym }} {{ left_text }}
+        {{ site.data.theme.text.left_sym }} {{ left_text }}
       </a>
     {% endif %}
   </div>
@@ -12,7 +12,7 @@
   <div class="flexitem fill text-right">
     {% if right_path %}
       <a href="{{ right_path | prepend: site.baseurl }}">
-        {{ right_text }} {{ site.text.right_sym }}
+        {{ right_text }} {{ site.data.theme.text.right_sym }}
       </a>
     {% endif %}
   </div>
