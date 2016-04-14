@@ -16,7 +16,7 @@
         </div>
         <div class="mark {% unless list_all %}feature{% endunless %} flexitem mobile-first">
           {% if list_all %}
-            {{ post.date | date: "%B %e, %Y" }}
+            {% include date/display.html date=post.date %}
           {% elsif forloop.first and include.feature.latest %}
             {{ site.data.theme.text.latest_post }}
           {% else %}

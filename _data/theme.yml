@@ -2,6 +2,13 @@ color:
   palette:   north-pole                 #TODO set these to null to define your
   highlight: github                     #TODO own color palette and highlight
 
+
+date:
+  short:      "%B %e, %Y"               #TODO date       blank then define own
+  long:       "%A, %B %e, %Y, %I:%M %p" #TODO date+time  in _include/date/...
+  allow_long: true                      #TODO show long date where possible
+
+
 text:
   latest_post:  Latest Post             #TODO settings for top-right label
   feature_post: Feature Post            #TODO of excerpt post on index page

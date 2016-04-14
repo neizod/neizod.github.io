@@ -2,17 +2,7 @@
   <footer>
     <h5>
       {{ site.author }} &copy;
-      {% if site.posts %}
-        {% capture latest_year %}{{ site.posts.first.date | date: "%Y" }}{% endcapture %}
-        {% capture early_year %}{{ site.posts.last.date | date: "%Y" }}{% endcapture %}
-        {% if latest_year == early_year %}
-          {{ latest_year }}
-        {% else %}
-          {{ early_year }}-{{ latest_year }}
-        {% endif %}
-      {% else %}
-        {{ site.time | date: "%Y" }}
-      {% endif %}
+      {% include date/year_range.html %}
       {{ site.rights }},
       <a href="{{ site.baseurl }}/feed.xml">subscribe</a>.
     </h5>

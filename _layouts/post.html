@@ -13,11 +13,7 @@ layout: default
       {{ content }}
     </div>
     <div class="date">
-      {% if site.show_time %}
-        Written on {{ page.date | date: "%R %A, %B %e, %Y" }}.
-      {% else %}
-        Written on {{ page.date | date: "%B %e, %Y" }}.
-      {% endif %}
+      Written on {% include date/display.html date=page.date type="long" %}
     </div>
     {% include paginate/single.html %}
     <div class="comment">
