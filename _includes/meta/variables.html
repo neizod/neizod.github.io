@@ -3,3 +3,6 @@
 {% capture meta-description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 {% capture meta-url %}{{ page.url | replace: "index.html","" | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
 {% capture meta-type %}{% if page.url == "/about.html" %}profile{% elsif page.layout == "post" %}article{% elsif page.layout == "project" %}product{% else %}website{% endif %}{% endcapture %}
+{% assign meta-img = page.content | split: "<img " %}
+{% assign meta-img = meta-img[1] | split: 'src="' %}
+{% assign meta-img = meta-img[1] | split: '"' | first %}
