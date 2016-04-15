@@ -13,6 +13,7 @@ author: neizod                          #TODO single author only
 rights: All Right Reserved              #TODO rights statement
 
 google_analytics:                       #TODO e.g. U-8152342-4
+google_verification:                    #TODO verification string in meta tag
 disqus:                                 #TODO if polar.disqus.com, then polar
 
 
