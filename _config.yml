@@ -5,6 +5,7 @@
 title:       Polar                      #TODO title of this site
 description: White-Clean Jekyll Theme   #TODO short description
 logo:        "/images/logo.png"         #TODO logo, recommended 256x256
+cover:       "/images/cover.png"        #TODO cover, recommended 1200x630
 
 baseurl: "/polar"                       #TODO leaves blank if already root
 url:     "https://neizod.github.io"     #TODO canonical url w/ protocol
