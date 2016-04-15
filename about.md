@@ -10,7 +10,7 @@ Hi, I'm a Polar Bear. Nice to meet you!
 Things I Like
 -------------
 
-1. Fish
+1. Seals
 2. Ice
 3. Sleep
 
