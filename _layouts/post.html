@@ -13,15 +13,11 @@ layout: default
       {{ content }}
     </div>
     <div class="date">
-      {% if site.show_time %}
-        Written on {{ page.date | date: "%R %A, %B %e, %Y" }}.
-      {% else %}
-        Written on {{ page.date | date: "%B %e, %Y" }}.
-      {% endif %}
+      Written on {% include date/display.html date=page.date type="long" %}
     </div>
-    {% include paginate_per_post.html %}
+    {% include paginate/single.html %}
     <div class="comment">
-      {% include disqus.html %}
+      {% include script/disqus.html %}
     </div>
   </article>
 </div>

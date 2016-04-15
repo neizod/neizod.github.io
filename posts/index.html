@@ -4,21 +4,6 @@ article: false
 ---
 
 <div class="posts">
-{% for post in paginator.posts %}
-  <article class="excerpt post">
-    <div class="flex align-center mobile-column">
-      <div class="flexitem fill">
-        <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-      </div>
-      <div class="mark flexitem mobile-first">
-        {{ post.date | date: "%B %e, %Y" }}
-      </div>
-    </div>
-    <div class="excerpt entry">
-      {{ post.excerpt | strip_html }}
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
-    </div>
-  </article>
-{% endfor %}
+  {% include list/posts.html %}
 </div>
-{% include paginate_all_posts.html %}
+{% include paginate/multiple.html %}

@@ -6,7 +6,7 @@
 
 
 @include selection {
-    color: invert($font-color);
+    color: $background-color;
     background: invert($major-color);
 }
 

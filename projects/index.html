@@ -4,28 +4,5 @@ article: false
 ---
 
 <div class="posts">
-{% for project in site.projects reversed %}
-  <article class="excerpt post">
-    <div class="flex align-center mobile-column">
-      <div class="flexitem fill">
-        <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
-      </div>
-      {% if project.display_date %}
-        <div class="mark flexitem mobile-first">
-          {{ project.display_date }}
-        </div>
-      {% endif %}
-    </div>
-    <div class="excerpt entry">
-      {{ project.excerpt | strip_html }}
-      <a href="{{ project.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
-      {% if project.demo %}
-        / <a href="{{ project.demo }}">{{ site.text.proj_demo }}</a>
-      {% endif %}
-      {% if project.source %}
-        / <a href="{{ project.source }}">{{ site.text.proj_source }}</a>
-      {% endif %}
-    </div>
-  </article>
-{% endfor %}
+  {% include list/projects.html %}
 </div>

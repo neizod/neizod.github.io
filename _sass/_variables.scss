@@ -1,4 +1,5 @@
-//TODO if you've change theme.palette to null, specify your own colors here.
+//TODO if you've change data.theme.color.palette to null,
+//     specify your own colors here.
 $major-color: lighten(yellow, 30%);
 $minor-color: lighten(lightgray, 10%);
 $border-color: gainsboro;
@@ -30,9 +31,9 @@ $mobile-width: 640px;
     $link-color: darken(deepskyblue, 20%);
 }
 @if ($palette == "aurora") {
-    $major-color: darken(green, 16%);
-    $minor-color: darken(blue, 42%);
-    $border-color: lighten(black, 15%);
+    $major-color: darken(blue, 42%);
+    $minor-color: lighten(black, 15%);
+    $border-color: lighten(black, 16%);
     $background-color: lighten(black, 4%);
 
     $font-color: lighten(green, 23%);

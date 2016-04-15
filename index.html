@@ -12,57 +12,6 @@ feature:
 ---
 
 <div class="posts">
-{% if page.feature %}
-  {% if page.feature.posts %}
-    {% for post in site.posts %}
-      {% if page.feature.posts.list contains post.id or
-            (forloop.first and page.feature.posts.latest) %}
-        <article class="excerpt post">
-          <div class="flex align-center mobile-column">
-            <div class="flexitem fill">
-              <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-            </div>
-            <div class="mark feature flexitem mobile-first">
-              {% if forloop.first and page.feature.posts.latest %}
-                {{ site.text.latest_post }}
-              {% else %}
-                {{ site.text.feature_post }}
-              {% endif %}
-            </div>
-          </div>
-          <div class="excerpt entry">
-            {{ post.excerpt | strip_html }}
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
-          </div>
-        </article>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-  {% if page.feature.projects %}
-    {% for project in site.projects %}
-      {% if page.feature.projects.list contains project.id %}
-        <article class="excerpt post">
-          <div class="flex align-center mobile-column">
-            <div class="flexitem fill">
-              <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
-            </div>
-            <div class="mark feature flexitem mobile-first">
-              {{ site.text.feature_proj }}
-            </div>
-          </div>
-          <div class="excerpt entry">
-            {{ project.excerpt | strip_html }}
-            <a href="{{ project.url | prepend: site.baseurl }}">{{ site.text.read_more }}</a>
-            {% if project.demo %}
-              / <a href="{{ project.demo }}">{{ site.text.proj_demo }}</a>
-            {% endif %}
-            {% if project.source %}
-              / <a href="{{ project.source }}">{{ site.text.proj_source }}</a>
-            {% endif %}
-          </div>
-        </article>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endif %}
+  {% include list/posts.html feature=page.feature.posts %}
+  {% include list/projects.html feature=page.feature.projects %}
 </div>

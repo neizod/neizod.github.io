@@ -12,21 +12,21 @@ layout: default
     <div class="info flex mobile-column">
       {% if page.demo %}
         <div class="demo flexitem fill">
-          <a href="{{ page.demo }}">{{ site.text.proj_demo }}</a>
+          <a href="{{ page.demo }}">{{ site.data.theme.text.proj_demo }}</a>
         </div>
       {% endif %}
       {% if page.source %}
         <div class="source flexitem fill">
-          <a href="{{ page.source }}">{{ site.text.proj_source }}</a>
+          <a href="{{ page.source }}">{{ site.data.theme.text.proj_source }}</a>
         </div>
       {% endif %}
     </div>
     <div class="entry">
       {{ content }}
     </div>
-    {% include paginate_per_post.html %}
+    {% include paginate/single.html %}
     <div class="comment">
-      {% include disqus.html %}
+      {% include script/disqus.html %}
     </div>
   </article>
 </div>
