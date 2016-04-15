@@ -3,8 +3,13 @@
 {% capture meta-description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 {% capture meta-url %}{{ page.url | replace: "index.html","" | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
 {% capture meta-type %}{% if page.url == "/about.html" %}profile{% elsif page.layout == "post" %}article{% elsif page.layout == "project" %}product{% else %}website{% endif %}{% endcapture %}
-{% capture raw-site-baseurl %}{% raw %}{{ site.baseurl }}{% endraw %}{% endcapture %}
-{% assign meta-img = page.content | markdownify | split: "<img " %}
+{% if "default,page" contains page.layout %}
+  {% capture raw-site-baseurl %}{% raw %}{{ site.baseurl }}{% endraw %}{% endcapture %}
+  {% assign the-content = page.content | markdownify | replace: raw-site-baseurl, site.baseurl %}
+{% else %}
+  {% assign the-content = page.content %}
+{% endif %}
+{% assign meta-img = the-content | split: "<img " %}
 {% assign meta-img = meta-img[1] | split: 'src="' %}
-{% assign meta-img = meta-img[1] | split: '"' | first | replace: raw-site-baseurl, site.baseurl %}
+{% assign meta-img = meta-img[1] | split: '"' | first %}
 {% unless meta-img %}{% assign meta-img = site.cover | prepend: site.baseurl %}{% endunless %}
