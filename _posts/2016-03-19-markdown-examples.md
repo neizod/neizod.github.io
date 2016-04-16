@@ -23,21 +23,31 @@ Table of Contents
 Heading
 -------
 
-This page will not render example for heading (except H2 for all title sections in this page), since its will corrupt the table of contents. However, this is the heading syntax:
+Every heading will be listed in table of contents, except those one with `{:.no_toc}` as in these examples:
 
-``` markdown
 # H1 (should not use, reserved for title)
+{:.no_toc}
+
 ## H2 (also newline with lots of `----` under heading text)
+{:.no_toc}
+
 ### H3
+{:.no_toc}
+
 #### H4
+{:.no_toc}
+
 ##### H5 (a little bit smaller than normal text from now on)
+{:.no_toc}
+
 ###### H6
-```
+{:.no_toc}
+
 
 Text
 ----
 
-__Lorem ipsum__ dolor sit amet, consectetur _adipiscing elit_. Proin blandit eros sapien, pharetra egestas justo pellentesque vel. Ut rutrum, ___ex vel fringilla interdum___, arcu turpis euismod odio, id molestie lectus lectus sit amet velit. ~~Donec suscipit consectetur sagittis.~~ Praesent quis varius nibh, vel luctus metus. Praesent egestas nisl eget nisl tempus molestie. Cras at finibus purus. Aenean `porttitor` efficitur dui ut iaculis.
+__Lorem ipsum__ dolor sit amet, consectetur _adipiscing elit_. Proin blandit eros sapien, pharetra egestas justo pellentesque vel. Ut rutrum, ___ex vel fringilla interdum___, arcu turpis euismod odio, id molestie lectus lectus sit amet velit. ~~Donec suscipit consectetur sagittis.~~[^strike] Praesent quis varius nibh, vel luctus metus. Praesent egestas nisl eget nisl tempus molestie. Cras at finibus purus. Aenean `porttitor` efficitur dui ut iaculis.
 
 
 Quotes
@@ -90,6 +100,31 @@ Link
 
 
 ---
+
+
+{: .infobox}
+> Attributes
+> ----------
+>
+> Great feature of kramdown is it able to add HTML attribute into elements. To do this, just place `{: [attributes]}` right after inline element, or above/below of a paragraph on block element.
+>
+> Here is a list of attributes provide by this theme:
+>
+> - Box decoration:
+>     - `.infobox`
+>     - `.spoiler`
+> - Floating:
+>     - `.float-left`
+>     - `.float-right`
+>     - `.clear-float`
+> - Text alignments:
+>     - `.text-left`
+>     - `.text-right`
+> - Content separate lines:
+>     - `.sep-left`
+>     - `.sep-right`
+>     - `.sep-top`
+>     - `.sep-bottom`
 
 
 Image
@@ -183,6 +218,7 @@ Footnotes
 
 _Note: if you need this footnote section text, you have to include it by your self at the end of each page._
 
+[^strike]: strike is a kramdown feature.
 [^filepath]: path to this file: `{{ page.path }}`
 [^linenos]: please do not use `{% raw %}{% highlight <lang> [linenos] %}{% endraw %}`.
 

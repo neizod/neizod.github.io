@@ -1,3 +1,19 @@
+.infobox {
+    background: $major-color;
+    border: 1px solid $border-color;
+}
+
+
+.spoiler {
+    background: $minor-color;
+    color: $minor-color;
+}
+.spoiler::before {
+    content: "spoiler alert!";
+    color: $font-color;
+}
+
+
 .mainmatter {
     @extend .sep-bottom;
     background: $background-color;
@@ -41,6 +57,10 @@
     text-align: right;
 }
 
+
+.sep-left {
+    border-left: 1px solid $border-color;
+}
 
 .sep-right {
     border-right: 1px solid $border-color;
