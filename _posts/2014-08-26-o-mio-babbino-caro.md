@@ -1,10 +1,8 @@
 ---
 title: O Mio Babbino Caro
 tags:
-  - Classical Music
-  - Song
   - Giacomo Puccini
-  - Gianni Schicchi
+  - Classical Music
   - Opera
 date: 2014-08-26 22:26:00 +0700
 ---
