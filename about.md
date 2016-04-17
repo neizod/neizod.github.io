@@ -2,9 +2,9 @@
 title: Nattawut Phetmak (@neizod)
 ---
 
-![](/images/neizod-large.jpg)
-
 Odinary one who question about everything in the universe (and multiverse).
+
+![](/images/neizod-large.jpg)
 
 
 Education
