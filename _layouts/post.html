@@ -15,6 +15,9 @@ layout: default
     <div class="date">
       Written on {% include date/display.html date=page.date type="long" %}
     </div>
+    <div class="tags">
+      Within tags: {% include list/tags.html tags=page.tags %}
+    </div>
     {% include paginate/single.html %}
     <div class="comment">
       {% include script/disqus.html %}

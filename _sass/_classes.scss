@@ -33,6 +33,11 @@
 }
 
 
+.target:not(:target) {
+    display: none;
+}
+
+
 .float-left {
     float: left;
     margin-right: 1em;
