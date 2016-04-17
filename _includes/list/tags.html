@@ -1,0 +1,15 @@
+{% assign prepath = "#" %}
+{% if include.tags %}
+  {% assign tags = include.tags %}
+  {% assign prepath = prepath | prepend: "/tags.html" | prepend: site.baseurl %}
+{% else %}
+  {% assign tags = site.tags %}
+{% endif %}
+{% for tag in tags %}
+  {% assign tag_title = tag %}
+  {% unless include.tags %}
+    {% assign tag_title = tag_title | first %}
+  {% endunless %}
+  {% capture id %}{{ prepath }}{% include utils/id.html string=tag_title %}{% endcapture %}
+  <a href="{{ id | strip }}">{{ tag_title }}</a>{% unless forloop.last %},{% endunless %}
+{% endfor %}
