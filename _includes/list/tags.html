@@ -6,10 +6,11 @@
   {% assign tags = site.tags %}
 {% endif %}
 {% for tag in tags %}
+  {% assign tag_size = tag | last | size %}
   {% assign tag_title = tag %}
   {% unless include.tags %}
     {% assign tag_title = tag_title | first %}
   {% endunless %}
   {% capture id %}{{ prepath }}{% include utils/id.html string=tag_title %}{% endcapture %}
-  <a href="{{ id | strip }}">{{ tag_title }}</a>{% unless forloop.last %},{% endunless %}
+  <a href="{{ id | strip }}">{{ tag_title }}{% if tag_size > 0 %} ({{ tag_size }}){% endif %}</a>{% unless forloop.last %},{% endunless %}
 {% endfor %}
