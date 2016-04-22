@@ -13,6 +13,11 @@ date:
   allow_long: true
 
 
+#TODO you may change navigation behavior here.
+navigation:
+  older_left: false
+
+
 #TODO you may customize padding text here.
 text:
   meta:

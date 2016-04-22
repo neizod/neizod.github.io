@@ -20,15 +20,13 @@ twitter:                                #TODO site's twitter
 disqus:                                 #TODO if polar.disqus.com, then polar
 
 
-# Layout Setting
-# ==============
+# Content Setting
+# ===============
 # you may change this to suit your own preference.
 
-timezone:  Asia/Bangkok                 #TODO post time offset
-
-older_left: false                       #TODO show older link on leftside?
-paginate:   3                           #TODO nos of excerpt post per page
-mathjax:    true                        #TODO if true, write $ with \\$
+timezone: Asia/Bangkok                  #TODO post time offset
+paginate: 3                             #TODO nos of excerpt post per page
+mathjax:  true                          #TODO if true, write $ with \\$
 
 
 # Engine Setting
