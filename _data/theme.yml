@@ -1,25 +1,35 @@
+#TODO set each item to null then define your css color in _sass/ dir.
+#     preset: palette = { north-pole, aurora }, highlight = { github, monokai }
 color:
-  palette:   north-pole                 #TODO set these to null to define your
-  highlight: github                     #TODO own color palette and highlight
+  palette:   north-pole
+  highlight: github
 
 
+#TODO set short, long to null then define your display in _include/date/ dir.
+#     set allow_long to false if you don't want to show time.
 date:
-  short:      "%B %e, %Y"               #TODO date       blank then define own
-  long:       "%A, %B %e, %Y, %I:%M %p" #TODO date+time  in _include/date/...
-  allow_long: true                      #TODO show long date where possible
+  short:      "%B %e, %Y"
+  long:       "%A, %B %e, %Y, %I:%M %p"
+  allow_long: true
 
 
+#TODO you may customize padding text here.
 text:
-  latest_post:  Latest Post             #TODO settings for top-right label
-  feature_post: Feature Post            #TODO of excerpt post on index page
-  feature_proj: Feature Project         #TODO _______________________________
-  proj_demo:    Live Demo!              #TODO settings for project demo/source
-  proj_source:  Source Code             #TODO _______________________________
-  left_sym:     «                       #TODO settings for left/right symbol
-  right_sym:    »                       #TODO _______________________________
-  at_page:      "Page: "                #TODO settings for pagination text,
-  of_page:      " of "                  #TODO example layout render:
-  prev_page:    Prev                    #TODO <ls,prev>  <at>2<of>3  <next,rs>
-  next_page:    Next                    #TODO _______________________________
-  title_sep:    "|"                     #TODO <post-title> <sep> <site-title>
-  read_more:    Read More               #TODO read more text
+  meta:
+    title_sep:    "|"
+  excerpt:
+    read_more:    Read More
+  mark:
+    latest_post:  Latest Post
+    feature_post: Feature Post
+    feature_proj: Feature Project
+  paginate:
+    left_symbol:  «
+    right_symbol: »
+    at_page:      "Page: "
+    of_page:      " of "
+    prev_page:    Prev
+    next_page:    Next
+  project:
+    demo:         Live Demo!
+    source:       Source Code

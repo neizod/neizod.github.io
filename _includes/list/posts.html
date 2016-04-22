@@ -18,15 +18,15 @@
           {% if list_all %}
             {% include date/display.html date=post.date %}
           {% elsif forloop.first and include.feature.latest %}
-            {{ site.data.theme.text.latest_post }}
+            {{ site.data.theme.text.mark.latest_post }}
           {% else %}
-            {{ site.data.theme.text.feature_post }}
+            {{ site.data.theme.text.mark.feature_post }}
           {% endif %}
         </div>
       </div>
       <div class="excerpt entry">
         {{ post.excerpt | strip_html }}
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ site.data.theme.text.read_more }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ site.data.theme.text.excerpt.read_more }}</a>
       </div>
     </article>
   {% endif %}
