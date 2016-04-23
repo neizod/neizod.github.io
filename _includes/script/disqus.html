@@ -1,4 +1,4 @@
-{% if site.disqus %}
+{% if site.disqus.username %}
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
@@ -7,7 +7,7 @@ var disqus_config = function () {
 };
 (function() {
   var d = document, s = d.createElement('script');
-  s.src = '//{{ site.disqus }}.disqus.com/embed.js';
+  s.src = '//{{ site.disqus.username }}.disqus.com/embed.js';
   s.setAttribute('data-timestamp', +new Date());
   (d.head || d.body).appendChild(s);
 })();

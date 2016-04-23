@@ -13,11 +13,18 @@ url:     "https://neizod.github.io"     #TODO canonical url w/ protocol
 author: neizod                          #TODO single author only
 rights: All Right Reserved              #TODO rights statement
 
+# Social & Sharing
+# ----------------
+
 google:
   analytics:                            #TODO e.g. U-8152342-4
   verification:                         #TODO verification string in meta tag
-twitter:                                #TODO site's twitter
-disqus:                                 #TODO if polar.disqus.com, then polar
+
+twitter:
+  username:                             #TODO site's twitter
+
+disqus:
+  username:                             #TODO if polar.disqus.com, then polar
 
 
 # Content Setting
