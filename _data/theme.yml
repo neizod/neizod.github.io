@@ -1,25 +1,40 @@
+#TODO set each item to null then define your css color in _sass/ dir.
+#     preset: palette = { north-pole, aurora }, highlight = { github, monokai }
 color:
   palette:
   highlight: github
 
 
+#TODO set short, long to null then define your display in _include/date/ dir.
+#     set allow_long to false if you don't want to show time.
 date:
   short:      "%B %e, %Y"
   long:       "%A, %B %e, %Y, %I:%M %p"
   allow_long: true
 
 
+#TODO you may change navigation behavior here.
+navigation:
+  older_left: false
+
+
+#TODO you may customize padding text here.
 text:
-  latest_post:  Latest Post
-  feature_post: Feature Post
-  feature_proj: Feature Project
-  proj_demo:    Live Demo!
-  proj_source:  Source Code
-  left_sym:     «
-  right_sym:    »
-  at_page:      "Page: "
-  of_page:      " of "
-  prev_page:    Prev
-  next_page:    Next
-  title_sep:    "~"
-  read_more:    Read More
+  meta:
+    title_sep:    "~"
+  excerpt:
+    read_more:    Read More
+  mark:
+    latest_post:  Latest Post
+    feature_post: Feature Post
+    feature_proj: Feature Project
+  paginate:
+    left_symbol:  «
+    right_symbol: »
+    at_page:      "Page: "
+    of_page:      " of "
+    prev_page:    Prev
+    next_page:    Next
+  project:
+    demo:         Live Demo!
+    source:       Source Code

@@ -15,18 +15,18 @@
           {% if list_all %}
             {{ project.display_date }}
           {% else %}
-            {{ site.data.theme.text.feature_proj }}
+            {{ site.data.theme.text.mark.feature_proj }}
           {% endif %}
         </div>
       </div>
       <div class="excerpt entry">
         {{ project.excerpt | strip_html }}
-        <a href="{{ project.url | prepend: site.baseurl }}">{{ site.data.theme.text.read_more }}</a>
+        <a href="{{ project.url | prepend: site.baseurl }}">{{ site.data.theme.text.excerpt.read_more }}</a>
         {% if project.demo %}
-          / <a href="{{ project.demo }}">{{ site.data.theme.text.proj_demo }}</a>
+          / <a href="{{ project.demo }}">{{ site.data.theme.text.project.demo }}</a>
         {% endif %}
         {% if project.source %}
-          / <a href="{{ project.source }}">{{ site.data.theme.text.proj_source }}</a>
+          / <a href="{{ project.source }}">{{ site.data.theme.text.project.source }}</a>
         {% endif %}
       </div>
     </article>

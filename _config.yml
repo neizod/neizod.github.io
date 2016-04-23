@@ -13,22 +13,28 @@ url:         "https://neizod.github.io"
 author: neizod
 rights: CC-BY
 
+# Social & Sharing
+# ----------------
+
 google:
   analytics:    UA-2498230-6
   verification: R28DTjp2yjUO-i7K4fdLkSGd-e99QNiewcyJeOjEi6E
-twitter:        neizod
-disqus:         neizod
+
+twitter:
+  username:          neizod
+  share_large_image: false
+
+disqus:
+  username: neizod
 
 
-# Layout Setting
-# ==============
+# Content Setting
+# ===============
 # you may change this to suit your own preference.
 
-timezone:  Asia/Bangkok
-
-older_left: false
-paginate:   10
-mathjax:    true
+timezone: Asia/Bangkok
+paginate: 10
+mathjax:  true
 
 
 # Engine Setting
