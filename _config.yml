@@ -22,6 +22,7 @@ google:
 
 twitter:
   username:                             #TODO site's twitter
+  share_large_image: true               #TODO use large img in twitter card
 
 disqus:
   username:                             #TODO if polar.disqus.com, then polar
