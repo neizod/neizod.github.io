@@ -7,3 +7,7 @@
 {% assign meta-img = meta-img[1] | split: 'src="' %}
 {% assign meta-img = meta-img[1] | split: '"' | first %}
 {% unless meta-img %}{% assign meta-img = site.cover | prepend: site.baseurl %}{% endunless %}
+{% assign meta-vid = content | split: "<iframe " %}
+{% assign meta-vid = meta-vid[1] | split: 'src="' %}
+{% assign meta-vid = meta-vid[1] | split: '"' %}
+{% assign meta-vid = meta-vid[0] | split: '/' | last %}
