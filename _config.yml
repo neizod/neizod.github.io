@@ -20,6 +20,10 @@ google:
   analytics:                            #TODO e.g. U-8152342-4
   verification:                         #TODO verification string in meta tag
 
+facebook:
+  username:                             #TODO site's facebook
+  app_id:                               #TODO collect og sharing data
+
 twitter:
   username:                             #TODO site's twitter
   share_large_image: true               #TODO use large img in twitter card
