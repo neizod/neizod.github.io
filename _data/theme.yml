@@ -22,6 +22,9 @@ navigation:
 text:
   meta:
     title_sep:    "|"
+  date:
+    post:         Written on
+    proj:         Worked on
   excerpt:
     read_more:    Read More
   mark:

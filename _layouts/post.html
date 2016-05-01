@@ -13,7 +13,7 @@ layout: default
       {{ content }}
     </div>
     <div class="date">
-      Written on {% include date/display.html date=page.date type="long" %}
+      {{ site.data.theme.text.date.post }} {% include date/display.html date=page.date type="long" %}
     </div>
     <div class="tags">
       {% if page.tags.size > 0 %}
