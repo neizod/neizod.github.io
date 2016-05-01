@@ -38,3 +38,11 @@ text:
   project:
     demo:         Live Demo!
     source:       Source Code
+
+
+#TODO you may include other resources here.
+other_resources:
+  css_files:
+    - "//fonts.googleapis.com/css?family=Lora"
+    - "//fonts.googleapis.com/css?family=Raleway:300"
+    - "//fonts.googleapis.com/css?family=Ubuntu+Mono"
