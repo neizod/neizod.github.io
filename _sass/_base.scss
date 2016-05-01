@@ -96,6 +96,7 @@ blockquote {
 code {
     @extend .highlight;
     font-family: $font-mono;
+    font-size: $font-mono-size;
     padding: 0 0.33em;
 }
 

@@ -24,6 +24,11 @@ layout: default
     <div class="entry">
       {{ content }}
     </div>
+    {% if page.display_date %}
+      <div class="date">
+        {{ site.data.theme.text.date.proj }} {{ page.display_date }}
+      </div>
+    {% endif %}
     {% include paginate/single.html %}
     <div class="comment">
       {% include script/disqus.html %}

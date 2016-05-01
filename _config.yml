@@ -10,7 +10,7 @@ cover:       "/images/cover.png"
 baseurl:     ""
 url:         "https://neizod.github.io"
 
-author: neizod
+owner:  neizod
 rights: CC-BY
 
 # Social & Sharing
