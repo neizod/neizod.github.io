@@ -10,7 +10,7 @@ cover:       "/images/cover.png"        #TODO cover, recommended 1200x630
 baseurl: "/polar"                       #TODO leaves blank if already root
 url:     "https://neizod.github.io"     #TODO canonical url w/ protocol
 
-author: neizod                          #TODO single author only
+owner:  neizod                          #TODO site's owner, individual or org
 rights: All Right Reserved              #TODO rights statement
 
 # Social & Sharing
