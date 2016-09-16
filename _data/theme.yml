@@ -47,5 +47,4 @@ text:
 other_resources:
   css_files:
     - "//fonts.googleapis.com/css?family=Lora|Raleway:300|Ubuntu+Mono"
-    - "//fonts.googleapis.com/css?family=Kanit:200&subset=thai"
-    - "//fonts.googleapis.com/earlyaccess/notosansthai.css"
+    - "//fonts.googleapis.com/css?family=Kanit:200|Maitree:400&subset=thai"
