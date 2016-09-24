@@ -1,4 +1,4 @@
-{% if site.disqus.username %}
+{% if jekyll.environment != "development" and site.disqus.username %}
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
