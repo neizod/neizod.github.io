@@ -4,6 +4,15 @@
 }
 
 
+.cite {
+    text-align: right;
+    font-style: italic;
+}
+.cite::before {
+    content: "— ";
+}
+
+
 .spoiler {
     background: $minor-color;
     color: $minor-color;
