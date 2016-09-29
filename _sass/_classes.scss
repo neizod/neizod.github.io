@@ -23,6 +23,25 @@
 }
 
 
+.oversized {
+    @extend .flex;
+    @extend .flex.column;
+    padding: 0;
+    border: none;
+    overflow-x: auto;
+    width: calc(100vw - 2em);
+    margin-left: calc(1em - ((100vw - 100%) / 2));
+    @include mobile {
+        width: 100vw;
+        margin-left: calc(-1 * ((100vw - 100%) / 2));
+    }
+}
+.oversized > * {
+    margin: auto;
+    padding: 0;
+}
+
+
 .mainmatter {
     @extend .sep-bottom;
     background: $background-color;
