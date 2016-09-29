@@ -26,6 +26,7 @@ facebook:
 
 twitter:
   username:          neizod
+  widgets:           true
   share_large_image: false
 
 disqus:
