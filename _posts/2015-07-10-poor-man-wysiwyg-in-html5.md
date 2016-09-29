@@ -34,28 +34,30 @@ data:text/html, <html contenteditable>
 
 ส่วนอะไรที่เวิร์กไม่เวิร์กบ้าง เท่าที่ลองคร่าวๆ ได้ผลตามตารางนี้ครับ
 
-|   การจัดรูปแบบ  |                แท็กที่ใช้แทน                | MS Word | LibreOffice | Google Docs |
-|:------------- | --------------------------------------- |:-------:|:-----------:|:-----------:|
-| Title         | `<p align="center"><font size="6">`     |    ✓    |       ✓     |       ✓     |
-| Subtitle      | `<p align="center"><font size="5">`     |    ✓    |       ✓     |       ✓     |
-| Heading 1-3   | `<h1>` - `<h3>`                         |    ✓    |       ✓     |       ✓     |
-| Heading       | `<font size="4">`                       |    ✓    |       ✓     |       ✓     |
-| Quotations    | `<blockquote>`                          |    ✓    |       ✓     |       ✓     |
-| Align Left    | `<p align="left">`                      |    ✓    |       ✓     |       ✓     |
-| Align Center  | `<p align="center">`                    |    ✓    |       ✓     |       ✓     |
-| Align Right   | `<p align="right">`                     |    ✓    |       ✓     |       ✓     |
-| Align Justify | `<p align="justify">`                   |    ✓    |       ✓     |       ✓     |
-| Bold          | `<b>`                                   |    ✓    |       ✓     |       ✓     |
-| Italic        | `<i>`                                   |    ✓    |       ✓     |       ✓     |
-| Underline     | `<u>`                                   |    ✓    |       ✓     |       ✓     |
-| Strikethrough | `<strike>`                              |    ✓    |       ✓     |       ✓     |
-| Superscript   | `<sup>`                                 |    ✓    |       ✓     |       ✓     |
-| Subscript     | `<sub>`                                 |    ✓    |       ✓     |       ✓     |
-| Table         | `<table>`, `<tbody>`, `<tr>`, `<td>`    |    ✓    |       ✓     |       ✓     |
-| Bullet List   | `<ul>`, `<li>`                          |    ✓    |       ✓     |       ✓     |
-| Numbering     | `<ol>`, `<li>`                          |    ✓    |       ✓     |       ✓     |
-| Image         | `<img src="data:image/png;base64,...">` |         |       ✓     |       ✓     |
-| Formula       | `<img src="data:image/png;base64,...">` |         |       ✓     |             |
+{: .oversized}
+> {: width="850px"}
+> |   การจัดรูปแบบ  |                แท็กที่ใช้แทน                | MS Word | LibreOffice | Google Docs |
+> |:------------- | --------------------------------------- |:-------:|:-----------:|:-----------:|
+> | Title         | `<p align="center"><font size="6">`     |    ✓    |       ✓     |       ✓     |
+> | Subtitle      | `<p align="center"><font size="5">`     |    ✓    |       ✓     |       ✓     |
+> | Heading 1-3   | `<h1>` - `<h3>`                         |    ✓    |       ✓     |       ✓     |
+> | Heading       | `<font size="4">`                       |    ✓    |       ✓     |       ✓     |
+> | Quotations    | `<blockquote>`                          |    ✓    |       ✓     |       ✓     |
+> | Align Left    | `<p align="left">`                      |    ✓    |       ✓     |       ✓     |
+> | Align Center  | `<p align="center">`                    |    ✓    |       ✓     |       ✓     |
+> | Align Right   | `<p align="right">`                     |    ✓    |       ✓     |       ✓     |
+> | Align Justify | `<p align="justify">`                   |    ✓    |       ✓     |       ✓     |
+> | Bold          | `<b>`                                   |    ✓    |       ✓     |       ✓     |
+> | Italic        | `<i>`                                   |    ✓    |       ✓     |       ✓     |
+> | Underline     | `<u>`                                   |    ✓    |       ✓     |       ✓     |
+> | Strikethrough | `<strike>`                              |    ✓    |       ✓     |       ✓     |
+> | Superscript   | `<sup>`                                 |    ✓    |       ✓     |       ✓     |
+> | Subscript     | `<sub>`                                 |    ✓    |       ✓     |       ✓     |
+> | Table         | `<table>`, `<tbody>`, `<tr>`, `<td>`    |    ✓    |       ✓     |       ✓     |
+> | Bullet List   | `<ul>`, `<li>`                          |    ✓    |       ✓     |       ✓     |
+> | Numbering     | `<ol>`, `<li>`                          |    ✓    |       ✓     |       ✓     |
+> | Image         | `<img src="data:image/png;base64,...">` |         |       ✓     |       ✓     |
+> | Formula       | `<img src="data:image/png;base64,...">` |         |       ✓     |             |
 
 (จากที่สังเกต ผลลัพธ์ตอนนำข้อความมาวาง _เหมือนจะ_ ไม่มีความต่างกันในแต่ละเว็บบราวเซอร์ ดังนั้นจึงสนใจเฉพาะตอนคัดลอกมาจากโปรแกรมแก้ไขเอกสารอย่างเดียวครับ)
 
