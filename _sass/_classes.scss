@@ -13,6 +13,18 @@
 }
 
 
+.figure {
+    padding: 0;
+    margin: auto;
+    border: none;
+}
+.figure > p {
+    color: rgba($font-color, 0.7);
+    text-align: center;
+    font-style: italic;
+}
+
+
 .spoiler {
     background: $minor-color;
     color: $minor-color;
