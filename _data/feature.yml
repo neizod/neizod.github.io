@@ -1,0 +1,8 @@
+posts:
+  latest: true
+  list:
+    - "/2013/01/02/latex-optional-argument-in-python"
+    - "/2016/03/08/lets-write-something-into-books"
+projects:
+  list:
+    - "/projects/kick-neizod"

@@ -1,17 +1,8 @@
 ---
 article: false
-feature:
-  posts:
-    latest: true
-    list:
-      - "/2013/01/02/latex-optional-argument-in-python"
-      - "/2016/03/08/lets-write-something-into-books"
-  projects:
-    list:
-      - "/projects/kick-neizod"
 ---
 
 <div class="posts">
-  {% include list/posts.html feature=page.feature.posts %}
-  {% include list/projects.html feature=page.feature.projects %}
+  {% include list/posts.html feature=site.data.feature.posts %}
+  {% include list/projects.html feature=site.data.feature.projects %}
 </div>
