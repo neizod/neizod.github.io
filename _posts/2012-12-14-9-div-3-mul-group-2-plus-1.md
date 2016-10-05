@@ -1,0 +1,65 @@
+---
+title: 9/3(2+1) = ?
+tags:
+  - Object-Oriented
+  - Programming
+  - Mathematics
+  - Python
+date: 2012-12-14 21:15:00 +0700
+---
+
+เวลามีคนถามว่า
+
+    9/3(2+1) = ?
+
+จะตอบโดยไม่ลังเลเลยว่า 1 แถมถ้าใครมาบอกว่าต้องคิดหารทางด้านซ้ายมือ แล้วค่อยมาคูณแบบคอมพิวเตอร์นะ จะตอบกลับไปเลยว่ามัน [syntax error][] โว้ย ภาษาคอมพิวเตอร์ที่ไหนเค้ายอมรับการเขียนเลขติดกันว่าเป็นการคูณเลขบ้าง?
+
+อนึ่ง ถ้ามองว่าการเขียนเลขติดกัน (คั่นด้วยวงเล็บ) เป็นการคูณจริงๆ ตัวที่ติดกับวงเล็บก็ต้องมี [precedence][] สูงกว่า (ทำงานก่อน) เครื่องหมายหารอยู่แล้ว นั่นหมายความว่าต้องคิดส่วน `3(2+1)` ให้เสร็จก่อนเอาไปคำนวณต่ออยู่ดี
+
+เจอบ่อยๆ ก็เริ่มขี้เกียจอธิบาย เลยเขียนโปรแกรมที่มันแปลสมการด้านบนนี้ได้ถูกต้องเลยละกัน -> [จิ้มโลด][calculator]
+
+ตัวอย่างผลลัพท์จากโปรแกรม
+
+``` python
+>>> 9/3(2+1)
+1.0
+>>> a, b, c, d = 48, 2, 9, 3
+>>> a/b(c+d)
+2.0
+>>> 10(9(8(7(6(5(4(3(2(1)))))))))
+3628800
+>>> (1+2j)(3-4j)
+(11+2j)
+>>> 1 + 1/phi
+1.618033988749895
+>>> phi(43)
+42
+```
+
+อันที่จริงก็[คิดว่าจะทำมาได้ซักพักละ][google calculator] แต่ด้วยความที่ขี้เกียจวางกฎ grammar ด้วย flex bison ทั้งที่หลายๆ กฎนั้นภาษาส่วนใหญ่ก็ทำไว้ให้แล้ว เลยดองมาเรื่อยๆ จนทำ [Infinite List][] เสร็จ และไปเจอ [Python's Magic Methods][] เลยได้ฤกษ์เริ่มจากตรงนั้น
+
+แนวคิดก็ง่ายนิดเดียว แค่เพิ่มเมธอด `__call__` เข้าไปให้ class ของตัวเลข (เป็น [Monkey Patching เหมือนใน Ruby][@visibletrap blog]) โดย define มันกว่าถ้าเรียก `a.__call__(b)` แล้วจะมีค่าเท่ากับเอามันมาคูณกันซะ
+
+ปัญหาที่ต้องไล่เก็บก็คือ
+
+1. Python ไม่อนุญาติให้แก้ไขพวก `builtins` -- ที่จริงปัญหานี้ก็เหมือนกับคราวที่ทำ Infinite List นั่นแหละ ซึ่งแก้ไม่ยาก แค่ inherit class นั้นๆ ออกมาแล้วไล่ define magic method ซะ
+2. ปัญหาจริงๆ คือ Python parser มันจะแปลตัวเลขไปเป็น class ตัวเลขใน `builtins` เท่านั้น ดังนั้นก็ต้องแปลง token เองโดยหาว่าตรงไหนคือเลข แล้วก็เอา class ตัวเลขที่ inherit มาแล้วครอบไว้
+3. งานนี้ได้โมดูล tokenize มาช่วยแปลตัวเลขให้ ไม่ต้องเขียน regex เอง เพราะมันจะมีท่าประกาศตัวเลขประหลาดๆ ทำให้ tokenize เองพลาดได้
+4. ที่เหลือก็เอา code ที่แก้ token เรียบร้อยไปทำงาน ตรงนี้ดึงโมดูล `code` ที่ทำทุกอย่างเตรียมไว้แล้วมาใช้ฟังก์ชันเดียวจบ
+5. แต่ตอนที่เอา `tokenize` มาใช้ร่วมกับ `code` จะมีปัญหาที่พิมพ์ได้ทีละบรรทัด เนื่องจาก `tokenize` มันปรับแต่งอะไรไม่ได้เลย ก็ต้องหลอกมันเอานิดหน่อย
+6. ครบถ้วนกระบวนความแล้วก็ clean up โดยจุดที่เอา code ออกไปได้เยอะมากๆ คือส่วน define magic method อันนี้ใช้ meta-programming บอกแค่ว่าจะเพิ่ม method ไหนบ้างก็พอ แล้วปล่อยให้มัน generate ตัวเองไปซะ
+7. อยู่ๆ ก็เขียน function decorator เป็นเฉยเลย งงตัวเอง 555+
+
+อย่างไรก็ตาม แนวคิดของ callable number นี้ไม่ควรเอาไปใช้เขียนโปรแกรมในโลกจริง เพราะนักคณิตศาสตร์ชอบตังชื่อเดียว แต่ใช้ในคนละบริบท เช่น $\phi$ ที่อาจหมายถึง [golden radio](http://en.wikipedia.org/wiki/Golden_ratio) หรือ [Euler's totient](http://en.wikipedia.org/wiki/Euler%27s_totient_function) ก็ได้ ซึ่งแม้ว่าทั้ง 2 รูปของ $\phi$ นี้จะไม่ overlap กัน (เช่น $1+\frac{1}{\phi}$ จะถูกมองว่าเป็นตัวเลข ในขณะที่ $\phi(43)$ คือการใช้ฟังก์ชัน) แต่ด้วยความที่ Python เป็น [1st class function][] ที่ยอมให้เราส่งผ่านฟังก์ชันเป็นตัวแปรของฟังก์ชันอื่นๆ ได้ ดังนั้นถ้าเราเจออะไรอย่าง $\delta(\phi,\epsilon)$ เราจะไม่สามารถแน่ใจได้เลยว่า $\phi$ ในบริบทนี้คืออะไรครับ
+
+
+[syntax error]: //en.wikipedia.org/wiki/Syntax_error
+[precedence]: //en.wikipedia.org/wiki/Operator-precedence_parser
+[calculator]: //github.com/neizod/calculator
+[google calculator]: //www.blognone.com/node/34438
+[Infinite List]: //neizod.blogspot.com/2012/08/infinity-list-python.html
+[Python's Magic Methods]: //www.rafekettler.com/magicmethods.html
+[@visibletrap blog]: //visibletrap.wordpress.com/2012/11/18/ฟีเจอร์ใหม่ของ-ruby-2-0-ตอนที่-1-refin/
+[golden radio]: //en.wikipedia.org/wiki/Golden_ratio
+[Euler's totient]: //en.wikipedia.org/wiki/Euler%27s_totient_function
+[1st class function]: //en.wikipedia.org/wiki/First-class_function
