@@ -12,9 +12,9 @@ date: 2016-10-07 13:48:31 +0700
 
 พอดีไม่ได้ตั้งใจดูหนังมาก เลยวิจารณ์ทั้งเรื่องไม่ได้ แต่มีอยู่ตอนหนึ่งที่ตัวเอกกล่าวในตอนเริ่่มคาบว่า
 
+{: .quote}
 > Character is everything, fortunately not in life, but in storytelling. Make sure that your character drive a plot, and not the other way around.
 >
-> {: .cite}
 > Keith Michaels, The Rewrite 2014
 
 ได้ยินครั้งแรกก็เอ๊ะใจว่า เฮ้ย นิยายหรือหนังหนึ่งเรื่องนี่ โครงเรื่อง (plot) ควรจะเป็นส่วนสำคัญที่สุดไม่ใช่เหรอ ถ้าโครงเรื่องไม่ดีก็จบเห่แล้ว รู้เลยว่านิยาย/หนังเรื่องนั้นไม่สนุกแน่ๆ

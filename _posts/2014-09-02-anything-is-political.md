@@ -7,9 +7,10 @@ tags:
 date: 2014-09-02 13:03:00 +0700
 ---
 
+{: .quote}
 > Politics is for the present, but an equation is something for eternity.
 >
-> <cite>Albert Einstein</cite>
+> Albert Einstein
 
 ตอนเด็ๆ เคยปลื้มคำพูดข้างต้นนี้มาก เลยเลือกเรียนสายวิทยาศาสตร์บริสุทธิ์เพราะไอดอลสุดเมพ เรียนไปเรียนมารู้ตัวอีกทีก็เข้ามหาวิทยาลัยไปอยู่เอกคณิตศาสตร์เรียบร้อย
 
