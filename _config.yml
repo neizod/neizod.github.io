@@ -4,8 +4,8 @@
 
 title:       neizod's speculation
 description: insufficient data for meaningful answer
-logo:        "/images/logo.png"
-cover:       "/images/cover.png"
+logo:        "/assets/img/logo.png"
+cover:       "/assets/img/cover.png"
 
 baseurl:     ""
 url:         "https://neizod.github.io"
