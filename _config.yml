@@ -81,3 +81,5 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+
+empty_array: []

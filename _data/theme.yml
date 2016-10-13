@@ -44,17 +44,25 @@ text:
 
 
 #TODO you may change/add more font here.
-fonts:
-  sans:
-    - family: Raleway
-      weight: 300
-    - family: Kanit
-      weight: 200
-  serif:
-    - family: Lora
-    - family: Maitree
-      weight: 400
+font:
+  head:
+    families:
+      - name: Raleway
+        weight: 300
+      - name: Kanit
+        weight: 200
+    default: sans-serif
+  body:
+    families:
+      - name: Lora
+      - name: Maitree
+        weight: 400
+    default: serif
   mono:
-    - family: Ubuntu Mono
-  subset:
+    families:
+      - name: Ubuntu Mono
+    default: monospace
+    size: 1.0em
+    line-height: 1.2
+  languages:
     - thai
