@@ -1,7 +1,7 @@
-{% capture zero-title %}
+{% capture empty-title %}
 No posts.
 {% endcapture %}
-{% capture zero-content %}
+{% capture empty-content %}
 
 Since there are zero posts, the list is empty.
 

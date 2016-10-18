@@ -1,7 +1,7 @@
-{% capture zero-title %}
+{% capture empty-title %}
 No projects.
 {% endcapture %}
-{% capture zero-content %}
+{% capture empty-content %}
 
 Since there are zero projects, the list is empty.
 
