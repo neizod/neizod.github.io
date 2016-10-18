@@ -18,8 +18,8 @@ article: false
     </article>
   {% else %}
     <div class="posts">
-      {% include list/posts.html feature=site.data.feature.posts %}
-      {% include list/projects.html feature=site.data.feature.projects %}
+      {% include list/posts.html feature=page.feature.posts %}
+      {% include list/projects.html feature=page.feature.projects %}
     </div>
   {% endif %}
 </div>
