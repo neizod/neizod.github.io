@@ -15,6 +15,13 @@ date:
 
 #TODO you may change navigation behavior here.
 navigation:
+  menu:
+    - name: Posts
+      path: "/posts"
+    - name: Projects
+      path: "/projects"
+    - name: About
+      path: "/about"
   paginate:
     older: right
 
@@ -23,6 +30,8 @@ navigation:
 text:
   meta:
     title_sep:    "|"
+  menu:
+    item_sep:     "⋅"
   date:
     post:         Written on
     proj:         Worked on
