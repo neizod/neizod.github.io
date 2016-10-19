@@ -32,8 +32,11 @@ article: false
   {% endif %}
   {% unless homepage-empty %}
     <div class="posts">
-      {% include list/posts.html feature=page.feature.posts %}
-      {% include list/projects.html feature=page.feature.projects %}
+      {% for collection in site.collections %}
+        {% assign listing_method = collection.listing | default: collection.label %}
+        {% assign feature_option = page.feature[collection.label] %}
+        {% include list/{{listing_method}}.html feature=feature_option %}
+      {% endfor %}
     </div>
   {% endunless %}
 </div>
