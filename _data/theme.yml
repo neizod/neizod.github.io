@@ -35,6 +35,8 @@ text:
   date:
     post:         Written on
     proj:         Worked on
+  empty:
+    announcement: Announcement
   excerpt:
     read_more:    Read More
   mark:
