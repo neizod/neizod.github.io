@@ -15,7 +15,8 @@ date:
 
 #TODO you may change navigation behavior here.
 navigation:
-  older_left: false
+  paginate:
+    older: right
 
 
 #TODO you may customize padding text here.
