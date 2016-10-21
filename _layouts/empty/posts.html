@@ -3,24 +3,22 @@ layout: default
 article: false
 ---
 
-<div class="container">
-  {% if site.posts.size == 0 %}
-    {% include empty/posts.md %}
-    <article class="page">
-      <div class="flex align-center mobile-column">
-        <div class="flexitem fill">
-          <h1>{{ empty-title }}</h1>
-        </div>
+{% if site.posts.size == 0 %}
+  {% include empty/posts.md %}
+  <article class="page">
+    <div class="flex align-center mobile-column">
+      <div class="flexitem fill">
+        <h1>{{ empty-title }}</h1>
       </div>
-      <div class="entry">
-        {{ empty-content | markdownify }}
-      </div>
-    </article>
-    {% include paginate/base.html %}
-  {% else %}
-    <div class="posts">
-      {% include list/posts.html %}
     </div>
-    {% include paginate/multiple.html %}
-  {% endif %}
-</div>
+    <div class="entry">
+      {{ empty-content | markdownify }}
+    </div>
+  </article>
+  {% include paginate/base.html %}
+{% else %}
+  <div class="posts">
+    {% include list/posts.html %}
+  </div>
+  {% include paginate/multiple.html %}
+{% endif %}
