@@ -1,11 +1,34 @@
 {% if include.content %}
-  <article class="{{ include.class }}">
+  <article class="{% if include.url %}excerpt {% endif %}{{ include.class }}">
     <div class="flex align-center mobile-column">
       <div class="flexitem fill">
-        <h1>{{ include.title }}</h1>
+        {% if include.url %}
+          <h1><a href="{{ include.url | prepend: site.baseurl }}">{{ include.title }}</a></h1>
+        {% else %}
+          <h1>{{ include.title }}</h1>
+        {% endif %}
       </div>
+      {% if include.url %}
+        <div class="mark {% if include.quota >= 0 %}feature{% endif %} flexitem mobile-first">
+          {% if include.display_date %}
+            {% if include.quota < 0 %}
+              {{ include.display_date }}
+            {% else %}
+              {{ site.data.theme.text.mark.feature_proj }}
+            {% endif %}
+          {% elsif include.date %}
+            {% if include.quota < 0 %}
+              {% include date/display.html date=include.date %}
+            {% elsif include.quota > 0 %}
+              {{ site.data.theme.text.mark.latest_post }}
+            {% else %}
+              {{ site.data.theme.text.mark.feature_post }}
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
-    {% if include.demo or include.source %}
+    {% if include.demo or include.source %}{% unless include.url %}
       <div class="info flex mobile-column">
         {% if include.demo %}
           <div class="demo flexitem fill">
@@ -18,20 +41,29 @@
           </div>
         {% endif %}
       </div>
-    {% endif %}
-    <div class="entry">
+    {% endunless %}{% endif %}
+    <div class="{% if include.url %}excerpt {% endif %}entry">
       {{ include.content }}
+      {% if include.url %}
+        <a href="{{ include.url | prepend: site.baseurl }}">{{ site.data.theme.text.excerpt.read_more }}</a>
+        {% if include.demo %}
+          / <a href="{{ include.demo }}">{{ site.data.theme.text.project.demo }}</a>
+        {% endif %}
+        {% if include.source %}
+          / <a href="{{ include.source }}">{{ site.data.theme.text.project.source }}</a>
+        {% endif %}
+      {% endif %}
     </div>
-    {% if include.date %}
+    {% if include.date %}{% unless include.url %}
       <div class="date">
         {{ site.data.theme.text.date.post }} {% include date/display.html date=include.date type='long' %}
       </div>
-    {% endif %}
-    {% if include.display_date %}
+    {% endunless %}{% endif %}
+    {% if include.display_date %}{% unless include.url %}
       <div class="date">
         {{ site.data.theme.text.date.proj }} {{ include.display_date }}
       </div>
-    {% endif %}
+    {% endunless %}{% endif %}
     {% if include.tags and include.tags.size != 0 %}
       <div class="tags">
         Withing tags: {% include list/tags.html tags=include.tags %}
