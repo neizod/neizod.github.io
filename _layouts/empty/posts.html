@@ -1,22 +1,19 @@
 ---
 layout: default
-article: false
 ---
 
-{% if site.posts.size == 0 %}
-  {% include empty/posts.md %}
-  <article class="page">
-    <div class="flex align-center mobile-column">
-      <div class="flexitem fill">
-        <h1>{{ empty-title }}</h1>
-      </div>
-    </div>
-    <div class="entry">
-      {{ empty-content | markdownify }}
-    </div>
-  </article>
-  {% include paginate/base.html %}
-{% else %}
+{% capture NOOUT %}
+  {% if site.posts.size == 0 %}
+    {% include empty/posts.md %}
+    {% assign article_class = 'page' %}
+    {% assign the_title = empty-title %}
+    {% assign the_content = empty-content | markdownify %}
+  {% else %}
+    {% assign listing = true %}
+  {% endif %}
+{% endcapture %}
+{% include article.html class=article_class title=the_title content=the_content %}
+{% if listing %}
   <div class="posts">
     {% include list/posts.html %}
   </div>
