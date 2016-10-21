@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% capture NOOUT %}
+  {% include variables/homepage.liquid %}
+  {% if homepage-empty %}
+    {% include empty/homepage.md %}
+    {% assign article_class = 'page' %}
+    {% assign the_title = empty-title %}
+    {% assign the_content = empty-content | markdownify %}
+  {% else %}
+    {% assign listing = true %}
+  {% endif %}
+  {% if homepage-announcement %}
+    {% assign article_class = 'page infobox' %}
+    {% assign the_title = page.title | default: site.data.theme.text.empty.announcement %}
+    {% assign the_content = content %}
+  {% endif %}
+{% endcapture %}
+{% include article.html class=article_class title=the_title content=the_content %}
+{% include listing.html listing=listing %}
