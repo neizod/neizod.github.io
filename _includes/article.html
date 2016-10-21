@@ -8,5 +8,23 @@
     <div class="entry">
       {{ include.content }}
     </div>
+    {% if include.date %}
+      <div class="date">
+        {{ site.data.theme.text.date.post }} {% include date/display.html date=include.date type='long' %}
+      </div>
+    {% endif %}
+    {% if include.tags and include.tags.size != 0 %}
+      <div class="tags">
+        Withing tags: {% include list/tags.html tags=include.tags %}
+      </div>
+    {% endif %}
+    {% if include.paginate %}
+      {% include paginate/{{include.paginate}}.html %}
+    {% endif %}
+    {% if include.comment %}
+      <div class="comment">
+        {% include script/disqus.html %}
+      </div>
+    {% endif %}
   </article>
 {% endif %}
