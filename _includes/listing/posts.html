@@ -1,6 +1,6 @@
 {% if include.feature %}
   {% assign posts = site.posts %}
-  {% assign quota = feature.latest_quota | default: 1 %}
+  {% assign quota = include.feature.latest | default: 1 %}
 {% else %}
   {% assign posts = paginator.posts %}
   {% assign quota = -1 %}
