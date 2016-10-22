@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% capture NOOUT %}
+  {% if site.docs.size == 0 %}
+    {% include empty/common_listing.md list='docs' %}
+    {% assign article_class = 'page' %}
+    {% assign the_title = empty-title %}
+    {% assign the_content = empty-content | markdownify %}
+  {% else %}
+    {% assign listing = true %}
+  {% endif %}
+{% endcapture %}
+{% include article.html class=article_class title=the_title content=the_content %}
+{% if listing %}
+  <div class="posts">
+    {% include listing/docs.html %}
+  </div>
+{% endif %}

@@ -3,7 +3,9 @@
     {% for collection in site.collections %}
       {% assign listing_method = collection.listing | default: collection.label %}
       {% assign feature_option = page.feature[collection.label] %}
-      {% include listing/{{listing_method}}.html feature=feature_option %}
+      {% if feature_option %}
+        {% include listing/{{listing_method}}.html feature=feature_option %}
+      {% endif %}
     {% endfor %}
   </div>
 {% endif %}
