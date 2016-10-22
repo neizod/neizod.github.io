@@ -1,17 +1,22 @@
-# Identity Setting
-# ================
-# you should change this to suit your own preference.
+# User Config
+# ===========
+# fill/change these fields to match your own.
+
+# Identity
+# --------
 
 title:       neizod's speculation
 description: insufficient data for meaningful answer
-logo:        "/assets/img/logo.png"
-cover:       "/assets/img/cover.png"
 
-baseurl:     ""
-url:         "https://neizod.github.io"
+logo:  "/assets/img/logo.png"
+cover: "/assets/img/cover.png"
+
+baseurl: ""
+url:     "https://neizod.github.io"
 
 owner:  neizod
 rights: CC-BY
+
 
 # Social & Sharing
 # ----------------
@@ -25,28 +30,24 @@ facebook:
   app_id:   772191139548544
 
 twitter:
-  username:          neizod
-  widgets:           true
-  share_large_image: false
+  username:  neizod
+  large_img: true
 
 disqus:
   username: neizod
 
 
-# Content Setting
-# ===============
-# you may change this to suit your own preference.
+# Content Format
+# --------------
 
 timezone: Asia/Bangkok
 paginate: 10
 mathjax:  true
 
 
-# Engine Setting
-# ==============
+# Engine Config
+# =============
 # you shouldn't change this unless you really know what you're doing.
-
-paginate_path: "/posts/page:num"
 
 collections:
   projects:
@@ -68,6 +69,8 @@ defaults:
       type: projects
     values:
       layout: project
+
+paginate_path: "/posts/page:num"
 
 sass:
   sass_dir: "_sass/"

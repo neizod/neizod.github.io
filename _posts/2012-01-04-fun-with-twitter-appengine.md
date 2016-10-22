@@ -13,6 +13,7 @@ date: 2012-01-04 17:25:00 +0700
 ด้วยความสงสัยของผม เลยหยิบเอา [tweepy][] มาดัดแปลงเล่นนิดหน่อย ผลที่ได้ออกมาก็เป็นอย่างนี้ครับ
 
 <blockquote class="twitter-tweet"><p>hll wrld</p>&mdash; Nattawut Phetmak (@neizod) <a href="https://twitter.com/#!/neizod/status/154457081032880128">January 4, 2012</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 เนื่องจากเสียเวลางมผิดจุดไปเยอะมาก (เยอะเกินไป อ่าน [dev.twitter.com][] ทำไมก็ไม่รู้ อ่าน [stackoverflow][] คงทำเสร็จด้วยเวลาน้อยกว่ากันครึ่งๆ) แถมยังเป็นโปรเจคที่ทำขำๆ จากการหยิบยืมไอเดียเพื่อนมาทดลองเล่นช่วงปีใหม่ว่างๆ อีก ตอนนี้ก็เลยมีแต่ client อย่างเดียวไม่มี API บน App Engine และไม่พัฒนาต่อแล้วครับ (ส่วน code หาดูได้ที่ [shrtntwt][] เลยครับ)
 

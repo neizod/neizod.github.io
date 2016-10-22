@@ -10,6 +10,7 @@ date: 2014-02-14 06:33:00 +0700
 ไอเดียมันเริ่มมาจากทวีตนี้
 
 <blockquote class="twitter-tweet" lang="en"><p>ควรมี flash game ถีบเนยสดได้แล้ว คือจับเวลา 1 นาที ให้เราพิมพ์คำว่าถีบเนยสดให้ได้มากที่สุด แล้วแมวเนยสดก็หน้าน่วมๆไปด้วยไรงี้ เก็บสถิติด้วย</p>&mdash; แม็คคลี่ (@McKiEz) <a href="https://twitter.com/McKiEz/statuses/411799743132471296">December 14, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 (ว่าแต่ใครมันจุดกระแส #ถีบเนยสด ฟระ Orz)
 

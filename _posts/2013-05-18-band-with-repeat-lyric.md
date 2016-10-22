@@ -10,6 +10,7 @@ date: 2013-05-18 16:58:00 +0700
 หลายเดือนก่อนเห็นทวีตนี้ผ่านตา
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">GIRLS&#39; GENERATION = เจ้าแม่ร้องซ้ำ gee gee gee gee, run run run run run, oh oh oh oh,Taxi Taxi Taxi, Bring the boys out! Bring the boys out!</p>&mdash; ต๊อกแต๊ก (@ffranceee) <a href="https://twitter.com/ffranceee/status/274838562103517184">December 1, 2012</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 มานั่งนับๆ ดู เอ่อ มันก็จริงนะ 555+
 

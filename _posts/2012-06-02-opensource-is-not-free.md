@@ -11,6 +11,7 @@ date: 2012-06-02 12:31:00 +0700
 อันที่จริงก็มีหลายคนเขียนถึงเรื่องนี้ไว้หลายครั้งแล้ว เช่นทวีตนี้
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="th" dir="ltr">opensource ในไทยฉิบหายก็เพราะใครไม่รู้บอกว่า opensource ฟรี opensource ช่วยประหยัด โน่นนั่นนี่ กรูไม่ได้อิ่มทิพย์!!!</p>&mdash; sugree (@sugree) <a href="https://twitter.com/sugree/status/15636438369">June 7, 2010</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 หรือใน[กระทู้นี้][thread  blognone]และ[กระทู้นี้ด้วย][thread ubuntu club] (ฯลฯ ที่ผมไม่สามารถหาเจอได้แล้ว) ซึ่งตอนนั้นผมเองอ่านบทความเหล่านั้นก็ยังไม่ค่อยเข้าใจเท่าไหร่ จนกระทั่งมาได้ทำงานกับ opensource จริงจัง
 

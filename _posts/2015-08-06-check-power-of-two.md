@@ -14,6 +14,7 @@ date: 2015-08-06 07:44:00 +0700
 <p lang="en" dir="ltr">
 Best way to check if number is a power of two&#10;&#10;return ((x != 0) &amp;&amp; ((x &amp; (~x + 1)) == x))</p>
 &mdash; Midas~♫ (@Methuz) <a href="https://twitter.com/Methuz/status/613534846132948996">June 24, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 แล้วก็มานึกได้ว่าเคยเห็นโจทย์นี้มานานแล้วนะ พอนั่งคิดต่ออีกหน่อยก็พบว่าปรับปรุงให้ดีขึ้นได้อีก โดยเปลี่ยนส่วนที่กลับข้างบิตแล้วเปรียบเทียบกับตัวเอง ไปเป็นไม่ต้องกลับข้างบิตแต่เอาไปเทียบกับศูนย์แทน กล่าวคือ
 
@@ -21,6 +22,7 @@ Best way to check if number is a power of two&#10;&#10;return ((x != 0) &amp;&am
 <p lang="en" dir="ltr">
 <a href="https://twitter.com/Methuz">@Methuz</a> ((x != 0) &amp;&amp; ((x &amp; (x - 1)) == 0))</p>
 &mdash; เนยสดร้องไห้ทำมัย (@neizod) <a href="https://twitter.com/neizod/status/613774023927836672">June 24, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ---
 

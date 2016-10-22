@@ -9,6 +9,7 @@ date: 2014-02-07 07:22:00 +0700
 วันก่อนเห็นทวีตนี้
 
 <blockquote class="twitter-tweet" lang="en"><p>ในตอนเด็กเรามักคิดว่าเมื่อเป็นผู้ใหญ่แล้ว จะทำอะไรก็ได้ แต่พอโตขึ้นมาแล้ว ถึงรู้ว่าตอนเป็นเด็กต่างหาก ที่จะทำอะไรก็ได้</p>&mdash; ไอ้เชี้ยอ้วน (@BestzFail) <a href="https://twitter.com/BestzFail/statuses/430016073136484352">February 2, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 จะบอกว่าไม่เห็นด้วยก็คงจะพูดได้ไม่เต็มปาก เพราะการตีความ "อำนาจ" ในการ "ทำอะไรก็ได้" ของเด็กและผู้ใหญ่นั้นต่างกันไกลลิบ
 

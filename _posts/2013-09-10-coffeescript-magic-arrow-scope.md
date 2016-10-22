@@ -55,3 +55,4 @@ class Dog
 
 <blockquote class="twitter-tweet"><a href="https://twitter.com/neizod">@neizod</a> <a href="https://twitter.com/plynoi">@plynoi</a> น่าจะชื่อ arrowscript
 — v038 (@vi038) <a href="https://twitter.com/vi038/statuses/376763260386566144">September 8, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
