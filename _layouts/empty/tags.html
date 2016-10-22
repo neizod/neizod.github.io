@@ -9,11 +9,11 @@ layout: default
     {% assign the_title = empty-title %}
     {% assign the_content = empty-content | markdownify %}
   {% else %}
-    {% assign listing = true %}
+    {% assign selection = true %}
   {% endif %}
 {% endcapture %}
 {% include article.html class=article_class title=the_title content=the_content %}
-{% if listing %}
+{% if selection %}
   <div class="posts">
     {% for tag in site.tags %}
       <div class="target" id="{{ tag[0] | slugify }}">

@@ -10,7 +10,7 @@ layout: default
   {% elsif homepage-empty %}
     {% include empty/homepage.md %}
   {% else %}
-    {% assign listing = true %}
+    {% assign selection = page.feature %}
   {% endif %}
   {% if unconfig-empty or homepage-empty %}
     {% assign article_class = 'page' %}
@@ -23,4 +23,4 @@ layout: default
   {% endif %}
 {% endcapture %}
 {% include article.html class=article_class title=the_title content=the_content %}
-{% include listing.html listing=listing %}
+{% include listing.html selection=selection %}
