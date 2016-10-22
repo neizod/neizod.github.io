@@ -35,6 +35,9 @@ text:
   date:
     post:         Written on
     proj:         Worked on
+  unconfig:
+    title:        untitled
+    description:  unconfigured theme
   empty:
     announcement: Announcement
   excerpt:

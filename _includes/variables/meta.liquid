@@ -1,16 +1,22 @@
 {% capture NOOUT %}
+  {% include variables/unconfig.liquid %}
+
   {% assign meta-html_title = site.empty_array %}
   {% if page.title %}
     {% assign meta-html_title = meta-html_title | push: page.title %}
     {% assign meta-html_title = meta-html_title | push: site.data.theme.text.meta.title_sep %}
   {% endif %}
-  {% assign meta-html_title = meta-html_title | push: site.title %}
+  {% if unconfig-empty %}
+    {% assign meta-html_title = meta-html_title | push: site.data.theme.text.unconfig.title %}
+  {% else %}
+    {% assign meta-html_title = meta-html_title | push: site.title %}
+  {% endif %}
   {% assign meta-html_title = meta-html_title | join: ' ' %}
 
   {% if page.title %}
     {% assign meta-title = page.title %}
   {% else %}
-    {% assign meta-title = site.title %}
+    {% assign meta-title = site.title | default: site.data.theme.text.unconfig.title %}
   {% endif %}
 
   {% if page.excerpt %}
