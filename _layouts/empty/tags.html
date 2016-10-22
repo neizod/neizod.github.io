@@ -9,27 +9,8 @@ layout: default
     {% assign the_title = empty-title %}
     {% assign the_content = empty-content | markdownify %}
   {% else %}
-    {% assign selection = true %}
+    {% assign selection = site.empty_array | push: 'tags' %}
   {% endif %}
 {% endcapture %}
 {% include article.html class=article_class title=the_title content=the_content %}
-{% if selection %}
-  <div class="posts">
-    {% for tag in site.tags %}
-      <div class="target" id="{{ tag[0] | slugify }}">
-        <h2>{{ tag[0] }}</h2>
-        <ul>
-        {% for post in tag[1] %}
-          <li>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
-    <div>
-      <h2>{{ page.title }}</h2>
-      {% include listing/tags.html %}
-    </div>
-  </div>
-{% endif %}
+{% include listing.html selection=selection %}
