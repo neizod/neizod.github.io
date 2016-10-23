@@ -39,6 +39,7 @@ text:
     announcement: Announcement
   excerpt:
     read_more:    Read More
+    item_sep:     "/"
   paginate:
     left_symbol:  «
     right_symbol: »

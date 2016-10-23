@@ -6,21 +6,11 @@
     {% unless include.url %}
       {% include article/project_demo.html demo=include.demo source=include.source %}
     {% endunless %}
-    <div class="{% if include.url %}excerpt {% endif %}entry">
+    <div class="entry">
       {{ include.content }}
-      {% if include.url %}
-        <a href="{{ include.url | prepend: site.baseurl }}">{{ site.data.theme.text.excerpt.read_more }}</a>
-        {% if include.demo %}
-          / <a href="{{ include.demo }}">{{ site.data.theme.text.project.demo }}</a>
-        {% endif %}
-        {% if include.source %}
-          / <a href="{{ include.source }}">{{ site.data.theme.text.project.source }}</a>
-        {% endif %}
-      {% endif %}
+      {% include article/read_more.html url=include.url demo=include.demo source=include.source %}
     </div>
-    {% if include.paginate %}
-      {% include paginate/{{include.paginate}}.html %}
-    {% endif %}
+    {% include article/paginate.html paginate=include.paginate %}
     {% include article/comment.html comment=include.comment %}
   </article>
 {% endif %}
