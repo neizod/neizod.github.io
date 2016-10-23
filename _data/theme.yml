@@ -10,7 +10,7 @@ color:
 date:
   short:      "%B %e, %Y"
   long:       "%A, %B %e, %Y, %I:%M %p"
-  allow_long: true
+  allow_long: sometimes
 
 
 #TODO you may change navigation behavior here.

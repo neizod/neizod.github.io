@@ -1,12 +1,6 @@
 <div class="flex align-center mobile-column">
   {% if include.date %}
-    <div class="date">
-      {% include date/display.html date=include.date type='long' %}
-    </div>
-  {% elsif include.display_date %}
-    <div class="date">
-      {{ include.display_date }}
-    </div>
+    {% include display/date.html date=include.date format=include.format %}
   {% endif %}
   {% if include.tags %}
     {% include listing/tags.html tags=include.tags %}

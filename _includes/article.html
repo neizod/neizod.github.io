@@ -1,7 +1,8 @@
+{% include variables/article.liquid %}
 {% if include.content %}
   <article class="{% if include.url %}excerpt {% endif %}{{ include.class }}">
     {% include article/title.html title=include.title url=include.url %}
-    {% include article/info.html tags=include.tags date=include.date display_date=include.display_date %}
+    {% include article/info.html tags=include.tags date=article-date format=article-format %}
     {% unless include.url %}
       {% include article/project_demo.html demo=include.demo source=include.source %}
     {% endunless %}
