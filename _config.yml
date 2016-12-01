@@ -31,7 +31,7 @@ facebook:
 
 twitter:
   username:  neizod
-  large_img: true
+  large_img: sometimes
 
 disqus:
   username: neizod
