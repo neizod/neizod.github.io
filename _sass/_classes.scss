@@ -16,7 +16,7 @@
     font-style: italic;
 }
 .quote > p:last-child::before {
-    content: "— ";
+    content: "\2014\00a0";
 }
 
 
