@@ -3,7 +3,7 @@ title: ได้ Google+ Custom URL ซักที
 tags:
   - Google Plus
   - Exploit
-date: 2014-06-07 19:39:00 +07:00
+date: 2014-06-07 19:39:00 +0700
 ---
 
 จริงๆ Google+ Custom URL นี่ไม่ใช่ของใหม่ มัน[เปิดตัวตั้งแต่ปลายปี 2012][g+ url announcement] และ[ขยายวงให้ผู้ใช้ทุกบัญชีตอนปลายปี 2013][g+ url all user]
