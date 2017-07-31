@@ -1,6 +1,7 @@
 ---
 title: rymdkapsel
 tags:
+  - Application
   - Game
   - Real Time Strategy
 date: 2016-10-10 08:11:23 +0700
