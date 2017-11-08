@@ -2,6 +2,8 @@
 title: อย่าอายในสำเนียงภาษาอังกฤษ
 tags:
   - Language
+  - Thought
+  - Education
 date: 2017-04-24 03:09:18 +0700
 ---
 
