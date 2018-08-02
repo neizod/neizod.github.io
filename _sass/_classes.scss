@@ -43,8 +43,7 @@
 
 
 .oversized {
-    @extend .flex;
-    @extend .flex.column;
+    @extend .flex, .column;
     padding: 0;
     border: none;
     overflow-x: auto;
