@@ -5,6 +5,7 @@ tags:
   - Thought
   - Artificial Intelligence
   - Go (board game)
+  - Board Game
 date: 2016-02-27 21:56:27 +0700
 ---
 

@@ -5,6 +5,8 @@ tags:
   - Recursive
   - Python
   - Thought
+  - Algorithm
+  - Computer Science
 date: 2016-03-23 06:43:08 +0700
 ---
 

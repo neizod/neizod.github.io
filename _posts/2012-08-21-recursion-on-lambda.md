@@ -5,6 +5,8 @@ tags:
   - Functional
   - Philosophy
   - Python
+  - Recursion
+  - Computer Science
 date: 2012-08-21 00:04:00 +0700
 ---
 

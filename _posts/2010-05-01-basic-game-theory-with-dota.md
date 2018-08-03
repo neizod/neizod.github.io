@@ -3,6 +3,7 @@ title: พื้นฐานทฤษฎีเกมด้วยดอทเอ
 tags:
   - Game Theory
   - Mathematics
+  - DotA
 date: 2010-05-01 03:37:00 +0700
 ---
 

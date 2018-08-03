@@ -3,6 +3,7 @@ title: สุโขทัยเมื่อ 2 อาทิตย์ก่อน
 tags:
   - Go (board game)
   - Sukhothai
+  - Board Game
 date: 2010-08-30 03:06:00 +0700
 ---
 

@@ -3,6 +3,7 @@ title: Barcamp Bangkok 2014
 tags:
   - BarCamp
   - Bangkok
+  - Board Game
 date: 2014-09-05 12:32:00 +0700
 ---
 
