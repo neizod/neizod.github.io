@@ -1,5 +1,5 @@
 ---
-title: Food Rader
+title: Food Radar
 tags:
   - Programming
   - Hackathon
@@ -28,8 +28,8 @@ date: 2015-04-06 01:23:45 +0700
 
 และนี่คือผลลัพธ์ได้ภายในเวลาประมาณสองชั่วโมงนั้น ([ลองเล่นจริงที่นี่][live demo])
 
-{: .figure}
-> ![หน้าตาเว็บ Food Radar](/images/foodradar.png)
+{: .oversized .figure}
+> ![หน้าตาเว็บ Food Radar](/images/program/misc/foodradar.png)
 >
 > หน้าตาเว็บไซต์ Food Radar ที่แสดงข้อมูลโภชนาการอาหารแบบข้อมูลพลังตัวละคร
 

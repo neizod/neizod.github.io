@@ -57,27 +57,21 @@ def simulate_voronoi(image_path, cells=25, scale=None):
 
 ผลลัพธ์ที่ออกมาก็ประมาณนี้ครับ (ที่ 500 เซลล์ Voronoi)
 
----
-
-![](/images/voronoi-bear.png)
-
-![](/images/voronoi-pearl-earing.png)
-
-![](/images/voronoi-great-wave.png)
-
-![](/images/voronoi-starry-night.png)
-
-![](/images/voronoi-saturn.png)
-
-![](/images/voronoi-andromeda-galaxy.png)
-
-![](/images/voronoi-circles-in-circle.png)
-
-![](/images/voronoi-composition-2.png)
-
----
+| ![][bear]             | ![][pearl-earing]     |
+| ![][great-wave]       | ![][starry-night]     |
+| ![][saturn]           | ![][andromeda-galaxy] |
+| ![][circle-in-circle] | ![][composition-2]    |
 
 เอาไปสู้เขาไม่ได้หรอก เพราะเขียนไปมั่วแบบคนไม่มีพื้นฐาน image processing อะไรเลย แต่ก็สนุกดีได้ลองใช้ PIL เป็นครั้งแรกด้วย
 
+
+[bear]: /images/algorithm/voronoi/bear.png
+[pearl-earing]: /images/algorithm/voronoi/pearl-earing.png
+[great-wave]: /images/algorithm/voronoi/great-wave.png
+[starry-night]: /images/algorithm/voronoi/starry-night.png
+[saturn]: /images/algorithm/voronoi/saturn.png
+[andromeda-galaxy]: /images/algorithm/voronoi/andromeda-galaxy.png
+[circle-in-circle]: /images/algorithm/voronoi/circles-in-circle.png
+[composition-2]: /images/algorithm/voronoi/composition-2.png
 
 [code golf challenge]: //codegolf.stackexchange.com/questions/50299/draw-an-image-as-a-voronoi-map

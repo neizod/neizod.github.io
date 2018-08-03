@@ -35,7 +35,11 @@ $$
 
 ความพยายามต่อมาคือ [gamma function][] ที่ให้สมการอินทิเกรตยากๆ มาอันนึง (ซึ่งแก้ออกได้ด้วยการ[ทำอินทิเกรตแยกส่วน แล้วลดรูปกลับมาให้อยู่ในรูปเดิม][recursion integral]) สมการนี้เมื่อหาค่าทุกจุดแล้วนำมาพล็อตกราฟ จะได้ภาพการลากเส้นโค้งเชื่อมจุดต่างๆ ของ factorial นั่นเอง กราฟนี้บอกเราว่า $0!=1$ และ factorial ของจำนวนเต็มลบใดๆ หาค่าไม่ได้ ซึ่งไม่ขัดแย้งกับความพยายามก่อนหน้า
 
-[![พล็อตของ gamma function](/images/gamma_plot.png)][gamma plot]
+{: .figure}
+> ![](/images/math/plot-gamma-function.png)
+>
+> พล็อตของ gamma function -- ภาพจาก [Wikipedia][gamma plot wiki image]
+
 
 แม้ว่าความพยายามนี้จะเลิศเลอเพอร์เฟคแค่ไหนก็ตาม (ทั้งสมการยากๆ ที่ทำให้ดูเป็นมือโปร ทั้งการขยายขอบเขต factorial ให้ไปอยู่บนจำนวนจริงได้) แต่มันก็เกิดขึ้นหลังจากที่เรานิยามได้แล้วว่า $0!=1$ ครับ
 
@@ -89,7 +93,7 @@ $$
 
 [gamma function]: //en.wikipedia.org/wiki/Gamma_function
 [recursion integral]: //neizod.blogspot.com/2012/09/recursion-integral.html
-[gamma plot]: //en.wikipedia.org/wiki/File:Gamma_plot.svg
+[gamma plot wiki image]: //en.wikipedia.org/wiki/File:Gamma_plot.svg
 [paradox]: //en.wikipedia.org/wiki/Paradox
 [binomial theorem]: //en.wikipedia.org/wiki/Binomial_theorem
 [pascal's triangle]: //en.wikipedia.org/wiki/Pascal's_triangle

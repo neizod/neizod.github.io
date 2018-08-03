@@ -77,7 +77,7 @@ main = do
 แต่ถ้า obfuscate แล้วสวยงามอย่างนี้ก็ยอมนะ
 
 {: .figure}
-> ![](/images/hello-world.png)
+> ![](/images/program/misc/piet-hello-world.png)
 >
 > จาก [Piet Program Gallery][]
 

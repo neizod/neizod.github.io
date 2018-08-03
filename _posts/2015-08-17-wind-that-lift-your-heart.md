@@ -21,7 +21,10 @@ date: 2015-08-17 20:20:20 +0700
 
 นั่งเติมพลังบางอย่างที่ขาดหายไปในชีวิต
 
-![ท้องฟ้าสดสวยในวันที่ลมแรง](/images/IMG_20150817_185629.jpg)
+{: .oversized .figure}
+> ![](/images/event/misc/twilight-sunset-with-crescent-moon.jpg)
+>
+> ท้องฟ้าสดสวยในวันที่ลมแรง
 
 20:00
 

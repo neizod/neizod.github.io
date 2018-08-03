@@ -13,7 +13,7 @@ origin:
 นั่ง (นอน) เล่น Civ V: BNW แบบ 12 ชั่วโมงติด ละเห็นเค้าชอบเขียนบรรยายเกมเพลย์กัน เลยลองมั่งๆ :P
 
 {: .oversized .figure}
-> ![ประเทศบราซิลในเทิร์นที่ 299](/images/civ5-brazil-cultural-victory.jpg)
+> ![ประเทศบราซิลในเทิร์นที่ 299](/images/game/misc/civ5-brazil-cultural-victory.jpg)
 >
 > ประเทศบราซิลที่เพิ่งสร้าง :p
 

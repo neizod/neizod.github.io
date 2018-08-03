@@ -9,7 +9,7 @@ date: 2018-03-01 23:53:57 +0700
 
 คอนเสิร์ตร่วมระหว่างวงดุริยางค์กองทัพอากาศไทย วงดนตรีนาวิกโยธินสหรัฐฯ และนิสิตมหาวิทยาลัยเกษตรศาตร์
 
-![](/images/poster-sound-of-friendship.jpg)
+![](/images/poster/sound-of-friendship.jpg)
 
 พอดีอ่านเวลาผิด เลยไปไม่ทัน ทันแค่ช่วงหลังๆ จำได้แค่ว่ามี Einleitung จาก Zaarathustra เพลงมาร์ชกองทัพไทย มาร์ชกองทัพสหรัฐฯ แล้วก็ Stars and Stripes Forever ครับ
 

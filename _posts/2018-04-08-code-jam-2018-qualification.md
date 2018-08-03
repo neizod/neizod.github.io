@@ -151,7 +151,7 @@ for case in range(int(input())):
 ข้อนี้เริ่มขี้เกียจอธิบายละ เอาที่ทดบนไวท์บอร์ดไปแกะเองละกันนะ 555
 
 {: .oversized .figure}
-> ![](/images/cubic-ufo.jpg)
+> ![](/images/algorithm/misc/cubic-ufo.jpg)
 >
 > สูตรคำนวณพื้นที่เงา UFO เมื่อ UFO หมุนตามแกนต่างๆ
 

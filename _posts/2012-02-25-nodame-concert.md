@@ -8,7 +8,7 @@ date: 2012-02-25 00:37:00 +0700
 
 คราวนี้จัดที่กาดสวนแก้ว ใกล้บ้านขนาดนี้ ยังไงก็ไม่พลาดอยู่แล้ว
 
-![](/images/poster-nodame.jpg)
+![](/images/poster/nodame-concert.jpg)
 
 ## Beethoven Symphony No.7
 

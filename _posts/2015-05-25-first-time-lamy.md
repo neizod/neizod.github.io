@@ -15,12 +15,13 @@ date: 2015-05-25 00:19:00 +0700
 
 แต่ตอนเอามาวาดรูปนี่รู้สึกควบคุมน้ำหนักเส้นไม่ได้เลย (ไม่เหมือนหัวลูกลื่นที่สามารถฝนบางๆ น้อยกว่าขนาดที่บอกไว้ได้) ...
 
-![](/images/IMG_20150523_011516.jpg)
-
-![](/images/IMG_20150524_222809.jpg)
-
-![](/images/IMG_20150524_222900.jpg)
-
-![](/images/IMG_20150525_044358.jpg)
+| ![][neicat]       | ![][paulaner]     |
+| ![][logi-gamepad] | ![][monet-stroll] |
 
 สรุปแล้วไม่ค่อยชอบเท่าไหร่แฮะ นี่ผมแปลกไปเองหรือเปล่าเนี่ย?
+
+
+[neicat]: /images/drawing/lamy/neicat.jpg
+[paulaner]: /images/drawing/lamy/paulaner.jpg
+[logi-gamepad]: /images/drawing/lamy/logi-gamepad.jpg
+[monet-stroll]: /images/drawing/lamy/monet-stroll.jpg

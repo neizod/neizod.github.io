@@ -9,26 +9,26 @@ date: 2011-07-26 02:42:00 +0700
 หลายเดือนที่ผ่านมาไม่มีไรทำ  
 ก็วาดรูปเล่นตามประสาอินดี้อะนะ
 
-![](/images/sketch-70.jpg)
+![](/images/drawing/sci-fi/destroyer-droid.jpg)
 
 เพราะว่าพึ่งได้เจ้าตัวนี้มา เลยมีนายแบบให้มองทุกซอกมุม
 
-![](/images/sketch-71.jpg)
+![](/images/drawing/sci-fi/battle-droid.jpg)
 
 เลยเกิดความคิดว่า เอาตัวเก่ามาออกแบบท่าทางในหัวดีกว่าแฮะ
 
-![](/images/sketch-72.jpg)
+![](/images/drawing/sci-fi/millennium-falcon.jpg)
 
 แล้วก็ไปลากเอายานจาก Star Wars มาวาดด้วย ^^
 
-![](/images/sketch-73.jpg)
+![](/images/drawing/sci-fi/uss-enterprise.jpg)
 
-พูดถึงยานอวกาศ ก็ต้องนึกถึง Enterprise ใน Star Trek หละ
+พูดถึงยานอวกาศ ก็ต้องนึกถึง USS Enterprise ใน Star Trek หละ
 
-![](/images/sketch-74.jpg)
+![](/images/drawing/sci-fi/mining-drone.jpg)
 
 ส่วนตัวนี้เป็นหุ่น concept สร้างจาก LEGO
 
-![](/images/sketch-75.jpg)
+![](/images/drawing/sci-fi/ipod-nano.jpg)
 
 ปิดท้าย ระหว่างวาดก็ฟังเพลงเหล่านี้ประกอบ ^^

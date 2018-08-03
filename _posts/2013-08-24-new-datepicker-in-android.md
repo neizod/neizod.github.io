@@ -25,26 +25,27 @@ date: 2013-08-24 07:20:00 +0700
 
 ภายใต้วัฒนธรรมคีย์บอร์ด+เมาส์ การป้อนข้อมูลด้วยวิธีข้างต้นก็ดูเข้าท่าดี แต่สำหรับมือถือจอสัมผัส (ที่หลายคนเลือกที่จะไม่พิมพ์ถ้าเป็นไปได้) เรามีวิธีที่แตกต่างออกไป
 
-![](/images/Screenshot_2013-08-24-06-20-57.png)
-
-![](/images/Screenshot_2013-08-24-06-21-04.png)
+| ![][1st-date] | ![][1st-time] |
 
 การป้อนวันเวลาในยุคแรกๆ ของ Android ผ่าน DatePicker (ฟังก์ชันมาตรฐานสำหรับป้อนข้อมูลวันเวลา) ที่ไม่ค่อยจะเป็นมิตรกับระบบสัมผัสซักเท่าไหร่ ด้วยปุ่มคลิกขึ้น/ลงที่ทำงานทีละขั้น หรือต้องกดค้างสำหรับการเลื่อนผ่านข้อมูลให้เร็วขึ้น (แบบเดียวกับนาฬิกาข้อมือเลย)
 
-![](/images/Screenshot_2013-08-24-06-15-42.png)
-
-![](/images/Screenshot_2013-08-24-06-15-51.png)
+| ![][2nd-date] | ![][2nd-time] |
 
 โชคดีที่ Android ยกเครื่องศัลยกรรมหน้าตาใหม่หมด (ช่วง Jelly Bean) ทำให้ DatePicker ตัวนี้ดูดีขึ้นมากภายใต้หน้าตาเดิมๆ (มีผลกับการปรับตัวของผู้ใช้ส่วนใหญ่) ด้วยการเลือกวันโดยใช้การเลื่อนขึ้น/ลงแทน แถมยังสามารถเลื่อนแบบมีแรงเฉื่อยเพื่อกระโดดข้ามชุดข้อมูลได้อีกด้วย
 
-![](/images/Screenshot_2013-08-24-06-16-30.png)
-
-![](/images/Screenshot_2013-08-24-06-16-38.png)
+| ![][3rd-date] | ![][3rd-time] |
 
 และแบบใหม่ล่าสุด เจอใน [Google Keep][] (อาจจะกลายเป็น official ถัดไป) ออกแบบมาอย่างสวยงาม แม้จะหน้าตาจะเปลี่ยนไปบ้าง แต่ก็ยังคงความง่ายในการใช้งานอยู่
 
 บล๊อกตอนนี้ไม่มีอะไร เห็นของสวยเลยมาอวยเฉยๆ :P
 
+
+[1st-date]: /images/program/date-picker/1st-date.png
+[1st-time]: /images/program/date-picker/1st-time.png
+[2nd-date]: /images/program/date-picker/2nd-date.png
+[2nd-time]: /images/program/date-picker/2nd-time.png
+[3rd-date]: /images/program/date-picker/3rd-date.png
+[3rd-time]: /images/program/date-picker/3rd-time.png
 
 [xkcd 1179]: //xkcd.com/1179/
 [hindu calendar]: //en.wikipedia.org/wiki/Hindu_calendar

@@ -11,7 +11,7 @@ date: 2016-02-08 05:14:45 +0700
 จนเมื่อปีที่แล้วได้รู้จัก [@Linghokkalom][] เลยได้กลับมาตระเวนคอนเสิร์ตระดับนักเรียน-นักศึกษาที่เข้าชมฟรีอีกครั้งหนึ่ง
 น่าเสียดายที่ชมเสร็จก็ไม่ได้จดบันทึกอะไรเก็บไว้เลย เอาแค่ฝ่าฟันเดินทางกลับมาถึงบ้านก็หมดแรงเรียบร้อยแล้ว
 
-![โปสเตอร์งาน CU Choral Festival](/images/poster-cu-choral-fest.jpg)
+![โปสเตอร์งาน CU Choral Festival](/images/poster/cu-choral-fest.jpg)
 
 แต่สำหรับ CU Choral Fest 2016 ที่จุฬาฯ เมื่อวานนี้ ไม่จดไม่ได้แล้ว เนื่องจากเราประทับใจกับ
 Adiemus ที่วง Harmonic Noises นำมาเสนอมากๆ จนอยากตะโกนร้องว่าบราโว่ตอนจบเลย
@@ -88,7 +88,10 @@ Adiemus ที่วง Harmonic Noises นำมาเสนอมากๆ จ
 วาทยากร: Tim Sharp  
 เปียโน: Thanuya Jaturanont
 
-![Tim Sharp กับวง Festival](/images/IMG_20160207_192158.jpg)
+{: .oversized .figure}
+> ![](/images/event/misc/cu-choral-fest.jpg)
+>
+> Time Sharp กับวง Festival
 
 
 [@Linghokkalom]: //twitter.com/Linghokkalom
