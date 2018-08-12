@@ -1,5 +1,5 @@
 ---
-title: Barcamp Bangkok 2014
+title: BarCamp Bangkok 2014
 tags:
   - BarCamp
   - Bangkok
