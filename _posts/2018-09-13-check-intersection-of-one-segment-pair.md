@@ -17,7 +17,7 @@ $$
 โจทย์คณิตศาสตร์ง่ายๆ ที่น่าจะเป็นจุดก่อกำเนิดของวิชา[เรขาคณิตคำนวณ (computational geometry)][computational geometry] อาจมาจากคำถามแค่ว่า เราจะตรวจสอบได้อย่างไรว่าส่วนของเส้นตรงสองเส้นที่สนใจตัดกันหรือไม่?
 
 {: .figure}
-> ![](/images/algorithm/misc/segment-intersection.png)
+> ![](/images/algorithm/segment-intersection/cover.png)
 >
 > ตัวอย่างการตัดกันของส่วนของเส้นตรง ในภาพนี้มีแค่สีเขียวคู่กลางเท่านั้นที่ตัดกัน
 
