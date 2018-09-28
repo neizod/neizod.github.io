@@ -35,10 +35,13 @@
 .date {
     font-family: $font-head;
     font-style: italic;
+    flex: 0 0 auto;
+    align-self: stretch;
 }
 
 
 .tags {
     margin: 0 1em;
     font-family: $font-head;
+    align-self: stretch;
 }
