@@ -16,17 +16,17 @@
 }
 
 
-.project .info {
+.submenu.info {
     div {
         padding: 0.33em;
         text-align: center;
     }
 
-    .demo {
+    .primary {
         background: $major-color;
     }
 
-    .source {
+    .secondary {
         background: $minor-color;
     }
 }
