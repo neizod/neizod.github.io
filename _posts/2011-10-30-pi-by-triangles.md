@@ -3,6 +3,7 @@ title: หาค่า $\pi$ ด้วยพื้นที่สามเหล
 tags:
   - Pi
   - Mathematics
+  - Mathematical Proof
   - Geometry
 date: 2011-10-30 01:35:00 +0700
 origin:

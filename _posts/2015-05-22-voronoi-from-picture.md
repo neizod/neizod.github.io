@@ -3,6 +3,7 @@ title: Voronoi จากภาพ
 tags:
   - Arts
   - Geometry
+  - Computational Geometry
   - Image Processing
   - Python
 date: 2015-05-22 02:43:00 +0700

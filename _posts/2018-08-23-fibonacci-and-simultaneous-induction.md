@@ -2,6 +2,7 @@
 title: เลขฟีโบนัชชีและการพิสูจน์อุปนัยแบบพร้อมเพรียงกัน
 tags:
   - Mathematics
+  - Mathematical Proof
   - Recursion
   - Algorithm
   - Time Complexity

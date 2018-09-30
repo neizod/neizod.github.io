@@ -2,6 +2,7 @@
 title: เจองานจับฉลากแลกของขวัญที่มีคนได้ของตัวเอง ไม่ต้องตกใจไปโอกาสมีสูงเกินครึ่ง
 tags:
   - Mathematics
+  - Mathematical Proof
   - Python
   - Algorithm
   - Thought
