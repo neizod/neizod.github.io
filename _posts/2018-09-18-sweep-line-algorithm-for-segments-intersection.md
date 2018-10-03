@@ -114,31 +114,21 @@ def ccw_bin_search(event, status):
             hi = i
     return lo
 
-def add_status(event, status):
-    i = ccw_bin_search(event, status)
-    status.insert(i, event.s)
-    return i
-
-def del_status(event, status):
-    i = ccw_bin_search(event, status)
-    del status[i]
-    return i
-
 def sweep(segments):
     intersections = set()
     status = blist()
     events = init_events(segments)
     while events:
+        i = ccw_bin_search(events[0], status)
         if isinstance(events[0], AddEvent):
-            i = add_status(events[0], status)
+            status.insert(i, events[0].s)
             add_intersect_event(i, i-1, status, events)
             add_intersect_event(i, i+1, status, events)
         elif isinstance(events[0], DelEvent):
-            i = del_status(events[0], status)
+            del status[i]
             add_intersect_event(i-1, i, status, events)
         else:
             intersections.add(Pair(events[0].s, events[0].t))
-            i = ccw_bin_search(events[0], status)
             status[i], status[i+1] = status[i+1], status[i]
             add_intersect_event(i-1, i-0, status, events)
             add_intersect_event(i+1, i+2, status, events)
