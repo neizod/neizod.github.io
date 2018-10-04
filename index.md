@@ -5,7 +5,9 @@ feature:
     latest: 1
     list:
       - "/2013/01/02/latex-optional-argument-in-python"
+      - "/2014/09/11/9-favorite-books"
       - "/2016/03/08/lets-write-something-into-books"
+      - "/2018/09/18/sweep-line-algorithm-for-segments-intersection"
   projects:
     latest: 0
     list:
