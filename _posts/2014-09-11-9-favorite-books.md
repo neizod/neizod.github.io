@@ -4,6 +4,9 @@ tags:
   - Thought
   - Book
 date: 2014-09-11 20:01:00 +0700
+origin:
+  - name: Facebook
+    url: //www.facebook.com/neizod/posts/840690802616228
 ---
 
 เขียนไว้บน Facebook รอบนึงแล้วครับ ก๊อปมาแปะตรงนี้อีกรอบกัน blog ร้าง :P
