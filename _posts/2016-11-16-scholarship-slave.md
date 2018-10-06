@@ -1,7 +1,7 @@
 ---
 title: ทุน/ทาส
 tags:
-  - Though
+  - Thought
   - Education
 date: 2016-11-16 19:10:34 +0700
 origin:

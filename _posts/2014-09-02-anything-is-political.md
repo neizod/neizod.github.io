@@ -4,6 +4,7 @@ tags:
   - Science
   - Thought
   - Social
+  - Political
 date: 2014-09-02 13:03:00 +0700
 ---
 
