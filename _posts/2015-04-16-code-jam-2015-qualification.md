@@ -1,7 +1,7 @@
 ---
 title: Code Jam 2015 รอบคัดเลือก
 tags:
-  - Programming
+  - Competitive Programming
   - Google Code Jam
   - Python
   - Haskell

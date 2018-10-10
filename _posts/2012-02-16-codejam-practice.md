@@ -1,7 +1,7 @@
 ---
 title: ซ้อม CodeJam
 tags:
-  - Programming
+  - Competitive Programming
   - Google Code Jam
 date: 2012-02-16 02:46:00 +0700
 ---

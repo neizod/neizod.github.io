@@ -3,6 +3,7 @@ title: BarCamp เชียงใหม่ ครั้งที่ 6
 tags:
   - Chiang Mai
   - BarCamp
+  - Event
 date: 2013-07-22 06:29:00 +0700
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Code Jam 2014 รอบคัดเลือก
 tags:
-  - Programming
+  - Competitive Programming
   - CoffeeScript
   - Google Code Jam
   - Python

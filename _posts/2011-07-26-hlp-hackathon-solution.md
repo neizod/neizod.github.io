@@ -1,8 +1,9 @@
 ---
 title: เฉลยโจทย์ HLP Hackathon ด้วย Python
 tags:
-  - Programming
+  - Competitive Programming
   - Python
+  - Event
 date: 2011-07-26 23:40:00 +0700
 ---
 
@@ -293,10 +294,16 @@ print(math.floor(math.sqrt(obj)))
 
 สุดท้ายนี้ก็ May the Code be with You นะครับ สวัสดีครับ ^^
 
+ป.ล. อ่านเพิ่มที่คนอื่นๆ: [@lewcpe บน Blognone][@lewcpe blognone], [บล็อก @iannnnn][@iannnnn blog], [โค้ด @dtinth][@dtinth code]
+
 
 [@tanin]: //twitter.com/tanin
 
 [HLP Hackathon]: //www.hlpth.com/hackathon/
 [hlp]: //www.hlpth.com/
 [sudoku solver]: //sudokusolver.tk/en
+
 [@tanin solution]: //tanin-programming.blogspot.com/2011/07/simple-dynamic-programming.html
+[@lewcpe blognone]: //www.blognone.com/node/25144
+[@iannnnn blog]: //iannnnn.com/2011/366
+[@dtinth code]: //gist.github.com/dtinth/1101614

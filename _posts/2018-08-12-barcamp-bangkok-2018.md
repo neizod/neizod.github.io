@@ -3,6 +3,7 @@ title: BarCamp Bangkok 2018
 tags:
   - BarCamp
   - Bangkok
+  - Event
 date: 2018-08-12 23:42:08 +0700
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Code Jam 2017 รอบคัดเลือก
 tags:
-  - Programming
+  - Competitive Programming
   - Google Code Jam
   - Python
 date: 2017-04-09 14:48:13 +0700

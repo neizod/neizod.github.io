@@ -1,7 +1,7 @@
 ---
 title: Code Jam 2016 รอบคัดเลือก
 tags:
-  - Programming
+  - Competitive Programming
   - Google Code Jam
   - Ruby
   - Haskell

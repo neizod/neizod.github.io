@@ -3,6 +3,7 @@ title: Food Radar
 tags:
   - Programming
   - Hackathon
+  - Event
 date: 2015-04-06 01:23:45 +0700
 ---
 
