@@ -57,5 +57,5 @@ T^T
 อย่างน้อย จะได้ไม่เสียใจถ้าหันกลับมามอง
 
 
-[former event]: /2007/05/11/strom-happy-morning
-[reoccur event]: /2009/05/18/strom-insomia-fear
+[former event]: /2007/05/11/storm-happy-morning.html
+[reoccur event]: /2009/05/18/storm-insomia-fear.html
