@@ -3,6 +3,7 @@ title: เฉลยโจทย์ HLP Hackathon ด้วย Python
 tags:
   - Competitive Programming
   - Python
+  - Hackathon
   - Event
 date: 2011-07-26 23:40:00 +0700
 ---

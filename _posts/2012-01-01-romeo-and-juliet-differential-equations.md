@@ -2,7 +2,7 @@
 title: สมการความรัก (เชิงอนุพันธ์) ของโรเมโอและจูเลียต
 tags:
   - Mathematics
-  - Love
+  - Romance
   - Differential Equation
 date: 2012-01-01 06:48:00 +0700
 origin:

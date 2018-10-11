@@ -1,6 +1,7 @@
 ---
 title: Opensource ไม่ใช่ของฟรี, คนทำไม่ได้อิ่มทิพย์
 tags:
+  - Open Source
   - Programming
   - Thought
 date: 2012-06-02 12:31:00 +0700
