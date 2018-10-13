@@ -21,7 +21,7 @@ date: 2015-05-25 00:19:00 +0700
 สรุปแล้วไม่ค่อยชอบเท่าไหร่แฮะ นี่ผมแปลกไปเองหรือเปล่าเนี่ย?
 
 
-[neicat]: /images/drawing/lamy/neicat.jpg
-[paulaner]: /images/drawing/lamy/paulaner.jpg
-[logi-gamepad]: /images/drawing/lamy/logi-gamepad.jpg
-[monet-stroll]: /images/drawing/lamy/monet-stroll.jpg
+[neicat]: /images/drawing/self-portrait/neicat.jpg
+[paulaner]: /images/drawing/brand/paulaner.jpg
+[logi-gamepad]: /images/drawing/object/logi-gamepad.jpg
+[monet-stroll]: /images/drawing/copy/monet-stroll.jpg
