@@ -16,11 +16,7 @@ date: 2015-04-16 08:00:00 +0700
 
 ---
 
-ข้อแรกง่ายฮะ แต่ถ้ายังอ่านโจทย์แล้วไม่อินขอให้ดูคลิปนี้ตอนนาทีที่ 7:05 และ 7:23 (เรียบร้อยแล้วก็กลับไปดูตั้งแต่ต้นด้วยจะดีมาก) :P
-
-<iframe width="853" height="480" src="https://www.youtube.com/embed/danBaPWT09A" frameborder="0" allowfullscreen></iframe>
-
-ส่วน code ก็ประมาณ
+ข้อแรกง่ายฮะ code ก็ประมาณ
 
 ``` haskell
 import Text.Printf (printf)

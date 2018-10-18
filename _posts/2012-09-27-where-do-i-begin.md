@@ -7,7 +7,7 @@ date: 2012-09-27 01:40:00 +0700
 
 where do i begin? .... ตอบยากมาก เริ่มไม่ถูกเลยแฮะ พอรู้ตัวอีกทีก็หลงรักเสียงของปู่ไปแล้ว
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/O_FklOwMyoE" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://open.spotify.com/embed/track/45FLu3nL1iMYXYPzhqLdko" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 หลับให้สบายฮะปู่ :'(
 

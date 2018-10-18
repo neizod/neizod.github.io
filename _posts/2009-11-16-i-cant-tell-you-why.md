@@ -8,6 +8,8 @@ date: 2009-11-16 03:53:00 +0700
 ...Nothing's wrong as far as I can see  
 We make it harder than it has to be
 
+<iframe src="https://open.spotify.com/embed/track/3813hmKFtCRLZvEXKyp0sG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
 คืนนี้พยายามข่มตาให้หลับ แต่ก็หลับไม่ลง  
 แล้วอยู่ๆ ท่อนนี้ของเพลงก็ดังขึ้นมาในหัว  
 ใช่แล้วหละ ชีวิตเราช่างเหมือนกับเพลงนี้เสียจริง

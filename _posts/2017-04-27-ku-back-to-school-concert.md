@@ -18,10 +18,7 @@ date: 2017-04-27 06:08:09 +0700
 
 เพลงที่ชอบสุดในงานนี้ (เท่าที่อยู่ฟัง) ก็คือ Tambourine Paraphrase จากเครื่องมาริมบา (ระนาดขยายขนาดที่มีเสียงครบบันไดโครมาติกและมีไม้ตีได้มากกว่าสอง) ส่วนตัวไม่เคยเห็นหรือฟังเจ้าเครื่องนี้มาก่อนเลย แต่ผู้แสดงก็ทำให้หลงรักตั้งแต่แรกพบได้แล้ว
 
-{: .figure}
-> <iframe width="853" height="480" src="https://www.youtube.com/embed/uhFoMnsYfTA" frameborder="0" allowfullscreen></iframe>
->
-> ตัวอย่างเพลง Tambourine Paraphrase จากการแสดงอื่น
+<iframe src="https://open.spotify.com/embed/track/0BSo2PUR4iXt9AcvhQrtiJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 ส่วนเพลงอื่นๆ ก็เจ๋งไม่แพ้กัน นานๆ ทีจะมีโอกาสได้ฟังเครื่องทองเหลืองเยอะขนาดนี้
 
