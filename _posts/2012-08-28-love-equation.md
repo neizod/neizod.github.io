@@ -2,8 +2,7 @@
 title: สมการรัก
 tags:
   - Romance
-  - Programming
-  - Mathematics
+  - Humor
   - Haskell
 date: 2012-08-28 22:53:00 +0700
 ---

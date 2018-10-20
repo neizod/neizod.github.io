@@ -3,6 +3,7 @@ title: เกมเรียงลูกแก้ว
 tags:
   - JavaScript
   - HTML5
+  - Puzzle
   - Game Development
 date: 2017-02-06 08:49:26 +0700
 ---

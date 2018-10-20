@@ -1,7 +1,7 @@
 ---
 title: รับน้องขึ้นดอย
 tags:
-  - Diary
+  - Chiang Mai University
 date: 2008-07-07 04:51:00 +0700
 ---
 

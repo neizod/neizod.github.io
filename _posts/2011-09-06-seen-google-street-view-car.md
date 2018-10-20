@@ -1,8 +1,8 @@
 ---
 title: เจอรถ Google Street View
 tags:
-  - Diary
   - Google
+  - Automobile
 date: 2011-09-06 22:56:00 +0700
 ---
 

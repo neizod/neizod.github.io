@@ -1,7 +1,6 @@
 ---
 title: พายุ น้ำท่วม เซ็ง
 tags:
-  - Diary
   - Nature
   - Observation Series
 date: 2011-08-03 10:10:00 +0700

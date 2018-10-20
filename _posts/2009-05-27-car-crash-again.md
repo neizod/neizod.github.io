@@ -1,7 +1,8 @@
 ---
 title: รถชน อีกแล้ว
 tags:
-  - Diary
+  - Accident
+  - Automobile
 date: 2009-05-27 13:05:00 +0700
 ---
 

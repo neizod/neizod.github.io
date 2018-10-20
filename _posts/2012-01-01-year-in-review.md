@@ -1,7 +1,6 @@
 ---
 title: ปี 2011 ของฉัน
 tags:
-  - Diary
   - Milestone
 date: 2012-01-01 01:32:00 +0700
 ---

@@ -1,7 +1,6 @@
 ---
 title: สรุปปี 2013
 tags:
-  - Diary
   - Milestone
 date: 2014-01-01 01:53:00 +0700
 ---

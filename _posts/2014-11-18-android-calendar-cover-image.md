@@ -2,7 +2,8 @@
 title: แอพ Calendar ตัวใหม่ของ Android Lollipop มาพร้อมกับภาพพาดหัว
 tags:
   - Android
-  - User Interface
+  - UI/UX
+  - Arts
 date: 2014-11-18 18:53:00 +0700
 ---
 

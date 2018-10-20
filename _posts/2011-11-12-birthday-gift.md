@@ -1,8 +1,9 @@
 ---
 title: ของขวัญวันเกิด
 tags:
-  - Diary
   - Gift
+  - Stationery
+  - Toy
 date: 2011-11-12 18:54:00 +0700
 ---
 

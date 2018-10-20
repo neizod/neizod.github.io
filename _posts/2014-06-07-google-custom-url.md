@@ -1,7 +1,7 @@
 ---
 title: ได้ Google+ Custom URL ซักที
 tags:
-  - Google Plus
+  - Google
   - Exploit
 date: 2014-06-07 19:39:00 +0700
 ---

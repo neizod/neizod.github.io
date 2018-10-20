@@ -1,7 +1,6 @@
 ---
 title: ค่ายโอวันที่สาม ได้ขึ้นไปชั้น 9 แล้ว
 tags:
-  - Diary
   - Camp
   - Astronomy Olympiad
 date: 2009-03-11 01:40:00 +0700

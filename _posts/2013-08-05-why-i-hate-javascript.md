@@ -3,7 +3,7 @@ title: ทำไมผมเกลียด JavaScript
 tags:
   - JavaScript
   - Programming
-  - Joke
+  - Humor
 date: 2013-08-05 09:58:00 +0700
 ---
 

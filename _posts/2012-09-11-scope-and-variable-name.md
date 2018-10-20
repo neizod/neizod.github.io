@@ -1,8 +1,8 @@
 ---
 title: Scope และชื่อตัวแปร
 tags:
-  - JavaScript
   - Programming
+  - JavaScript
   - Python
   - Haskell
 date: 2012-09-11 12:54:00 +0700

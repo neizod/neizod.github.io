@@ -2,6 +2,15 @@
 title: สวัสดีโลก!
 tags:
   - Programming
+  - C
+  - C++
+  - Java
+  - Python
+  - PHP
+  - Lisp
+  - Haskell
+  - Brainfuck
+  - Piet
 date: 2012-11-21 18:15:00 +0700
 ---
 

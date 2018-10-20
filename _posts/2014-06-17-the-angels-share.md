@@ -2,6 +2,7 @@
 title: The Angels' Share
 tags:
   - Movie
+  - Review
 date: 2014-06-17 11:13:00 +0700
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: ปี 2012 ของฉัน
 tags:
-  - Diary
   - Milestone
+  - Movie
 date: 2013-01-01 14:01:00 +0700
 ---
 

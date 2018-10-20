@@ -3,7 +3,7 @@ title: เทคโนโลยีที่ไม่ลดทอนคุณค�
 tags:
   - Thought
   - Humanity
-  - User Experience
+  - UI/UX
 date: 2017-03-12 18:05:00 +0700
 origin:
   - name: Facebook

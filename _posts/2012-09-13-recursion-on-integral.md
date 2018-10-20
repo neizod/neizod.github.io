@@ -1,6 +1,7 @@
 ---
 title: ทำ Recursion บนการ Integral
 tags:
+  - Recursion
   - Functional
   - Mathematics
 date: 2012-09-13 14:24:00 +0700

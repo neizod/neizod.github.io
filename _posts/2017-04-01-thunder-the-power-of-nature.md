@@ -1,7 +1,6 @@
 ---
 title: พายุ ฟ้าผ่า พลังแห่งธรรมชาติ
 tags:
-  - Diary
   - Nature
   - Observation Series
 date: 2017-04-01 05:41:59 +0700

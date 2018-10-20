@@ -3,7 +3,7 @@ title: คำนวณค่าฟีโบนัชชีอย่างเร�
 tags:
   - Algorithm
   - Fibonacci
-  - Matrix
+  - Linear Algebra
   - Optimization
   - Time Complexity
   - Computer Science

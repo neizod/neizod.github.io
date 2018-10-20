@@ -5,6 +5,7 @@ tags:
   - Programming
   - CoffeeScript
   - jQuery
+  - Quote
 date: 2013-09-10 14:55:00 +0700
 ---
 

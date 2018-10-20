@@ -1,7 +1,6 @@
 ---
 title: พายุ นอนไม่หลับ กลัว
 tags:
-  - Diary
   - Observation Series
 date: 2009-05-18 00:15:00 +0700
 ---

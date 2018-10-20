@@ -1,7 +1,6 @@
 ---
 title: ระบบแจ้งความอันแสนงุนงงของตำรวจไทย
 tags:
-  - Diary
   - Taxi
   - Police
   - Thailand

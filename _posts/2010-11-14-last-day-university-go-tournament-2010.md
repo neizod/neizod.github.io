@@ -1,7 +1,6 @@
 ---
 title: เก็บตกงานโกะวันสุดท้าย
 tags:
-  - Diary
   - Go (board game)
   - Board Game
 date: 2010-11-14 00:50:00 +0700

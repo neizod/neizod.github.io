@@ -2,6 +2,7 @@
 title: アニメの日本語 ท้ายชื่อ
 tags:
   - Japan
+  - Language
 date: 2007-05-29 23:02:00 +0700
 ---
 

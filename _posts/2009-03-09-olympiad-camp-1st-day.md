@@ -1,7 +1,6 @@
 ---
 title: ค่ายโอวันแรก ขึ้นหอดูดอย
 tags:
-  - Diary
   - Camp
   - Astronomy Olympiad
 date: 2009-03-09 00:49:00 +0700

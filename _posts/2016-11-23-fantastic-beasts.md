@@ -2,6 +2,7 @@
 title: Fantastic Beasts and Where to Find Them
 tags:
   - Movie
+  - Review
   - Fantasy
 date: 2016-11-23 20:50:04 +0700
 origin:

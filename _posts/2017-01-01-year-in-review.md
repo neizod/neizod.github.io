@@ -1,7 +1,6 @@
 ---
 title: สรุปปี 2016
 tags:
-  - Diary
   - Milestone
 date: 2017-01-01 01:23:45 +0700
 ---

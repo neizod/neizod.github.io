@@ -1,7 +1,6 @@
 ---
 title: Puma คู่แรก
 tags:
-  - Fashion
   - Shoes
   - Lifestyle
   - Puma

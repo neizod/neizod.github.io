@@ -1,7 +1,6 @@
 ---
 title: ค่ายโอวันที่สี่ เตรียมตัวก่อนสอบ
 tags:
-  - Diary
   - Camp
   - Astronomy Olympiad
 date: 2009-03-13 13:56:00 +0700

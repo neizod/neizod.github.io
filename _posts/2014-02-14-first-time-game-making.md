@@ -4,6 +4,7 @@ tags:
   - Game Development
   - Research
   - Mathematics
+  - Quote
 date: 2014-02-14 06:33:00 +0700
 ---
 

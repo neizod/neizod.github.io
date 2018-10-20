@@ -3,6 +3,8 @@ title: Break the NSA Encryption
 tags:
   - Cryptography
   - Hacking
+  - Puzzle
+  - Exploit
 date: 2016-11-02 06:20:06 +0700
 origin:
   - name: Gist

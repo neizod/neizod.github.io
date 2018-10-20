@@ -3,6 +3,7 @@ title: Cogito ergo sum
 tags:
   - Philosophy
   - René Descartes
+  - Quote
   - Paradox
 date: 2016-02-15 12:59:48 +0700
 ---

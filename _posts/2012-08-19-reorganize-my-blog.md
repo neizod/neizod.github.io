@@ -1,7 +1,6 @@
 ---
 title: จัดระเบียบ Blog
 tags:
-  - Diary
   - Meta
 date: 2012-08-19 00:13:00 +0700
 ---

@@ -2,7 +2,8 @@
 title: พื้นที่สำหรับความผิดพลาด
 tags:
   - Thought
-  - Error
+  - Failure
+  - Quote
 date: 2014-02-07 07:22:00 +0700
 ---
 

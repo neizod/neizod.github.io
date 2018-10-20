@@ -2,6 +2,7 @@
 title: FizzBuzz และฟังก์ชันประกอบใน Haskell
 tags:
   - Haskell
+  - Functional
   - Programming
   - Mathematics
   - Computer Science

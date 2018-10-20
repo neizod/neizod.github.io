@@ -3,7 +3,7 @@ title: DatePicker ตัวใหม่ของ Android?
 tags:
   - Android
   - Input Method
-  - User Interface
+  - UI/UX
 date: 2013-08-24 07:20:00 +0700
 ---
 

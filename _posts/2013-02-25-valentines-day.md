@@ -1,7 +1,7 @@
 ---
 title: วาเลนไทน์
 tags:
-  - Diary
+  - Romance
 date: 2013-02-25 15:22:00 +0700
 ---
 

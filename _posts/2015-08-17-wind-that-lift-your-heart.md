@@ -1,7 +1,6 @@
 ---
 title: พายุ ลมแรง ทำใจ
 tags:
-  - Diary
   - Nature
   - Observation Series
 date: 2015-08-17 20:20:20 +0700

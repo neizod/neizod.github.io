@@ -1,7 +1,6 @@
 ---
 title: ชีวิต (เกือบ) ไม่ติดเน็ต
 tags:
-  - Diary
   - Thought
   - Internet
 date: 2014-07-08 02:20:00 +0700

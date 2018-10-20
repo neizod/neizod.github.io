@@ -2,6 +2,7 @@
 title: จำลอง WYSIWYG ตามแบบคนจนบน HTML5
 tags:
   - HTML5
+  - WYSIWYG
   - Software Development
 date: 2015-07-10 18:00:00 +0700
 ---

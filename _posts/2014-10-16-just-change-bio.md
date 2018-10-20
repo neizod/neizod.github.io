@@ -1,8 +1,8 @@
 ---
 title: เปลี่ยน bio แล้ว
 tags:
-  - Diary
   - Twitter
+  - Milestone
 date: 2014-10-16 23:08:00 +0700
 ---
 

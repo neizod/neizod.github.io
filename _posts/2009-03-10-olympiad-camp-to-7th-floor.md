@@ -1,7 +1,6 @@
 ---
 title: ค่ายโอวันที่สอง ขึ้นแค่ชั้น 7
 tags:
-  - Diary
   - Camp
   - Astronomy Olympiad
 date: 2009-03-10 02:32:00 +0700

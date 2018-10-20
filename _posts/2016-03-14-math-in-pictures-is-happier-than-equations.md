@@ -2,6 +2,7 @@
 title: มองสมการแล้วรู้สึกเป็นยาขม มองให้เห็นเป็นภาพสิจะได้สนุก
 tags:
   - Mathematics
+  - Mathematical Proof
   - Book
 date: 2016-03-14 00:23:46 +0700
 ---

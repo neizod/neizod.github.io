@@ -2,7 +2,6 @@
 title: おひさしぶり~
 tags:
   - Romance
-  - Diary
 date: 2009-01-24 14:37:00 +0700
 ---
 

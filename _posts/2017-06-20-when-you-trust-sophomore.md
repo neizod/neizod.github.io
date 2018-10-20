@@ -3,7 +3,7 @@ title: เชื่อรุ่นพี่
 tags:
   - Education
   - Thought
-  - Error
+  - Failure
 date: 2017-06-20 04:48:15 +0700
 ---
 

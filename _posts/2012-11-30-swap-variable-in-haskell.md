@@ -3,6 +3,7 @@ title: เปลี่ยนค่าตัวแปรใน Haskell
 tags:
   - Functional
   - Haskell
+  - Programming
 date: 2012-11-30 14:09:00 +0700
 ---
 

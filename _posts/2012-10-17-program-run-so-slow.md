@@ -2,6 +2,7 @@
 title: โปรแกรมที่เขียนมันช้า...
 tags:
   - Programming
+  - Optimization
   - C++
   - Python
   - Shit

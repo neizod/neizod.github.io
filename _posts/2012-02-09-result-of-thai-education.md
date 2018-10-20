@@ -2,7 +2,6 @@
 title: การศึกษาไทย
 tags:
   - Programming
-  - Diary
   - Thought
   - Education
 date: 2012-02-09 15:27:00 +0700

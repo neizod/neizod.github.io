@@ -2,6 +2,7 @@
 title: คิดเองมั่งดิ
 tags:
   - Dialog
+  - Romance
 date: 2012-11-05 00:54:00 +0700
 ---
 

@@ -2,7 +2,6 @@
 title: เล่นกับ Twitter & App Engine
 tags:
   - Programming
-  - Diary
   - Twitter
   - Python
 date: 2012-01-04 17:25:00 +0700

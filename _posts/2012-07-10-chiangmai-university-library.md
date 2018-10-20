@@ -1,7 +1,8 @@
 ---
 title: ความประทับใจกับห้องสมุดวิทย์ฯ มช.
 tags:
-  - Diary
+  - Chiang Mai University
+  - Bureaucracy
 date: 2012-07-10 11:48:00 +0700
 ---
 

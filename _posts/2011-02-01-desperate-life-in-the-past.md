@@ -1,8 +1,8 @@
 ---
 title: รำลึกความหลังอันสุดเซ็ง
 tags:
-  - Diary
-  - Myself
+  - Memory
+  - Milestone
 date: 2011-02-01 16:27:00 +0700
 ---
 

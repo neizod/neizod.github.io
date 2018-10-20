@@ -5,6 +5,7 @@ tags:
   - Classical Music
   - Song
   - K-pop
+  - Quote
 date: 2013-05-18 16:58:00 +0700
 ---
 

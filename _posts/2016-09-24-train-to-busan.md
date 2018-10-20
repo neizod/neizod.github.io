@@ -2,6 +2,7 @@
 title: Train to Busan
 tags:
   - Movie
+  - Review
   - Korean
   - Zombie
 date: 2016-09-24 19:21:22 +0700

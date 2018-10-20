@@ -2,6 +2,7 @@
 title: The Book of Mormon
 tags:
   - Musical
+  - Review
   - Satire
   - Religion
   - Christianity

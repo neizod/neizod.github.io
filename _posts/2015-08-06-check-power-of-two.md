@@ -1,6 +1,7 @@
 ---
 title: ตรวจ $2^n$
 tags:
+  - Quote
   - Algorithm
   - Assembly
   - Optimization

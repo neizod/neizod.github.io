@@ -2,6 +2,8 @@
 title: One More Time, One More Chance
 tags:
   - Song
+  - Slice of Life
+  - Milestone
 date: 2012-07-08 04:17:00 +0700
 ---
 

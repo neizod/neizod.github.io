@@ -1,7 +1,8 @@
 ---
 title: Food Radar
 tags:
-  - Programming
+  - Data Mining
+  - Software Development
   - Hackathon
   - Event
 date: 2015-04-06 01:23:45 +0700

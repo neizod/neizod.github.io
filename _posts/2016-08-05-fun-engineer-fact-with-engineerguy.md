@@ -1,7 +1,6 @@
 ---
 title: เกร็ดความรู้วิศวกรรมจาก engineerguy
 tags:
-  - Video
   - Engineering
 date: 2016-08-05 19:41:35 +0700
 origin:
