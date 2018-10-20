@@ -12,7 +12,7 @@ date: 2018-09-30 23:17:42 +0700
 
 ---
 
-แต่ก่อนอื่น จะขอเปลี่ยนปัญหาตั้งต้นไปเขียนอยู่ในรูปนี้แทน "$r!$ หารผลคูณของจำนวนธรรมชาติที่เขียนติดกัน $r$ ตัวได้ลงตัว" หรือก็คือ สำหรับ $r,k \in \mathbb{N}$ เราต้องการพิสูจน์ว่า
+แต่ก่อนอื่น จะขอเปลี่ยนปัญหาตั้งต้นไปเขียนอยู่ในรูปนี้แทน "$r!$ [หารลงตัว][divides]กับผลคูณของจำนวนธรรมชาติที่เขียนติดกัน $r$ ตัว" หรือก็คือ สำหรับ $r,k \in \mathbb{N}$ เราต้องการพิสูจน์ว่า
 
 $$
 \forall r \forall k\left[r! \mid \prod_{i=0}^{r-1} (k+i) \right]
@@ -108,4 +108,5 @@ $$
 
 
 [combinatorics]: //en.wikipedia.org/wiki/Combinatorics
+[divides]: //en.wikipedia.org/wiki/Divisor
 [factorial]: //en.wikipedia.org/wiki/Factorial
