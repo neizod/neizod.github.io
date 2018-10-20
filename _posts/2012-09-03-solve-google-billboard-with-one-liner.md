@@ -157,7 +157,8 @@ next(e[i:10+i] for e, p in [[
 happy coding นะครับ ^^
 
 
+[recursion lambda]: /2012/08/21/recursion-on-lambda.html
+
 [google viral recruit billboard]: //googleblog.blogspot.com/2004/07/warning-we-brake-for-number-theory.html
 [@khajochi solution]: //www.khajochi.com/2008/12/official-google-blog-warning-we-brake.html
-[recursion lambda]: //neizod.blogspot.com/2012/08/recursion-lambda.html
 [one-liner solution]: //gist.github.com/3605921

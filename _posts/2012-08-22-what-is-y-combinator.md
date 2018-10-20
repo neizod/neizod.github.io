@@ -100,5 +100,6 @@ Y(g)(n)
 ง่ายจริงป่ะ?
 
 
-[recursive lambda]: //neizod.blogspot.com/2012/08/recursion-lambda.html
+[recursive lambda]: /2012/08/21/recursion-on-lambda.html
+
 [fixed-point combinator]: //en.wikipedia.org/wiki/Fixed-point_combinator

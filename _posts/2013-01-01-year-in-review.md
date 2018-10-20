@@ -18,6 +18,9 @@ date: 2013-01-01 14:01:00 +0700
 ส่วน achievement คืนข้ามปีคือดูหนังโรงฮะ ([Wreck-It Ralph][])
 
 
+[Infinite List]: /2012/08/30/python-infinite-list.html
+[Callable Num]: /2012/12/14/9-div-3-mul-group-2-plus-1.html
+
 [@rtsp]: //twitter.com/rtsp
 
 [Tutor0x]: //tutor0x.blogspot.com
@@ -27,6 +30,4 @@ date: 2013-01-01 14:01:00 +0700
 [barcamp bangkok]: //www.barcampbangkok.org/
 [Project Euler]: //projecteuler.net
 [Python Magic]: //www.rafekettler.com/magicmethods.html
-[Infinite List]: //neizod.blogspot.com/2012/08/infinity-list-python.html
-[Callable Num]: //neizod.blogspot.com/2012/12/9321.html
 [Wreck-It Ralph]: http://www.imdb.com/title/tt1772341/

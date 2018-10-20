@@ -29,4 +29,4 @@ date: 2013-05-11 15:55:00 +0700
 ก็ต้องดูต่อไปว่าการมาของเซ็นทรัลลำปาง จะช่วยชุบชีวิตเมืองนี้ให้กลับมายิ่งใหญ่ได้หรือไม่ครับ
 
 
-[central phitsanulok]: //neizod.blogspot.com/2012/12/blog-post_11.html
+[central phitsanulok]: /2012/12/11/central-phitsanulok.html

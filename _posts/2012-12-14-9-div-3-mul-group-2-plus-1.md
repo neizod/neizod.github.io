@@ -53,11 +53,12 @@ date: 2012-12-14 21:15:00 +0700
 อย่างไรก็ตาม แนวคิดของ callable number นี้ไม่ควรเอาไปใช้เขียนโปรแกรมในโลกจริง เพราะนักคณิตศาสตร์ชอบตังชื่อเดียว แต่ใช้ในคนละบริบท เช่น $\phi$ ที่อาจหมายถึง [golden radio](http://en.wikipedia.org/wiki/Golden_ratio) หรือ [Euler's totient](http://en.wikipedia.org/wiki/Euler%27s_totient_function) ก็ได้ ซึ่งแม้ว่าทั้ง 2 รูปของ $\phi$ นี้จะไม่ overlap กัน (เช่น $1+\frac{1}{\phi}$ จะถูกมองว่าเป็นตัวเลข ในขณะที่ $\phi(43)$ คือการใช้ฟังก์ชัน) แต่ด้วยความที่ Python เป็น [1st class function][] ที่ยอมให้เราส่งผ่านฟังก์ชันเป็นตัวแปรของฟังก์ชันอื่นๆ ได้ ดังนั้นถ้าเราเจออะไรอย่าง $\delta(\phi,\epsilon)$ เราจะไม่สามารถแน่ใจได้เลยว่า $\phi$ ในบริบทนี้คืออะไรครับ
 
 
+[Infinite List]: /2012/08/30/python-infinite-list.html
+
 [syntax error]: //en.wikipedia.org/wiki/Syntax_error
 [precedence]: //en.wikipedia.org/wiki/Operator-precedence_parser
 [calculator]: //github.com/neizod/calculator
 [google calculator]: //www.blognone.com/node/34438
-[Infinite List]: //neizod.blogspot.com/2012/08/infinity-list-python.html
 [Python's Magic Methods]: //www.rafekettler.com/magicmethods.html
 [@visibletrap blog]: //visibletrap.wordpress.com/2012/11/18/ฟีเจอร์ใหม่ของ-ruby-2-0-ตอนที่-1-refin/
 [golden radio]: //en.wikipedia.org/wiki/Golden_ratio

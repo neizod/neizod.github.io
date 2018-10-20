@@ -91,8 +91,9 @@ $$
 เพราะคณิตศาสตร์คือความสวยงามครับ :)
 
 
+[recursion integral]: /2012/09/13/recursion-on-integral.html
+
 [gamma function]: //en.wikipedia.org/wiki/Gamma_function
-[recursion integral]: //neizod.blogspot.com/2012/09/recursion-integral.html
 [gamma plot wiki image]: //en.wikipedia.org/wiki/File:Gamma_plot.svg
 [paradox]: //en.wikipedia.org/wiki/Paradox
 [binomial theorem]: //en.wikipedia.org/wiki/Binomial_theorem

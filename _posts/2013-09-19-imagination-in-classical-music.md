@@ -27,4 +27,4 @@ date: 2013-09-19 03:57:00 +0700
 จินตนาการกันดีกว่า ใครจะมาเข้าใจผิดก็ช่างเขาเถอะ
 
 
-[moonlight sonata analyse]: //neizod.blogspot.com/2008/05/blog-post_23.html
+[moonlight sonata analyse]: /2008/05/23/beethoven-moonlight-sonata.html

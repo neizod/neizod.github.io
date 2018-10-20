@@ -29,7 +29,7 @@ date: 2013-01-02 03:58:00 +0700
 
 จริงๆ แล้วทาง math ก็มีฟังก์ชันในแนวคิดนี้อยู่เยอะ อย่างเช่น [$\sigma_{x}(n)$][divisor function] ซึ่งเขียนแบบนี้แล้วเข้าใจง่ายกว่า $\sigma(n, x)$ และยังไม่สับสนอีกว่า argument ตัวไหนที่ควรเป็น $n$ หรือ $x$ กันแน่
 
-แล้วถ้าอยากได้แบบนี้ใน Python บ้าง? ง่ายนิดเดียวเพราะใช้เทคนิคเดียวกับ [Infinite List][self-ref infinite list] นั่นเอง
+แล้วถ้าอยากได้แบบนี้ใน Python บ้าง? ง่ายนิดเดียวเพราะใช้เทคนิคเดียวกับ [Infinite List][infinite list] นั่นเอง
 
 ``` python
 @singleton
@@ -62,6 +62,7 @@ tau = sigma[0]
 ก็ย่อมได้
 
 
+[infinite list]: /2012/08/30/python-infinite-list.html
+
 [currying]: //en.wikipedia.org/wiki/Currying
 [divisor function]: //en.wikipedia.org/wiki/Divisor_function
-[self-ref infinite list]: //neizod.blogspot.com/2012/08/infinity-list-python.html

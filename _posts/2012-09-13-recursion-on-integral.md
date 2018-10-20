@@ -98,5 +98,6 @@ $$ \begin{align}
 ข้อดีของการเขียนในรูป integral นี่มีอีกอย่าง คือถ้ารู้สึกว่าพิสูจน์ห่าค่าตรงๆ แบบนี้มันยากไป จะเลี่ยงไปใช้ [Riemann integral][] เพื่อประมาณค่าแทนก็ย่อมได้ครับ
 
 
-[y combinator]: //neizod.blogspot.com/2012/08/y-combinator.html
+[y combinator]: /2012/08/22/what-is-y-combinator.html
+
 [Riemann integral]: //en.wikipedia.org/wiki/Riemann_integral
