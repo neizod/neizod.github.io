@@ -36,4 +36,4 @@ date: 2015-08-17 20:20:20 +0700
 คงเป็นเพราะว่าหัวใจของฉันมันด้านชาไปแล้วหละมั้ง
 
 
-[former event]: /2011/08/14/storm-flood-desperate
+[former event]: /2011/08/03/storm-flood-desperate

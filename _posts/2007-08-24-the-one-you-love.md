@@ -2,7 +2,7 @@
 title: The One You Love
 tags:
   - Song
-date: '2007-08-24T23:12:00.001+07:00'
+date: 2007-08-24 23:12:00 +0700
 ---
 
 Are you gonna stay with the one who loves you,  
