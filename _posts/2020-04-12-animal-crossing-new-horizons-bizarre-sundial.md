@@ -4,6 +4,7 @@ tags:
   - Astronomy
   - Experiment
   - Game
+  - English Post
 date: 2020-04-12 21:47:13 +0700
 thumbnail: /images/game/acnh/sundial.jpg
 origin:

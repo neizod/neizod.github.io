@@ -2,6 +2,8 @@
 title: Cursed Gifted
 tags:
   - Life
+  - Thought
+  - English Post
 date: 2019-11-28 16:52:37 +0900
 ---
 
