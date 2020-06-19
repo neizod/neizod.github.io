@@ -90,7 +90,7 @@ $$
 ป.ล. อันที่จริงไม่ต้องวิเคราะห์ยืดยาวก็ได้ เพราะวิธีการข้างต้นก็เป็นนิยามการสร้างไฮเพอร์โบลาอยู่แล้ว 🤪
 
 [self voronoi picture]: /2015/05/22/voronoi-from-picture.html
-[self pollution idw]: /2019/10/11/interpolate-bangkok-pollution-with-idw.html
+[self pollution idw]: /2019/10/11/interpolate-bkk-pollution-idw.html
 
 [wiki hyperbola]: //en.wikipedia.org/wiki/Hyperbola
 [wiki weighted voronoi]: //en.wikipedia.org/wiki/Weighted_Voronoi_diagram
