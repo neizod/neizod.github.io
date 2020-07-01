@@ -40,6 +40,14 @@
 }
 
 
+.archive .date {
+    font-family: $font-head;
+    font-style: italic;
+    flex: 0 0 auto;
+    width: 120px;
+}
+
+
 .mini-title, .tags {
     margin: 0 1em;
     font-family: $font-head;
