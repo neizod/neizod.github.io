@@ -57,6 +57,14 @@
 }
 
 
+.tag-item {
+    border: 1px dashed $border-color;
+    border-radius: 5px;
+    padding: 0 0.333em;
+    margin: 0.125em;
+}
+
+
 .footnotes {
     border-top: 1px dashed $border-color;
 }
