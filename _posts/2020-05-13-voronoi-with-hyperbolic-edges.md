@@ -72,9 +72,9 @@ t &= (R+2r)\left( \frac{x-r}{R} - 1 \right) \\
 และเมื่อหาตำแหน่งในแกน $Y$ ก็จะได้
 
 $$ \begin{align}
-y &= \pm \sqrt{ (R+r+t)^2 - \left(\frac{R}2+r+x\right)^2 } \\
-  &= \pm \sqrt{ \left( \frac{R^2 + 2xR + 4xr}{2R} \right)^2 - \left( \frac{R^2 + 2rR + 2xR}{2R} \right)^2 } \\
-  &= \pm \frac1{R^2} \left( 4x^2rR + 4x^2r^2 - rR^3 - r^2R^2 \right)
+y^2 &= (R+r+t)^2 - \left(\frac{R}2+r+x\right)^2 \\
+    &= \left( \frac{R^2 + 2xR + 4xr}{2R} \right)^2 - \left( \frac{R^2 + 2rR + 2xR}{2R} \right)^2 \\
+    &= \frac1{R^2} \left( 4x^2rR + 4x^2r^2 - rR^3 - r^2R^2 \right)
 \end{align} $$
 
 ถึงจะได้ข้อมูลตำแหน่งมาครบก็อาจจะยังมองไม่ชัดถึงหน้าตาสมการว่าเป็นไฮเพอร์โบลาได้อย่างไร แต่ถ้าอดทนจัดรูปต่อไปอีกหน่อยก็จะเห็นว่าสมการข้างต้นมันสามารถกลายเป็น
