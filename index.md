@@ -13,6 +13,7 @@ feature:
       - "/2017/05/18/cafe-terrace-at-night"
       - "/2018/09/18/sweep-line-algorithm-for-segments-intersection"
       - "/2018/09/28/avenue-q"
+      - "/2020/08/08/cutting-cone-with-cone-alternative-conic-section"
   projects:
     latest: 0
     list:
