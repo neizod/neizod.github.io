@@ -8,6 +8,9 @@ date: 2018-10-29 17:02:28 +0700
 origin:
   - name: TechJam's Medium
     url: https://medium.com/@techjamthailand/3d03287a7e79
+people:
+  neizod: author, illustrator
+  ipats: coauthor
 ---
 
 หนึ่งในไม่กี่เหตุผลที่โปรแกรมเมอร์หลายคนหลบเลี่ยงการเขียนฟังก์ชันเวียนเกิด (recursive function) คงหนีไม่พ้นความกังวลว่าจะไปทำให้สแตกล้น ([stack overflow][]) เพราะโปรแกรมเรียกใช้งานฟังก์ชันซ้อนกันเป็นจำนวนมากเสียเกินกว่าที่สแตกการเรียกฟังก์ชัน ([call stack][]) จะรับไหว จนได้ผลลัพธ์อันน่ารำคาญใจออกมาเป็น `Segmentation Fault` ในที่สุด
