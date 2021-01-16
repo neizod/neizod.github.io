@@ -1,7 +1,7 @@
 ---
-title: IOI 2020 นับเห็ดเปลี่ยนชนิด
+title: "IOI 2020: นับเห็ดเปลี่ยนชนิด"
 tags:
-  - International Olympiad in Informatics
+  - Olympiad in Informatics
   - Competitive Programming
   - Algorithm
   - C++

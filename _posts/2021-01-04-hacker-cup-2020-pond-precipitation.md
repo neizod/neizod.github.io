@@ -1,5 +1,5 @@
 ---
-title: Hacker Cup 2020 น้องเต่าในบ่อน้ำ
+title: "Hacker Cup 2020: น้องเต่าในบ่อน้ำ"
 tags:
   - Facebook Hacker Cup
   - Competitive Programming

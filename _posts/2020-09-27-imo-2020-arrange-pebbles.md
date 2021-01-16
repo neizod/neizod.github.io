@@ -1,7 +1,7 @@
 ---
-title: IMO 2020 จัดกลุ่มก้อนกรวด
+title: "IMO 2020: จัดกลุ่มก้อนกรวด"
 tags:
-  - International Mathematical Olympiad
+  - Mathematical Olympiad
   - Combinatorics
   - Graph Theory
 date: 2020-09-27 13:33:33 +0700

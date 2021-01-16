@@ -1,5 +1,5 @@
 ---
-title: เฉลย Code Jam ข้อ Cubic UFO อย่างละเอียด
+title: "Code Jam 2018: UFO ลูกบาศก์"
 tags:
   - Competitive Programming
   - Google Code Jam
