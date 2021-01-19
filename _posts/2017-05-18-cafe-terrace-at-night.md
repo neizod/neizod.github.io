@@ -1,10 +1,11 @@
 ---
 title: Café Terrace at Night
 tags:
-  - Arts
+  - Art
+  - Painting
   - France
-  - Vincent van Gogh
   - Travel
+  - Vincent van Gogh
 date: 2017-05-18 02:24:39 +0700
 ---
 

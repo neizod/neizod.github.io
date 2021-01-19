@@ -1,7 +1,7 @@
 ---
 title: Voronoi จากภาพ
 tags:
-  - Arts
+  - Art
   - Geometry
   - Computational Geometry
   - Image Processing

@@ -48,7 +48,7 @@ This is the most intriguing case that arises from using the cutting cone method.
 Note that the hyperbola cut has two disjointed curves, but in real-world situations, we are often interested in only one branch of the curve.
 
 
-## Ellipse Needs a Difference Story
+## Ellipse Needs a Difference Narration
 
 The hyperbola case said that when constructing cones, their apexes can't be contained in another cone.  But what if it is contained? Well, we get an ellipse from this cut!
 
