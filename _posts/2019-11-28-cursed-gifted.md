@@ -1,8 +1,7 @@
 ---
 title: Cursed Gifted
 tags:
-  - Life
-  - Thought
+  - Self-Reflection
   - English Post
 date: 2019-11-28 16:52:37 +0900
 ---

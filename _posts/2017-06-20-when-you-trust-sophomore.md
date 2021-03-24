@@ -4,6 +4,7 @@ tags:
   - Education
   - Thought
   - Failure
+  - Self-Reflection
 date: 2017-06-20 04:48:15 +0700
 ---
 

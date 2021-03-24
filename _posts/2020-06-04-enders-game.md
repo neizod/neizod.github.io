@@ -1,9 +1,8 @@
 ---
 title: Ender's Game
 tags:
-  - Thought
-  - Life
   - Sci-Fi
+  - Self-Reflection
 date: 2020-06-04 23:23:23 +0700
 ---
 

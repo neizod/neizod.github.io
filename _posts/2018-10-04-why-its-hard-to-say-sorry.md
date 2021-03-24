@@ -3,6 +3,7 @@ title: Why It's Hard to Say Sorry?
 tags:
   - Thought
   - Apology
+  - Self-Reflection
   - English Post
 date: 2018-10-04 19:57:48 +0700
 ---
