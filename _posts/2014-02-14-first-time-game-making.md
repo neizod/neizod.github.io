@@ -1,7 +1,7 @@
 ---
 title: ประสบการณ์สร้างเกมจริงจังครั้งแรก
 tags:
-  - Game Development
+  - Game Design
   - Research
   - Mathematics
   - Quote
