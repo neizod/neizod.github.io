@@ -11,11 +11,11 @@
     padding: 0 1.5em;
     border-left: 0.25em solid $major-color;
 }
-.quote > p:last-child {
+.quote > p:last-child:not(:only-child) {
     text-align: right;
     font-style: italic;
 }
-.quote > p:last-child::before {
+.quote > p:last-child:not(:only-child)::before {
     content: "\2014\00a0";
 }
 
