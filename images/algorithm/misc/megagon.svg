@@ -1,0 +1,59 @@
+<!-- 1000000-gon with layers [50, 1, 2, 2, 3, 3, 2, 4, 2, 3, 2, 2, 1]. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="500" width="500" stroke="#f0e" fill="none">
+<view id="zoom-250x" viewBox="249 4 2 2" />
+<rect x="249" y="4" width="2" height="2" stroke="none" fill="#eee" />
+<text x="249.025" y="5.975" font-size="0.1px" stroke-width="0.001px" stroke="#bbb" fill="#bbb">250x</text>
+<text x="249.875" y="4.475" font-size="0.1px" stroke-width="0.001px" stroke="#f0e" fill="#f0e">50 sides</text>
+<g id="a0"><polyline points="249.99923031,5 250.00076969,5.0 250.002309071,5.00000001 250.003848451,5.000000029 250.005387831,5.000000058 250.006927212,5.000000097 250.008466592,5.000000145 250.010005973,5.000000203 250.011545353,5.000000271 250.013084733,5.000000348 250.014624114,5.000000435 250.016163494,5.000000532 250.017702875,5.000000638 250.019242255,5.000000754 250.020781635,5.00000088 250.022321016,5.000001016 250.023860396,5.000001161 250.025399777,5.000001315 250.026939157,5.00000148 250.028478537,5.000001654 250.030017918,5.000001838 250.031557298,5.000002031 250.033096679,5.000002234 250.034636059,5.000002447 250.036175439,5.00000267 250.03771482,5.000002902 250.0392542,5.000003143 250.04079358,5.000003395 250.042332961,5.000003656 250.043872341,5.000003927 250.045411722,5.000004207 250.046951102,5.000004498 250.048490482,5.000004797 250.050029863,5.000005107 250.051569243,5.000005426 250.053108623,5.000005755 250.054648004,5.000006093 250.056187384,5.000006442 250.057726764,5.0000068 250.059266145,5.000007167 250.060805525,5.000007544 250.062344906,5.000007931 250.063884286,5.000008328 250.065423666,5.000008734 250.066963047,5.00000915 250.068502427,5.000009575 250.070041807,5.000010011 250.071581188,5.000010456 250.073120568,5.00001091 250.074659948,5.000011375 250.076199329,5.000011848" /></g>
+<g id="a1" stroke="#000">
+<use xlink:href="#a0" transform="rotate(0.018 250 250)" />
+</g>
+<g id="a2">
+<use xlink:href="#a1" transform="rotate(0.018 250 250)" />
+<use xlink:href="#a1" transform="rotate(0.036 250 250)" />
+</g>
+<g id="a3">
+<use xlink:href="#a2" transform="rotate(0.036 250 250)" />
+<use xlink:href="#a2" transform="rotate(0.072 250 250)" />
+</g>
+<g id="a4">
+<use xlink:href="#a3" transform="rotate(0.072 250 250)" />
+<use xlink:href="#a3" transform="rotate(0.144 250 250)" />
+<use xlink:href="#a3" transform="rotate(0.216 250 250)" />
+</g>
+<g id="a5">
+<use xlink:href="#a4" transform="rotate(0.216 250 250)" />
+<use xlink:href="#a4" transform="rotate(0.432 250 250)" />
+<use xlink:href="#a4" transform="rotate(0.648 250 250)" />
+</g>
+<g id="a6">
+<use xlink:href="#a5" transform="rotate(0.648 250 250)" />
+<use xlink:href="#a5" transform="rotate(1.296 250 250)" />
+</g>
+<g id="a7">
+<use xlink:href="#a6" transform="rotate(1.296 250 250)" />
+<use xlink:href="#a6" transform="rotate(2.592 250 250)" />
+<use xlink:href="#a6" transform="rotate(3.888 250 250)" />
+<use xlink:href="#a6" transform="rotate(5.184 250 250)" />
+</g>
+<g id="a8">
+<use xlink:href="#a7" transform="rotate(5.184 250 250)" />
+<use xlink:href="#a7" transform="rotate(10.368 250 250)" />
+</g>
+<g id="a9">
+<use xlink:href="#a8" transform="rotate(10.368 250 250)" />
+<use xlink:href="#a8" transform="rotate(20.736 250 250)" />
+<use xlink:href="#a8" transform="rotate(31.104 250 250)" />
+</g>
+<g id="a10">
+<use xlink:href="#a9" transform="rotate(31.104 250 250)" />
+<use xlink:href="#a9" transform="rotate(62.208 250 250)" />
+</g>
+<g id="a11">
+<use xlink:href="#a10" transform="rotate(62.208 250 250)" />
+<use xlink:href="#a10" transform="rotate(124.416 250 250)" />
+</g>
+<g id="a12">
+<use xlink:href="#a11" transform="rotate(124.416 250 250)" />
+</g>
+</svg>
