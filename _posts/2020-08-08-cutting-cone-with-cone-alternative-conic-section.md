@@ -93,7 +93,7 @@ Keep in mind that the method has many restrictions; such as we can't rotate cone
 
 **Lemma 1:** Given two distinct spheres $S_1$ and $S_2$, if the spheres intersected, then all of the intersection lies on a plane perpendicular to $\overleftrightarrow{f_1f_2}$.  Also, a distance from $f_1$ to the plane is equal to $\frac{\ell^2+r_1^2-r_2^2}{2\ell}$, where $\ell = d(f_1, f_2)$.
 
-**Proof:** Let $p$ and $p'$ be two intersecting points that are on the opposite side of a line $\overleftrightarrow{f_1f_2}$.  Since $d(f_i, p) = d(f_i, p') = r_i$ for $i \in \{1,2\}$, we can say that $\square f_1pf_2p'$ is a [kite][], and therefore we have $\overleftrightarrow{f_1f_2} \perp \overleftrightarrow{pp'}$.  We know that a plane that contains $p$ and $p'$ must also contain $\overleftrightarrow{pp'}$. 
+**Proof:** Let $p$ and $p'$ be two intersecting points that are on the opposite side of a line $\overleftrightarrow{f_1f_2}$.  Since $d(f_i, p) = d(f_i, p') = r_i$ for $i \in \lbrace1,2\rbrace$, we can say that $\square f_1pf_2p'$ is a [kite][], and therefore we have $\overleftrightarrow{f_1f_2} \perp \overleftrightarrow{pp'}$.  We know that a plane that contains $p$ and $p'$ must also contain $\overleftrightarrow{pp'}$.
 
 Consider another distinct set of intersecting points $q$ and $q'$ in the same manner.  We can see that the desired plane must also contains $\overleftrightarrow{qq'}$.  Since $\overleftrightarrow{pp'} \ne \overleftrightarrow{qq'}$ and both $\overleftrightarrow{pp'}$ and $\overleftrightarrow{qq'}$ are perpendicular to $\overleftrightarrow{f_1f_2}$, then the plane must also be perpendicular to $\overleftrightarrow{f_1f_2}$ too.
 
@@ -122,7 +122,7 @@ $$
 **Proof:** Let $S_1'$ and $S_2'$ be modified spheres such that $r_1' = r_1 + t$ and $r_2' = r_2 + t$, also let $\ell_1'$ be a distance from $f_1$ to a plane that contains $S_1' \cap S_2'$.  From lemma&nbsp;1 we can see that
 
 $$
-\ell_1' = \frac{\ell^2 + (r_1 + t)^2 - (r_2 + t)^2}{2\ell} 
+\ell_1' = \frac{\ell^2 + (r_1 + t)^2 - (r_2 + t)^2}{2\ell}
         = \ell_1 + \frac{r_1-r_2}{\ell}t.
 \tag*{$\blacksquare$}
 $$
@@ -134,7 +134,7 @@ $$
 **Proof:** In the same manner of lemma&nbsp;2, but change $r_2' = r_2 - t$.  Thus we have
 
 $$
-\ell_1' = \frac{\ell^2 + (r_1 + t)^2 - (r_2 - t)^2}{2\ell} 
+\ell_1' = \frac{\ell^2 + (r_1 + t)^2 - (r_2 - t)^2}{2\ell}
         = \ell_1 + \frac{r_1+r_2}{\ell}t.
 \tag*{$\blacksquare$}
 $$
@@ -152,7 +152,7 @@ $$
 
 The first case, refers to fig.&nbsp;2a, is when one cone does not contain another apex.  Let $p$ be the upper point when they start intersecting upward at time $t_u$, and $p'$ be the lower point when they start intersecting downward at time $t_d$.
 
-To find other intersect point of these cones at time $t$ such that $t \le t_d$ or $t_u \le t$, is to find an intersection between a plane $\mathcal{P^\parallel}$ that is parallel to $XY$-plane at time $t$, and a plane $\mathcal{P}^\perp$ that is perpendicular to $\overleftrightarrow{a_1a_2}$ such that it is constructed by intersecting two spheres with $f_i = a_i$ and $r_i = (t-t_i)\sqrt{v^2+1}$ for $i \in \{1, 2\}$.
+To find other intersect point of these cones at time $t$ such that $t \le t_d$ or $t_u \le t$, is to find an intersection between a plane $\mathcal{P^\parallel}$ that is parallel to $XY$-plane at time $t$, and a plane $\mathcal{P}^\perp$ that is perpendicular to $\overleftrightarrow{a_1a_2}$ such that it is constructed by intersecting two spheres with $f_i = a_i$ and $r_i = (t-t_i)\sqrt{v^2+1}$ for $i \in \lbrace1, 2\rbrace$.
 
 If $\mathcal{P}^\parallel$ moves in $T$-axis by some length, from lemma&nbsp;2, $\mathcal{P}^\perp$ will move by a constant proportion of that length.  So an intersection $\mathcal{P}^\parallel \cap \mathcal{P}^\perp$ will also move by some other constant proportion of that length.  This concludes that the intersection lies on a straight line, which implies that a plane perpendicular to this cross-section contains this cut.  Thus, the case holds.
 
