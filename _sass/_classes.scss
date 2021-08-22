@@ -1,7 +1,27 @@
+.nomargin {
+    margin: 0;
+}
+.wellmargin {
+    margin: 0.25em 1em;
+}
+.nopadding {
+    padding: 0;
+}
+.wellpadding {
+    padding: 0.25em 1em;
+}
+
+
 .infobox {
     margin: 0;
     padding: 0 1.5em;
     background: $major-color;
+    border: 1px solid $border-color;
+}
+.remarkbox {
+    margin: 0;
+    padding: 0 1.5em;
+    background: $minor-color;
     border: 1px solid $border-color;
 }
 
@@ -168,7 +188,7 @@
 }
 
 
-.MathJax_Display {
+.MathJax[display="true"] {
     overflow: auto;
     padding: 0.75em 0.5em;
 }
@@ -176,4 +196,9 @@
 
 .highlight.flexitem {
     overflow-y: hidden;
+}
+
+
+.revise-item > p {
+    display: inline;
 }
