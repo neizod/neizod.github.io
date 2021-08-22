@@ -3,8 +3,12 @@
 MathJax = {
   loader: { load: ['[tex]/physics'] },
   tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
     packages: { '[+]': ['physics'] },
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
+    macros: {
+      'ord': '\\operatorname{ord}',
+      'sgn': '\\operatorname{sgn}'
+    }
   }
 };
 </script>
