@@ -37,7 +37,7 @@ print(' '.join(reversed(sorted('hello to the old world'.split()))))
 Haskell:
 
 ``` haskell
-print (join " " . reverse . sort . splitOn " ") "hello to the old world"
+(print . unwords . reverse . sort . words) "hello to the old world"
 ```
 
 เอาเป็นว่าถ้าไม่รู้มาก่อนว่าเจอโปรแกรมแบบนี้แล้วให้อ่านจากขวามาซ้าย รับรองว่างานนี้มีงงแน่ๆ

@@ -58,7 +58,10 @@ $$
 
 วิ่งไล่จับกันไปเรื่อยๆ แบบนี้แหละครับ ความรักของมนุษย์
 
-อ่านเพิ่ม: [Mathematics Magazine - February 1988][math magazine feb 1988], [UBC Calculus Online][ubc calculus]
+## อ้างอิง
+
+- [Mathematics Magazine - February 1988][math magazine feb 1988]
+- [UBC Calculus Online][ubc calculus]
 
 
 [romeo and juliet]: //en.wikipedia.org/wiki/Romeo_and_Juliet

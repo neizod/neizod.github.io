@@ -3,6 +3,7 @@ title: ทำไมต้องไหว้ครู
 tags:
   - Thought
   - Tredition
+  - Education
 date: 2016-09-07 01:55:55 +0700
 ---
 

@@ -2,11 +2,15 @@
 title: ปาร์ตี้แลกของขวัญที่มีคนได้ของตัวเองเกิดบ๊อยบ่อย
 tags:
   - Mathematics
+  - Combinatorics
   - Probability
   - Dynamic Programming
   - Thought
   - Python
 date: 2015-12-29 06:38:00 +0700
+revise:
+  - date: 2021-06-20 23:24:57 +0700
+    note: แก้ไขส่วนสมการคณิตศาสตร์ที่วิเคราะห์ผิดตามคำแนะนำของ [@jittat](//twitter.com/jittat)
 ---
 
 วันก่อนเห็นเพื่อนแลกของขวัญปีใหม่แล้วดันจับได้ของตัวเองก็ฮาดี มองเผินๆ เหมือนว่าเรื่องแบบนี้จะเกิดขึ้นได้ยาก แต่เท่าที่เคยเล่นแลกของขวัญวันคริสต์มาสที่โรงเรียนมากว่าหนึ่งทศวรรษ ก็จำได้ลางๆ ว่าเรื่องประมาณนี้เกิดขึ้นบ่อยจนเป็นที่จดจำเลยหละ เลยลองมานั่งไล่สมการความน่าจะเป็นดูว่าโอกาสที่ปาร์ตี้หนึ่งๆ จะมีคนจับของขวัญได้ของตัวเองเป็นเท่าไหร่กันแน่
@@ -76,11 +80,11 @@ $$
 {: .figure}
 > $$
 > \begin{array}{c|cc}
-> \text{person} & 1 & 2 & 3 & 4 & 5 & \color{red}6 \\
+> \text{person} & 1 & 2 & 3 & 4 & 5 & {\color{red}6} \\
 > \hline
-> \text{gifts (before)} & 3 & 1 & 2 & 5 & 4 & \color{red}6 \\
+> \text{gifts (before)} & 3 & 1 & 2 & 5 & 4 & {\color{red}6} \\
 > \Downarrow \\
-> \text{gifts (after)}  & 3 & 1 & \color{red}6 & 5 & 4 & 2 \\
+> \text{gifts (after)}  & 3 & 1 & {\color{red}6} & 5 & 4 & 2 \\
 > \end{array}
 > $$
 >
@@ -91,11 +95,11 @@ $$
 {: .figure}
 > $$
 > \begin{array}{c|cc}
-> \text{person} & 1 & 2 & 3 & 4 & 5 & \color{red}6 \\
+> \text{person} & 1 & 2 & 3 & 4 & 5 & {\color{red}6} \\
 > \hline
-> \text{gifts (before)} & 5 & 3 & 2 & \color{red}4 & 1 & \color{red}6 \\
+> \text{gifts (before)} & 5 & 3 & 2 & {\color{red}4} & 1 & {\color{red}6} \\
 > \Downarrow \\
-> \text{gifts (after)}  & 5 & 3 & 2 & \color{red}6 & 1 & \color{red}4 \\
+> \text{gifts (after)}  & 5 & 3 & 2 & {\color{red}6} & 1 & {\color{red}4} \\
 > \end{array}
 > $$
 >
@@ -125,30 +129,30 @@ $$
 แต่สมการที่ได้ก็ไม่ช่วยอะไรมากนักในการทำความเข้าใจภาพรวม อย่างไรก็ตามเรายังสามารถวิเคราะห์ $d(n,0)$ อีกทางได้ด้วย[หลักการเพิ่มเข้าและตัดออก][inclusion exclusion] โดยให้ $s(n,a)$ แทนเซตที่คนทั้งหมด $n$ คนเล่นแลกของขวัญโดยที่คนตำแหน่งที่ $a$ ได้ของขวัญของตัวเอง (ส่วนคนอื่นๆ อาจจะได้หรือไม่ได้ของตัวเองก็ได้) ดังนั้น
 
 $$
-d(n,0) = n! - \left| \bigcup_{1 \le a \le n} s(n,a) \;\right|
+d(n,0) = n! - \abs{ \bigcup_{1 \le a \le n} s(n,a) \;}
 $$
 
 ซึ่งจะเห็นว่า $s(n,a)$ สำหรับแต่ละ $a$ มีขนาดเป็น $(n-1)!$ แต่เพราะว่ามีวิธีเลือก $a$ ไม่ซ้ำกันทั้งหมด ${n \choose 1}$ แบบ จึงทำให้เราได้ว่า
 
 $$
-\sum_{a} \bigg| s(n,a) \bigg| = {n \choose 1} (n-1)!
+\sum_{a} \abs{s(n,a)} = {n \choose 1} (n-1)!
 $$
 
 แต่อย่าลืมว่า $s$ เป็นเซต หากหาผลรวมของขนาดของแต่ละเซตตรงๆ เราจะได้ค่ามากกว่าการหาขนาดของเซตหลังจากการยูเนียนเซตเหล่านั้นแล้ว เพราะมีส่วนที่นับซ้ำเกินมานั่นเอง ในกรณีนี้คือเมื่อมีคนที่ $a$ และคนที่ $b$ สองคนที่ได้ของขวัญตัวเองพร้อมกัน ซึ่งก็คือ
 
 $$
-\sum_{a,b} \bigg| s(n,a) \cap s(n,b) \bigg| = {n \choose 2} (n-2)!
+\sum_{a,b} \abs{ s(n,a) \cap s(n,b) } = {n \choose 2} (n-2)!
 $$
 
 อย่างไรก็ตามเมื่อหักล้างการนับเกินจากกรณีสองคนแล้ว จะกลายเป็นว่าเรานับน้อยกว่าที่ควรเพราะได้ลบกรณีได้ของตัวเองสามคนเกินไปเสียอีก และหากแก้กรณีสามคนก็จะกลายเป็นบวกกรณีสี่คนเกินไป เป็นแบบนี้สลับกันไปเรื่อยๆ ดังนั้น
 
 $$
 \begin{align}
-\left| \bigcup_{1 \le a \le n} s(n,a) \;\right|
-  &= \sum_a \bigg| s(n,a) \bigg|
-   - \sum_{a,b} \bigg| \bigcap_{x \in \lbrace a,b \rbrace} s(n,x) \bigg|
+\abs{ \bigcup_{1 \le a \le n} s(n,a) \; }
+  &= \sum_a \abs{s(n,a)}
+   - \sum_{a,b} \abs{ \bigcap_{x \in \lbrace a,b \rbrace} s(n,x) }
    + \cdots
-   + (-1)^{n+1} \bigg| \bigcap_\text{all $x$} s(n,x) \bigg| \\
+   + (-1)^{n+1} \abs{ \bigcap_\text{all $x$} s(n,x) } \\
   &= {n \choose 1}(n-1)! - {n \choose 2} (n-2)! + \cdots + (-1)^{n+1} {n \choose n} (n-n)! \\
   &= \sum_{i=1}^n (-1)^{i+1} {n \choose i} (n-i)! \\
   &= n! \sum_{i=1}^n \frac{(-1)^{i+1}}{i!} \\
@@ -209,13 +213,10 @@ def exchanged(ls):
 
 สวัสดีปีใหม่ 2016 ล่วงหน้าครับ
 
-*หมายเหตุ:* แก้ไขส่วนสมการคณิตศาสตร์ที่วิเคราะห์ผิดตามคำแนะนำของ [@jittat][]
-
 
 [self derangement]: /2007/09/16/shuffle-o2jam-notes.html
 
 [@NungNing]: //twitter.com/NungNing
-[@jittat]: //twitter.com/jittat
 
 [poisson distribution]: //en.wikipedia.org/wiki/Poisson_distribution
 [inclusion exclusion]: //en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle

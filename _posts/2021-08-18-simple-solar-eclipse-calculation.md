@@ -3,6 +3,9 @@ title: มาคำนวณสุริยุปราคาอย่างง�
 tags:
   - Astronomy
   - Geometry
+  - Physics
+  - Science
+  - History
 date: 2021-08-18 23:59:59 +0700
 thumbnail: /images/astronomy/synodic-months.png
 ---

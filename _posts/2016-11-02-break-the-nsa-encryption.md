@@ -12,9 +12,6 @@ origin:
     url: //gist.github.com/neizod/a0389fa0364e3ebeada6bcfb7a1cfcbb
 ---
 
-$$
-    \newcommand{\ord}{ \mathop{\rm ord} }
-$$
 [Challenge on Gist][] from [this Facebook Post][] provide an interesting question on cracking the NSA encryption. Doesn't this hook you enough? Let's roll. :D
 
 Note, you can also test the validity of logic in this file with the command:
@@ -165,20 +162,20 @@ $$ \begin{align}
 >>> Ku = 9280 * 10**15
 ```
 
-Assume every char in $P$ is `f`, its $\ord$ value is $102$, and $K_l$ is a lower bound of the key:
+Assume every char in $P$ is `f`, its $\ord$ value is $102$, and $K_\ell$ is a lower bound of the key:
 
 $$ \begin{align}
-    102 K_l^{32} + 102 K_l^{31} + \cdots + 102 K_l &= C \\
-                                      102 K_l^{32} &\approx C \\
-                                               K_l &\approx \sqrt[32]{C \over 102} \\
-                                                   &\approx 9.060 \times 10^{18}
+    102 K_\ell^{32} + 102 K_\ell^{31} + \cdots + 102 K_\ell &= C \\
+                                            102 K_\ell^{32} &\approx C \\
+                                                     K_\ell &\approx \sqrt[32]{C \over 102} \\
+                                                            &\approx 9.060 \times 10^{18}
 \end{align} $$
 
 ``` python
 >>> Kl = 9060 * 10**15
 ```
 
-So basically, if you select a key $K$ that *is not* satisfy with $K_l \le K \le K_u$. Then we'll never got to the answer because $E(P, K) \ne C$ for every possible $P$.
+So basically, if you select a key $K$ that *is not* satisfy with $K_\ell \le K \le K_u$. Then we'll never got to the answer because $E(P, K) \ne C$ for every possible $P$.
 
 ### Possible Keys
 

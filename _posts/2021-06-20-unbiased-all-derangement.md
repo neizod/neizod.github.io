@@ -2,6 +2,7 @@
 title: เล่นแลกของขวัญให้ไม่ได้ของตัวเอง
 tags:
   - Mathematics
+  - Combinatorics
   - Probability
   - Psychology
   - Python

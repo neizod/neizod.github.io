@@ -39,12 +39,12 @@ date: 2020-07-19 23:58:49 +0700
 
 ## อ้างอิง
 
-1. <https://www.bbc.com/news/magazine-29543708>
-2. <https://www.quora.com/Why-was-Latin-dropped-as-the-scientific-language-in-the-Age-of-Enlightenment>
-3. <https://socratic.org/questions/why-did-linnaeus-choose-latin>
-4. <https://blogs.scientificamerican.com/culturing-science/botanists-finally-ditch-latin-and-paper-enter-21st-century/>
-6. <https://latin.stackexchange.com/questions/1942/why-did-scientists-abandon-latin-in-their-publications>
-7. <https://www.visualcapitalist.com/100-most-spoken-languages/>
+- BBC: [Nobel Prize: How English beat German as language of science](https://www.bbc.com/news/magazine-29543708)
+- Quora: [Why was Latin dropped as the scientific language in the Age of Enlightenment?](https://www.quora.com/Why-was-Latin-dropped-as-the-scientific-language-in-the-Age-of-Enlightenment)
+- Socratic: [Why did linnaeus choose latin?](https://socratic.org/questions/why-did-linnaeus-choose-latin)
+- Scientific American: [Botanists finally ditch Latin and paper, enter 21st century](https://blogs.scientificamerican.com/culturing-science/botanists-finally-ditch-latin-and-paper-enter-21st-century/)
+- StackExchange/Latin: [Why did scientists abandon Latin in their publications?](https://latin.stackexchange.com/questions/1942/why-did-scientists-abandon-latin-in-their-publications)
+- Visual Capitalist: [Ranked: The 100 Most Spoken Languages Around the World](https://www.visualcapitalist.com/100-most-spoken-languages/)
 
 
 [^1]: "si j'écris en français, qui est la langue de mon pays, plutôt qu'en latin, qui est celle de mes précepteurs, c'est à cause que j'espère que ceux qui ne se servent que de leur raison naturelle toute pure jugeront mieux de mes opinions que ceux qui ne croient qu'aux livres anciens;" -- หนังสือ Discours de la Méthode บทที่ 6

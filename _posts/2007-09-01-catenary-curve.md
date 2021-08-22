@@ -217,8 +217,10 @@ $$
 เอาเป็นว่า ขอจบตอนนี้เลยละกันครับ  
 หวังว่าจะได้รับความรู้ไปบ้างนะครับ ^^
 
-อ้างอิง:  
-Meriam & Kraige , Engineering Mechanics (Statics) Fifth Edition , John Wiley
+
+## อ้างอิง
+
+- Meriam & Kraige , Engineering Mechanics (Statics) Fifth Edition , John Wiley
 
 
 [@GFK]: //www.vcharkarn.com/my/1122

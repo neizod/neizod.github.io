@@ -188,7 +188,7 @@ WHERE  NOT EXISTS (
 
 ---
 
-#### อ้างอิง
+## อ้างอิง
 
 - [Steven Hauser: SQL Relational Algebra Examples][sql example]
 - [Gregor Ulm: Relational Division in SQL The Easy Way][easy sql division]
