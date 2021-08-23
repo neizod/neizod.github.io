@@ -65,6 +65,8 @@ font:
         weight: 300
       - name: Kanit
         weight: 200
+      - name: Noto Sans JP
+        weight: 300
     default: sans-serif
   body:
     families:
@@ -80,3 +82,4 @@ font:
     line-height: 1.2
   languages:
     - thai
+    - japanese
