@@ -1,7 +1,7 @@
 ---
 title: アニメの日本語 เลขญี่ปุ่น
 tags:
-  - Japan
+  - Japanese
   - Language
 date: 2007-07-30 00:49:00 +0700
 ---

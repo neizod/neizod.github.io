@@ -5,7 +5,7 @@ tags:
   - Review
   - Drama
   - Revolution
-  - France
+  - French
 date: 2020-10-24 23:53:44 +0700
 ---
 

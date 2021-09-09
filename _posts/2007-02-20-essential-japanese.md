@@ -1,7 +1,7 @@
 ---
 title: ภาษาญี่ปุ่น เท่าที่ต้องใช้
 tags:
-  - Japan
+  - Japanese
   - Language
 date: 2007-02-20 18:51:00 +0700
 ---

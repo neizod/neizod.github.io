@@ -3,7 +3,7 @@ title: Un bar aux Folies Bergère
 tags:
   - Art
   - Painting
-  - France
+  - French
   - Book
   - Cat
   - Édouard Manet

@@ -1,7 +1,7 @@
 ---
 title: アニメの日本語 ออกบ้าน
 tags:
-  - Japan
+  - Japanese
   - Language
 date: 2007-05-12 23:22:00 +0700
 ---

@@ -1,7 +1,7 @@
 ---
 title: アニメの日本語 เข้าบ้าน
 tags:
-  - Japan
+  - Japanese
   - Language
 date: 2007-06-26 23:36:00 +0700
 ---
