@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="240" viewBox="0 0 285 120" font-family="monospace" dominant-baseline="middle" text-anchor="middle">
+
+
+<g id="unders" stroke="#FA0" stroke-dasharray="2 1">
+<line id="l8C"  x1="80"  y1="90" x2="115" y2="100" />
+<line id="l8A"  x1="80"  y1="90" x2="115"  y2="80" />
+<line id="l4A"  x1="80"  y1="70" x2="115"  y2="80" />
+<line id="l46"  x1="80"  y1="70" x2="115"  y2="60" />
+<line id="l45"  x1="80"  y1="70" x2="115"  y2="40" />
+<line id="l25"  x1="80"  y1="50" x2="115"  y2="40" />
+<line id="l23"  x1="80"  y1="50" x2="115"  y2="20" />
+<line id="lCE" x1="125" y1="100" x2="160"  y2="80" />
+<line id="lAE" x1="125"  y1="80" x2="160"  y2="80" />
+<line id="l67" x1="125"  y1="60" x2="160"  y2="40" />
+<line id="l57" x1="125"  y1="40" x2="160"  y2="40" />
+<line id="lDF" x1="215"  y1="70" x2="250"  y2="60" />
+</g>
+
+<g id="lines" stroke="#A00">
+<line id="l08"  x1="35" y1="60"  x2="70"  y2="90" />
+<line id="l04"  x1="35" y1="60"  x2="70"  y2="70" />
+<line id="l02"  x1="35" y1="60"  x2="70"  y2="50" />
+<line id="l01"  x1="35" y1="60"  x2="70"  y2="30" />
+<line id="l4C"  x1="80" y1="70" x2="115" y2="100" />
+<line id="l2A"  x1="80" y1="50" x2="115"  y2="80" />
+<line id="l26"  x1="80" y1="50" x2="115"  y2="60" />
+<line id="l15"  x1="80" y1="30" x2="115"  y2="40" />
+<line id="l13"  x1="80" y1="30" x2="115"  y2="20" />
+<line id="l6E" x1="125" y1="60" x2="160"  y2="80" />
+<line id="l69" x1="125" y1="60" x2="160"  y2="60" />
+<line id="l37" x1="125" y1="20" x2="160"  y2="40" />
+<line id="l9D" x1="170" y1="60" x2="205"  y2="70" />
+<line id="l9B" x1="170" y1="60" x2="205"  y2="50" />
+<line id="lBF" x1="215" y1="50" x2="250"  y2="60" />
+</g>
+
+<g id="circles" stroke="#36F" fill="#FFF">
+<circle id="c0"  cx="30" cy="60" r="6" opacity="0" />
+<circle id="c2"  cx="75" cy="50" r="6" opacity="0" />
+<circle id="c4"  cx="75" cy="70" r="6" opacity="0" />
+<circle id="c6" cx="120" cy="60" r="6" opacity="0" />
+<circle id="c9" cx="165" cy="60" r="6" opacity="0" />
+<circle id="cB" cx="210" cy="50" r="6" opacity="0" />
+<circle id="cD" cx="210" cy="70" r="6" opacity="0" />
+<circle id="cF" cx="255" cy="60" r="6" opacity="0" />
+</g>
+
+<text id="n0"  x="30"  y="60">0</text>
+<text id="n8"  x="75"  y="90">8</text>
+<text id="n4"  x="75"  y="70">4</text>
+<text id="nC" x="120" y="100">C</text>
+<text id="n2"  x="75"  y="50">2</text>
+<text id="nA" x="120"  y="80">A</text>
+<text id="n6" x="120"  y="60">6</text>
+<text id="nE" x="165"  y="80">E</text>
+<text id="n1"  x="75"  y="30">1</text>
+<text id="n9" x="165"  y="60">9</text>
+<text id="n5" x="120"  y="40">5</text>
+<text id="nD" x="210"  y="70">D</text>
+<text id="n3" x="120"  y="20">3</text>
+<text id="nB" x="210"  y="50">B</text>
+<text id="n7" x="165"  y="40">7</text>
+<text id="nF" x="255"  y="60">F</text>
+
+
+<animate dur="0.5s" begin="1s; f5.end+1s" id="f1" />
+<animate dur="0.5s" begin="f1.begin" href="#c0" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#c2" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#c6" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#c9" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#cB" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#cF" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#l02" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#l26" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#l69" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#l9B" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#lBF" attributeName="stroke" to="#36F" fill="freeze" />
+
+
+<animate dur="0.5s" begin="f1.end+1s" id="f2" />
+<animate dur="0.5s" begin="f2.begin" href="#cB" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#l9B" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#lBF" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#cD" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#l9D" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#lDF" attributeName="stroke" to="#36F" fill="freeze" />
+
+
+<animate dur="0.5s" begin="f2.end+1s" id="f3" />
+<animate dur="0.5s" begin="f3.begin" href="#c2" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#cD" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l02" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l26" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l9D" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#lDF" attributeName="stroke" to="#FA0" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#c4" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#cB" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l04" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l46" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l9B" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#lBF" attributeName="stroke" to="#36F" fill="freeze" />
+
+
+<animate dur="0.5s" begin="f3.end+1s" id="f4" />
+<animate dur="0.5s" begin="f4.begin" href="#cB" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#l9B" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#lBF" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#cD" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#l9D" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#lDF" attributeName="stroke" to="#36F" fill="freeze" />
+
+
+<animate dur="0.5s" begin="f4.end+1s" id="f5" />
+<animate dur="0.5s" begin="f5.begin" href="#c0" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#c4" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#c6" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#c9" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#cD" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#cF" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l04" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l46" attributeName="stroke" to="#FA0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l69" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l9D" attributeName="stroke" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#lDF" attributeName="stroke" to="#FA0" fill="freeze" />
+
+
+</svg>
