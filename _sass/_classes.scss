@@ -40,6 +40,51 @@
 }
 
 
+.convo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: .5em;
+}
+.convo::after {
+    content: attr(data-name);
+    margin: 0 1em;
+}
+.convo > p {
+    display: inline-block;
+    margin: .125em 1em;
+    padding: 0.5em 1em;
+    border: solid 1px $border-color;
+    border-radius: 1em;
+}
+
+.convo.left {
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.convo.left > p {
+    text-align: left;
+    margin-right: 5em;
+    background-color: $minor-color;
+}
+.convo.left > p:last-child {
+    border-bottom-left-radius: 0;
+}
+
+.convo.right {
+    align-content: flex-end;
+    align-items: flex-end;
+}
+.convo.right > p {
+    text-align: right;
+    margin-left: 5em;
+    background-color: $major-color;
+}
+.convo.right > p:last-child {
+    border-bottom-right-radius: 0;
+}
+
+
 .figure {
     padding: 0;
     margin: auto;
