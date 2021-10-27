@@ -8,6 +8,7 @@ tags:
   - Algorithm
   - Computer Science
   - Computational Geometry
+  - Math Animation
 date: 2018-09-13 08:54:20 +0700
 revise:
   - date: 2018-09-14 16:56:09 +0700

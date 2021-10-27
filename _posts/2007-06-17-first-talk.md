@@ -2,6 +2,7 @@
 title: First Talk...
 tags:
   - Meta
+  - English Post
 date: 2007-06-17 14:18:00 +0700
 ---
 

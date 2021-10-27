@@ -5,6 +5,7 @@ tags:
   - Classical Music
   - Opera
   - Song
+  - Italian
 date: 2014-08-26 22:26:00 +0700
 ---
 

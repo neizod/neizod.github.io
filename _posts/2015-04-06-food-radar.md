@@ -1,6 +1,7 @@
 ---
 title: Food Radar
 tags:
+  - Food
   - Data Mining
   - Software Development
   - Hackathon

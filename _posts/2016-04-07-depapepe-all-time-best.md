@@ -3,6 +3,7 @@ title: Depapepe All Time Best
 tags:
   - Concert
   - Depapepe
+  - Japanese
 date: 2016-04-07 21:47:52 +0700
 ---
 

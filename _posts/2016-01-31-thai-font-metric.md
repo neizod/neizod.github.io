@@ -1,7 +1,7 @@
 ---
 title: ขนาดฟอนต์ของเอกสารไทย
 tags:
-  - Thailand
+  - Thai
   - Typeface
   - Microsoft Word
   - Google Docs

@@ -2,6 +2,8 @@
 title: กลั้นใจดำน้ำลึกสู่ความสำเร็จ
 tags:
   - Self-Reflection
+  - Thought
+  - Writing
 date: 2017-03-25 04:10:23 +0700
 ---
 

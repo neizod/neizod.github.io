@@ -3,6 +3,7 @@ title: Life is Strange
 tags:
   - Game
   - Suicide
+  - Christianity
 date: 2018-07-06 22:52:29 +0700
 origin:
   - name: Facebook

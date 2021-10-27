@@ -5,7 +5,7 @@ tags:
   - Optimization
   - C++
   - Python
-  - Shit
+  - Rant
 date: 2012-10-17 13:39:00 +0700
 ---
 

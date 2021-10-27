@@ -4,6 +4,8 @@ tags:
   - KBTG TechJam
   - Computer Science
   - Recursion
+  - JavaScript
+  - Math Animation
 date: 2018-10-29 17:02:28 +0700
 origin:
   - name: TechJam's Medium

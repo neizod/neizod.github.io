@@ -1,8 +1,9 @@
 ---
 title: Word Count Goal
 tags:
-  - Writer
+  - Writing
   - Markdown
+  - Application
 date: 2018-12-22 23:04:17 +0700
 ---
 

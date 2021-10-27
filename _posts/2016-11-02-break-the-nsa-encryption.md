@@ -2,6 +2,7 @@
 title: Break the NSA Encryption
 tags:
   - Cryptography
+  - Number Theory
   - Hacking
   - Puzzle
   - Exploit

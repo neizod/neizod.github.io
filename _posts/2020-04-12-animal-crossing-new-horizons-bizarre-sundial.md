@@ -2,7 +2,7 @@
 title: Animal Crossing New Horizons' Bizarre Sundial 
 tags:
   - Astronomy
-  - Experiment
+  - Experimental
   - Game
   - English Post
 date: 2020-04-12 21:47:13 +0700

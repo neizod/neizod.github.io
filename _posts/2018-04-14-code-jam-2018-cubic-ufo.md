@@ -6,6 +6,7 @@ tags:
   - Mathematics
   - Geometry
   - R
+  - Math Animation
 date: 2018-04-14 06:51:10 +0700
 ---
 

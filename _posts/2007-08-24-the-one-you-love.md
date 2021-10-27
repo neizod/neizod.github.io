@@ -2,6 +2,7 @@
 title: The One You Love
 tags:
   - Song
+  - English
 date: 2007-08-24 23:12:00 +0700
 ---
 

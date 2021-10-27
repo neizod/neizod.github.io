@@ -2,10 +2,12 @@
 title: ลำดับย่อยค่าเพิ่มขึ้นที่ยาวที่สุด
 tags:
   - Dynamic Programming
+  - Graph Theory
   - Time Complexity
   - Python
   - Experimental
   - SVG
+  - Math Animation
 date: 2021-09-13 15:37:08 +0700
 thumbnail: /images/algorithm/lis/graph.png
 ---

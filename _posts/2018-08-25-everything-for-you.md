@@ -2,6 +2,7 @@
 title: เป็นทุกอย่าง
 tags:
   - Song
+  - Thai
   - Music Video
 date: 2018-08-25 07:11:44 +0700
 ---

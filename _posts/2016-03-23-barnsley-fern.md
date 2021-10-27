@@ -2,7 +2,7 @@
 title: ใบเฟิร์น Barnsley
 tags:
   - Mathematics
-  - Recursive
+  - Recursion
   - Python
   - Thought
   - Algorithm

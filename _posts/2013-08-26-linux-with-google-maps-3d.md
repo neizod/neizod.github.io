@@ -1,6 +1,7 @@
 ---
 title: Google Maps Linux เล่น 3D ได้แล้ว 🙌
 tags:
+  - Application
   - Linux
   - Google
 date: 2013-08-26 06:30:00 +0700

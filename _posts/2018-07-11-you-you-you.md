@@ -2,6 +2,7 @@
 title: You You You
 tags:
   - Song
+  - Thai
 date: 2018-07-11 00:06:42 +0700
 ---
 

@@ -2,6 +2,7 @@
 title: The Day You Went Away
 tags:
   - Song
+  - English
   - Nostalgia
 date: 2019-09-22 09:25:00 +0700
 ---

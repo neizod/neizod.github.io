@@ -2,6 +2,8 @@
 title: Intel ทำ Adaptive Brightness หาย 😡
 tags:
   - Windows
+  - Rant
+  - Application
 date: 2021-03-10 18:09:22 +0700
 ---
 

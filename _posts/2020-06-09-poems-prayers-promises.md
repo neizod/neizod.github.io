@@ -2,6 +2,8 @@
 title: Poems, Prayers & Promises
 tags:
   - Song
+  - English
+  - Country Music
   - Death
 date: 2020-06-09 17:09:44 +0700
 ---

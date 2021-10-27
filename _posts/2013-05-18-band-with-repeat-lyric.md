@@ -1,10 +1,9 @@
 ---
 title: วงที่ได้ดีจากการร้องคำเดิมซ้ำๆ
 tags:
-  - SNSD
-  - Classical Music
   - Song
-  - K-pop
+  - Korean
+  - Classical Music
   - Quote
 date: 2013-05-18 16:58:00 +0700
 ---

@@ -4,7 +4,6 @@ tags:
   - Musical
   - Review
   - Satire
-  - Religion
   - Christianity
   - Theology
 date: 2018-08-04 22:56:17 +0700

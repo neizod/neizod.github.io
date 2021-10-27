@@ -2,6 +2,7 @@
 title: "ตัวเลข Stirling ประเภทที่สอง: จัดของขวัญไม่ซ้ำลงกล่องที่เหมือนกันได้กี่แบบ"
 tags:
   - Mathematics
+  - Combinatorics
   - Recursion
 date: 2016-05-09 11:23:34 +0800
 ---

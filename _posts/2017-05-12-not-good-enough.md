@@ -2,6 +2,7 @@
 title: ยังไม่ดีพอ
 tags:
   - Thought
+  - Self-Reflection
   - Game
 date: 2017-05-12 00:47:35 +0200
 ---

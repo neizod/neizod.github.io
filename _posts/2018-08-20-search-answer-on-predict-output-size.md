@@ -4,6 +4,7 @@ tags:
   - Algorithm
   - Time Complexity
   - Computer Science
+  - Math Animation
 date: 2018-08-20 15:32:27 +0700
 ---
 

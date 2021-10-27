@@ -2,6 +2,7 @@
 title: Unchained Melody
 tags:
   - Song
+  - English
   - Earworm
 date: 2007-06-30 23:52:00 +0700
 ---

@@ -2,7 +2,7 @@
 title: Inception ส้นตีน
 tags:
   - Thought
-  - Shit
+  - Rant
 date: 2012-02-02 21:35:00 +0700
 ---
 

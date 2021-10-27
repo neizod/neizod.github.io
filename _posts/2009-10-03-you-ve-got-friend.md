@@ -2,6 +2,7 @@
 title: You've Got a Friend
 tags:
   - Song
+  - English
 date: 2009-10-03 05:16:00 +0700
 ---
 

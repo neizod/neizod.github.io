@@ -2,6 +2,8 @@
 title: The Girl from Ipanema
 tags:
   - Song
+  - Brazilian
+  - Portuguese
   - Earworm
 date: 2007-07-07 23:57:00 +0700
 ---

@@ -4,6 +4,7 @@ tags:
   - Turandot
   - Classical Music
   - Song
+  - Italian
   - Giacomo Puccini
   - Opera
 date: 2012-10-07 20:26:00 +0700

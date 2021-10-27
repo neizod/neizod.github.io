@@ -2,6 +2,7 @@
 title: 青春ブタ野郎
 tags:
   - Anime
+  - Japanese
   - Romcom
   - Philosophy
 date: 2020-05-24 02:18:41 +0700

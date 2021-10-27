@@ -1,12 +1,14 @@
 ---
 title: เลขฟีโบนัชชีและการพิสูจน์อุปนัยแบบพร้อมเพรียงกัน
 tags:
+  - Fibonacci
   - Mathematics
   - Mathematical Proof
   - Recursion
   - Algorithm
   - Time Complexity
   - Computer Science
+  - Math Animation
 date: 2018-08-23 08:11:15 +0700
 ---
 

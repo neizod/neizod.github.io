@@ -2,6 +2,7 @@
 title: ヴァイオレット・エヴァーガーデン
 tags:
   - Anime
+  - Japanese
   - Self-Reflection
 date: 2021-03-24 09:01:48 +0700
 ---

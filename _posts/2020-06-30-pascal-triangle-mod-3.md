@@ -2,7 +2,7 @@
 title: สามเหลี่ยมปาสคาลมอดุโลสาม
 tags:
   - Mathematics
-  - Recursive
+  - Recursion
   - Python
   - Algorithm
   - Computer Science

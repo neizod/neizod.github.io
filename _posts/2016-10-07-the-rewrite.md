@@ -2,7 +2,7 @@
 title: The Rewrite
 tags:
   - Movie
-  - Writer
+  - Writing
   - Quote
 date: 2016-10-07 13:48:31 +0700
 ---
