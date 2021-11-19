@@ -1,6 +1,7 @@
 ---
 title: สามเหลี่ยมปาสคาลมอดุโลสาม
 tags:
+  - Fractal
   - Mathematics
   - Recursion
   - Python

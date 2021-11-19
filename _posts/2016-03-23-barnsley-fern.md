@@ -1,6 +1,7 @@
 ---
 title: ใบเฟิร์น Barnsley
 tags:
+  - Fractal
   - Mathematics
   - Recursion
   - Python
