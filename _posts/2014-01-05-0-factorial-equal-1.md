@@ -1,7 +1,10 @@
 ---
 title: $ 0! = 1 $
 tags:
+  - Factorial
   - Mathematics
+  - Thought
+  - Art
 date: 2014-01-05 20:02:00 +0700
 ---
 

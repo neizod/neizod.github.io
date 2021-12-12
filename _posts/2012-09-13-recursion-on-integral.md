@@ -1,6 +1,7 @@
 ---
 title: ทำ Recursion บนการ Integral
 tags:
+  - Factorial
   - Recursion
   - Functional
   - Mathematics
