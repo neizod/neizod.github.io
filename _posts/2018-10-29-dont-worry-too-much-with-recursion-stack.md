@@ -7,12 +7,12 @@ tags:
   - JavaScript
   - Math Animation
 date: 2018-10-29 17:02:28 +0700
-origin:
-  - name: TechJam's Medium
-    url: https://medium.com/@techjamthailand/3d03287a7e79
 people:
   neizod: author, illustrator
   ipats: coauthor
+origin:
+  - name: TechJam's Medium
+    url: //medium.com/@techjamthailand/3d03287a7e79
 ---
 
 หนึ่งในไม่กี่เหตุผลที่โปรแกรมเมอร์หลายคนหลบเลี่ยงการเขียนฟังก์ชันเวียนเกิด (recursive function) คงหนีไม่พ้นความกังวลว่าจะไปทำให้สแตกล้น ([stack overflow][]) เพราะโปรแกรมเรียกใช้งานฟังก์ชันซ้อนกันเป็นจำนวนมากเสียเกินกว่าที่สแตกการเรียกฟังก์ชัน ([call stack][]) จะรับไหว จนได้ผลลัพธ์อันน่ารำคาญใจออกมาเป็น `Segmentation Fault` ในที่สุด
@@ -50,20 +50,20 @@ const qs = (xs) => {
 
 ...
 
-ซะที่ไหนกันหละ! เพราะเราสามารถออกแบบให้ฟังก์ชันเวียนเกิดใดๆ คืนค่าเป็นการเรียกตัวเองซ้ำได้เสมอ โดยฟังก์ชันที่เป็นเป้าหมายของเรานี้ จะรับตัวแปรแรกเป็นข้อมูลเพียงครึ่งเดียวของสิ่งที่ต้องทำ พร้อมห่อหุ้ม ([closure][]) ข้อมูลครึ่งหลังไว้เป็นตัวแปรที่สอง ซึ่งถูกส่งต่อให้ตัวเองในอนาคตหยิบมาทำเมื่อพร้อมนั่นเอง
+ซะที่ไหนกันหละ! เพราะเราสามารถออกแบบฟังก์ชันเวียนเกิดใดๆ ให้คืนค่าเป็นการเรียกตัวเองซ้ำได้เสมอ โดยฟังก์ชันที่เป็นเป้าหมายของเรานี้ จะรับตัวแปรแรกเป็นข้อมูลเพียงครึ่งเดียวของสิ่งที่ต้องทำ พร้อมห่อหุ้ม ([closure][]) ข้อมูลครึ่งหลังไว้เป็นตัวแปรที่สอง ซึ่งถูกส่งต่อให้ตัวเองในอนาคตหยิบมาทำเมื่อพร้อมนั่นเอง
 
 เทคนิคดังกล่าวเรียกว่า การส่งผ่านอย่างต่อเนื่อง ([continuation-passing style, CPS][cps]) ซึ่งเราสามารถนำมาใช้ปรับโค้ด quicksort ให้อยู่ในรูปแบบดังกล่าวได้ดังนี้
 
 ``` javascript
-const qs_cps = (xs) => {
-    const aux = (xs, c) => {
-        if (xs.length == 0)
-            return c([])
-        const [p, ...ps] = xs,
-              ys = ps.filter((x) => x<p),
-              zs = ps.filter((x) => x>=p)
-        return aux(ys, (ls) => aux(zs, (rs) => c([...ls, p, ...rs]))) }
-    return aux(xs, (t) => t) }
+const id = (t) => t
+
+const qs_cps = (xs, c=id) => {
+    if (xs.length == 0)
+        return c([])
+    const [p, ...ps] = xs,
+          ys = ps.filter((x) => x<p),
+          zs = ps.filter((x) => x>=p)
+    return qs_cps(ys, (ls) => qs_cps(zs, (rs) => c([...ls, p, ...rs]))) }
 ```
 
 เมื่อไล่การทำงานของมันก็จะได้ภาพประมาณ
@@ -75,7 +75,7 @@ const qs_cps = (xs) => {
 
 พูดง่ายๆ ก็คือ เราย้ายสแตกการเรียก (ที่ถูกซ่อนด้วยตัวภาษา) ออกมาให้เห็นกันชัดๆ ในระดับตัวแปรนั่นเอง!
 
-ดังนั้น แม้เราจะสามารถทำ TCO บนฟังก์ชันเวียนเกิดใดๆ ได้ก็จริง แต่ไม่ใช่ทุกการทำ TCO จะเป็นประโยชน์
+ดังนั้น แม้ว่าเราจะสามารถทำ TCO บนฟังก์ชันเวียนเกิดใดๆ ก็ได้โดยไม่มีใครห้าม แต่ไม่ใช่ทุกการทำ TCO นั้นจะเป็นประโยชน์ แม้เราจะสามารถทำ TCO บนฟังก์ชันเวียนเกิดใดๆ ก็ได้โดยไม่มีใครห้าม แต่ไม่ใช่ทุกการทำ TCO นั้นจะช่วยให้ประหยัดสแตกมากขึ้น อย่าให้ฟังก์ชันใดเห็นแก่พื้นที่สแตกส่วนตัว แต่จงเห็นแก่พื้นที่ RAM ทั้งหมด
 
 ---
 
@@ -89,14 +89,14 @@ const qs_loop = (xs) => {
     const stack = [[0, xs.length]]
     while (stack.length > 0) {
         const [lo, hi] = stack.pop(),
-              [p, ...ps] = xs.slice(lo, hi)
+              [p, ...ps] = xs.slice(lo, hi),
               ys = ps.filter((x) => x<p),
               zs = ps.filter((x) => x>=p)
-        if (ys.length+zs.length == 0)
+        if (ps.length == 0)
             continue
-        xs.splice(lo, ys.length+zs.length+1, ...ys, p, ...zs)
+        xs.splice(lo, ps.length+1, ...ys, p, ...zs)
         stack.push([lo, lo+ys.length])
-        stack.push([lo+ys.length+1, hi]) }
+        stack.push([hi-zs.length, hi]) }
     return xs }
 ```
 

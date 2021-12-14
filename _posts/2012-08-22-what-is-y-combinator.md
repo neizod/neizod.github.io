@@ -56,44 +56,38 @@ lambda f: lambda x: 1 if x == 0 else x * f(x-1)
 Y = lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v)))
 ```
 
-(นิยามเต็มๆ คือ $Y = \lambda f.(\lambda x.f (x \; x)) (\lambda x.f (x \; x))$ ซึ่งไม่จำเป็นต้องติดตัวแปร $v$ มาด้วย)
+หรือนิยามทางคณิตศาสตร์คือ $Y = \lambda f.(\lambda x.f(x\;x))(\lambda x.f(x\;x))$ ซึ่งไม่จำเป็นต้องติดตัวแปร $v$ มาด้วย
 
-ลองมาสำรวจการทำงานของมันดีกว่า จะเห็นได้ว่า
+และเมื่อเราสำรวจการทำงานของมัน จะเห็นได้ว่า
 
-``` python
-Y(g)(n)
--> (lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(g)(n)
-   # reduce: g -> f
--> (lambda x: g(lambda v: x(x)(v)))(lambda x: g(lambda v: x(x)(v)))(n)
-   # reduce: (lambda x: g(lambda v: x(x)(v))) -> x
--> g(lambda v: (lambda x: g(lambda v: x(x)(v)))(lambda x: g(lambda v: x(x)(v)))(v))(n)
-   # reduce: n -> v
--> g((lambda x: g(lambda v: x(x)(v)))(lambda x: g(lambda v: x(x)(v)))(n))
-   # for inner g function, expand back to lambda: f <- g
--> g(lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v)))(g)(n))
-   # by definition
--> g(Y(g)(n))
-   # thus
--> g(g(Y(g)(n)))
--> g(g(g(Y(g)(n))))
--> g(g(g(g(...))))
-```
+$$
+\begin{align}
+Y\;g &= \Big( {\color{blue}\lambda f}.\big(\lambda x.{\color{blue}f}(x\;x)\big) \; \big(\lambda x.{\color{blue}f}(x\;x)\big) \Big) \; {\color{red}g}  \\
+     &= \big(\lambda x.{\color{green}g}(x\;x)\big) \; \big(\lambda x.{\color{green}g}(x\;x)\big) \\
+     &= \big({\color{blue}\lambda x}.g({\color{blue}x}\;{\color{blue}x})\big) \; {\color{red}\big(\lambda x.g(x\;x)\big)} \\
+     &= g\Big( {\color{green}\big(\lambda x.g(x\;x)\big)}\;{\color{green}\big(\lambda x.g(x\;x)\big)} \Big) \\
+     &= g\Big( \big(\lambda x.{\color{green}g}(x\;x)\big)\;\big(\lambda x.{\color{green}g}(x\;x)\big) \Big) \\
+     &= g\Big( \Big( {\color{blue}\lambda f}. \big(\lambda x.{\color{blue}f}(x\;x)\big)\;\big(\lambda x.{\color{blue}f}(x\;x)\big) \Big) \; {\color{red}g} \Big) \\
+     &= g \big( Y\;g \big) \\
+     &= g \big( g \big( Y\;g \big) \big) = g \big( g \big( g \big( Y\;g \big) \big) \big) = g \big( g \big( g \big( g \big( \cdots \big) \big) \big) \big)
+\end{align}
+$$
 
 วิธีเอามาใช้งานก็ไม่ยุ่งยาก เพียง
 
 ``` python
-(lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(  # Y-comb
-  lambda f:                                  # recursive function name
-    lambda x: 1 if x == 0 else x * f(x-1)    # recursive function definition
-  )(5)                                       # recursive function argument
+(lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))( # Y
+  lambda factorial:                                  # function name
+    lambda n: 1 if n == 0 else n * factorial(n-1)    # function definition
+  )(5)                                               # applying argument
 ```
 
-ลองเปลี่ยนมาหา fibonacci บ้าง ก็ง่ายนิดเดียว
+ลองเปลี่ยนมาหา Fibonacci บ้าง ก็แค่เปลี่ยนเป็น
 
 ``` python
 (lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(
-  lambda f:
-    lambda x: x if x <= 1 else f(x-1) + f(x-2)
+  lambda fib:
+    lambda n: n if n <= 1 else fib(n-1) + fib(n-2)
   )(5)
 ```
 
