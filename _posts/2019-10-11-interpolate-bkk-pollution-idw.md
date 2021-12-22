@@ -70,9 +70,9 @@ $$
 
 [@BangkokAQI]: //twitter.com/BangkokAQI
 
-[voronoi]: //en.wikipedia.org/wiki/Voronoi_diagram(http://en.wikipedia.org/wiki/Voronoi_diagram)
-[multivariate interpolation]: //en.wikipedia.org/wiki/Multivariate_interpolation(http://en.wikipedia.org/wiki/Multivariate_interpolation)
+[voronoi]: //en.wikipedia.org/wiki/Voronoi_diagram
+[multivariate interpolation]: //en.wikipedia.org/wiki/Multivariate_interpolation
 [nearest-neighbor]: //en.wikipedia.org/wiki/Nearest-neighbor_interpolation
-[idw]: //en.wikipedia.org/wiki/Inverse_distance_weighting(http://en.wikipedia.org/wiki/Inverse_distance_weighting)
+[idw]: //en.wikipedia.org/wiki/Inverse_distance_weighting
 
 [gist idw]: //gist.github.com/neizod/031b5ced9c567e25c007d902e05cc538

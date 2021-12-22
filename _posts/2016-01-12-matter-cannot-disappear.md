@@ -3,11 +3,14 @@ title: สสารไม่มีวันสูญหาย
 tags:
   - Book
   - Review
+  - Thai
   - Quote
 date: 2016-01-12 00:38:16 +0700
 origin:
   - name: Facebook
-    url: //www.facebook.com/photo.php?fbid=1101024429916196
+    url: //facebook.com/photo.php?fbid=1101024429916196
+  - name: Goodreads
+    url: //goodreads.com/review/show/1505580135
 ---
 
 {: .quote}

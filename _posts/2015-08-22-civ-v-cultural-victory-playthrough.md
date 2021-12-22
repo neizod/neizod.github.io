@@ -7,7 +7,7 @@ tags:
 date: 2015-08-22 12:11:55 +0700
 origin:
   - name: Facebook
-    url: https://www.facebook.com/photo.php?fbid=1028904213794885
+    url: //facebook.com/photo.php?fbid=1028904213794885
 ---
 
 นั่ง (นอน) เล่น Civ V: BNW แบบ 12 ชั่วโมงติด ละเห็นเค้าชอบเขียนบรรยายเกมเพลย์กัน เลยลองมั่งๆ :P

@@ -258,5 +258,5 @@ True
 By best practice, the key must be large prime in order to be uncrackable. However, we're very lucky that 1.) the key is a composite number, 2.) we know the length of the original plain text 3.) the character space used in plain text is very narrow. These flaws allow us to break the code in no time, though some aspect of the methodology may looks weird and unscalable. Thanks for a good puzzle. ;)
 
 
-[Challenge on Gist]: //github.com/anonymous/7d19a35c54e7dac40fa1a470df4a209a
+[Challenge on Gist]: //gist.github.com/anonymous/7d19a35c54e7dac40fa1a470df4a209a
 [this Facebook Post]: //facebook.com/longhackz/photos/a.1560357644219017.1073741828.1559669844287797/1753068201614626/

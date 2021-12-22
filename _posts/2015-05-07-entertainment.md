@@ -2,6 +2,7 @@
 title: Entertainment
 tags:
   - Song
+  - English
   - Movie
 date: 2015-05-07 18:57:00 +0700
 ---

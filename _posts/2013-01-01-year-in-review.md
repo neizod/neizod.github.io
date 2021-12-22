@@ -30,4 +30,4 @@ date: 2013-01-01 14:01:00 +0700
 [barcamp bangkok]: //www.barcampbangkok.org/
 [Project Euler]: //projecteuler.net
 [Python Magic]: //www.rafekettler.com/magicmethods.html
-[Wreck-It Ralph]: http://www.imdb.com/title/tt1772341/
+[Wreck-It Ralph]: //www.imdb.com/title/tt1772341/

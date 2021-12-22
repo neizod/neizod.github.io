@@ -1,5 +1,5 @@
 ---
-title: Hava Nagila
+title: הבה נגילה
 tags:
   - Song
   - Hebrew

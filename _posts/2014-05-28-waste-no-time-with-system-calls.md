@@ -51,5 +51,5 @@ grep -l '//' *.cpp | wc -l
 (แต่สุดท้ายก็คงกลับไปเขียน Python อยู่ดี เพราะมีปัจจัยที่ใช้วิเคราะห์ซับซ้อนกว่านี้ ใช้ Python แล้วรู้สึกถนัดมือกว่า)
 
 
-[@juggapong]: https://twitter.com/juggapong
+[@juggapong]: //twitter.com/juggapong
 [russ cox regexpl]: //swtch.com/~rsc/regexp/regexp1.html

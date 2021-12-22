@@ -220,5 +220,5 @@ for case in range(int(input())):
 ป.ล.ล. ระบบใหม่ทำ friend list หาย อดส่อง (ง่ายๆ) เลยว่าเพื่อนๆ ได้คะแนนเท่าไหร่กันมั่ง แถมยังโหลดโค้ดคนอื่นมาดูไม่ได้แล้ว 😭
 
 [codejam 2014 qual]: /2014/04/13/code-jam-2014-qualification.html
-[coupon collector's problem]: https://en.wikipedia.org/wiki/Coupon_collector%27s_problem
+[coupon collector's problem]: //en.wikipedia.org/wiki/Coupon_collector%27s_problem
 [rotation matrix]: //en.wikipedia.org/wiki/Rotation_matrix#In_three_dimensions

@@ -27,6 +27,6 @@ date: 2020-05-24 02:18:41 +0700
 
 
 
-[haruhi]: //en.wikipedia.org/wiki/Haruhi_Suzumiya(http://en.wikipedia.org/wiki/Haruhi_Suzumiya)
+[haruhi]: //en.wikipedia.org/wiki/Haruhi_Suzumiya
 [bunny girl senpai]: //en.wikipedia.org/wiki/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai
 [ship of theseus]: //en.wikipedia.org/wiki/Ship_of_Theseus

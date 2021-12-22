@@ -41,7 +41,7 @@ date: 2021-09-18 22:04:40 +0700
 
 [manoonchai layout]: //manoonchai.com
 [voice manoonchai]: //youtu.be/fhIHXPxKyV4
-[borntodev]: //facebook.com/borntodev/photos/a.830302417028053/4457360530988872
+[BorntoDev]: //facebook.com/borntodev/photos/a.830302417028053/4457360530988872
 [ADPT]: //www.facebook.com/ADPTnews/posts/2966265087034219
 [time2history]: //facebook.com/permalink.php?story_fbid=2281844925448337&id=2007331706232995
 [wiki thai pattachote]: //th.wikipedia.org/wiki/แป้นพิมพ์ปัตตะโชติ

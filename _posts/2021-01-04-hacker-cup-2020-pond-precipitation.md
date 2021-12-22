@@ -185,7 +185,7 @@ for t in range(int(input())):
 
 
 
-[problem statement]: //www.facebook.com/codingcompetitions/hacker-cup/2020/final-round/problems/C
+[problem statement]: //facebook.com/codingcompetitions/hacker-cup/2020/final-round/problems/C
 
 [expectation]: //en.wikipedia.org/wiki/Expected_value
 [algorithm]: //en.wikipedia.org/wiki/Algorithm

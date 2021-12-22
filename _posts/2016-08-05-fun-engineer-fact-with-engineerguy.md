@@ -5,7 +5,7 @@ tags:
 date: 2016-08-05 19:41:35 +0700
 origin:
   - name: Facebook
-    url: //www.facebook.com/neizod/posts/1234609469891024
+    url: //facebook.com/neizod/posts/1234609469891024
 ---
 
 ช่วงนี้ชอบดู video จากช่อง engineerguy -- นายวิศวกรคนนี้เป็นพิเศษ

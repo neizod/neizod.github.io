@@ -138,19 +138,19 @@ for case in range(int(input())):
     ....          ....          ....          ....
     ....          ....          ....          ...*
     ....          ...*          ..**          ..**
-
+    
     Case #4:      Case #5:      Case #6:      Case #7:
     c..*          c..*          c..*          c..*
     ...*          ...*          ...*          ...*
     ...*          ...*          ..**          ...*
     ...*          ..**          ..**          ****
-
+    
     Case #8:      Case #9:      Case #10:     Case #11:
     c.**          Impossible    c.**          Impossible
     ..**                        ..**
     ..**                        ..**
     ..**                        ****
-
+    
     Case #12:     Case #13:     Case #14:     Case #15:
     c.**          Impossible    Impossible    c***
     ..**                                      ****
@@ -242,5 +242,5 @@ for case in range(int(input())):
 ข้อนี้เสียดายมากที่หา bug ไม่เจอ มาเจออีกทีตอนแข่งจบไปแล้ว ไม่งั้นรอบนี้คงได้ทำคะแนนเต็มให้เป็นเกียรติเป็นศรี \\(TwT)/
 
 
-[where is my high speed train]: //www.facebook.com/pages/แล้วรถไฟความเร็วสูงกูล่ะ/631153140260214
+[where is my high speed train]: //facebook.com/pages/แล้วรถไฟความเร็วสูงกูล่ะ/631153140260214
 [go-hero neizod]: //www.go-hero.net/jam/14/name/neizod

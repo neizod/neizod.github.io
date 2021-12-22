@@ -2,6 +2,8 @@
 title: เจ้าชายน้อย
 tags:
   - Book
+  - Translate
+  - French
 date: 2007-10-10 09:34:00 +0700
 ---
 

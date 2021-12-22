@@ -3,11 +3,14 @@ title: Logicomix
 tags:
   - Book
   - Review
+  - English
   - Mathematics
 date: 2016-01-21 11:42:53 +0700
 origin:
   - name: Facebook
-    url: //www.facebook.com/photo.php?fbid=1105973232754649
+    url: //facebook.com/photo.php?fbid=1105973232754649
+  - name: Goodreads
+    url: //goodreads.com/review/show/1512452620
 ---
 
 การ์ตูนเล่าเรื่องราวของนักคณิตศาสตร์ นักปรัชญา และนักตรรกะผู้ยิ่งใหญ่ [Bertrand Russell][] เกี่ยวกับการตามล่าหาความจริงของการใช้เหตุผล ที่แสนจะซับซ้อนวกวนจนเหมือนไม่มีทางออก

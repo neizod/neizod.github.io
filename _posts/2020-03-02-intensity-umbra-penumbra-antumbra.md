@@ -8,7 +8,7 @@ date: 2020-03-02 14:26:44 +0700
 thumbnail: /images/program/umbra-penumbra-antumbra/model.png
 origin:
   - name: Stack Exchange
-    url: https://physics.stackexchange.com/questions/86402/#534052
+    url: //physics.stackexchange.com/questions/86402/#534052
 ---
 
 หนึ่งในเรื่องที่ค้างคาใจที่สุดที่เคยอ่านเจอในหนังสือวิทยาศาสตร์นับตั้งแต่แต่สมัยยังเป็นเด็กประถมสิงห้องสมุดทุกเย็น คงหนีไม่พ้นเรื่องของเงาแบบต่างๆ ณ ขณะที่เกิดสุริยุปราคา ซึ่งแบ่งออกเป็นสามส่วน อันได้แก่ umbra, penumbra และ antumbra (ไม่เจอการถอดศัพท์ชุดนี้เป็นภาษาไทยแฮะ)
