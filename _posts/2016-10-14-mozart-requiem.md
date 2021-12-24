@@ -1,5 +1,5 @@
 ---
-title: Wolfgang Amadeus Mozart - Requiem in D minor, K. 626
+title: Mozart - Requiem in D minor, K. 626
 tags:
   - Classical Music
   - Wolfgang Amadeus Mozart

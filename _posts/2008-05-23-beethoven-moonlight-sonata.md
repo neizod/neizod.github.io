@@ -1,9 +1,9 @@
 ---
-title: Ludwig van Beethoven - Piano Sonata No. 14 in C♯ minor, Op. 27, No. 2 "Moonlight"
+title: Beethoven - Moonlight Sonata, Op. 27, No. 2
 tags:
-  - Review
   - Classical Music
   - Ludwig van Beethoven
+  - Musical Analysis
 date: 2008-05-23 01:02:00 +0700
 ---
 
