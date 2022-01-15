@@ -4,8 +4,8 @@ tags:
   - Thought
   - Education
   - History
-  - Social
-  - Political
+  - Humanity
+  - Politics
 date: 2018-10-06 23:31:12 +0700
 ---
 

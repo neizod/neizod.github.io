@@ -2,7 +2,7 @@
 title: ดอกไม้แด่ผู้ถือปืน
 tags:
   - Comic Strip
-  - Political
+  - Politics
   - Revolution
   - Flower
 date: 2020-11-19 22:01:42 +0700
