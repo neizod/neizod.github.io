@@ -3,8 +3,10 @@ title: ภาษากลางแห่งโลกวิชาการ
 tags:
   - Latin
   - Language
+  - History
   - Science
-  - Political
+  - Politics
+  - Culture
   - René Descartes
 date: 2020-07-19 23:58:49 +0700
 ---
