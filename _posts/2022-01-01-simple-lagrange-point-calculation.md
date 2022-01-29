@@ -64,7 +64,7 @@ $$
 $$
 \begin{equation}
 \vec{F_\odot} + \vec{F_\oplus} + \vec{F_c} = 0
-\label{eq:zero-force}
+\label{eq:zero-force}\tag{1}
 \end{equation}
 $$
 
@@ -119,7 +119,7 @@ $$
 $$
 \begin{equation}
 m_\odot x_\odot + m_\oplus x_\oplus = 0
-\label{eq:center-of-mass}
+\label{eq:center-of-mass}\tag{2}
 \end{equation}
 $$
 
