@@ -3,6 +3,7 @@ title: "Putnam 2020: $\\sum_{j=0}^k 2^{k-j} {k+j \\choose j}$"
 tags:
   - Putnam Competition
   - Mathematical Proof
+  - Pascal's Triangle
   - Combinatorics
 date: 2021-02-28 23:04:08 +0700
 ---
