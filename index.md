@@ -14,6 +14,8 @@ feature:
       - "/2018/09/18/sweep-line-algorithm-for-segments-intersection"
       - "/2018/09/28/avenue-q"
       - "/2020/08/08/cutting-cone-with-cone-alternative-conic-section"
+      - "/2021/10/27/stirling-1st-take-higest-cards"
+      - "/2022/01/14/wordle-in-3.7-guesses"
   projects:
     latest: 0
     list:
