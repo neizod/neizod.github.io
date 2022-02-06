@@ -36,7 +36,8 @@ thumbnail: /images/algorithm/misc/barnsley-fern-23it.png
 
 พูดให้รัดกุมเป็นภาษาคณิตศาสตร์ก็คือ การสร้างใบเฟิร์น Barnsley เริ่มจากลากเส้นแรกยาว $1.6$ หน่วยจากจุด $(0,0)$ ขึ้นไปตามแกน $y$ แล้วเอาเส้นนั้นมาวาดซ้ำๆ อีกครั้ง จากเลื่อนและปรับขนาดด้วยสมการดังนี้
 
-$$ \begin{align}
+$$
+\begin{align}
 f_1(x, y) &= \begin{bmatrix} 0.85 & 0.04 \\ -0.04 & 0.85 \end{bmatrix}
              \begin{bmatrix} x \\ y \end{bmatrix} +
              \begin{bmatrix} 0 \\ 1.6 \end{bmatrix} \\
@@ -46,7 +47,8 @@ f_2(x, y) &= \begin{bmatrix} 0.20 & -0.26 \\ 0.23 & 0.22 \end{bmatrix}
 f_3(x, y) &= \begin{bmatrix} -0.15 & 0.28 \\ 0.26 & 0.24 \end{bmatrix}
              \begin{bmatrix} x \\ y \end{bmatrix} +
              \begin{bmatrix} 0 \\ 0.44 \end{bmatrix}
-\end{align} $$
+\end{align}
+$$
 
 โดย $f_1, f_2, f_3$ คือสมการสำหรับคำนวณรูปร่างก้านที่ต่อยอดขึ้นข้างบน ก้านที่เอียงไปด้านซ้าย และก้านที่พลิกตัวแล้วเอียงไปด้านขวา ตามลำดับ
 

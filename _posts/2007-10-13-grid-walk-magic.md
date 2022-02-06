@@ -13,11 +13,13 @@ date: 2007-10-13 23:08:00 +0700
 ให้ช่องตารางแทนการ์ด (ตามที่เค้าเล่น)  
 กำหนดชื่อการ์ด และเรียงการ์ดดังนี้
 
-$$ \begin{bmatrix}
+$$
+\begin{bmatrix}
 A & B & C \\
 D & E & F \\
 G & H & I
-\end{bmatrix} $$
+\end{bmatrix}
+$$
 
 หลังจากนั้น ให้คุณเดินทางผ่านแต่ละช่อง  
 สามารถเดินได้ 4 ทิศ บน, ล่าง, ซ้าย, ขวา  
@@ -34,60 +36,72 @@ ADA, ADG หรือ ADE แบบใดก็ได้
 
 1. เดิน 4 ครั้งโดยเริ่มจากการ์ด A ครับ
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    A & B & C \\
    D & E & F \\
    G & H & I
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 2. ผมจะเอาการ์ด I ออก (เดินผ่านไม่ได้)  
    แล้วให้คุณเดินต่ออีก 5 ครั้ง  
    (ดูช่องที่คุณสามารถเดินได้จากข้างล่าง)
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    A & B & C \\
    D & E & F \\
    G & H &
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 3. คราวนี้ผมจะเอาการ์ด F ออกนะครับ  
    ให้คุณเดินต่ออีก 2 ครั้ง
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    A & B & C \\
    D & E &   \\
    G & H &
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 4. ผมเอาการ์ด H ออก  
    และให้คุณเดินต่ออีก 3 ครั้ง
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    A & B & C \\
    D & E &   \\
    G &   &
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 5. คราวนี้ผมจะเอาการ์ดออกถึง 2 ใบ  
    ซึ่งคือการ์ด C กับ G และเดินต่อ 3 ครั้ง
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    A & B \\
    D & E
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 6. ผมจะเอาการ์ดออก 1 ใบ คือ B  
    และขอให้คุณเดินอีก 1 ครั้ง
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    A &   \\
    D & E
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 7. สุดท้ายนี้ ผมขอทายว่าคุณอยู่ที่การ์ด D  
@@ -108,11 +122,13 @@ ADA, ADG หรือ ADE แบบใดก็ได้
    และการ์ดที่คุณจะไปตกอยู่ก็คือ O ซักอัน  
    (ตามตารางการ์ดข้างล่างนะครับ)
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    X & O & X \\
    O & X & O \\
    X & O &
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 2. เมื่อให้เดินต่อ 5 ครั้งจากช่องที่คุณอยู่  
@@ -120,30 +136,36 @@ ADA, ADG หรือ ADE แบบใดก็ได้
    แน่นอนว่าจากตรงนี้ ผมเอาใบ X ออกได้  
    และผมก็เลือกที่จะเอาใบ F ออกครับ
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    O & X & O \\
    X & O &   \\
    O & X &
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 3. อีกครั้งที่ผมค่อยๆ เอาการ์ด H ออก  
    (ที่จริงจะเอา F กับ H ออกพร้อมกันก็ได้)
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    O & X & O \\
    X & O &   \\
    O &   &
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 4. คราวนี้ผมเอาออกพร้อมกัน 2 ใบ  
    เพื่อให้คุณประหลาดใจเล่นๆ ^^
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    X & O \\
    O & X
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 
 5. การที่ผมเอาการ์ด C ออกเป็นสิ่งสำคัญ
@@ -151,10 +173,12 @@ ADA, ADG หรือ ADE แบบใดก็ได้
    และการที่ผมให้โอกาสคุณเดินเพียงครั้งเดียว
    ก็จะทำให้คุณไปตกบนการ์ด D เท่านั้นครั้บ
 
-   $$ \begin{bmatrix}
+   $$
+   \begin{bmatrix}
    O &   \\
    X & O
-   \end{bmatrix} $$
+   \end{bmatrix}
+   $$
 
 ---
 

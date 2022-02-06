@@ -32,20 +32,24 @@ date: 2020-05-13 10:24:42 +0700
 
 นอกจากนี้ เรายังจะได้สมบัติพื้นฐานของสามเหลี่ยมมุมฉาก $\triangle ADC$ และ $\triangle BDC$ มาใช้อีกด้วย คือ
 
-$$ \begin{align*}
+$$
+\begin{align*}
 \overline{AC}^2 &= \overline{AD}^2 + \overline{CD}^2 \\
 \overline{BC}^2 &= \overline{BD}^2 + \overline{CD}^2
-\end{align*} $$
+\end{align*}
+$$
 
 ซึ่งจะทำให้ได้ว่า
 
-$$ \begin{align*}
+$$
+\begin{align*}
 \overline{AC}^2 - \overline{AD}^2
     &= \overline{BC}^2 - \overline{BD}^2 \\
     &= \overline{BC}^2 - \left( \overline{AB} - \overline{AD} \right)^2 \\
     &= \overline{BC}^2 - \left( \overline{AB}^2 - 2 \overline{AB} \cdot \overline{AD} + \overline{AD}^2 \right) \\
     &= \overline{BC}^2 - \overline{AB}^2 + 2 \overline{AB} \cdot \overline{AD} - \overline{AD}^2
-\end{align*} $$
+\end{align*}
+$$
 
 ย้ายข้างและจัดรูป ก็จะได้คำตอบ
 
@@ -63,19 +67,23 @@ $$
 
 ตอนนี้เพื่อความง่ายในการวิเคราะห์ต่อ สมมติให้ $\overline{AB}$ ขนานกับแกน $X$ โดยให้ $A=\left(\frac{-R-2r}2,0\right)$ และ $B=\left(\frac{R+2r}2,0\right)$ แล้วแทนค่าความยาวด้านต่างๆ ลงไปเพื่อหาตำแหน่งของ $C=(x,y)$ เริ่มจากหาตำแหน่งในแกน $X$ ก่อน ก็จะได้ว่า
 
-$$ \begin{align}
+$$
+\begin{align}
 x &= \frac{ (R+2r)^2 + (R+r+t)^2 - (r+t)^2 }{ 2(R+2r) } \\
   &= r + R \left( 1 + \frac{t}{R+2r} \right) \\
 t &= (R+2r)\left( \frac{x-r}{R} - 1 \right) \\
-\end{align} $$
+\end{align}
+$$
 
 และเมื่อหาตำแหน่งในแกน $Y$ ก็จะได้
 
-$$ \begin{align}
+$$
+\begin{align}
 y^2 &= (R+r+t)^2 - \left(\frac{R}2+r+x\right)^2 \\
     &= \left( \frac{R^2 + 2xR + 4xr}{2R} \right)^2 - \left( \frac{R^2 + 2rR + 2xR}{2R} \right)^2 \\
     &= \frac1{R^2} \left( 4x^2rR + 4x^2r^2 - rR^3 - r^2R^2 \right)
-\end{align} $$
+\end{align}
+$$
 
 ถึงจะได้ข้อมูลตำแหน่งมาครบก็อาจจะยังมองไม่ชัดถึงหน้าตาสมการว่าเป็นไฮเพอร์โบลาได้อย่างไร แต่ถ้าอดทนจัดรูปต่อไปอีกหน่อยก็จะเห็นว่าสมการข้างต้นมันสามารถกลายเป็น
 

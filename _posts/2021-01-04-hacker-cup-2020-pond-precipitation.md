@@ -51,13 +51,14 @@ $$
 
 ให้ $H(i,d)$ เป็นจำนวนวิธีที่น้ำฝนจะไม่ท่วมน้องเต่าเมื่อฝนตกมาแล้ว $d$ หยด โดยพิจารณาเฉพาะบ่อน้ำตั้งแต่บ่อซ้ายสุดจนถึงบ่อที่ $i$ เราจะเขียนสมการสำหรับหา $S$ และ $H$ ได้ดังนี้
 
-$$ \begin{align}
+$$
+\begin{align}
 S(i, d+1) &=
   \begin{cases}
     \displaystyle \left( \sum_{k = 1}^i w_k \right) \cdot H(i, d) &
     \displaystyle \text{if } d = \sum_{k=1}^i c_k \\
     \displaystyle \sum_{\substack{a, b \in \mathbb{N}_0 \\ a+b = d}}
-                  {d \choose b} \cdot w_i^b \cdot S(i, a+1) &
+                  \binom{d}{b} \cdot w_i^b \cdot S(i, a+1) &
     \displaystyle \text{if } d \lt \sum_{k=1}^i c_k \\
     0 & \text{otherwise}
   \end{cases}
@@ -66,11 +67,12 @@ H(i, d) &=
   \begin{cases}
     1 & \text{if } i = 0 \text{ and } d = 0 \\
     \displaystyle \sum_{\substack{a, b \in \mathbb{N}_0 \\ a+b = d}}
-                  {d \choose b} \cdot w_i^b \cdot H(i, a) &
+                  \binom{d}{b} \cdot w_i^b \cdot H(i, a) &
     \displaystyle \text{if } d \le \sum_{k=1}^i c_k \\
     0 & \text{otherwise}
   \end{cases}
-\end{align} $$
+\end{align}
+$$
 
 และทำให้ได้ว่าคำตอบคือ
 
@@ -83,7 +85,8 @@ $$
 
 วิธีคำนวณข้างต้นแม้จะตรงไปตรงมาแต่ก็มีความซับซ้อนสูง แถมยังต้องใช้กำหนดการพลวัตเก็บตัวแปรถึงสองตัว อย่างไรก็ตามเราอาจแปลงโจทย์ให้คำนวณได้ง่ายยิ่งขึ้น โดยสังเกตว่าค่าคาดหวังมีสมบัติดังนี้
 
-$$ \begin{align}
+$$
+\begin{align}
 E(X) &= \sum_{d \in \mathbb{N}} d \cdot P(X=d) \\
      &= 1 \cdot P(X=1) + 2 \cdot P(X=2) + 3 \cdot P(X=3) + \cdots \\
      &=
@@ -95,7 +98,8 @@ E(X) &= \sum_{d \in \mathbb{N}} d \cdot P(X=d) \\
      \end{pmatrix} \\
      &= P(X \ge 1) + P(X \ge 2) + P(X \ge 3) + \cdots \\
      &= \sum_{d \in \mathbb{N}} P(X \ge d)
-\end{align} $$
+\end{align}
+$$
 
 ดังนั้นเราจะมาแปลความหมายของ $P(X \ge d)$ กัน เพราะว่า $X$ เป็นตัวแปรสุ่มแทน**น้ำฝนหยดที่**ทำให้น้องเต่าจมน้ำ นั่นก็แปลว่า $X \ge d$ จะหมายถึงเหตการณ์ที่น้ำฝนหยดใดก็ได้ตั้งแต่หยดที่ $d$ ขึ้นไป (จนถึง $\infty$) ที่ทำให้น้องเต่าจมน้ำ หรืออีกนัยหนึ่งก็คือ น้ำฝนตั้งแต่หยดที่ $0$ ถึง $d-1$ นั้นไม่ทำให้น้องเต่าจมน้ำนั่นเอง
 
@@ -107,10 +111,12 @@ $$
 
 เนื่องจาก $P(Y=d)$ สามารถคำนวณได้จาก ${H(m,d)}$ นี่ทำให้เราสามารถลดการคำนวณเหลือเพียงเท่านี้
 
-$$ \begin{align}
+$$
+\begin{align}
 E(X) &= \sum_{d \in \mathbb{N}_0} P(Y=d) \\
      &= \sum_{d \in \mathbb{N}_0} \frac{H(m,d)}{n^d}
-\end{align} $$
+\end{align}
+$$
 
 เพื่อหาคำตอบได้เช่นกันโดยไม่ต้องง้อการคำนวณตัวแปร $S$ ที่ยุ่งยากอีกต่อไป
 

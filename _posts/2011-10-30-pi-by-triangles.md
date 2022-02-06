@@ -37,39 +37,51 @@ $$
 
 และเมื่อสังเกตความยาวต่างๆ ของสามเหลี่ยมเล็กนี้ เราจะได้ว่าความสูงคือ $r$ (รัศมีวงกลม) ส่วนฐาน (สมมติตัวแปรดัมมี่ $w$) นั้นได้จากการสังเกตว่ามุมของสามเหลี่ยมเล็กคือ 30 องศา ด้วยวิธีทางตรีโกณมิติ เราจะได้
 
-$$ \begin{align}
+$$
+\begin{align}
 \tan30^\circ &= \frac{w}{r} \\
            w &= r\tan30^\circ
-\end{align} $$
+\end{align}
+$$
 
 ถึงตอนนี้ เราก็จะได้แล้วว่า
 
-$$ \begin{align}
+$$
+\begin{align}
 \frac{1}{12}\times\text{Area}_{\text{large}} &= \frac12 \times r^2 \tan30^\circ \\
                   \text{Area}_{\text{large}} &= 6 \times r^2 \tan30^\circ
-\end{align} $$
+\end{align}
+$$
 
 สังเกตต่อไปอีกหน่อยนึง (หรือถ้าจะให้ชัวร์ ลองทำในทำนองเดียวกันนี้ดูกับรูปหลายเหลี่ยมอื่นๆ) จะได้ว่า สำหรับรูปหลายเหลี่ยม $n$ ด้าน (กรณีทั่วไป) จะมีพื้นที่
 
-$$ \begin{align}
+$$
+\begin{align}
 \text{Area}_{\text{large}} = nr^2 \tan\theta
-\end{align} $$
+\end{align}
+$$
 
 โดย $\theta=\frac12\times\frac{360^\circ}{n}$ และเมื่อหาพื้นที่รูปหลายเหลี่ยมเล็กในทำนองเดียวกัน (ระวังมึนหัวกับตรีโกณมิตินะครับ) ก็จะได้
 
-$$ \begin{align}
+$$
+\begin{align}
 \text{Area}_{\text{small}} = nr^2 \sin\theta \cos\theta
-\end{align} $$
+\end{align}
+$$
 
 ดังนั้น เราจึงได้อสมการ ([ลองเล่นเองบน Wolfram Alpha][interactive wolfram alpha])
 
-$$ \begin{align}
+$$
+\begin{align}
 nr^2 \sin\theta \cos\theta \lt \pi r^2 \lt nr^2 \tan\theta
-\end{align} $$
+\end{align}
+$$
 
-$$ \begin{align}
+$$
+\begin{align}
 n \sin\theta \cos\theta \lt \pi \lt n \tan\theta
-\end{align} $$
+\end{align}
+$$
 
 น่าเสียดายที่สมัยอาร์คิมิดีสยังไม่มีตรีโกณมิติละเอียดๆ การหาความกว้างของด้านสามเหลี่ยมเล็กจะใช้เรขาคณิตแบ่งครึ่งสามเหลี่ยมไปเรื่อยๆ ทำให้เขาได้ค่าคร่าวๆ คือ $3\frac{10}{71}\lt\pi\lt3\frac{10}{70}$ จากการใช้รูป 96 เหลี่ยมครับ
 

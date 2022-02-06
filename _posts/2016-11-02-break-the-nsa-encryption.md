@@ -96,7 +96,7 @@ Message $C$ is what we got, it is a huge number represent in base 10 with length
 We precisely know how $E$ works: Let message $P$ has length of $n$ chars (index of each char in $P$ starts from $1$ to $n$ for convenient). Then $C$ can be computed with:
 
 $$
-    E(P, K) = \ord(p_1) K^n + \ord(p_2) K^{n-1} + \ord(p_3) K^{n-2} + \cdots + \ord(p_n) K^1
+E(P, K) = \ord(p_1) K^n + \ord(p_2) K^{n-1} + \ord(p_3) K^{n-2} + \cdots + \ord(p_n) K^1
 $$
 
 Where $\ord$ is a function that maps ASCII char to integer.
@@ -131,19 +131,19 @@ Speculation
 Assume original message $P$ has length of 32 chars. Now, for simplicity of concrete example, let just assume that all $\ord(p)$ in $P$ is 1. By analyzing the encryption function, we see that:
 
 $$
-    K^{32} + K^{31} + K^{30} + \cdots + K^1 = C
+K^{32} + K^{31} + K^{30} + \cdots + K^1 = C
 $$
 
 Since $K^{32}$ is very much larger than $\sum_{i=0}^{31} K^i$, we may say that:
 
 $$
-    K = \sqrt[32]{C}
+K = \sqrt[32]{C}
 $$
 
 Approximate result from this roughly calculation is:
 
 $$
-    K \approx 10.470 \times 10^{18}
+K \approx 10.470 \times 10^{18}
 $$
 
 **Note:** this is not the final answer, just compute it to see how large the number can be.
@@ -152,12 +152,14 @@ Assume original message $P$ is also has format of MD5, hence only ASCII char tha
 
 Assume every char in $P$ is `0`, its $\ord$ value is $48$, and $K_u$ is an upper bound of the key:
 
-$$ \begin{align}
-    48 K_u^{32} + 48 K_u^{31} + \cdots + 48 K_u &= C \\
-                                    48 K_u^{32} &\approx C \\
-                                            K_u &\approx \sqrt[32]{C \over 48} \\
-                                                &\approx 9.280 \times 10^{18}
-\end{align} $$
+$$
+\begin{align}
+48 K_u^{32} + 48 K_u^{31} + \cdots + 48 K_u &= C \\
+                                48 K_u^{32} &\approx C \\
+                                        K_u &\approx \sqrt[32]{C \over 48} \\
+                                            &\approx 9.280 \times 10^{18}
+\end{align}
+$$
 
 ``` python
 >>> Ku = 9280 * 10**15
@@ -165,12 +167,14 @@ $$ \begin{align}
 
 Assume every char in $P$ is `f`, its $\ord$ value is $102$, and $K_\ell$ is a lower bound of the key:
 
-$$ \begin{align}
-    102 K_\ell^{32} + 102 K_\ell^{31} + \cdots + 102 K_\ell &= C \\
-                                            102 K_\ell^{32} &\approx C \\
-                                                     K_\ell &\approx \sqrt[32]{C \over 102} \\
-                                                            &\approx 9.060 \times 10^{18}
-\end{align} $$
+$$
+\begin{align}
+102 K_\ell^{32} + 102 K_\ell^{31} + \cdots + 102 K_\ell &= C \\
+                                        102 K_\ell^{32} &\approx C \\
+                                                 K_\ell &\approx \sqrt[32]{C \over 102} \\
+                                                        &\approx 9.060 \times 10^{18}
+\end{align}
+$$
 
 ``` python
 >>> Kl = 9060 * 10**15
@@ -182,10 +186,12 @@ So basically, if you select a key $K$ that *is not* satisfy with $K_\ell \le K \
 
 Take a look at the encrypt function, we see that:
 
-$$ \begin{align}
-    E(P, K) &= \ord(p_1) K^n + \ord(p_2) K^{n-1} + \cdots + \ord(p_n) K^1 \\
-            &= \left( \ord(p_1) K^{n-1} + \ord(p_2) K^{n-2} + \cdots + \ord(p_n) \right) K
-\end{align} $$
+$$
+\begin{align}
+E(P, K) &= \ord(p_1) K^n + \ord(p_2) K^{n-1} + \cdots + \ord(p_n) K^1 \\
+        &= \left( \ord(p_1) K^{n-1} + \ord(p_2) K^{n-2} + \cdots + \ord(p_n) \right) K
+\end{align}
+$$
 
 This may be the weakest link of the function that allow us to attack. It tell us that $K$ must be divisor of $C$. In other word, $0 \equiv C \pmod{K}$.
 

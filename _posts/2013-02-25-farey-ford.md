@@ -37,7 +37,8 @@ revise:
 
 **ตัวอย่าง**
 
-$$ \begin{align}
+$$
+\begin{align}
 F_1 &= \left\lbrace \frac01, \frac11 \right\rbrace \\
 F_2 &= \left\lbrace \frac01, \frac12, \frac11 \right\rbrace \\
 F_3 &= \left\lbrace \frac01, \frac13, \frac12, \frac23, \frac11 \right\rbrace \\
@@ -46,7 +47,8 @@ F_5 &= \left\lbrace \frac01, \frac15, \frac14, \frac13, \frac25, \frac12, \frac3
 F_6 &= \left\lbrace \frac01, \frac16, \frac15, \frac14, \frac13, \frac25, \frac12, \frac35, \frac23, \frac34, \frac45, \frac56, \frac11 \right\rbrace \\
 F_7 &= \left\lbrace \frac01, \frac17, \frac16, \frac15, \frac14, \frac27, \frac13, \frac25, \frac37, \frac12, \frac47, \frac35, \frac23, \frac57, \frac34, \frac45, \frac56, \frac67, \frac11 \right\rbrace \\
 F_8 &= \left\lbrace \frac01, \frac18, \frac17, \frac16, \frac15, \frac14, \frac27, \frac13, \frac38, \frac25, \frac37, \frac12, \frac47, \frac35, \frac58, \frac23, \frac57, \frac34, \frac45, \frac56, \frac67, \frac78, \frac11\right\rbrace
-\end{align} $$
+\end{align}
+$$
 
 **สมบัติ 1.1** $F_n$ จะบรรจุสมาชิกทุกตัวจาก $F_k$ สำหรับทุกๆ $k \le n$
 
@@ -61,10 +63,12 @@ F_8 &= \left\lbrace \frac01, \frac18, \frac17, \frac16, \frac15, \frac14, \frac2
 {: .remarkbox}
 > [ออยเลอร์ทอเทียนต์][euler totient] (Euler's totient) สัญลักษณ์ $\phi(n)$ คือฟังก์ชันแสดงจำนวนนับในช่วง $[1, n]$ ที่เป็นจำนวนเฉพาะสัมพัทธ์กับ $n$ มีสูตรทั่วไปคือ
 > 
-> $$ \begin{align}
+> $$
+> \begin{align}
 >    \phi(1) &= 1 \\
 > \phi(p^kq) &= p^{k-1}(p - 1)\phi(q), \quad\quad \gcd(p^k, q) = 1
-> \end{align} $$
+> \end{align}
+> $$
 
 **ขั้นตอนวิธี 1** การสร้างลำดับ Farey ด้วยการไล่ทุกเศษส่วนที่เป็นไปได้ แล้วเก็บเฉพาะเศษส่วนอย่างต่ำ
 
@@ -88,20 +92,24 @@ def farey(n):
 
 {: .flex}
 > {: .flexitem .fill .nomargin  style="border-right: solid 1px #000"}
-> > $$ \begin{align}
+> > $$
+> > \begin{align}
 > >        \frac{ad}{b} &< c \\
 > > a + \frac{ad}{b} &< a + c \\
 > > \frac{a(b+d)}{b} &< a + c \\
 > >      \frac{a}{b} &< \frac{a+c}{b+d}
-> > \end{align} $$
+> > \end{align}
+> > $$
 >
 > {: .flexitem .fill .nomargin}
-> > $$ \begin{align}
+> > $$
+> > \begin{align}
 > >               a &< \frac{cb}{d} \\
 > >           a + c &< \frac{cb}{d} + c \\
 > >           a + c &< \frac{c(b+d)}{d} \\
 > > \frac{a+c}{b+d} &< \frac{c}{d}
-> > \end{align} $$
+> > \end{align}
+> > $$
 
 **ทฤษฎีบท 2.2** พจน์ใดๆ ใน $F_n$ จะเป็น mediant ของสองพจน์ที่อยู่ก่อนและหลัง หรือเป็นพจน์ขอบของ $F_n$
 
@@ -175,14 +183,16 @@ return sequence
 
 **พิสูจน์** ให้ $R$ แทนระยะห่างระหว่างจุดศูนย์กลางของ $C(a,b), C(c,d)$ และให้ $r_{C(a,b)}, r_{C(c,d)}$ แทนรัศมีของวงกลมทั้งสองตามลำดับ  
 
-$$ \begin{align}
+$$
+\begin{align}
 R &= \sqrt{ \left( \frac{c}{d}-\frac{a}{b} \right)^2
           + \left( \frac1{2d^2} - \frac1{2b^2} \right)^2 } \\
     &= \frac1{2b^2d^2} \sqrt{4b^2d^2(bc-ad)^2 + (b^2-d^2)^2} \\
     &\ge \frac1{2b^2d^2} \sqrt{4b^2d^2 + (b^2-d^2)^2} \\
     &= \frac1{2b^2} + \frac1{2d^2} \\
     &= r_{C(a,b)} + r_{C(c,d)}
-    \end{align} $$
+\end{align}
+$$
 
 เพราะระยะห่างจากศูนย์กลางของสองวงกลม มีค่ามากกว่ารัศมีรวมกัน ดังนั้นจึงไม่มีวงกลม Ford คู่ใดซ้อนกัน
 
@@ -195,13 +205,15 @@ R &= \sqrt{ \left( \frac{c}{d}-\frac{a}{b} \right)^2
 
 ดังนั้น จุดสัมผัสของวงกลม $C(a,b), C(c,d)$ จะอยู่ที่
 
-$$ \begin{align}
+$$
+\begin{align}
 (x,y) &= \left( \frac{r_1x_2+r_2x_1}{r_1+r_2}, \frac{r_1y_2+r_2y_1}{r_1+r_2} \right) \\
       &= \left( \frac{r_2}{r_1+r_2}\frac{a}{b} + \frac{r_1}{r_1+r_2}\frac{c}{d}, \frac{r_1r_2+r_2r_1}{r_1+r_2} \right) \\
       &= \left( \frac{r_1+r_2}{r_1+r_2}\frac{a}{b} + \frac{r_1}{r_1+r_2}(\frac{c}{d}-\frac{a}{b}), \frac{2r_1r_2}{r_1+r_2} \right) \\
       &= \left( \frac{a}{b} + \frac1{2b^2}\frac{2b^2d^2}{b^2+d^2}\frac{bc-ad}{bd}, 2\frac1{2b^2}\frac1{2d^2}\frac{2b^2d^2}{b^2+d^2} \right) \\
       &= \left( \frac{a}{b} + \frac1{b^2+d^2}\frac{d}{b}, \frac1{b^2+d^2} \right)
-\end{align} $$
+\end{align}
+$$
 
 **ทฤษฎีบท 3.3** $C(a+c, b+d)$ จะเป็นวงกลม Ford ที่ใหญ่ที่สุดระหว่างวงกลม Ford $C(a,b), C(c,d)$ ที่สัมผัสกัน
 

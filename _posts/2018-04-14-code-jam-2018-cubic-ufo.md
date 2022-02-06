@@ -19,7 +19,7 @@ date: 2018-04-14 06:51:10 +0700
 ดังนั้นลูกบาศก์หนึ่งหน่วยที่อยู่นิ่งๆ ยังไม่ได้หมุนอะไร ก็จะมีจุดยอดของเงาอยู่ 4 จุด (มีทั้งหมด 8 จุดแต่ซ้ำกันไปซะครึ่ง) ได้แก่
 
 $$
-    \lbrace (\pm0.5, \pm0.5) \rbrace = \lbrace (0.5, 0.5), (0.5, -0.5), (-0.5, 0.5), (-0.5, -0.5) \rbrace
+\lbrace (\pm0.5, \pm0.5) \rbrace = \lbrace (0.5, 0.5), (0.5, -0.5), (-0.5, 0.5), (-0.5, -0.5) \rbrace
 $$
 
 เกิดเป็นเงารูปสี่เหลี่ยมจัตุรัส มีขนาดพื้นที่เป็น 1 ตารางหน่วย
@@ -118,64 +118,76 @@ FUNCTION solve():
 
 พิจารณาภาพประกอบที่ 4 จะเห็นว่าเราสามารถคำนวณพื้นที่รูป 6 เหลี่ยมได้โดยตรง โดยไม่ต้องพึ่ง convex hull และ shoelace formula แล้ว ซึ่งก็คือ
 
-$$ \begin{align*}
-  A &= bh + (a-b)\frac{h}{2} \\
-    &= (a+b)\frac{h}{2} \\
-    &= \frac{ (a+b) }{ \sqrt{2} }
-\end{align*} $$
+$$
+\begin{align*}
+A &= bh + (a-b)\frac{h}{2} \\
+  &= (a+b)\frac{h}{2} \\
+  &= \frac{ (a+b) }{ \sqrt{2} }
+\end{align*}
+$$
 
 แต่เนื่องจาก
 
-$$ \begin{align*}
-  a &= \sqrt{3}\cos\omega \\
-  b &= \sin\theta \\
-  \omega &= \delta-\theta \\
-  \delta &= \arccos\sqrt{ \frac{2}{3} } = \arcsin\frac{1}{ \sqrt{3} }
-\end{align*} $$
+$$
+\begin{align*}
+     a &= \sqrt{3}\cos\omega \\
+     b &= \sin\theta \\
+\omega &= \delta-\theta \\
+\delta &= \arccos\sqrt{ \frac{2}{3} } = \arcsin\frac{1}{ \sqrt{3} }
+\end{align*}
+$$
 
 ดังนั้น
 
-$$ \begin{align*}
-  A &= \frac{ \sqrt{3}\cos(\delta-\theta) + \sin\theta }{ \sqrt{2} } \\
-    &= \frac{ \sqrt{3}\cos\delta\cos\theta + \sqrt{3}\sin\delta\sin\theta + \sin\theta }{ \sqrt{2} } \\
-    &= \frac{ \sqrt{2}\cos\theta + 2\sin\theta }{ \sqrt{2} } \\
-    &= \sqrt{2}\sin\theta + \cos\theta
-\end{align*} $$
+$$
+\begin{align*}
+A &= \frac{ \sqrt{3}\cos(\delta-\theta) + \sin\theta }{ \sqrt{2} } \\
+  &= \frac{ \sqrt{3}\cos\delta\cos\theta + \sqrt{3}\sin\delta\sin\theta + \sin\theta }{ \sqrt{2} } \\
+  &= \frac{ \sqrt{2}\cos\theta + 2\sin\theta }{ \sqrt{2} } \\
+  &= \sqrt{2}\sin\theta + \cos\theta
+\end{align*}
+$$
 
 แม้ฝั่งขวาของสมการจะติดฟังก์ชันตรีโกณมิติ 2 ฟังก์ชัน แต่ถ้ายังจำเอกลัษณ์ตรีโกณมิติกันได้ จะพบว่าสามารถจัดรูปให้เป็น
 
 $$
-  \sin(\alpha+\beta) = \sin\alpha \cos\beta + \cos\alpha \sin\beta
+\sin(\alpha+\beta) = \sin\alpha \cos\beta + \cos\alpha \sin\beta
 $$
 
 ซึ่งก็คือ
 
-$$ \begin{align*}
-  A &= x \left( \frac{ \sqrt{2} }{x} \sin\theta + \frac{1}{x} \cos\theta \right) \\
-  \sin\gamma &= \frac{1}{x} \\
-  \cos\gamma &= \frac{\sqrt{2} }{x}
-\end{align*} $$
+$$
+\begin{align*}
+         A &= x \left( \frac{ \sqrt{2} }{x} \sin\theta + \frac{1}{x} \cos\theta \right) \\
+\sin\gamma &= \frac{1}{x} \\
+\cos\gamma &= \frac{\sqrt{2} }{x}
+\end{align*}
+$$
 
 เพราะฉะนั้น
 
-$$ \begin{align*}
-  \tan\gamma &= \frac{1}{ \sqrt{2} } \\
-  \gamma &= \arctan\frac{1}{ \sqrt{2} } = \arcsin\frac{1}{ \sqrt{3} } \\
-  x &= \sqrt{3}
-\end{align*} $$
+$$
+\begin{align*}
+\tan\gamma &= \frac{1}{ \sqrt{2} } \\
+    \gamma &= \arctan\frac{1}{ \sqrt{2} } = \arcsin\frac{1}{ \sqrt{3} } \\
+         x &= \sqrt{3}
+\end{align*}
+$$
 
 ดังนั้น
 
-$$ \begin{align*}
-  A &= \sqrt{3} \left( \cos\gamma\sin\theta + \sin\gamma\cos\theta \right) \\
-    &= \sqrt{3} \sin(\theta+\gamma) \\
-    &= \sqrt{3} \sin\left(\theta+\arcsin\frac{1}{ \sqrt{3} }\right)
-\end{align*} $$
+$$
+\begin{align*}
+A &= \sqrt{3} \left( \cos\gamma\sin\theta + \sin\gamma\cos\theta \right) \\
+  &= \sqrt{3} \sin(\theta+\gamma) \\
+  &= \sqrt{3} \sin\left(\theta+\arcsin\frac{1}{ \sqrt{3} }\right)
+\end{align*}
+$$
 
 และเมื่อหาฟังก์ชันผกผันเพื่อคำนวนมุมจากพื้นที่ ก็จะได้เป็น
 
 $$
-  \theta = \arcsin\frac{A}{ \sqrt{3} } - \arcsin\frac{1}{ \sqrt{3} }
+\theta = \arcsin\frac{A}{ \sqrt{3} } - \arcsin\frac{1}{ \sqrt{3} }
 $$
 
 ซึ่งนำไปเขียนโค้ดเทียมได้สั้นลงเหลือแค่นี้

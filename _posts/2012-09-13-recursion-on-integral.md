@@ -32,65 +32,73 @@ factorial n = n * factorial (n - 1)
 โชคดี (?) ที่เรามีเลขมหัศจรรย์อย่าง $e$ ซึ่งมีสมบัติประหลาดว่า
 
 $$
-    e^x = \frac{d}{dx} e^x
+e^x = \frac{d}{dx} e^x
 $$
 
 ดูๆ ไปแล้ว มันก็คล้ายกับ [fixed-point combinator ที่เคยพูดไว้ในตอนก่อนๆ][y combinator] เพียงแต่เปลี่ยนจาก function call เป็นการ diff-integral แทน โดยมี terminate point ที่
 
-$$ \begin{align}
-    \int_0^\infty \frac{1}{e^x} \;dx &= - \frac{1}{e^\infty} + \frac{1}{e^0} \\
-                                     &= 1
-\end{align} $$
+$$
+\begin{align}
+\int_0^\infty \frac{1}{e^x} \;dx
+&= - \frac{1}{e^\infty} + \frac{1}{e^0} \\
+&= 1
+\end{align}
+$$
 
 นี่ทำให้เราสามารถเขียน recursion ในรูปของ integral ได้ เช่น
 
 $$
-    \Gamma(n) = \int_0^\infty \frac{1}{e^t} t^{n-1} \;dt
+\Gamma(n) = \int_0^\infty \frac{1}{e^t} t^{n-1} \;dt
 $$
 
 ลองดูสมบัติของมันโดยทำการ integral เข้าไป จะได้ว่า
 
-$$ \begin{align}
-    \Gamma(n) &= \int_0^\infty \frac{1}{e^t} t^{n-1} \;dt \\
-              &= \int_0^\infty u \;dv
-                  & \text{let}\; u = \frac{1}{e^t}, dv = t^{n-1} \;dt \\
-              &= \left[ uv \right]_0^\infty - \int_0^\infty v \;du \\
-              &= \frac{1}{n} \left( \lim_{t \to \infty} \frac{1}{e^t} t^n - \frac{1}{e^0} 0^n \right) - \int_0^\infty v \;du \\
-              &= 0 - \int_0^\infty v du \\
-              &= \frac{1}{n} \int_0^\infty \frac{1}{e^t} t^n \;dt \\
-              &= \frac{\Gamma(n+1)}{n}
-\end{align} $$
+$$
+\begin{align}
+\Gamma(n)
+&= \int_0^\infty \frac{1}{e^t} t^{n-1} \;dt \\
+&= \int_0^\infty u \;dv
+   & \text{let}\; u = \frac{1}{e^t}, dv = t^{n-1} \;dt \\
+&= \left[ uv \right]_0^\infty - \int_0^\infty v \;du \\
+&= \frac{1}{n} \left( \lim_{t \to \infty} \frac{1}{e^t} t^n - \frac{1}{e^0} 0^n \right) - \int_0^\infty v \;du \\
+&= 0 - \int_0^\infty v du \\
+&= \frac{1}{n} \int_0^\infty \frac{1}{e^t} t^n \;dt \\
+&= \frac{\Gamma(n+1)}{n}
+\end{align}
+$$
 
 ดังนั้น จะเห็นว่า
 
-$$ \begin{align}
-    \Gamma(1) &= 1 \\
-    \Gamma(n) &= (n-1) \Gamma(n-1) \\
-              &= (n-1)(n-2) \Gamma(n-2) \\
-              &= \cdots
-\end{align} $$
+$$
+\begin{align}
+\Gamma(1) &= 1 \\
+\Gamma(n) &= (n-1) \Gamma(n-1) \\
+          &= (n-1)(n-2) \Gamma(n-2) \\
+          &= \cdots
+\end{align}
+$$
 
 ซึ่งก็คือ
 
 $$
-    n! = \Gamma(n+1)
+n! = \Gamma(n+1)
 $$
 
 ---
 
 ถึงตอนนี้ก็คงตอบคำถามได้แล้วว่า $0.5!$ นั้น สามารถหาค่าได้จาก
 
-$$ \begin{align}
-    \Gamma(1.5) &= \frac{1}{2} \Gamma\left(\frac{1}{2}\right) \\
-
-    \Gamma(0.5) &= \int_0^\infty \frac{1}{e^t} \frac{1}{\sqrt t} \;dt \\
-                &= 2 \int_0^\infty \frac{1}{ e^{u^2} } \;du
-                    & \text{let}\; du = \frac{1}{\sqrt t} \\
-                &= \int_{-\infty}^\infty \frac{1}{ e^{u^2} } \;du \\
-                &= \sqrt\pi \\
-
-    \Gamma(1.5) &= \frac{\sqrt\pi}{2}
-\end{align} $$
+$$
+\begin{align}
+\Gamma(1.5) &= \frac{1}{2} \Gamma\left(\frac{1}{2}\right) \\
+\Gamma(0.5) &= \int_0^\infty \frac{1}{e^t} \frac{1}{\sqrt t} \;dt \\
+            &= 2 \int_0^\infty \frac{1}{ e^{u^2} } \;du
+               & \text{let}\; du = \frac{1}{\sqrt t} \\
+            &= \int_{-\infty}^\infty \frac{1}{ e^{u^2} } \;du \\
+            &= \sqrt\pi \\
+\Gamma(1.5) &= \frac{\sqrt\pi}{2}
+\end{align}
+$$
 
 ตอนพยายามหาค่าของ $\Gamma(0.5)$ ต้องใช้ความรู้เรื่อง double integral และการแปลงระนาบเข้าช่วย ถ้ายังมีพลังลุยต่อวิดีโอนี้น่าจะช่วยอธิบายเพิ่มได้
 

@@ -38,7 +38,8 @@ $$
 
 เริ่มจากฝั่ง $P(k+1)$ ก่อน จะเห็นว่า
 
-$$ \begin{align*}
+$$
+\begin{align*}
 F_{k+1}^2 + F_k^2 &= (F_k + F_{k-1})^2 + F_k^2 \\
                   &= (F_k^2 + 2F_kF_{k-1} + F_{k-1}^2) + F_k^2 \\
                   &= (F_k^2 + F_{k-1}^2) + 2F_kF_{k-1} + F_k^2 \\
@@ -47,17 +48,20 @@ F_{k+1}^2 + F_k^2 &= (F_k + F_{k-1})^2 + F_k^2 \\
                   &= \underbrace{(F_k^2 + F_{k-1}^2)}_{\text{induction}} + \underbrace{F_kF_{k-1} + F_kF_{k+1}}_{\text{mutual equation}} \\
                   &= F_{2k-1} + F_{2k} \\
                   &= F_{2k+1}
-\end{align*} $$
+\end{align*}
+$$
 
 และแน่นอนว่าฝั่ง $Q(k+1)$ ก็สามารถถูกพิสูจน์ได้ในทำนองเดียวกัน
 
-$$ \begin{align*}
+$$
+\begin{align*}
 F_{k+2}F_{k+1} + F_{k+1}F_k &= (F_{k+1} + F_k)F_{k+1} + (F_k + F_{k-1})F_k \\
                             &= (F_{k+1}^2 + F_kF_{k+1}) + (F_k^2 + F_{k-1}F_k) \\
                             &= \underbrace{(F_{k+1}^2 + F_k^2)}_{\text{mutual equation}} + \underbrace{(F_kF_{k+1} + F_{k-1}F_k)}_{\text{induction}} \\
                             &= F_{2k+1} + F_{2k} \\
                             &= F_{2k+2}
-\end{align*} $$
+\end{align*}
+$$
 
 เราอาจเรียกเทคนิคนี้ว่าเป็นการพิสูจน์โดยอุปนัยแบบพร้อมเพรียงกัน (simultaneous induction)
 
@@ -88,7 +92,8 @@ def fibonacci(n):
 
 บล็อกตอนนี้อาจถือได้ว่าเป็นตอนต่อของ[การคำนวณค่าฟิโบนัชชีด้วยเมทริกซ์][fast fibonacci matrix] ซึ่งเราสามารถมาถึงข้อสรุปของเอกลักษณ์ข้างต้นได้เช่นกัน ผ่านการแก้สมการเมทริกซ์จากตอนที่แล้วต่อดังนี้
 
-$$ \begin{align*}
+$$
+\begin{align*}
 \begin{bmatrix}
 1 & 1\\
 1 & 0
@@ -118,8 +123,8 @@ F_{2n}   & F_{2n-1}
        F_{n+1}^2 + F_n^2       & F_{n+1}F_n + F_nF_{n-1} \\
        F_nF_{n+1} + F_{n-1}F_n & F_n^2 + F_{n-1}^2
        \end{bmatrix}
-
-\end{align*} $$
+\end{align*}
+$$
 
 
 ## อ้างอิง

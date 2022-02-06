@@ -23,7 +23,7 @@ date: 2012-09-03 08:10:00 +0700
 โดย algorithm ที่จะใช้คำนวณหาค่า $e$ คือ
 
 $$
-    e = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \frac{1}{4!} + \cdots
+e = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \frac{1}{4!} + \cdots
 $$
 
 ต้องใช้ algorithm นี้เพราะว่ามันให้ค่าทศนิยมได้แม่นยำรวดเร็วพอสมควร และยัง implement ตามไม่ยากเท่าไหร่ ในที่นี้ใช้ถึงแค่พจน์ $\frac{1}{200!}$ ก็ให้ค่าออกมาแม่นยำเกือบ 400 ตำแหน่งแล้ว
@@ -44,21 +44,23 @@ sum(1/factorial(i) for i in range(200))
 
 เพราะ `float` มันเก็บ precision ของทศนิยมได้เล็กนิดเดียว ดังนั้นเราต้องดัดแปลงสมการต้นแบบให้กลายเป็น
 
-$$ \begin{align}
-    e &= \left( 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \frac{1}{4!} + \cdots \right) \left( \frac{\prod\limits_{i=1}^{\infty}i!}{\prod\limits_{i=1}^{\infty}i!} \right) \\
-      &= \frac{ \left( \prod\limits_{i=1}^{\infty}i!  + \frac{\prod\limits_{i=1}^{\infty}i!}{1!} + \frac{\prod\limits_{i=1}^{\infty}i!}{2!} + \frac{\prod\limits_{i=1}^{\infty}i!}{3!} + \frac{\prod\limits_{i=1}^{\infty}i!}{4!} + \cdots \right) }{ \prod\limits_{i=1}^{\infty}i! }
-\end{align} $$
+$$
+\begin{align}
+e &= \left( 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \frac{1}{4!} + \cdots \right) \left( \frac{\prod\limits_{i=1}^{\infty}i!}{\prod\limits_{i=1}^{\infty}i!} \right) \\
+  &= \frac{ \left( \prod\limits_{i=1}^{\infty}i!  + \frac{\prod\limits_{i=1}^{\infty}i!}{1!} + \frac{\prod\limits_{i=1}^{\infty}i!}{2!} + \frac{\prod\limits_{i=1}^{\infty}i!}{3!} + \frac{\prod\limits_{i=1}^{\infty}i!}{4!} + \cdots \right) }{ \prod\limits_{i=1}^{\infty}i! }
+\end{align}
+$$
 
 เทคนิคหนึ่ง (ใน Python) ที่ใช้ได้เสมอๆ เมื่อต้องการทศนิยมละเอียด $n$ ตำแหน่ง คือคูณด้วย $10^n$ เข้าไปเพื่อให้กลายเป็นจำนวนเต็ม แล้วค่อยนำไปหารปัดเศษทีหลังสุดนั่นเอง ดังนั้น
 
 $$
-    \left\lfloor e \times 10^n \right\rfloor = \left\lfloor \frac{ \left( \prod\limits_{i=1}^{\infty}i!  + \frac{\prod\limits_{i=1}^{\infty}i!}{1!} + \frac{\prod\limits_{i=1}^{\infty}i!}{2!} + \frac{\prod\limits_{i=1}^{\infty}i!}{3!} + \frac{\prod\limits_{i=1}^{\infty}i!}{4!} + \cdots \right) 10^n }{ \prod\limits_{i=1}^{\infty}i! } \right\rfloor
+\left\lfloor e \times 10^n \right\rfloor = \left\lfloor \frac{ \left( \prod\limits_{i=1}^{\infty}i!  + \frac{\prod\limits_{i=1}^{\infty}i!}{1!} + \frac{\prod\limits_{i=1}^{\infty}i!}{2!} + \frac{\prod\limits_{i=1}^{\infty}i!}{3!} + \frac{\prod\limits_{i=1}^{\infty}i!}{4!} + \cdots \right) 10^n }{ \prod\limits_{i=1}^{\infty}i! } \right\rfloor
 $$
 
 แต่จากการสังเกตที่เคยทำมาแล้ว เราต้องการ $n=400$ และไล่คูณค่า factorial ไปแค่ $200$ ก็พอ ไม่ต้องถึง $\infty$ ดังนั้น
 
 $$
-    \left\lfloor e \times 10^{400} \right\rfloor = \left\lfloor \frac{ \left( \prod\limits_{i=1}^{200}i!  + \frac{\prod\limits_{i=1}^{200}i!}{1!} + \frac{\prod\limits_{i=1}^{200}i!}{2!} + \frac{\prod\limits_{i=1}^{200}i!}{3!} + \frac{\prod\limits_{i=1}^{200}i!}{4!} + \cdots \right) 10^{400} }{ \prod\limits_{i=1}^{200}i! } \right\rfloor
+\left\lfloor e \times 10^{400} \right\rfloor = \left\lfloor \frac{ \left( \prod\limits_{i=1}^{200}i!  + \frac{\prod\limits_{i=1}^{200}i!}{1!} + \frac{\prod\limits_{i=1}^{200}i!}{2!} + \frac{\prod\limits_{i=1}^{200}i!}{3!} + \frac{\prod\limits_{i=1}^{200}i!}{4!} + \cdots \right) 10^{400} }{ \prod\limits_{i=1}^{200}i! } \right\rfloor
 $$
 
 จะเห็นว่าถ้าเรียงลำดับ operator ดีๆ เราจะไม่สูญเสีย precision เพราะไม่ต้องแปลงเลขไปเป็น `float` เลย

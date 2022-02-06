@@ -41,23 +41,26 @@ revise:
 
 ด้วยความช่วยเหลือจาก[ฟังก์ชันบ่งเครื่องหมาย ($\sgn$)][sign function] เราอาจสร้างฟังก์ชันสำหรับตรวจสอบว่าจุด $v$ อยู่ฝั่งทวนเข็มนาฬิกาจากเส้นตรงจากจุด $(0,0)$ ไปยังจุด $u$ หรือไม่ ออกมาเป็นสมการได้ดังนี้
 
-$$ \begin{align*}
-CCW(u, v, w) &= \sgn(\vec{u}_N \cdot \vec{v}) \\
-             &= \sgn(u_x v_y - u_y v_x) \\
-             &= \sgn \begin{vmatrix} u_x & v_x \\ u_y & v_y \end{vmatrix}
-\end{align*} $$
+$$
+\begin{align*}
+CCW(u, v, w)
+&= \sgn(\vec{u}_N \cdot \vec{v}) \\
+&= \sgn(u_x v_y - u_y v_x) \\
+&= \sgn \begin{vmatrix} u_x & v_x \\ u_y & v_y \end{vmatrix}
+\end{align*}
+$$
 
 แต่อย่าลืมว่า $\vec{u}$ และ $\vec{v}$ นั้น เป็นเวกเตอร์ที่โดน[เลื่อน][translation]มาคำนวณที่จุด $(0,0)$ หากเวกเตอร์ของการเลื่อนคือ $\vec{w}$ ค่าใน[ดีเทอร์มิแนนต์][determinant]ข้างต้นจะกลายเป็น
 
 $$
 \begin{vmatrix}
-  u_x-w_x & v_x-w_x \\
-  u_y-w_y & v_y-w_y
+u_x-w_x & v_x-w_x \\
+u_y-w_y & v_y-w_y
 \end{vmatrix} =
 \begin{vmatrix}
-  u_x & v_x & w_x \\
-  u_y & v_y & w_y \\
-  1   & 1   & 1
+u_x & v_x & w_x \\
+u_y & v_y & w_y \\
+1   & 1   & 1
 \end{vmatrix}
 $$
 
@@ -65,10 +68,12 @@ $$
 
 เมื่อได้ฟังก์ชัน $CCW$ มาแล้ว จะหาว่าส่วนของเส้นตรง $\overline{pq}$ และ $\overline{rs}$ ตัดกันหรือไม่ ก็ทำได้ง่ายๆ เพียง
 
-$$ \begin{align*}
+$$
+\begin{align*}
 CUT(\overline{pq}, \overline{rs}) &= CCW(p, q, r) \oplus CCW(p, q, s) \\
 INTERSECT(\overline{pq}, \overline{rs}) &= CUT(\overline{pq}, \overline{rs}) \land CUT(\overline{rs}, \overline{pq})
-\end{align*} $$
+\end{align*}
+$$
 
 ## อ้างอิง
 

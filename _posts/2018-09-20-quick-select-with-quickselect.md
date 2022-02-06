@@ -24,11 +24,13 @@ date: 2018-09-20 23:58:30 +0700
 
 ดังนั้นเวลาที่ใช้ทั้งหมดจะกลายเป็น
 
-$$ \begin{align*}
+$$
+\begin{align*}
 \sum_{i=0}^{\log n} O(n/2^i) &= O(n) + O(n/2) + O(n/4) + \dots + O(n/2^{\log n}) \\
                              &= O\left( n \sum_{i=0}^{\log n} \frac{1}{2^i} \right) \\
                              &\le O(2n) = O(n)
-\end{align*} $$
+\end{align*}
+$$
 
 ตัวอย่างโค้ดในภาษา Python
 

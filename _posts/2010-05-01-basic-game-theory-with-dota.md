@@ -51,12 +51,12 @@ date: 2010-05-01 03:37:00 +0700
 เขียนเป็นตารางผลตอบแทนได้ดังนี้
 
 $$
-    \begin{array}{r|c c}
-    \text{W\\F}   & \text{center} & \text{edge} \\
-    \hline
-    \text{center} &    (-2,-2)    &    (-1,-3)  \\
-    \text{edge}   &    (-3,-5)    &    (-5,-4)  \\
-    \end{array} \\
+\begin{array}{r|cc}
+\text{W\\F}   & \text{center} & \text{edge} \\
+\hline
+\text{center} &    (-2,-2)    &    (-1,-3)  \\
+\text{edge}   &    (-3,-5)    &    (-5,-4)  \\
+\end{array}
 $$
 
 จุดประสงค์ที่แท้จริงของเกมนี้ ไม่ใช่การไล่ฆ่าให้ได้มากที่สุด  

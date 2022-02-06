@@ -2,6 +2,8 @@
 title: 立川雅
 tags:
   - Toy
+  - Japanese
+  - Memorabilia
 date: 2022-01-21 21:01:21 +0700
 ---
 
