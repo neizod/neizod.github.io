@@ -1,7 +1,7 @@
 ---
 title: แก้โจทย์ป้ายสมัครงาน Google แบบบรรทัดเดียว
 tags:
-  - Competitive Programming
+  - Programming Interview Question
   - Functional
   - Python
   - One-Liner
