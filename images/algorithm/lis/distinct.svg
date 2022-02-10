@@ -63,65 +63,65 @@
 <text id="nF" x="255"  y="60">F</text>
 
 
-<animate dur="0.5s" begin="1s; f5.end+1s" id="f1" />
-<animate dur="0.5s" begin="f1.begin" href="#c0" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#c2" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#c6" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#c9" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#cB" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#cF" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#l02" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#l26" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#l69" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#l9B" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f1.begin" href="#lBF" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="1s; f5.end+1s" attributeName="x" id="f1" />
+<animate dur="0.5s" begin="f1.begin" href="#c0" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#c2" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#c6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#c9" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#cB" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#cF" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#l02" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#l26" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#l69" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#l9B" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.begin" href="#lBF" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f1.end+1s" id="f2" />
-<animate dur="0.5s" begin="f2.begin" href="#cB" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#l9B" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#lBF" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#cD" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#l9D" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#lDF" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f1.end+1s" attributeName="x" id="f2" />
+<animate dur="0.5s" begin="f2.begin" href="#cB" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#l9B" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#lBF" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#cD" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#l9D" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#lDF" attributeName="stroke" from="#FA0" to="#36F" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f2.end+1s" id="f3" />
-<animate dur="0.5s" begin="f3.begin" href="#c2" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#cD" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l02" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l26" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l9D" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#lDF" attributeName="stroke" to="#FA0" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#c4" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#cB" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l04" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l46" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l9B" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#lBF" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f2.end+1s" attributeName="x" id="f3" />
+<animate dur="0.5s" begin="f3.begin" href="#c2" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#cD" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l02" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l26" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l9D" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#lDF" attributeName="stroke" from="#36F" to="#FA0" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#c4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#cB" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l04" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l46" attributeName="stroke" from="#FA0" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l9B" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#lBF" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f3.end+1s" id="f4" />
-<animate dur="0.5s" begin="f4.begin" href="#cB" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#l9B" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#lBF" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#cD" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#l9D" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#lDF" attributeName="stroke" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f3.end+1s" attributeName="x" id="f4" />
+<animate dur="0.5s" begin="f4.begin" href="#cB" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#l9B" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#lBF" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#cD" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#l9D" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#lDF" attributeName="stroke" from="#FA0" to="#36F" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f4.end+1s" id="f5" />
-<animate dur="0.5s" begin="f5.begin" href="#c0" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#c4" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#c6" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#c9" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#cD" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#cF" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l04" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l46" attributeName="stroke" to="#FA0" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l69" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l9D" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#lDF" attributeName="stroke" to="#FA0" fill="freeze" />
+<animate dur="0.5s" begin="f4.end+1s" attributeName="x" id="f5" />
+<animate dur="0.5s" begin="f5.begin" href="#c0" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#c4" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#c6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#c9" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#cD" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#cF" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l04" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l46" attributeName="stroke" from="#36F" to="#FA0" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l69" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l9D" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#lDF" attributeName="stroke" from="#36F" to="#FA0" fill="freeze" />
 
 
 </svg>

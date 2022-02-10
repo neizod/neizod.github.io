@@ -49,315 +49,315 @@
 <text id="nF" x="255" y="15">F</text>
 
 
-<animate dur="0.5s" begin="1s; f19.end+1s" id="f1" />
-<animate dur="0.5s" begin="f1.begin" href="#n0" attributeName="y" to="60" fill="freeze" />
+<animate dur="0.5s" begin="1s; f19.end+1s" attributeName="x" id="f1" />
+<animate dur="0.5s" begin="f1.begin" href="#n0" attributeName="y" from="15" to="60" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f1.end+1s" id="f2" />
-<animate dur="0.5s" begin="f2.begin" href="#n8" attributeName="x" to="75" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#n8" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#l8" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#l8" attributeName="x2" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f2.begin" href="#l8" attributeName="y2" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f1.end+1s" attributeName="x" id="f2" />
+<animate dur="0.5s" begin="f2.begin" href="#n8" attributeName="x" from="45" to="75" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#n8" attributeName="y" from="15" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#l8" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#l8" attributeName="x2" from="45" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f2.begin" href="#l8" attributeName="y2" from="20" to="60" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f2.end+1s" id="f3" />
-<animate dur="0.5s" begin="f3.begin" href="#n4" attributeName="x" to="75" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#n4" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#n8" attributeName="y" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l4" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l4" attributeName="x2" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l4" attributeName="y2" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f3.begin" href="#l8" attributeName="y2" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f2.end+1s" attributeName="x" id="f3" />
+<animate dur="0.5s" begin="f3.begin" href="#n4" attributeName="x" from="60" to="75" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#n4" attributeName="y" from="15" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#n8" attributeName="y" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l4" attributeName="x2" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l4" attributeName="y2" from="20" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f3.begin" href="#l8" attributeName="y2" from="60" to="70" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f3.end+1s" id="f4" />
-<animate dur="0.5s" begin="f4.begin" href="#nC" attributeName="x" to="120" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#nC" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#lC" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#lC" attributeName="x2" to="115" fill="freeze" />
-<animate dur="0.5s" begin="f4.begin" href="#lC" attributeName="y2" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f3.end+1s" attributeName="x" id="f4" />
+<animate dur="0.5s" begin="f4.begin" href="#nC" attributeName="x" from="75" to="120" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#nC" attributeName="y" from="15" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#lC" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#lC" attributeName="x2" from="75" to="115" fill="freeze" />
+<animate dur="0.5s" begin="f4.begin" href="#lC" attributeName="y2" from="20" to="50" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f4.end+1s" id="f5" />
-<animate dur="0.5s" begin="f5.begin" href="#n2" attributeName="x" to="75" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#n2" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#n4" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#n8" attributeName="y" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#nC" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l2" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l2" attributeName="x2" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l2" attributeName="y2" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l4" attributeName="y2" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#l8" attributeName="y2" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#lC" attributeName="y1" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f5.begin" href="#lC" attributeName="y2" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f4.end+1s" attributeName="x" id="f5" />
+<animate dur="0.5s" begin="f5.begin" href="#n2" attributeName="x" from="90" to="75" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#n2" attributeName="y" from="15" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#n4" attributeName="y" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#n8" attributeName="y" from="70" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#nC" attributeName="y" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l2" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l2" attributeName="x2" from="90" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l2" attributeName="y2" from="20" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l4" attributeName="y2" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#l8" attributeName="y2" from="70" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#lC" attributeName="y1" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f5.begin" href="#lC" attributeName="y2" from="50" to="60" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f5.end+1s" id="f6" />
-<animate dur="0.5s" begin="f6.begin" href="#nA" attributeName="x" to="120" fill="freeze" />
-<animate dur="0.5s" begin="f6.begin" href="#nA" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f6.begin" href="#lA" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f6.begin" href="#lA" attributeName="x2" to="115" fill="freeze" />
-<animate dur="0.5s" begin="f6.begin" href="#lA" attributeName="y2" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f5.end+1s" attributeName="x" id="f6" />
+<animate dur="0.5s" begin="f6.begin" href="#nA" attributeName="x" from="105" to="120" fill="freeze" />
+<animate dur="0.5s" begin="f6.begin" href="#nA" attributeName="y" from="15" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f6.begin" href="#lA" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f6.begin" href="#lA" attributeName="x2" from="105" to="115" fill="freeze" />
+<animate dur="0.5s" begin="f6.begin" href="#lA" attributeName="y2" from="20" to="40" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f6.end+1s" id="f7" />
-<animate dur="0.5s" begin="f7.begin" href="#n6" attributeName="y" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f7.begin" href="#nA" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f7.begin" href="#nC" attributeName="y" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f7.begin" href="#l6" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f7.begin" href="#l6" attributeName="x2" to="115" fill="freeze" />
-<animate dur="0.5s" begin="f7.begin" href="#l6" attributeName="y2" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f7.begin" href="#lA" attributeName="y2" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f7.begin" href="#lC" attributeName="y2" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f6.end+1s" attributeName="x" id="f7" />
+<animate dur="0.5s" begin="f7.begin" href="#n6" attributeName="y" from="15" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f7.begin" href="#nA" attributeName="y" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f7.begin" href="#nC" attributeName="y" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f7.begin" href="#l6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f7.begin" href="#l6" attributeName="x2" from="120" to="115" fill="freeze" />
+<animate dur="0.5s" begin="f7.begin" href="#l6" attributeName="y2" from="20" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f7.begin" href="#lA" attributeName="y2" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f7.begin" href="#lC" attributeName="y2" from="60" to="70" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f7.end+1s" id="f8" />
-<animate dur="0.5s" begin="f8.begin" href="#nE" attributeName="x" to="165" fill="freeze" />
-<animate dur="0.5s" begin="f8.begin" href="#nE" attributeName="y" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f8.begin" href="#lE" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f8.begin" href="#lE" attributeName="x2" to="160" fill="freeze" />
-<animate dur="0.5s" begin="f8.begin" href="#lE" attributeName="y2" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f7.end+1s" attributeName="x" id="f8" />
+<animate dur="0.5s" begin="f8.begin" href="#nE" attributeName="x" from="135" to="165" fill="freeze" />
+<animate dur="0.5s" begin="f8.begin" href="#nE" attributeName="y" from="15" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f8.begin" href="#lE" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f8.begin" href="#lE" attributeName="x2" from="135" to="160" fill="freeze" />
+<animate dur="0.5s" begin="f8.begin" href="#lE" attributeName="y2" from="20" to="30" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f8.end+1s" id="f9" />
-<animate dur="0.5s" begin="f9.begin" href="#n1" attributeName="x" to="75" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#n1" attributeName="y" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#n2" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#n4" attributeName="y" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#n8" attributeName="y" to="90" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#n6" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#nA" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#nC" attributeName="y" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#nE" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#l1" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#l1" attributeName="x2" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#l1" attributeName="y2" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#l2" attributeName="y2" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#l4" attributeName="y2" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#l8" attributeName="y2" to="90" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#l6" attributeName="y1" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#l6" attributeName="y2" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#lA" attributeName="y1" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#lA" attributeName="y2" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#lC" attributeName="y1" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#lC" attributeName="y2" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#lE" attributeName="y1" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f9.begin" href="#lE" attributeName="y2" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f8.end+1s" attributeName="x" id="f9" />
+<animate dur="0.5s" begin="f9.begin" href="#n1" attributeName="x" from="150" to="75" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#n1" attributeName="y" from="15" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#n2" attributeName="y" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#n4" attributeName="y" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#n8" attributeName="y" from="80" to="90" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#n6" attributeName="y" from="30" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#nA" attributeName="y" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#nC" attributeName="y" from="70" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#nE" attributeName="y" from="30" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#l1" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#l1" attributeName="x2" from="150" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#l1" attributeName="y2" from="20" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#l2" attributeName="y2" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#l4" attributeName="y2" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#l8" attributeName="y2" from="80" to="90" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#l6" attributeName="y1" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#l6" attributeName="y2" from="30" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#lA" attributeName="y1" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#lA" attributeName="y2" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#lC" attributeName="y1" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#lC" attributeName="y2" from="70" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#lE" attributeName="y1" from="30" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#lE" attributeName="y2" from="30" to="40" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f9.end+1s" id="f10" />
-<animate dur="0.5s" begin="f10.begin" href="#n9" attributeName="y" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f10.begin" href="#nE" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f10.begin" href="#l9" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f10.begin" href="#l9" attributeName="x2" to="160" fill="freeze" />
-<animate dur="0.5s" begin="f10.begin" href="#l9" attributeName="y2" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f10.begin" href="#lE" attributeName="y2" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f9.end+1s" attributeName="x" id="f10" />
+<animate dur="0.5s" begin="f10.begin" href="#n9" attributeName="y" from="15" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f10.begin" href="#nE" attributeName="y" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f10.begin" href="#l9" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f10.begin" href="#l9" attributeName="x2" from="165" to="160" fill="freeze" />
+<animate dur="0.5s" begin="f10.begin" href="#l9" attributeName="y2" from="20" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f10.begin" href="#lE" attributeName="y2" from="40" to="50" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f10.end+1s" id="f11" />
-<animate dur="0.5s" begin="f11.begin" href="#n5" attributeName="x" to="120" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#n5" attributeName="y" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#n6" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#nA" attributeName="y" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#nC" attributeName="y" to="90" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#n9" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#nE" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#l5" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#l5" attributeName="x2" to="115" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#l5" attributeName="y2" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#l6" attributeName="y2" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#lA" attributeName="y2" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#lC" attributeName="y2" to="90" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#l9" attributeName="y1" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#l9" attributeName="y2" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#lE" attributeName="y1" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f11.begin" href="#lE" attributeName="y2" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f10.end+1s" attributeName="x" id="f11" />
+<animate dur="0.5s" begin="f11.begin" href="#n5" attributeName="x" from="180" to="120" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#n5" attributeName="y" from="15" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#n6" attributeName="y" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#nA" attributeName="y" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#nC" attributeName="y" from="80" to="90" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#n9" attributeName="y" from="30" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#nE" attributeName="y" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#l5" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#l5" attributeName="x2" from="180" to="115" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#l5" attributeName="y2" from="20" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#l6" attributeName="y2" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#lA" attributeName="y2" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#lC" attributeName="y2" from="80" to="90" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#l9" attributeName="y1" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#l9" attributeName="y2" from="30" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#lE" attributeName="y1" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f11.begin" href="#lE" attributeName="y2" from="50" to="60" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f11.end+1s" id="f12" />
-<animate dur="0.5s" begin="f12.begin" href="#nD" attributeName="x" to="210" fill="freeze" />
-<animate dur="0.5s" begin="f12.begin" href="#nD" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f12.begin" href="#lD" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f12.begin" href="#lD" attributeName="x2" to="205" fill="freeze" />
-<animate dur="0.5s" begin="f12.begin" href="#lD" attributeName="y2" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f11.end+1s" attributeName="x" id="f12" />
+<animate dur="0.5s" begin="f12.begin" href="#nD" attributeName="x" from="195" to="210" fill="freeze" />
+<animate dur="0.5s" begin="f12.begin" href="#nD" attributeName="y" from="15" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f12.begin" href="#lD" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f12.begin" href="#lD" attributeName="x2" from="195" to="205" fill="freeze" />
+<animate dur="0.5s" begin="f12.begin" href="#lD" attributeName="y2" from="20" to="40" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f12.end+1s" id="f13" />
-<animate dur="0.5s" begin="f13.begin" href="#n3" attributeName="x" to="120" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#n3" attributeName="y" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#n5" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#n6" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#nA" attributeName="y" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#nC" attributeName="y" to="100" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#n9" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#nE" attributeName="y" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#nD" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#l3" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#l3" attributeName="x2" to="115" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#l3" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#l5" attributeName="y2" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#l6" attributeName="y2" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#lA" attributeName="y2" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#lC" attributeName="y2" to="100" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#l9" attributeName="y1" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#l9" attributeName="y2" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#lE" attributeName="y1" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#lE" attributeName="y2" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#lD" attributeName="y1" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f13.begin" href="#lD" attributeName="y2" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f12.end+1s" attributeName="x" id="f13" />
+<animate dur="0.5s" begin="f13.begin" href="#n3" attributeName="x" from="210" to="120" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#n3" attributeName="y" from="15" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#n5" attributeName="y" from="30" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#n6" attributeName="y" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#nA" attributeName="y" from="70" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#nC" attributeName="y" from="90" to="100" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#n9" attributeName="y" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#nE" attributeName="y" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#nD" attributeName="y" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#l3" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#l3" attributeName="x2" from="210" to="115" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#l3" attributeName="y2" from="20" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#l5" attributeName="y2" from="30" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#l6" attributeName="y2" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#lA" attributeName="y2" from="70" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#lC" attributeName="y2" from="90" to="100" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#l9" attributeName="y1" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#l9" attributeName="y2" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#lE" attributeName="y1" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#lE" attributeName="y2" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#lD" attributeName="y1" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f13.begin" href="#lD" attributeName="y2" from="40" to="50" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f13.end+1s" id="f14" />
-<animate dur="0.5s" begin="f14.begin" href="#nB" attributeName="x" to="210" fill="freeze" />
-<animate dur="0.5s" begin="f14.begin" href="#nB" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f14.begin" href="#nD" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f14.begin" href="#lB" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f14.begin" href="#lB" attributeName="x2" to="205" fill="freeze" />
-<animate dur="0.5s" begin="f14.begin" href="#lB" attributeName="y2" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f14.begin" href="#lD" attributeName="y2" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f13.end+1s" attributeName="x" id="f14" />
+<animate dur="0.5s" begin="f14.begin" href="#nB" attributeName="x" from="225" to="210" fill="freeze" />
+<animate dur="0.5s" begin="f14.begin" href="#nB" attributeName="y" from="15" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f14.begin" href="#nD" attributeName="y" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f14.begin" href="#lB" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f14.begin" href="#lB" attributeName="x2" from="225" to="205" fill="freeze" />
+<animate dur="0.5s" begin="f14.begin" href="#lB" attributeName="y2" from="20" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f14.begin" href="#lD" attributeName="y2" from="50" to="60" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f14.end+1s" id="f15" />
-<animate dur="0.5s" begin="f15.begin" href="#n7" attributeName="x" to="165" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#n7" attributeName="y" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#n9" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#nE" attributeName="y" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#nB" attributeName="y" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#nD" attributeName="y" to="70" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#l7" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#l7" attributeName="x2" to="160" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#l7" attributeName="y2" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#l9" attributeName="y2" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#lE" attributeName="y2" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#lB" attributeName="y1" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#lB" attributeName="y2" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#lD" attributeName="y1" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f15.begin" href="#lD" attributeName="y2" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f14.end+1s" attributeName="x" id="f15" />
+<animate dur="0.5s" begin="f15.begin" href="#n7" attributeName="x" from="240" to="165" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#n7" attributeName="y" from="15" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#n9" attributeName="y" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#nE" attributeName="y" from="70" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#nB" attributeName="y" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#nD" attributeName="y" from="60" to="70" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#l7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#l7" attributeName="x2" from="240" to="160" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#l7" attributeName="y2" from="20" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#l9" attributeName="y2" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#lE" attributeName="y2" from="70" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#lB" attributeName="y1" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#lB" attributeName="y2" from="40" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#lD" attributeName="y1" from="50" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f15.begin" href="#lD" attributeName="y2" from="60" to="70" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f15.end+1s" id="f16" />
-<animate dur="0.5s" begin="f16.begin" href="#nF" attributeName="y" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#lF" attributeName="opacity" to="1" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#lF" attributeName="x2" to="250" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#lF" attributeName="y2" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#c0" attributeName="cy" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#c2" attributeName="cx" to="75" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#c2" attributeName="cy" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#c6" attributeName="cy" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#c9" attributeName="cy" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#cB" attributeName="cx" to="210" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#cB" attributeName="cy" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f16.begin" href="#cF" attributeName="cy" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f15.end+1s" attributeName="x" id="f16" />
+<animate dur="0.5s" begin="f16.begin" href="#nF" attributeName="y" from="15" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#lF" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#lF" attributeName="x2" from="255" to="250" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#lF" attributeName="y2" from="20" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#c0" attributeName="cy" from="15" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#c2" attributeName="cx" from="90" to="75" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#c2" attributeName="cy" from="15" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#c6" attributeName="cy" from="15" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#c9" attributeName="cy" from="15" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#cB" attributeName="cx" from="225" to="210" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#cB" attributeName="cy" from="15" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f16.begin" href="#cF" attributeName="cy" from="15" to="60" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f16.end+1s" id="f17" />
-<animate dur="0.5s" begin="f17.begin" href="#lis" attributeName="stroke" to="#36F" fill="freeze" />
-<animate dur="0.5s" begin="f17.begin" href="#circles" attributeName="opacity" to="1" fill="freeze" />
+<animate dur="0.5s" begin="f16.end+1s" attributeName="x" id="f17" />
+<animate dur="0.5s" begin="f17.begin" href="#lis" attributeName="stroke" from="#A00" to="#36F" fill="freeze" />
+<animate dur="0.5s" begin="f17.begin" href="#circles" attributeName="opacity" from="0" to="1" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f17.end+1s" id="f18" />
-<animate dur="0.5s" begin="f18.begin" href="#n0" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n8" attributeName="x" to="45" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n8" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n4" attributeName="x" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n4" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nC" attributeName="x" to="75" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nC" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n2" attributeName="x" to="90" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n2" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nA" attributeName="x" to="105" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nA" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n6" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nE" attributeName="x" to="135" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nE" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n1" attributeName="x" to="150" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n1" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n9" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n5" attributeName="x" to="180" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n5" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nD" attributeName="x" to="195" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nD" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n3" attributeName="x" to="210" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n3" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nB" attributeName="x" to="225" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nB" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n7" attributeName="x" to="240" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#n7" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#nF" attributeName="y" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l1" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l2" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l3" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l4" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l5" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l6" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l7" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l8" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#l9" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#lA" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#lB" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#lC" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#lD" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#lE" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#lF" attributeName="opacity" to="0" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#lis" attributeName="stroke" to="#A00" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#c0" attributeName="cy" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#c2" attributeName="cx" to="90" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#c2" attributeName="cy" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#c6" attributeName="cy" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#c9" attributeName="cy" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#cB" attributeName="cx" to="225" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#cB" attributeName="cy" to="15" fill="freeze" />
-<animate dur="0.5s" begin="f18.begin" href="#cF" attributeName="cy" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f17.end+1s" attributeName="x" id="f18" />
+<animate dur="0.5s" begin="f18.begin" href="#n0" attributeName="y" from="60" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n8" attributeName="x" from="75" to="45" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n8" attributeName="y" from="90" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n4" attributeName="x" from="75" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n4" attributeName="y" from="70" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nC" attributeName="x" from="120" to="75" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nC" attributeName="y" from="100" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n2" attributeName="x" from="75" to="90" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n2" attributeName="y" from="50" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nA" attributeName="x" from="120" to="105" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nA" attributeName="y" from="80" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n6" attributeName="y" from="60" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nE" attributeName="x" from="165" to="135" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nE" attributeName="y" from="80" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n1" attributeName="x" from="75" to="150" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n1" attributeName="y" from="30" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n9" attributeName="y" from="60" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n5" attributeName="x" from="120" to="180" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n5" attributeName="y" from="40" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nD" attributeName="x" from="210" to="195" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nD" attributeName="y" from="70" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n3" attributeName="x" from="120" to="210" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n3" attributeName="y" from="20" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nB" attributeName="x" from="210" to="225" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nB" attributeName="y" from="50" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n7" attributeName="x" from="165" to="240" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#n7" attributeName="y" from="40" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#nF" attributeName="y" from="60" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l1" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l2" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l3" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l4" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l5" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l8" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#l9" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#lA" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#lB" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#lC" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#lD" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#lE" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#lF" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#lis" attributeName="stroke" from="#36F" to="#A00" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#c0" attributeName="cy" from="60" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#c2" attributeName="cx" from="75" to="90" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#c2" attributeName="cy" from="50" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#c6" attributeName="cy" from="60" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#c9" attributeName="cy" from="60" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#cB" attributeName="cx" from="210" to="225" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#cB" attributeName="cy" from="50" to="15" fill="freeze" />
+<animate dur="0.5s" begin="f18.begin" href="#cF" attributeName="cy" from="60" to="15" fill="freeze" />
 
 
-<animate dur="0.5s" begin="f18.end+1s" id="f19" />
-<animate dur="0.5s" begin="f19.begin" href="#l8" attributeName="x2" to="45" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l8" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l4" attributeName="x2" to="60" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l4" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l2" attributeName="x2" to="90" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l2" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l1" attributeName="x2" to="150" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l1" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lC" attributeName="x1" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lC" attributeName="y1" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lC" attributeName="x2" to="75" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lC" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lA" attributeName="x1" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lA" attributeName="y1" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lA" attributeName="x2" to="105" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lA" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l6" attributeName="x1" to="80" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l6" attributeName="y1" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l6" attributeName="x2" to="120" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l6" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l5" attributeName="x2" to="180" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l5" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l3" attributeName="x2" to="210" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l3" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lE" attributeName="x1" to="125" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lE" attributeName="y1" to="30" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lE" attributeName="x2" to="135" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lE" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l9" attributeName="x1" to="125" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l9" attributeName="y1" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l9" attributeName="x2" to="165" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l9" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l7" attributeName="x2" to="240" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#l7" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lD" attributeName="x1" to="170" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lD" attributeName="y1" to="40" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lD" attributeName="x2" to="195" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lD" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lB" attributeName="x1" to="170" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lB" attributeName="y1" to="50" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lB" attributeName="x2" to="225" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lB" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lF" attributeName="x2" to="255" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#lF" attributeName="y2" to="20" fill="freeze" />
-<animate dur="0.5s" begin="f19.begin" href="#circles" attributeName="opacity" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f18.end+1s" attributeName="x" id="f19" />
+<animate dur="0.5s" begin="f19.begin" href="#l8" attributeName="x2" from="70" to="45" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l8" attributeName="y2" from="90" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l4" attributeName="x2" from="70" to="60" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l4" attributeName="y2" from="70" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l2" attributeName="x2" from="70" to="90" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l2" attributeName="y2" from="50" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l1" attributeName="x2" from="70" to="150" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l1" attributeName="y2" from="30" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lC" attributeName="x1" from="80" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lC" attributeName="y1" from="70" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lC" attributeName="x2" from="115" to="75" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lC" attributeName="y2" from="100" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lA" attributeName="x1" from="80" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lA" attributeName="y1" from="50" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lA" attributeName="x2" from="115" to="105" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lA" attributeName="y2" from="80" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l6" attributeName="x1" from="80" to="80" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l6" attributeName="y1" from="50" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l6" attributeName="x2" from="115" to="120" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l6" attributeName="y2" from="60" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l5" attributeName="x2" from="115" to="180" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l5" attributeName="y2" from="40" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l3" attributeName="x2" from="115" to="210" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l3" attributeName="y2" from="20" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lE" attributeName="x1" from="125" to="125" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lE" attributeName="y1" from="60" to="30" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lE" attributeName="x2" from="160" to="135" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lE" attributeName="y2" from="80" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l9" attributeName="x1" from="125" to="125" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l9" attributeName="y1" from="60" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l9" attributeName="x2" from="160" to="165" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l9" attributeName="y2" from="60" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l7" attributeName="x2" from="160" to="240" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#l7" attributeName="y2" from="40" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lD" attributeName="x1" from="170" to="170" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lD" attributeName="y1" from="60" to="40" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lD" attributeName="x2" from="205" to="195" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lD" attributeName="y2" from="70" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lB" attributeName="x1" from="170" to="170" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lB" attributeName="y1" from="60" to="50" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lB" attributeName="x2" from="205" to="225" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lB" attributeName="y2" from="50" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lF" attributeName="x2" from="250" to="255" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#lF" attributeName="y2" from="60" to="20" fill="freeze" />
+<animate dur="0.5s" begin="f19.begin" href="#circles" attributeName="opacity" from="1" to="0" fill="freeze" />
 
 
 </svg>
