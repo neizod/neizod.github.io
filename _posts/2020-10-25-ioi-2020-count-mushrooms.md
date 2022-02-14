@@ -2,6 +2,7 @@
 title: "IOI 2020: นับเห็ดเปลี่ยนชนิด"
 tags:
   - Olympiad in Informatics
+  - Interactive Problem
   - Competitive Programming
   - Algorithm
   - C++

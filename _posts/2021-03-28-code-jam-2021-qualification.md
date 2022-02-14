@@ -2,6 +2,7 @@
 title: Code Jam 2021 รอบคัดเลือก
 tags:
   - Competitive Programming
+  - Interactive Problem
   - Google Code Jam
   - Python
   - R

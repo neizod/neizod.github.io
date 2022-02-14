@@ -2,6 +2,7 @@
 title: Code Jam 2018 รอบคัดเลือก
 tags:
   - Competitive Programming
+  - Interactive Problem
   - Google Code Jam
   - Python
 date: 2018-04-08 18:34:16 +0700
