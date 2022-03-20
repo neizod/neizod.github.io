@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="-150 -150 300 300" font-family="monospace" dominant-baseline="middle" text-anchor="middle">
+
+<polygon id="front" points="-130,0 -130,130 130,130 130,-130 -130,-130" stroke="#999" fill="#fda" />
+<line id="directrix" x1="0" y1="-130" x2="0" y2="130" stroke="#d03" />
+<polygon id="back" points="0,0 0,0 0,0 0,0" stroke="#999" fill="#ccc" />
+<circle id="focus" cx="-130" cy="0" r="2" fill="#d03" />
+<g stroke="#333" stroke-dasharray="2 1">
+<line id="crease1" x1="-150" y1="-150" x2="150"  y2="150" opacity="0" />
+<line id="crease2" x1="-130" y1="-150"  x2="43"  y2="150" opacity="0" />
+<line id="crease3" x1="-100" y1="-150" x2="-20"  y2="150" opacity="0" />
+<line id="crease4"  x1="-65" y1="-150" x2="-65"  y2="150" opacity="0" />
+<line id="crease5" x1="-100"  y1="150" x2="-20" y2="-150" opacity="0" />
+<line id="crease6" x1="-123"  y1="150"  x2="43" y2="-150" opacity="0" />
+<line id="crease7" x1="-150"  y1="150" x2="150" y2="-150" opacity="0" />
+</g>
+<g id="annotation" fill="#d03" font-size="7pt" opacity="0">
+<text x="-110" y="0">focus</text>
+<text x="30" y="120">directrix</text>
+<text x="-110" y="-90" transform="rotate(55 -110 -90)">parabola</text>
+</g>
+<path id="parabola" d="M-325,260 Q195,0 -325,-260" stroke="#d03" fill="none" opacity="0" />
+
+
+
+<!-- keyframes -->
+
+<!-- 1. fold 45 degree -->
+<animate id="kf1a" begin="0.5s; kf6b.end+1.0s" dur="1.84s" attributeName="x" />
+<animate id="kf1b" begin="kf1a.end+1.0s" dur="1.84s" attributeName="x" />
+
+<!-- 2. fold 30 degree -->
+<animate id="kf2a" begin="kf1b.end+0.5s" dur="1.3s" attributeName="x" />
+<animate id="kf2b" begin="kf2a.end+1.0s" dur="1.3s" attributeName="x" />
+
+<!-- 3. fold 15 degree -->
+<animate id="kf3a" begin="kf2b.end+0.5s" dur="1.01s" attributeName="x" />
+<animate id="kf3b" begin="kf3a.end+1.0s" dur="1.01s" attributeName="x" />
+
+<!-- 4. fold 0 degree -->
+<animate id="kf4a" begin="kf3b.end+0.5s" dur="0.65s" attributeName="x" />
+<animate id="kf4b" begin="kf4a.end+1.0s" dur="0.65s" attributeName="x" />
+
+<!-- 5. conclusion on parabola envelope -->
+<animate id="kf5a" begin="kf4b.end+0.5s" dur="0.5s" attributeName="x" />
+<animate id="kf5b" begin="kf5a.end+1.0s" dur="0.5s" attributeName="x" />
+
+<!-- 6. reset the animation -->
+<animate id="kf6a" begin="kf5b.end+1.0s" dur="0.5s" attributeName="x" />
+<animate id="kf6b" begin="kf6a.end+1.5s" dur="0.5s" attributeName="x" />
+
+
+
+<!-- annotation -->
+
+<animate begin="kf5b.begin" dur="0.5s" fill="freeze" href="#annotation" attributeName="opacity" from="0" to="1" />
+<animate begin="kf6b.begin" dur="0.5s" fill="freeze" href="#annotation" attributeName="opacity" from="1" to="0" />
+
+
+
+<!-- points -->
+
+<animate begin="kf1a.end-0.92s" dur="0.92s" fill="freeze" href="#focus" attributeName="cx" from="-130" to="0" />
+<animate begin="kf1a.end-0.92s" dur="0.92s" fill="freeze" href="#focus" attributeName="cy" from="0" to="-130" />
+<animate begin="kf1b.begin" dur="0.92s" fill="freeze" href="#focus" attributeName="cx" from="0" to="-130" />
+<animate begin="kf1b.begin" dur="0.92s" fill="freeze" href="#focus" attributeName="cy" from="-130" to="0" />
+
+<animate begin="kf2a.end-0.70s" dur="0.70s" fill="freeze" href="#focus" attributeName="cx" from="-130" to="0" />
+<animate begin="kf2a.end-0.70s" dur="0.70s" fill="freeze" href="#focus" attributeName="cy" from="0" to="-75" />
+<animate begin="kf2b.begin" dur="0.70s" fill="freeze" href="#focus" attributeName="cx" from="0" to="-130" />
+<animate begin="kf2b.begin" dur="0.70s" fill="freeze" href="#focus" attributeName="cy" from="-75" to="0" />
+
+<animate begin="kf3a.end-0.67s" dur="0.67s" fill="freeze" href="#focus" attributeName="cx" from="-130" to="0" />
+<animate begin="kf3a.end-0.67s" dur="0.67s" fill="freeze" href="#focus" attributeName="cy" from="0" to="-35" />
+<animate begin="kf3b.begin" dur="0.67s" fill="freeze" href="#focus" attributeName="cx" from="0" to="-130" />
+<animate begin="kf3b.begin" dur="0.67s" fill="freeze" href="#focus" attributeName="cy" from="-35" to="0" />
+
+<animate begin="kf4a.begin" dur="0.65s" fill="freeze" href="#focus" attributeName="cx" from="-130" to="0" />
+<animate begin="kf4b.begin" dur="0.65s" fill="freeze" href="#focus" attributeName="cx" from="0" to="-130" />
+
+
+
+<!-- lines -->
+
+<animate begin="kf1a.end" dur="0.5s" fill="freeze" href="#crease1" attributeName="opacity" from="0" to="1" />
+<animate begin="kf2a.end" dur="0.5s" fill="freeze" href="#crease2" attributeName="opacity" from="0" to="1" />
+<animate begin="kf3a.end" dur="0.5s" fill="freeze" href="#crease3" attributeName="opacity" from="0" to="1" />
+<animate begin="kf4a.end" dur="0.5s" fill="freeze" href="#crease4" attributeName="opacity" from="0" to="1" />
+<animate begin="kf5a.begin" dur="0.5s" fill="freeze" href="#crease5" attributeName="opacity" from="0" to="1" />
+<animate begin="kf5a.begin" dur="0.5s" fill="freeze" href="#crease6" attributeName="opacity" from="0" to="1" />
+<animate begin="kf5a.begin" dur="0.5s" fill="freeze" href="#crease7" attributeName="opacity" from="0" to="1" />
+<animate begin="kf6a.begin" dur="0.5s" fill="freeze" href="#crease1" attributeName="opacity" from="1" to="0" />
+<animate begin="kf6a.begin" dur="0.5s" fill="freeze" href="#crease2" attributeName="opacity" from="1" to="0" />
+<animate begin="kf6a.begin" dur="0.5s" fill="freeze" href="#crease3" attributeName="opacity" from="1" to="0" />
+<animate begin="kf6a.begin" dur="0.5s" fill="freeze" href="#crease4" attributeName="opacity" from="1" to="0" />
+<animate begin="kf6a.begin" dur="0.5s" fill="freeze" href="#crease5" attributeName="opacity" from="1" to="0" />
+<animate begin="kf6a.begin" dur="0.5s" fill="freeze" href="#crease6" attributeName="opacity" from="1" to="0" />
+<animate begin="kf6a.begin" dur="0.5s" fill="freeze" href="#crease7" attributeName="opacity" from="1" to="0" />
+
+<animate begin="kf1a.end-0.92s" dur="0.92" fill="freeze" href="#directrix" attributeName="y2" from="130" to="0" />
+<animate begin="kf1b.begin" dur="0.92" fill="freeze" href="#directrix" attributeName="y2" from="0" to="130" />
+<animate begin="kf2a.end-0.30s" dur="0.30s" fill="freeze" href="#directrix" attributeName="y2" from="130" to="75" />
+<animate begin="kf2b.begin" dur="0.30s" fill="freeze" href="#directrix" attributeName="y2" from="75" to="130" />
+
+<animate begin="kf5b.begin" dur="0.5s" fill="freeze" href="#parabola" attributeName="opacity" from="0" to="1" />
+<animate begin="kf6b.begin" dur="0.5s" fill="freeze" href="#parabola" attributeName="opacity" from="1" to="0" />
+
+
+
+<!-- folds -->
+
+<animate begin="kf1a.begin" dur="1.84s" fill="freeze" href="#back" attributeName="points"
+         from="-130,130 -130,130 -130,130 -130,130" to="130,130 130,-130 -130,-130 130,130" />
+<animate begin="kf1a.begin" dur="1.84s" fill="freeze" href="#front" attributeName="points"
+         from="-130,130 -130,130 130,130 130,-130 -130,-130" to="-130,-130 130,130 130,130 130,-130 -130,-130" />
+<animate begin="kf1b.begin" dur="1.84s" fill="freeze" href="#back" attributeName="points"
+         from="130,130 130,-130 -130,-130 130,130" to="-130,130 -130,130 -130,130 -130,130" />
+<animate begin="kf1b.begin" dur="1.84s" fill="freeze" href="#front" attributeName="points"
+         from="-130,-130 130,130 130,130 130,-130 -130,-130" to="-130,130 -130,130 130,130 130,-130 -130,-130" />
+
+<animate begin="kf2a.begin" dur="1.2s" fill="freeze" href="#back" attributeName="points"
+         from="-130,130 -130,130 -130,130 -130,130" to="-130,-130 20,130 95,0 -130,-130" />
+<animate begin="kf2a.end-0.1s" dur="0.1s" fill="freeze" href="#back" attributeName="points"
+         from="-130,-130 20,130 95,0 -130,-130" to="-118,-130 32,130 113,-10 -113,-140" />
+<animate begin="kf2a.begin" dur="1.2s" fill="freeze" href="#front" attributeName="points"
+         from="-130,130 -130,130 130,130 130,-130 -130,-130" to="-130,-130 20,130 130,130 130,-130 -130,-130" />
+<animate begin="kf2a.end-0.1s" dur="0.1s" fill="freeze" href="#front" attributeName="points"
+         from="-130,-130 20,130 130,130 130,-130 -130,-130" to="-118,-130 32,130 130,130, 130,-130, 118,-130" />
+<animate begin="kf2b.begin" dur="0.1s" fill="freeze" href="#back" attributeName="points"
+         from="-118,-130 32,130 113,-10 -113,-140" to="-130,-130 20,130 95,0 -130,-130" />
+<animate begin="kf2b.end-1.2s" dur="1.2s" fill="freeze" href="#back" attributeName="points"
+         from="-130,-130 20,130 95,0 -130,-130" to="-130,130 -130,130 -130,130 -130,130" />
+<animate begin="kf2b.begin" dur="0.1s" fill="freeze" href="#front" attributeName="points"
+         from="-118,-130 32,130 130,130, 130,-130, 118,-130" to="-130,-130 20,130 130,130 130,-130 -130,-130" />
+<animate begin="kf2b.end-1.2s" dur="1.2s" fill="freeze" href="#front" attributeName="points"
+         from="-130,-130 20,130 130,130 130,-130 -130,-130" to="-130,130 -130,130 130,130 130,-130 -130,-130" />
+
+<animate begin="kf3a.begin" dur="0.67s" fill="freeze" href="#back" attributeName="points"
+         from="-130,130 -130,130 -130,130 -130,130" to="-130,-130 -60,130 0,95 -130,-130" />
+<animate begin="kf3a.end-0.34s" dur="0.34s" fill="freeze" href="#back" attributeName="points"
+         from="-130,-130 -60,130 0,95 -130,-130" to="-95,-130 -26,130 65,78 -65,-147" />
+<animate begin="kf3a.begin" dur="0.67s" fill="freeze" href="#front" attributeName="points"
+         from="-130,130 -130,130 130,130 130,-130 -130,-130" to="-130,-130 -60,130 130,130 130,-130 -130,-130" />
+<animate begin="kf3a.end-0.34s" dur="0.34s" fill="freeze" href="#front" attributeName="points"
+         from="-130,-130 -60,130 130,130 130,-130 -130,-130" to="-95,-130 -26,130 130,130 130,-130 -95,-130" />
+<animate begin="kf3b.begin" dur="0.34s" fill="freeze" href="#back" attributeName="points"
+         from="-95,-130 -26,130 65,78 -65,-147" to="-130,-130 -60,130 0,95 -130,-130" />
+<animate begin="kf3b.end-0.67s" dur="0.67s" fill="freeze" href="#back" attributeName="points"
+         from="-130,-130 -60,130 0,95 -130,-130" to="-130,130 -130,130 -130,130 -130,130" />
+<animate begin="kf3b.begin" dur="0.34s" fill="freeze" href="#front" attributeName="points"
+         from="-95,-130 -26,130 130,130 130,-130 -95,-130" to="-130,-130 -60,130 130,130 130,-130 -130,-130" />
+<animate begin="kf3b.end-0.67s" dur="0.67s" fill="freeze" href="#front" attributeName="points"
+         from="-130,-130 -60,130 130,130 130,-130 -130,-130" to="-130,130 -130,130 130,130 130,-130 -130,-130" />
+
+<animate begin="kf4a.begin" dur="0.65s" fill="freeze" href="#back" attributeName="points"
+         from="-130,130 -130,130 -130,-130 -130,-130" to="-65,130 0,130 0,-130 -65,-130" />
+<animate begin="kf4a.begin" dur="0.65s" fill="freeze" href="#front" attributeName="points"
+         from="-130,0 -130,130 130,130 130,-130 -130,-130" to="-65,0 -65,130 130,130 130,-130 -65,-130" />
+<animate begin="kf4b.begin" dur="0.65s" fill="freeze" href="#back" attributeName="points"
+         from="-65,130 0,130 0,-130 -65,-130" to="-130,130 -130,130 -130,-130 -130,-130" />
+<animate begin="kf4b.begin" dur="0.65s" fill="freeze" href="#front" attributeName="points"
+         from="-65,0 -65,130 130,130 130,-130 -65,-130" to="-130,0 -130,130 130,130 130,-130 -130,-130" />
+
+
+</svg>
