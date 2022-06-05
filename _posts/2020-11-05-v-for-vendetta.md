@@ -3,8 +3,8 @@ title: V for Vendetta
 tags:
   - Movie
   - Review
+  - Corruption
   - Revolution
-  - Power
 date: 2020-11-05 13:24:48 +0700
 ---
 
