@@ -3,7 +3,7 @@ title: เลขฟีโบนัชชีและการพิสูจน�
 tags:
   - Fibonacci
   - Mathematics
-  - Mathematical Proof
+  - Induction
   - Recursion
   - Algorithm
   - Time Complexity

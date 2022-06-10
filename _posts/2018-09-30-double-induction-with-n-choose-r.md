@@ -2,7 +2,7 @@
 title: อุปนัยสองชั้นกับ $\binom{n}{r}$
 tags:
   - Mathematics
-  - Mathematical Proof
+  - Induction
   - Combinatorics
 date: 2018-09-30 23:17:42 +0700
 ---
