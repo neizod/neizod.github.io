@@ -2,7 +2,7 @@
 {% if include.content %}
   <article class="{% if include.url %}excerpt {% endif %}{{ include.class }}">
     {% include article/title.html title=include.title url=include.url %}
-    {% include article/info.html tags=include.tags date=article-date format=article-format %}
+    {% include article/info.html tags=include.tags path=include.path date=article-date format=article-format %}
     {% unless include.url %}
       {% include menu/demo_source.html demo=include.demo source=include.source %}
     {% endunless %}

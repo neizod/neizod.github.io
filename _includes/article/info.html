@@ -2,6 +2,7 @@
   {% if include.date %}
     {% include display/date.html date=include.date format=include.format %}
   {% endif %}
+  {% include display/locales.html path=include.path %}
   {% if include.tags %}
     {% include listing/tags.html tags=include.tags %}
   {% endif %}

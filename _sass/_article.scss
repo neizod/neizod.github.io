@@ -34,6 +34,13 @@
 }
 
 
+.locales {
+    margin: 0 0.5em;
+    flex: 0 0 auto;
+    align-self: stretch;
+}
+
+
 .date {
     font-family: $font-head;
     font-style: italic;
