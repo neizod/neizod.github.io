@@ -5,92 +5,94 @@ tags:
   - Combinatorics
   - Proof Without Words
   - Induction
+  - English Post
 date: 2022-06-10 15:04:36 +0700
 thumbnail: /images/math/proof-without-words/square-pyramidal-number.png
+lang: en
 ---
 
-เคยสงสัยมานานแล้วว่า ผลรวมของจำนวนเต็มที่ถูกยกกำลังด้วยค่าคงที่ $1^k + 2^k + 3^k + \cdots + n^k$ สำหรับทุกๆ $k \in \mathbb{N}$ มันจะมีสูตรหน้าตาเป็นอย่างไร ซึ่งถ้าดูกรณีที่ง่ายที่สุดอย่าง $k=1$ เราก็จะมีวิธีพิสูจน์อันแสนสวยงามผ่านการวาดภาพเช่นนี้
+I've been wondering for quite a long time, what is the formula for the sum of integers to the power of a constant, $1^k + 2^k + 3^k + \cdots + n^k$, for every $k \in \mathbb{N}$. Take a look at the simplest case for $k=1$, we have a beautifully *illustrated* proof.
 
 {: .figure}
 > ![](/images/math/proof-without-words/triangular-number.png)
 >
-> บทพิสูจน์ด้วยภาพว่า $1 + 2 + 3 + \cdots + n = n(n+1)/2$
+> Proof without words that $1 + 2 + 3 + \cdots + n = n(n+1)/2$
 
-และจากแนวทางการพิสูจน์เช่นนี้ จึงทำให้เราเรียกสูตรในกรณีที่ $k=1$ ว่า[จำนวนสามเหลี่ยม][triangular number]นั่นเอง
+By this visualization technique, we may also called the result a [triangular number][].
 
-แม้มนุษยชาติจะทราบสูตรข้างต้นย้อนกลับไปได้ตั้งแต่สมัยกรีกโบราณแล้ว แต่ตำนาน (อันอาจเป็นเท็จ) ที่น่าตื่นตาตื่นใจของสูตรดังกล่าว คงหนีไม่พ้นเรื่องเล่าที่ว่าเจ้าหนู [Gauss][] เมื่อครั้งยังเยาว์วัยนั้นสามารถแก้โจทย์ $1+2+3+\cdots+100$ ได้อย่างรวดเร็ว ทั้งที่คุณครูผู้อยากอู้งานได้เขียนโจทย์ขึ้นมาอย่างลวกๆ เพื่อหวังให้เด็กๆ วุ่นวายอยู่กับมันจนหมดคาบเรียนนั่นแหละ
+Though we, humanity, knows the formula since ancient Greek. However, legends (might be wrong) told that youngling [Gauss][] can solve $1+2+3+\cdots+100$ quickly, despite that the teacher post this problem just to keep the students busy.
 
-กลับมาดูกรณีที่ $k=2$ จะเห็นว่าเราก็มีวิธีพิสูจน์ด้วยการวาดภาพ (และตั้ง[ชื่อ][square pyramidal number]ให้) ในทำนองเดียวกัน
+Back to the sum. For the case $k=2$ we also have an illustrated proof (and [naming][square pyramidal number] it).
 
 {: .figure}
 > ![](/images/math/proof-without-words/square-pyramidal-number.png)
 >
-> บทพิสูจน์ด้วยภาพว่า $1^2 + 2^2 + 3^2 + \cdots + n^2 = n(n+1)(2n+1)/6$
+> Proof without words that $1^2 + 2^2 + 3^2 + \cdots + n^2 = n(n+1)(2n+1)/6$
 
-ซึ่งทำให้เราได้สูตรที่สวยงามน่าสนใจออกมา ยิ่งเมื่อดูควบคู่กับสูตรจากกรณีก่อนหน้า เราอาจจะเดาว่าสูตรของกรณีต่อไปๆ ก็น่าจะมีโครงสร้างที่อิงบนคำตอบเดิม คือน่าจะเขียนได้ประมาณว่า
+The proof gives us a beautiful formula. Which, take the previous case into account, we might *guess* that the general formula can be written in the structure
 
 $$
-S_k(n) \stackrel?= \frac{n(n+1)(2n+1)\cdots(???)}{(k+1)!}
+S_k(n) \stackrel?= \frac{n(n+1)(2n+1)\cdots(???)}{(k+1)!}.
 $$
 
-แต่เราจะรู้ได้อย่างไรว่าสูตรหน้าตาเช่นนี้มันถูกต้อง เพราะจากเทคนิคการวาดภาพเพื่อช่วยพิสูจน์ จะเห็นว่าเมื่อเราต้องการพิสูจน์กรณี $k$ ที่สูงขึ้นไป เราก็ยิ่งต้องใส่มิติเพิ่มขึ้นเป็นเงาตามตัว ... ซึ่งสำหรับมนุษย์โดยทั่วไปก็น่าจะจินตนาการตามไม่ไหวแล้ว (หละมั้ง?)
+But how can we know that this formula is correct? Keep in mind that the illustration technique has its own limitation. That is when we want to proof for the higher $k$, we have to consider $(k{+}1)$-dimensional space. Which most of us human cannot visualize it, right?
 
-{: .figure}
+{: .oversized .figure}
 > ![](/images/math/proof-without-words/squared-triangular-number.png)
 >
-> บทพิสูจน์ด้วย[ภาพ][squared triangular number]ว่า $1^3 + 2^3 + 3^3 + \cdots + n^3 = (1 + 2 + 3 + \cdots + n)^2$
+> Proof without words that $1^3 + 2^3 + 3^3 + \cdots + n^3 = (1 + 2 + 3 + \cdots + n)^2$ -- [picture from Wikipedia][squared triangular number]
 
-โอเคว่ามันยังพอมีทริกที่จะหลบเลี่ยงประเด็นด้านมิติที่สูงเกินจะเข้าใจได้บ้าง แต่เทคนิคเหล่านั้นแต่ละอันนั้นก็ดูจะเป็นการแก้ปัญหาเฉพาะหน้าที่ไม่สามารถนำไปใช้กับกรณีทั่วไปได้เลย จึงทำให้การพิสูจน์ด้วยภาพเช่นนี้ไม่เหมาะสมอีกต่อไป
+Ok, there are some workarounds to avoid higher dimensions than we may imagine. But those tricks seem to don't scale well with the generalization. Thus, we have to ditch the illustration technique even though it's quite a fun exercise.
 
-อนึ่ง แค่กรณีที่ $k=3$ ก็ทำให้เราเห็นแล้วว่า สูตรที่เราเฝ้าฝันหวานอยากได้ในข้างต้นนั้น มันไม่ได้ถูกต้องเข้าใกล้ความเป็นจริงเลยแม้แต่นิดเดียว 😭
+Besides, just for the case of $k=3$, we can clearly see that the proposed formula is not anything close to the true nature of this sum 😭
 
-งั้นก็ต้องมาลุยกับสมการตรงๆ โดยพระเอกที่จะมาร้อยเรียงเรื่องราวบทพิสูจน์ของเรา ก็คือ[การกระจายทวินาม][binomial expansion]ที่เราคุ้นเคยกันดี
+So we have to tackle the equation head-on. Starts with the familiar [binomial expansion][]
 
 $$
-(a+1)^{k+1} = a^{k+1} + \binom{k+1}k a^k + \cdots + \binom{k+1}2 a^2 + \binom{k+1}1 a + 1
+(a+1)^{k+1} = a^{k+1} + \binom{k+1}k a^k + \cdots + \binom{k+1}2 a^2 + \binom{k+1}1 a + 1.
 $$
 
-ต่อไปเราจะสร้าง $f_k(a) = (a+1)^{k+1} - a^{k+1}$ สังเกตว่า $\sum f_k(a)$ นั้นสามารถถูกจัดการได้สองทาง ในทางที่หนึ่งคือเราจะใช้เทคนิค[อนุกรมกล้องส่องทางไกล][telescoping] เพื่อย่นระยะห่างระหว่างพจน์แรกกับพจน์สุดท้ายด้วยการทำลายพจน์กลางๆ ทิ้งไป
+We define $f_k(a) = (a+1)^{k+1} - a^{k+1}$. Observe that we can handle $\sum f_k(a)$ in two different ways. The first way is using [telescoping series][] to *zoom* the first term to the last term by negating intermediate terms,
 
 $$
 \begin{align}
 \sum_{a=1}^n f_k(a)
 &= \left( (n+1)^{k+1} - n^{k+1} \right) + \cdots + \left( 3^{k+1} - 2^{k+1} \right) + \left( 2^{k+1} - 1 \right) \\
 &= (n+1)^{k+1} - 1 \\
-&= n^{k+1} + \binom{k+1}k n^k + \cdots + \binom{k+1}2 n^2 + \binom{k+1}1 n
+&= n^{k+1} + \binom{k+1}k n^k + \cdots + \binom{k+1}2 n^2 + \binom{k+1}1 n.
 \label{eq:telescope}\tag{1}
 \end{align}
 $$
 
-ส่วนอีกทางเราจะทำการกระจายทวินามแต่ละ $f_k(a)$ ก่อน แล้วค่อยจับกลุ่มรวมพจน์ตัวที่เลขชี้กำลังเท่ากัน
+The other way is expanding each $f_k(a)$, then grouping terms with the same exponent,
 
 $$
 \begin{align}
 \sum_{a=1}^n f_k(a)
 &= \sum_{a=1}^n \left( \binom{k+1}k a^k + \cdots + \binom{k+1}2 a^2 + \binom{k+1}1 a + 1 \right) \\
 &= \binom{k+1}k \! \left( \sum_{a=1}^n a^k \right) + \cdots + \binom{k+1}1 \! \left( \sum_{a=1}^n a \right) + \left( \sum_{a=1}^n 1 \right) \\
-&= \binom{k+1}k S_k(n) + \cdots + \binom{k+1}2 S_2(n) + \binom{k+1}1 S_1(n) + S_0(n)
+&= \binom{k+1}k S_k(n) + \cdots + \binom{k+1}2 S_2(n) + \binom{k+1}1 S_1(n) + S_0(n).
 \label{eq:expansion}\tag{2}
 \end{align}
 $$
 
-เพราะสิ่งที่เราต้องการคือ $S_k(n)$ และตอนนี้เรามีของเพียงพอที่จะคำนวณมันได้แล้ว ซึ่งก็คือให้ $\eqref{eq:telescope} = \eqref{eq:expansion}$ แล้วจัดข้างสมการนิดหน่อยก็จะพบกับคำตอบว่า
+Since we want to find $S_k(n)$ and now we have all the terms for the computation. We let $\eqref{eq:telescope} = \eqref{eq:expansion}$ and do some magic,
 
 $$
-S_k(n) = \frac1{k+1} \left( \sum_{p=1}^{k+1} \binom{k+1}p n^p - \sum_{p=0}^{k-1} \binom{k+1}p S_p(n) \right)
+S_k(n) = \frac1{k+1} \left( \sum_{p=1}^{k+1} \binom{k+1}p n^p - \sum_{p=0}^{k-1} \binom{k+1}p S_p(n) \right).
 \label{eq:pascal}\tag{3}
 $$
 
-นี่คือเทคนิคและสูตรในทำนองเดียวกันกับที่ [Blaise Pascal][] (เจ้าของเดียวกับสามเหลี่ยมปัสกาล) ค้นพบเมื่อปี 1654 นั่นเอง ซึ่งสูตรนี้บอกเราโดยนัยว่า เมื่อต้องการคำนวณ $S_k(n)$ เราต้องหา $S_p(n)$ สำหรับทุก $p < k$ มาให้เรียบร้อยเสียก่อน
+This is the technique and formula in the same manner as [Blaise Pascal][] discovered in 1654 (no surprise he's also known for the triangle). The formula hints us that, in order to find $S_k(n)$, we have to find $S_p(n)$ for all $p < k$ first.
 
-แล้วมันจะเป็นไปได้มั้ยที่จะไม่ต้องคำนวณ $S_p(n)$ อื่นๆ ... สังเกตว่าจากกรณีพื้นฐานที่ $S_0(n) = n$ เราสามารถอุปนัยได้ว่าพหุนาม $S_k(n)$ นั้นมีดีกรี $k+1$ เราจะเดาว่าโครงสร้างคำตอบที่เราต้องการก็ควรจะอิงกับพจน์จาก $\sum\binom{k+1}{p}n^p$ เพียงอย่างเดียว โดยจะพยายาม*ละลาย*พจน์ $\sum\binom{k+1}{p}S_p(n)$ ให้ไปหลอมรวมกับมัน ซึ่งก็คือเราอยากจัด $\eqref{eq:pascal}$ ให้กลายเป็นสูตรที่มีหน้าตาเช่นนี้
+It is natural to ask if we can drop the other $S_p(n)$ terms? Observe that, from the basis case $S_0(n) = n$, we may induct that the polynomial for $S_k(n)$ has degree $k+1$. So we'll guess that the structure should rely on $\sum\binom{k+1}{p}n^p$ terms only, by *dissolving* terms in $\sum\binom{k+1}{p}S_p(n)$ into them. That is we want to adjust $\eqref{eq:pascal}$ into this structure
 
 $$
-S_k(n) = \frac1{k+1} \left( \binom{k+1}{k+1} \boxed{?} n^{k+1} + \binom{k+1}k \boxed{?} n^k + \cdots + \binom{k+1}1 \boxed{?} n \right)
+S_k(n) = \frac1{k+1} \left( \binom{k+1}{k+1} \boxed{?} n^{k+1} + \binom{k+1}k \boxed{?} n^k + \cdots + \binom{k+1}1 \boxed{?} n \right).
 \label{eq:guess}\tag{4}
 $$
 
-ทางหนึ่งที่สามารถทำได้ คือเราจะกระจายค่าของแต่ละพจน์ใน $\eqref{eq:pascal}$ เพื่อพยายามจัดรูปออกมาให้เป็น $\eqref{eq:guess}$ ต่อไปนี้จะขอเขียน[ลวกๆ][abuse of notation] โดยเอาเมทริกซ์เข้ามาช่วย ซึ่งน่าจะทำให้เราเห็นภาพได้อย่างชัดเจนว่ามันคือ
+One way to do it is to expand terms from $\eqref{eq:pascal}$ and try to make them become $\eqref{eq:guess}$. By [abusing][abuse of notation] the matrix notation, we may write
 
 $$
 S_k(n) \cong \frac1{k+1} \begin{pmatrix}
@@ -100,10 +102,10 @@ S_k(n) \cong \frac1{k+1} \begin{pmatrix}
 \boxed{\color{blue}-\tbinom{k+1}{k-3}\times} &&& \boxed{S_{k-3}(n)} & \cdot & \cdot \\
 \vdots &&&& \ddots & \vdots \\
 \boxed{-\tbinom{k+1}0\times} &&&&& \boxed{S_0(n)}
-\end{pmatrix} \begin{bmatrix} n^{k+1} \\ n^k \\ n^{k-1} \\ n^{k-2} \\ \vdots \\ n \end{bmatrix}
+\end{pmatrix} \! \begin{bmatrix} n^{k+1} \\ n^k \\ n^{k-1} \\ n^{k-2} \\ \vdots \\ n \end{bmatrix}.
 $$
 
-โดยที่กล่องซ้ายสุดในแต่ละแถวคือตัวคูณประจำแถวนั้นๆ ส่วนกล่องถัดไปด้านขวาคือ $S_p(n)$ ณ ดีกรีสูงสุดก่อนที่จะกระจายเข้าเมทริกซ์ ซึ่งคราวนี้เราจะกระจายด้วย $\eqref{eq:guess}$ แทน สนใจเฉพาะเมทริกซ์นี้ เราจะได้
+A left box in each row is a multiplier for their row. While a right box is $S_p(n)$ at the highest degree before expansion. This time, we'll expand them with $\eqref{eq:guess}$. Which yields us the matrix
 
 {: .oversized}
 > $$
@@ -114,12 +116,12 @@ $$
 > &&& {\color{blue}-\binom{k+1}{k-3}}\frac1{k-2}\binom{k-2}{k-2}\boxed{?} & \cdot & {\color{blue}-\binom{k+1}{k-3}}\frac1{k-2}\binom{k-2}{1}\boxed{?} \\
 > &&&& \ddots & \vdots \\
 > &&&&& -\binom{k+1}0\frac11\binom11\boxed{?}
-> \end{pmatrix}
+> \end{pmatrix}.
 > $$
 
-สังเกตว่าในแถวแนวนอนใดๆ ที่ไม่ใช่แถวบนสุด แต่ละช่องในเมทริกซ์นั้นจะขึ้นต้นด้วย $-\binom{k+1}{k-?}$ เราจะพยายามเปลี่ยนพจน์นี้ให้เหมือนกับ $+\binom{k+1}{k-?}$ ที่อยู่แถวบนสุดในคอลัมน์ของมันเอง เพื่อให้เราสามารถบวกลบช่องต่างๆ จากคอลัมน์เดียวกันได้ในภายหลัง
+Observe that, except for the top row, each cell in the matrix starts with a term $-\binom{k+1}{k-?}$. We want to convert this term into $+\binom{k+1}{k-?}$, the term in the top row of its own column.
 
-เช่น สำหรับพจน์ $-\binom{k+1}{k-3}\frac1{k-2}\binom{k-2}{k-2}\boxed{?}$ (แถวที่ 4 คอลัมน์ที่ 4) เราต้องการ*เขี่ย*ให้พจน์นี้ติดตัวคูณ $+\binom{k+1}{k-2}$ แทน ซึ่งอาจทำได้ผ่านเทคนิคประมาณนี้
+For example, for cell $-\binom{k+1}{k-3}\frac1{k-2}\binom{k-2}{k-2}\boxed{?}$ (row 4, column 4), we want to *nudge* it to have a multiplier of $+\binom{k+1}{k-2}$ instead. It might be done via this technique
 
 $$
 \begin{align}
@@ -128,11 +130,11 @@ $$
 &= \frac{1\cdot2\cdot3\cdots(k+1)}{1\cdot2\cdots(k-3)\cdot{\color{blue}4}\cdot3\cdot2\cdot1} \frac{\color{red}(k-2)}{\color{red}(k-2)} \frac1{k-2} \\
 &= \frac{1\cdot2\cdot3\cdots(k+1)}{1\cdot2\cdots(k-3)\cdot{\color{red}(k-2)}\cdot3\cdot2\cdot1} \frac{\color{red}(k-2)}{\color{blue}4} \frac1{k-2} \\
 &= \frac{(k+1)!}{(k-2)!3!} \frac{(k-2)}4 \frac1{k-2} \\
-&= \binom{k+1}{k-2} \frac14
+&= \binom{k+1}{k-2} \frac14.
 \end{align}
 $$
 
-เมื่อไล่ทำแบบนี้จนครบทุกช่อง เมทริกซ์ดังกล่าวก็จะกลายเป็น
+Done nudging and the matrix became
 
 $$
 \begin{pmatrix}
@@ -142,10 +144,10 @@ $$
 &&& {\color{blue}-\binom{k+1}{k-2}}\frac14\boxed{?} & \cdot & -\binom{k+1}{1}\frac14\binom{k}{3}\boxed{?} \\
 &&&& \ddots & \vdots \\
 &&&&& -\binom{k+1}{1}\frac1{k+1}\binom{k}{k}\boxed{?}
-\end{pmatrix}
+\end{pmatrix}.
 $$
 
-หรือมองย้อนกลับไปที่ภาพรวมได้ว่า
+Or plugged back into the big picture equation
 
 {: .oversized}
 > $$
@@ -157,12 +159,12 @@ $$
 > &&&& \ddots & \vdots \\
 > &&&&& -\frac1{k+1}\binom{k}{k}\boxed{?}
 > \end{pmatrix}
-> \begin{bmatrix} \binom{k+1}{k+1} n^{k+1} \\ \binom{k+1}{k} n^k \\ \binom{k+1}{k-1} n^{k-1} \\ \binom{k+1}{k-2} n^{k-2} \\ \vdots \\ \binom{k+1}{1} n \end{bmatrix}
+> \begin{bmatrix} \binom{k+1}{k+1} n^{k+1} \\ \binom{k+1}{k} n^k \\ \binom{k+1}{k-1} n^{k-1} \\ \binom{k+1}{k-2} n^{k-2} \\ \vdots \\ \binom{k+1}{1} n \end{bmatrix}.
 > $$
 
-สังเกตว่าทุกช่องที่มี $\boxed{?}$ ติดอยู่นั้นจะถูกคูณกับค่าคงที่เสมอ นั่นหมายความว่าไม่ว่าเราจะเปลี่ยนค่า $k$ เป็นเท่าไหร่ แต่*ถ้า*เราแทนที่ $\boxed{?}$ ณ ตำแหน่งเดิมๆ ด้วยค่าเดิมซ้ำๆ ผลรวมของแต่ละคอลัมน์ก็จะมีค่าเท่าเดิมเสมอ
+See that every cell with $\boxed{?}$ is multiplied by a constant. Thus, no matter how we scale the matrix by changing the value $k$; *if* we fill the same value into the same $\boxed{?}$, we will always get the same column sum.
 
-และเมื่ออุปนัยลงไปก็จะพบว่าแต่ละ $\boxed{?}$ มันคือค่าเดิมซ้ำๆ เช่นนั้นจริง เราจึงเดินทางมาถึงข้อสรุปที่ว่า
+And by induction, we find that each of $\boxed{?}$ has the same value as we expected. Hence, we arrived at the conclusion
 
 {: .oversized}
 > $$
@@ -175,25 +177,25 @@ $$
 > &&&&& -\frac1{k+1}\binom{k}{k}B_0
 > \end{pmatrix}
 > \begin{bmatrix} \binom{k+1}{k+1} n^{k+1} \\ \binom{k+1}{k} n^k \\ \binom{k+1}{k-1} n^{k-1} \\ \binom{k+1}{k-2} n^{k-2} \\ \vdots \\ \binom{k+1}{1} n \end{bmatrix}
-> = \frac1{k+1} \begin{bmatrix} \binom{k+1}{k+1} B_0 n^{k+1} \\ \binom{k+1}k B_1 n^k \\ \binom{k+1}{k-1} B_2 n^{k-1} \\ \binom{k+1}{k-2} B_3 n^{k-2}\\ \cdots \\ \binom{k+1}1 B_k n \end{bmatrix}
+> = \frac1{k+1} \begin{bmatrix} \binom{k+1}{k+1} B_0 n^{k+1} \\ \binom{k+1}k B_1 n^k \\ \binom{k+1}{k-1} B_2 n^{k-1} \\ \binom{k+1}{k-2} B_3 n^{k-2}\\ \cdots \\ \binom{k+1}1 B_k n \end{bmatrix}.
 > $$
 
-หรือก็คือ
+In other words,
 
 $$
-S_k(n) = \frac1{k+1} \sum_{p=1}^{k+1} \binom{k+1}{p} B_{k+1-p} n^p
+S_k(n) = \frac1{k+1} \sum_{p=1}^{k+1} \binom{k+1}{p} B_{k+1-p} n^p.
 \label{eq:bernoulli}\tag{5}
 $$
 
-โดยค่าคงที่ $B_n$ นั้นถูกเรียกว่า[จำนวนแบร์นูลลี][bernoulli number] เพราะสมการและค่าคงที่นี้ถูกค้นพบและอธิบายให้อยู่ในรูปทั่วไปได้สำเร็จสำหรับทุกๆ $k$ โดย [Jacob Bernoulli][] ผ่านงานตีพิมพ์ปี 1713 หลังจากที่เขาเสียชีวิตไปแล้ว
+The constant $B_n$ is called the [Bernoulli number][], since the formula and constants were generalized by [Jacob Bernoulli][] in the 1713 publication after his death.
 
-ซึ่งจากเมทริกซ์ที่นำไปสู่สมการ $\eqref{eq:bernoulli}$ สังเกตว่าเราสามารถคำนวณ $B_n$ ต่างๆ ที่ต้องการได้ผ่าน
+Back to the matrix technique that leads to $\eqref{eq:bernoulli}$, we can calculate for $B_n$ with
 
 $$
-B_n = 1 - \sum_{i=0}^{n-1} \frac1{1+i} \binom{n}{i} B_{n-i}
+B_n = 1 - \sum_{i=0}^{n-1} \frac1{1+i} \binom{n}{i} B_{n-i}.
 $$
 
-ที่เราจะคำนวณหาค่าแรกๆ บางค่าออกมาได้ดังนี้
+Which has the very first values:
 
 $$
 \begin{array}{c|ccccccccccccc}
@@ -203,10 +205,10 @@ B_n & 1 & \frac12 & \frac16 & 0 & -\frac1{30} & 0 & \frac1{42} & 0 & -\frac1{30}
 \end{array}
 $$
 
-แม้สมการ $B_n$ จะดูเรียบง่าย แต่ก็เกี่ยวเนื่องกับการคำนวณตัวเลขขนาดใหญ่เป็นจำนวนมากในลักษณะวนลูป มันจึงไม่ค่อยเหมาะที่จะเป็นงานสำหรับมนุษย์เสียเท่าไหร่ ... อันที่จริงแล้ว [Ada Lovelace][] ผู้ซึ่งได้ชื่อว่าเป็นโปรแกรมเมอร์คนแรกของโลก ก็ได้ตีพิมพ์โปรแกรมคอมพิวเตอร์แรกของโลกสำหรับคำนวณค่าคงที่ดังกล่าวในปี 1843 อีกด้วย
+Even though the formula for $B_n$ is simple. But it requires manipulating lots of large numbers with lots of iterations. So it's not an easy task for humans... [Ada Lovelace][], whom we considered the first programmer, published the world's first computer program that calculated the constants in 1843.
 
 
-## อ้างอิง
+## Reference
 
 - Nathaniel Larson, *The Bernoulli Numbers: A Brief Primer*
 - [Janet Beery, *Sums of Powers of Positive Integers*](//www.maa.org/press/periodicals/convergence/sums-of-powers-of-positive-integers)
@@ -220,11 +222,10 @@ $$
 [Ada Lovelace]: //en.wikipedia.org/wiki/Ada_Lovelace
 
 [binomial expansion]: //en.wikipedia.org/wiki/Binomial_theorem
-[telescoping]: //en.wikipedia.org/wiki/Telescoping_series
+[telescoping series]: //en.wikipedia.org/wiki/Telescoping_series
 [abuse of notation]: //en.wikipedia.org/wiki/Abuse_of_notation
-[bernoulli number]: //en.wikipedia.org/wiki/Bernoulli_number
+[Bernoulli number]: //en.wikipedia.org/wiki/Bernoulli_number
 
 [triangular number]: //en.wikipedia.org/wiki/Triangular_number
 [square pyramidal number]: //en.wikipedia.org/wiki/Square_pyramidal_number
 [squared triangular number]: //en.wikipedia.org/wiki/File:Nicomachus_theorem_3D.svg
-
