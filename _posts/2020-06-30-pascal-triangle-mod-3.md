@@ -1,5 +1,5 @@
 ---
-title: สามเหลี่ยมปัสกาลมอดุโลสาม
+title: Pascal's Triangle Modulo Three
 tags:
   - Pascal's Triangle
   - Combinatorics
@@ -9,21 +9,22 @@ tags:
   - Python
   - Algorithm
   - Computer Science
+  - English Post
 date: 2020-06-30 23:48:04 +0700
 ---
 
-ชาตินี้น่าจะเคยวาด[สามเหลี่ยมปัสกาล][pascal triangle]เล่นมานับครั้งไม่ถ้วน และก็มีครั้งนึงที่รู้สึกยูเรก้าเพราะว่าลองเอาค่าแต่ละตัวในสามเหลี่ยมปาสคาลมามอดุโลสอง จนได้เป็น[สามเหลี่ยมเซียร์พินสกิ][sierpinski triangle] (จำได้แม่นเพราะว่าไปขีดเขียนเล่นบน iPad เครื่องใหม่ของ [@NutSnC][] เนี่ยแหละ 555) ... มาวันนี้เจอความรู้สึกแบบนั้นอีกครั้งนึง เพราะดันทะลึงเอาเจ้าสามเหลี่ยมสารพัดประโยชน์นี้ไปมอดุโลสาม จนได้ผลลัพธ์ออกมาหน้าตาแบบนี้
+I think I have drawn [Pascal's triangle][pascal triangle] numerous times in this life. Once it was a eureka moment when I modulo each entry with two, resulting in a [Sierpiński triangle][sierpinski triangle]! (remembered vividly since I drawn it on [@NutSnC][]'s new iPad, LOL) ... Today I'm experiencing that moment again, when I modulo it with three instead.
 
 {: .oversized .figure}
 > ![](/images/math/pascal-mod3.png)
 >
-> สามเหลี่ยมปาสคาลที่ถูกมอดุโลด้วยสาม โดยสีขาว, ดำ, แดง แทนค่า 0, 1, 2 ตามลำดับ[^1]
+> Pascal's triangle modulo three; where white, black, and red represent 0, 1, and 2 repectively[^1]
 
-ก็จะเห็นว่ายังได้รูปทรงที่เป็น fractal คืนมาอยู่ดี โดยสังเกตว่ามีหน่วยที่เล็กที่สุดเป็นสามเหลี่ยมขนาด 3 แถว ซึ่งประกอบด้วยจุดสีดำเกือบทั้งหมดยกเว้นจุดตรงกลางของบรรทัดล่างสุดที่เป็นสีแดง และสามารถสร้างด้วยการวนซ้ำ (iteration) ได้โดยการขยายจุดสีดำด้วยสามเหลี่ยมแบบเดียวกับตนเอง และขยายจุดสีแดงด้วยสามเหลี่ยมแบบเดียวตนเองที่สลับสีดำ-แดงนั่นเอง
+We still get a fractal shape! Observe that the base triangle is the top 3 rows, where every dots is black except for the red center bottom. We may reconstruct the fractal triangle with iteration, by expanding each black dot with the exact base triangle, and expand each red dot with the black-red swap.
 
-(หรืออาจมองว่าหน่วยเล็กสุดคือข้าวหลามตัดกว้าง 3 สูง 5 โดยประกอบไปด้วยสามเหลี่ยมชี้ขึ้น 3 บรรทัดที่มีสีดำและแดงปนกันตามข้างต้น และสามเหลี่ยมชี้ลงอีก 2 บรรทัดที่มีแต่สีขาวก็ย่อมได้)
+(We may also view the base as a rhombus of 3 width and 5 height, the upper 3 height is a base triangle, and the lower 2 height is just an all white triangle.)
 
-นี่ทำให้เราเขียนโค้ดสำหรับหา $\binom{n}{k} {\pmod 3}$ แต่ละตัวได้ในเวลา $O(\log n)$ ดังนี้
+So we may write this code for finding $\binom{n}{k} {\pmod 3}$ in $O(\log n)$ time.
 
 ``` python
 table = [ [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
@@ -49,12 +50,12 @@ def choose_mod3(n, k):
     return t
 ```
 
-อย่าลืมว่า $n$ เป็นข้อมูลตัวเลขที่ถูกแสดงค่าด้วยขนาดข้อมูลเพียง $O(\log n)$ บิต ดังนั้นอัลกอริทึมนี้มีความซับซ้อนเป็นเชิงเส้นขึ้นกับขนาดข้อมูลนำเข้า ซึ่งดีกว่าการคำนวณ factorial/combination ผ่านการคูณ/หารตัวเลขหลายต่อหลายครั้งนั่นเอง
+Don't forget that $n$ has a binary representation of length $O(\log n)$ bits. Thus the algorithm is actually run in linear time. Which is faster that computing the whole factorial/combination using many multiplication/division.
 
-ถึงจุดนี้ (ที่ควรต้องนอนแล้ว) ก็แอบสงสัยต่อไปว่า สามเหลี่ยมปาสคาลที่มอดุโลด้วยค่าอื่นๆ จะมีหน้าตาแปลกประหลาดมหัศจรรย์ขนาดไหนกันนะ?
+Now (it's time to bed) I still can't rest my mind with the thought, what wll Pascal's triangle with other modulo value would look like...?
 
 
-[^1]: [สคริปต์ Python][self script] สำหรับสร้างภาพดังกล่าว
+[^1]: [Python script][self script] for generating the image
 
 
 [self script]: /scripts/draw_pascal_mod3.py
