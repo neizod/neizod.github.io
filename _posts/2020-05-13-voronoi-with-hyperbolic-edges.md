@@ -1,8 +1,10 @@
 ---
 title: แผนภาพ Voronoi ที่เส้นขอบเป็นไฮเพอร์โบลา
 tags:
-  - Mathematics
+  - Conic Section
+  - Geometry
   - Computational Geometry
+  - Mathematics
 date: 2020-05-13 10:24:42 +0700
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: "Cutting Cone with Cone: An Alternative Way to Understand Conic Section"
 tags:
-  - Mathematics
+  - Conic Section
   - Geometry
   - GeoGebra
+  - Mathematics
   - English Post
 date: 2020-08-08 10:56:23 +0700
 ---
