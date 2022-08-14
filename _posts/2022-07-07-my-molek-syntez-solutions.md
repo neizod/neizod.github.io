@@ -5,7 +5,7 @@ tags:
   - Game
   - Puzzle
   - Optimization
-  - Zachtonics
+  - Zachtronics
   - English Post
 date: 2022-07-07 16:28:13 +0700
 thumbnail: /images/game/molek-syntez/static-caffeine.png
