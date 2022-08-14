@@ -3,6 +3,7 @@ title: มองสมการแล้วรู้สึกเป็นยา�
 tags:
   - Mathematics
   - Proof Without Words
+  - Algebra
   - Book
 date: 2016-03-14 00:23:46 +0700
 ---

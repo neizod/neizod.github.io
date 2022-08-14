@@ -4,6 +4,7 @@ tags:
   - Haskell
   - Recursion
   - Functional
+  - One-Liner
   - Number Theory
 date: 2022-03-14 14:07:21 +0700
 ---

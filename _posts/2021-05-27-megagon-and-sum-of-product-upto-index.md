@@ -5,7 +5,6 @@ tags:
   - Dynamic Programming
   - Python
   - SVG
-  - Experimental
   - English Post
 date: 2021-05-27 20:17:29 +0700
 ---
@@ -79,9 +78,9 @@ Thus, left us mental workout on geometry to find the correct rotating angles aft
 
 ...
 
-No.  Not yet.  Although we have the shortest code that reduced file size by ten thousand times.  But SVG (or maybe my hardware) currently cannot handle a million [`<line>`][svg line] defined recursively.  Even if we wait for the web engine to respond, the resulting figure still looked ugly since some sides are too short to be drawn on the screen.
+Not so fast.  Although we have the shortest code that reduced file size by ten thousand times.  But SVG (or maybe just my hardware) currently cannot handle a million [`<line>`][svg line] defined recursively.  Even if we wait for the web engine to respond, the resulting figure still looked glitchy since some sides are too short to be drawn on the screen.
 
-Luckily, there is the [`<polyline>`][svg polyline] that draws consecutive lines within a single stroke.  Thus, we use this to draw initial sides that would be too small to draw individually.  We also have to update the equation for computing $n$ a bit by including $x_0$, the number of initial sides, to
+Luckily, there is a [`<polyline>`][svg polyline] that draws consecutive lines within a single stroke.  Thus, we use this to draw an initial set of sides that would be too small to draw individually.  We also have to update the equation for computing $n$ a bit by including $x_0$, the number of sides in the initial set, to
 
 $$
 n = x_0(1 + x_1(1 + x_2(1 + \cdots (1+x_k))))

@@ -5,7 +5,6 @@ tags:
   - Dynamic Programming
   - Python
   - SVG
-  - Experimental
 date: 2021-05-27 20:17:29 +0700
 ---
 

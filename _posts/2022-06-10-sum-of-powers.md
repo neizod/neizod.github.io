@@ -3,6 +3,7 @@ title: $S_k(n) = 1^k + 2^k + 3^k + \cdots + n^k$
 tags:
   - Mathematics
   - Combinatorics
+  - Algebra
   - Proof Without Words
   - Induction
   - English Post
@@ -119,9 +120,9 @@ A left box in each row is a multiplier for their row. While a right box is $S_p(
 > \end{pmatrix}.
 > $$
 
-Observe that, except for the top row, each cell in the matrix starts with a term $-\binom{k+1}{k-?}$. We want to convert this term into $+\binom{k+1}{k-?}$, the term in the top row of its own column.
+Observe that, except for the top row, each cell in the matrix starts with a negative coefficient $-\binom{k+1}{k-?}$. We want to convert this cell to have a positive coefficient $+\binom{k+1}{k-?}$, the cell in the top row of its own column.
 
-For example, for cell $-\binom{k+1}{k-3}\frac1{k-2}\binom{k-2}{k-2}\boxed{?}$ (row 4, column 4), we want to *nudge* it to have a multiplier of $+\binom{k+1}{k-2}$ instead. It might be done via this technique
+For example, a cell $-\binom{k+1}{k-3}\frac1{k-2}\binom{k-2}{k-2}\boxed{?}$ (row 4, column 4) can be *nudged* to have a multiplier of $+\binom{k+1}{k-2}$ instead. Which might be done via this technique
 
 $$
 \begin{align}
@@ -138,16 +139,16 @@ Done nudging and the matrix became
 
 $$
 \begin{pmatrix}
-+\binom{k+1}{k+1} & \color{red}+\binom{k+1}{k} & \color{green}+\binom{k+1}{k-1} & \color{blue}+\binom{k+1}{k-2} & \cdots & +\binom{k+1}{1} \\
-& {\color{red}-\binom{k+1}{k}}\frac12\boxed{?} & {\color{green}-\binom{k+1}{k-1}}\boxed{?} & {\color{blue}-\binom{k+1}{k-2}}\frac32\boxed{?} & \cdot & -\binom{k+1}{1}\frac12\binom{k}{1}\boxed{?} \\
-&& {\color{green}-\binom{k+1}{k-1}}\frac13\boxed{?} & {\color{blue}-\binom{k+1}{k-2}}\boxed{?} & \cdot & -\binom{k+1}{1}\frac13\binom{k}{2}\boxed{?} \\
-&&& {\color{blue}-\binom{k+1}{k-2}}\frac14\boxed{?} & \cdot & -\binom{k+1}{1}\frac14\binom{k}{3}\boxed{?} \\
++\binom{k+1}{k+1} & \color{blue}+\binom{k+1}{k} & \color{red}+\binom{k+1}{k-1} & \color{green}+\binom{k+1}{k-2} & \cdots & +\binom{k+1}{1} \\
+& {\color{blue}-\binom{k+1}{k}}\frac12\boxed{?} & {\color{red}-\binom{k+1}{k-1}}\boxed{?} & {\color{green}-\binom{k+1}{k-2}}\frac32\boxed{?} & \cdot & -\binom{k+1}{1}\frac12\binom{k}{1}\boxed{?} \\
+&& {\color{red}-\binom{k+1}{k-1}}\frac13\boxed{?} & {\color{green}-\binom{k+1}{k-2}}\boxed{?} & \cdot & -\binom{k+1}{1}\frac13\binom{k}{2}\boxed{?} \\
+&&& {\color{green}-\binom{k+1}{k-2}}\frac14\boxed{?} & \cdot & -\binom{k+1}{1}\frac14\binom{k}{3}\boxed{?} \\
 &&&& \ddots & \vdots \\
 &&&&& -\binom{k+1}{1}\frac1{k+1}\binom{k}{k}\boxed{?}
 \end{pmatrix}.
 $$
 
-Or plugged back into the big picture equation
+Don't see its beauty yet? Well lets plug it back into the big picture equation
 
 {: .oversized}
 > $$
@@ -162,7 +163,7 @@ Or plugged back into the big picture equation
 > \begin{bmatrix} \binom{k+1}{k+1} n^{k+1} \\ \binom{k+1}{k} n^k \\ \binom{k+1}{k-1} n^{k-1} \\ \binom{k+1}{k-2} n^{k-2} \\ \vdots \\ \binom{k+1}{1} n \end{bmatrix}.
 > $$
 
-See that every cell with $\boxed{?}$ is multiplied by a constant. Thus, no matter how we scale the matrix by changing the value $k$; *if* we fill the same value into the same $\boxed{?}$, we will always get the same column sum.
+Observe that every cell with $\boxed{?}$ is multiplied by a constant. Thus, no matter how we scale the matrix by changing the value $k$; *if* we fill the same value into the same $\boxed{?}$, we will always get the same column sum.
 
 And by induction, we find that each of $\boxed{?}$ has the same value as we expected. Hence, we arrived at the conclusion
 
