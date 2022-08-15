@@ -6,20 +6,21 @@ tags:
   - Mathematics
   - Haskell
   - Computer Science
+  - English Post
 date: 2012-08-17 15:42:00 +0700
 ---
 
-ตอนม.ปลาย คงเคยเห็นฟังก์ชั่นที่เขียนแทนด้วยสัญลักษณ์ $g \circ f$ กันมาแล้ว
-ซึ่งมันหมายความง่ายๆ เช่นนี้
+In high school math, we might have seen functions that are written in the form of $g \circ f$. Which is just
+
 $$
-(g \circ f) (x) = g(f(x))
+(g \circ f) (x) = g(f(x)).
 $$
 
-(นิยามเต็มๆ ของมันคือ ถ้า $f: X \to Y$ และ $g: Y \to Z$ แล้ว $g \circ f: X \to Z$ -- ที่ต้องนิยามเช่นนี้เพราะเราจะสามารถละการเขียนตัวแปร $x$ ติดไปกับนิยามได้)
+(a full definition is, if $f: X \to Y$ and $g: Y \to Z$, then $g \circ f: X \to Z$ -- so that we may exclude $x$ from the description)
 
-ในการเขียนโปรแกรม (โดยเฉพาะเชิง functional) เรามักต้องทำงานแบบฟังก์ชันต่อเนื่อง คือ output จาก function หนึ่ง จะถูกนำมาใช้เป็น input ให้ฟังก์ชันถัดไปเป็นลูกโซ่
+In programming (especially functional), we often passing values over functions continuously. That is we take an output from one function to feed in as an input to other function in the chain.
 
-เขียนอธิบายเป็นภาษาโปรแกรมได้คือ
+In other words, with this code.
 
 ``` python
 first_input = x
@@ -29,44 +30,44 @@ second_output = g(second_input)
 y = second_output
 ```
 
-หรือเพื่อไม่ให้เปลืองตัวแปร ทั้งหมดนี้สามารถย่อได้เหลือ
+Or reducing everything to save variables/functions naming.
 
 ``` python
 y = g(f(x))
 ```
 
-คำถามคือ ถ้าเราต้องการประกาศแค่ฟังก์ชั่นที่ทำงานต่อกันไปเรื่อยๆ เช่นนี้ โดยที่ไม่ต้องการใส่ input ให้ฟังก์ชั่นโดยทันที เราจะทำอย่างไร?
+The question is, if we want to declared this chain of functions *without* applying the argument right away. How can we do that?
 
-ทางออกหนึ่งคือใช้ lambda เข้าช่วย
+One way to do that, by using lambda.
 
 ``` python
 h = lambda x: g(f(x))
 ```
 
-แล้วเวลาจะเรียกใช้ฟังก์ชั่นนี้ ก็แค่สั่ง
+So now we may call this later.
 
 ``` python
 y = h(x)
 ```
 
-ฟังดูง่ายดี แต่นึกดูอีกที ทำไมเราถึงต้องทำอะไรให้มันยุ่งยากด้วยการเอา `lambda` เข้ามาเกี่ยวด้วย?
+Simple thought, but why use `lambda` anyway?
 
-ในภาษา imperative คงไม่มีทางเลือกอื่น แต่สำหรับภาษา functional จ๋าอย่าง Haskell เราสามารถเขียนแบบนี้ได้
+In imperative languages, there might be no other choices. But for functional languages like Haskell, we can just write this.
 
 ``` haskell
 let h = g . f
 ```
 
-จะเห็นว่าง่ายดายเหมือนกับ $g \circ f$ ตอนแรกเลย เวลาใช้ก็แค่
+It is just $g \circ f$ that we've seen before! And just call it with this.
 
 ``` haskell
 h x
 ```
 
-หรือถ้าจะละการประกาศฟังก์ชั่น $h$ ทิ้งไป เพื่อหาผลลัพท์ทันทีเลย ก็ทำได้โดย
+We might also abandon $h$ completely when we want to run it right away.
 
 ``` haskell
 (g . f) x
 ```
 
-อ่าห์... นี่มันคณิตศาสตร์ชัดๆ!!
+Wow... This is mathematics!!

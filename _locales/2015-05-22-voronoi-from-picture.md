@@ -1,18 +1,17 @@
 ---
-title: Voronoi from Picture
+title: Voronoi จากภาพ
 tags:
   - Art
   - Geometry
   - Computational Geometry
   - Image Processing
   - Python
-  - English Post
 date: 2015-05-22 02:43:00 +0700
 ---
 
-Days ago I've seen [this challenge on Code Golf][code golf challenge]. It ask for a Voronoi diagram that resemble the original picture as close as possible.
+วันก่อนไปเจอ[คำถามใน Code Golf][code golf challenge] มา เค้าให้สร้าง Voronoi เพื่อเลียนแบบภาพต้นฉบับครับ
 
-It hooked me on. And other's results are great! Like a fine Divisionism/Pointillism movement. So I give it a try myself also.
+อ่านแล้วสนุกดี ผลงานของคนอื่นที่ได้ๆ ก็ดูเหมือนงานศิลป์พวก Divisionism/Pointillism ด้วย เลยลองกลับมาเขียนเองแบบมั่วๆ บ้าง 555
 
 ``` python
 import random
@@ -57,14 +56,14 @@ def simulate_voronoi(image_path, cells=25, scale=None):
     return image.size, list(zip(centroids, rgbs))
 ```
 
-Here are my results (at 500 Voronoi sites).
+ผลลัพธ์ที่ออกมาก็ประมาณนี้ครับ (ที่ 500 เซลล์ Voronoi)
 
 | ![][bear]             | ![][pearl-earing]     |
 | ![][great-wave]       | ![][starry-night]     |
 | ![][saturn]           | ![][andromeda-galaxy] |
 | ![][circle-in-circle] | ![][composition-2]    |
 
-Can't say that I can compete with these. Especially consider that I have no background knowledge in image processing at all. Still, it's a fun experience that let me try PIL for the first time.
+เอาไปสู้เขาไม่ได้หรอก เพราะเขียนไปมั่วแบบคนไม่มีพื้นฐาน image processing อะไรเลย แต่ก็สนุกดีได้ลองใช้ PIL เป็นครั้งแรกด้วย
 
 
 [bear]: /images/algorithm/voronoi/bear.png
