@@ -3,8 +3,10 @@ title: $S_k(n) = 1^k + 2^k + 3^k + \cdots + n^k$
 tags:
   - Mathematics
   - Combinatorics
+  - Algebra
   - Proof Without Words
   - Induction
+  - Math Animation
 date: 2022-06-10 15:04:36 +0700
 thumbnail: /images/math/proof-without-words/square-pyramidal-number.png
 lang: th
@@ -24,9 +26,21 @@ lang: th
 กลับมาดูกรณีที่ $k=2$ จะเห็นว่าเราก็มีวิธีพิสูจน์ด้วยการวาดภาพ (และตั้ง[ชื่อ][square pyramidal number]ให้) ในทำนองเดียวกัน
 
 {: .figure}
-> ![](/images/math/proof-without-words/square-pyramidal-number.png)
+> <div class="flex column align-center">
+>   <div id="canvas-pyramidal" style="width: 600px; height: 600px; background-image: url('/images/math/proof-without-words/square-pyramidal-number.png');"></div>
+>   <div id="control-pyramidal" style="display: none;">
+>     <button onclick="togrot(-1)" id="rotate-left">⬅️</button>
+>     <button onclick="togvis(0)">🟥</button>
+>     <button onclick="togvis(1)">🟧</button>
+>     <button onclick="togvis(2)">🟨</button>
+>     <button onclick="togvis(3)">🟩</button>
+>     <button onclick="togvis(4)">🟦</button>
+>     <button onclick="togvis(5)">🟪</button>
+>     <button onclick="togrot(+1)" id="rotate-right">➡️</button>
+>   </div>
+> </div>
 >
-> บทพิสูจน์ด้วยภาพว่า $1^2 + 2^2 + 3^2 + \cdots + n^2 = n(n+1)(2n+1)/6$
+> บทพิสูจน์แบบโต้ตอบด้วยภาพว่า $1^2 + 2^2 + 3^2 + \cdots + n^2 = n(n+1)(2n+1)/6$
 
 ซึ่งทำให้เราได้สูตรที่สวยงามน่าสนใจออกมา ยิ่งเมื่อดูควบคู่กับสูตรจากกรณีก่อนหน้า เราอาจจะเดาว่าสูตรของกรณีต่อไปๆ ก็น่าจะมีโครงสร้างที่อิงบนคำตอบเดิม คือน่าจะเขียนได้ประมาณว่า
 
@@ -212,6 +226,10 @@ $$
 - Nathaniel Larson, *The Bernoulli Numbers: A Brief Primer*
 - [Janet Beery, *Sums of Powers of Positive Integers*](//www.maa.org/press/periodicals/convergence/sums-of-powers-of-positive-integers)
 - Roger B. Nelsen, *Proofs Without Words II*
+
+
+<script src="//cdn.jsdelivr.net/npm/three@0.143.0/build/three.min.js"></script>
+<script defer src="/scripts/square-pyramidal-proof.js"></script>
 
 
 

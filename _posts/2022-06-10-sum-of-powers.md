@@ -6,6 +6,7 @@ tags:
   - Algebra
   - Proof Without Words
   - Induction
+  - Math Animation
   - English Post
 date: 2022-06-10 15:04:36 +0700
 thumbnail: /images/math/proof-without-words/square-pyramidal-number.png
@@ -26,9 +27,21 @@ Though we, humanity, knows the formula since ancient Greek. However, legends (mi
 Back to the sum. For the case $k=2$ we also have an illustrated proof (and [naming][square pyramidal number] it).
 
 {: .figure}
-> ![](/images/math/proof-without-words/square-pyramidal-number.png)
+> <div class="flex column align-center">
+>   <div id="canvas-pyramidal" style="width: 600px; height: 600px; background-image: url('/images/math/proof-without-words/square-pyramidal-number.png');"></div>
+>   <div id="control-pyramidal" style="display: none;">
+>     <button onclick="togrot(-1)" id="rotate-left">⬅️</button>
+>     <button onclick="togvis(0)">🟥</button>
+>     <button onclick="togvis(1)">🟧</button>
+>     <button onclick="togvis(2)">🟨</button>
+>     <button onclick="togvis(3)">🟩</button>
+>     <button onclick="togvis(4)">🟦</button>
+>     <button onclick="togvis(5)">🟪</button>
+>     <button onclick="togrot(+1)" id="rotate-right">➡️</button>
+>   </div>
+> </div>
 >
-> Proof without words that $1^2 + 2^2 + 3^2 + \cdots + n^2 = n(n+1)(2n+1)/6$
+> Interactive proof without words that $1^2 + 2^2 + 3^2 + \cdots + n^2 = n(n+1)(2n+1)/6$
 
 The proof gives us a beautiful formula. Which, take the previous case into account, we might *guess* that the general formula can be written in the structure
 
@@ -214,6 +227,10 @@ Even though the formula for $B_n$ is simple. But it requires manipulating lots o
 - Nathaniel Larson, *The Bernoulli Numbers: A Brief Primer*
 - [Janet Beery, *Sums of Powers of Positive Integers*](//www.maa.org/press/periodicals/convergence/sums-of-powers-of-positive-integers)
 - Roger B. Nelsen, *Proofs Without Words II*
+
+
+<script src="//cdn.jsdelivr.net/npm/three@0.143.0/build/three.min.js"></script>
+<script defer src="/scripts/square-pyramidal-proof.js"></script>
 
 
 
