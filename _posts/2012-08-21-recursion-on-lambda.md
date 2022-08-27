@@ -1,5 +1,5 @@
 ---
-title: Recursive Lambda ความงามบนความงาม...
+title: Recursion on Lambda Function
 tags:
   - Programming
   - Functional
@@ -7,55 +7,67 @@ tags:
   - Python
   - Recursion
   - Computer Science
+  - English Post
 date: 2012-08-21 00:04:00 +0700
 ---
 
-พอถล่ำลึกลงไปใน functional programming ซักพักหนึ่ง จะเริ่มเกิดคำถามขึ้นมาว่า
+Dig deep down into the [functional programming][], one might ask
 
-> "แล้วเราจะทำ recursion บน lambda ได้หรือเปล่า?"
+{: .quote}
+> "Can we do a [recursion][] on a [lambda][] function?"
 
-ฟังดูเผินๆ ไม่น่าเป็นไปได้ เพราะ lambda ทำให้ฟังก์ชันไม่มีชื่อ แต่การ recursion ต้องอาศัยชื่อของฟังก์ชันนั้นๆ เพื่อเรียกมันขึ้นมาทำงานเสมอ สมมติเช่นฟังก์ชันง่ายๆ ที่จะทำการยกกำลังสองเลขที่ได้รับมาทันที
+At first glance it seems impossible. Since functions defined via lambda are anonymous. But to recurse we need them to have name. Ditch the recursion aspect for now. Take a look at this very simple function take a number and return a it's square.
 
 ``` python
 (lambda x: x**2)(5)
 ```
 
-นี่คือฟอร์มที่เรียบง่ายสุด และถ้าเราทดลองเพิ่มตัวแปรเข้าไปให้ฟังก์ชันนี้ (โดยไม่จำเป็นต้องใช้มัน) อาจจะเขียนฟังก์ชันนี้ออกมาได้ว่า
+It is the simplest form. Now, how about adding an *unused* parameter to the function.
 
 ``` python
 (lambda w, x: x**2)(999, 5)
 ```
 
-แน่นอนว่ากรณีนี้เราไม่สนใจเลข `999` ที่ถูกนำไปเก็บไว้ยังตัวแปร `w` เลย ...แล้วเราก็คงจะถึงทางตัน ถ้าไม่สังเกตว่าตัวแปร `w` นั้นหนะ รับค่าอะไรเข้ามาก็ได้ (เพราะไม่ได้ใช้) นี่รวมไปถึงเราอาจจะยัด lambda เข้าไปให้มันก็ได้
+In this case, we just simply ignore the number `999` that stored as an argument of `w`... And it is the end of the road if we aren't notice that `w` can be anything, not only a number (as a data point). That is we can feed another lambda function in to it.[^1]
 
 ``` python
 (lambda w, x: x**2)(lambda u: 42, 5)
 ```
 
-นั่นหมายความว่า lambda ไม่จำเป็นต้องไร้ชื่อเสียทีเดียว แน่หละมันอาจจะไร้ชื่อใน scope หนึ่งๆ แต่กับ scope ที่ใหญ่ขึ้นกว่าตัวมันแล้ว เราสามารถตั้งชื่อให้มันได้ ถึงตอนนี้จะเปลี่ยนชื่อตัวแปรกันซักหน่อย พร้อมกับเอาฟังก์ชันสำหรับคำนวณจากด้านบนมาใส่แทน `lambda u: 42` ไปซะ
+So, lambda function need not to be anonymous. Yes, it might be anonymous in some [scope][]. But for the larger scope than itself, we can give it a name! Here, lets consider a slightly different version with altered parameter name such that we feed in the square function as the first argument.
 
 ``` python
 (lambda g, y: y**2)(lambda x: x**2, 5)
 ```
 
-จะเห็นว่าเลข `5` จะถูกเก็บไว้ในตัวแปร `y` และคำนวณ `y**2` ตรงๆ โดยที่ `lambda x: x**2` ไม่ได้แสดงบทบาทอะไร แต่เนื่องจากฟังก์ชัน `lambda x: x**2` ถูก scope ด้านหน้าแปะป้ายชื่อให้ว่า `g` เป็นที่เรียบร้อยแล้ว ดังนั้น เราสามารถส่งผ่านเลข `5` ให้ไปทำงานกับ `lambda x: x**2` ได้ดังนี้
+We'll see that the number `5` is stored at `y`. We then find `y**2` from the outer function, failing to utilize `lambda x: x**2` yet. To use `lambda x: x**2`, observe that it is now called `g`, so we can apply `5` to the `lambda x: x**2`, like this.
 
 ``` python
 (lambda g, y: g(y))(lambda x: x**2, 5)
 ```
 
-แม้ว่าตอนนี้เราจะสามารถเรียกชื่อของ `lambda x: x**2` ใน scope ที่ใหญ่กว่าตัวมันได้ แต่มันก็ไม่มีประโยชน์เลยเพราะการจะทำ recursion นั้นต้องสามารถเรียกชื่อตัวมันเองใน scope ที่มันอยู่ได้ ดังนั้น เราจะใช้ท่าเดิมคือส่งผ่านเจ้า `lambda x: x**2` นี้ต่อไปเรื่อยๆ ไม่ให้มันหายไป โดย
+Yes. We did it. We can use `lambda x: x**2` in the larger scope now. However, it is still not useful in the aspect of recursion. Since recursion required a function to call itself in *the same* scope. One way to do it is to pass `lambda x: x**2` on and on, keeping it alive.
 
 ``` python
 (lambda g, y: g(g, y))(lambda f, x: x**2, 5)
 ```
 
-เท่านี้ ใน scope ของ `lambda f, x: x**2` ก็สามารถเรียกตัวเองได้แล้ว (ชื่อว่า `f`) ถึงตอนนี้ก็ได้เวลาเขียน recursion ให้มัน อาจเริ่มจากฟังก์ชันง่ายๆ อย่าง factorial ก็ได้
+Just this and the scope of `lambda f, x: x**2` is populate with the name of itself (name `f`). Now we can try writing a recursive function. Maybe a simple factorial function.
 
 ``` python
 (lambda g, y: g(g, y))(lambda f, x: 1 if x == 0 else x * f(f, x-1), 5)
 ```
 
-สังเกตว่าการเรียก recursion ภายใน lambda นี้ ต้องส่งผ่านชื่อฟังก์ชันตัวเองเป็นตัวแปรพ่วงลงไปด้วยเสมอนะ
+Observe that to write a recursion with this lambda technique, we have to pass its name as an argument to its own parameter.
 
-จบแล้ว แค่นี้แหละ recursion บน lambda ไม่ยากอย่างที่คิดเลยใช่มั้ยครับ ;)
+
+[^1]: In functional programming, a function is [first-class][], that is we can pass the function around anywhere anytime. Unlike the antique C that we cannot directly feed a function as an argument to other function.
+
+
+
+[functional programming]: //en.wikipedia.org/wiki/Functional_programming
+[recursion]: //en.wikipedia.org/wiki/Recursion
+[lambda]: //en.wikipedia.org/wiki/Anonymous_function
+[scope]: //en.wikipedia.org/wiki/Scope_(computer_science)
+[first-class]: //en.wikipedia.org/wiki/First-class_function
+

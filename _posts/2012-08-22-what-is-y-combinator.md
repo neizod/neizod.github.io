@@ -1,5 +1,5 @@
 ---
-title: อะไรคือ Y Combinator
+title: What is Y Combinator?
 tags:
   - Programming
   - Functional
@@ -7,32 +7,33 @@ tags:
   - Python
   - Recursion
   - Computer Science
+  - English Post
 date: 2012-08-22 13:34:00 +0700
 ---
 
-ถึงตอนนี้เราคงทำ recursion บน lambda เป็นกันแล้ว (ถ้ายังไม่เป็น แนะนำให้อ่าน[ตอนก่อน][recursive lambda])
+Now we can do a [recursion][] on [lambda][] function. (If not, read [the previous entry][self lambda recursion].)
 
-กลับไปดูอีกรอบ จะเห็นว่าตอนเรียก recursion ต้องใส่ชื่อฟังก์ชันตัวเองลงไปเป็นตัวแปรหนึ่งเสมอ
+Looking back, we'll see that we have to pass its own function name as an argument to one of its own parameter. (Whoa, what a mouthful to speak!)
 
 ``` python
 lambda f, x: 1 if x == 0 else x * f(f, x-1)
 ```
 
-แล้วถ้าเราไม่อยากทำอย่างนี้หละ อยากจะเรียกแค่ `f(x-1)` เหมือนการเรียกใช้งานฟังก์ชันตามปรกติทั่วไป จะทำได้มั้ย?
+Can we *not* doing that, and just write `f(x-1)` like other normal functions?
 
-ถอยหนึ่งก้าว กลับไปเขียน factorial แบบธรรมดาๆ ก่อน
+Take one step back and re-write the factorial function in a sanity manner.
 
 ``` python
 f = lambda x: 1 if x == 0 else x * f(x-1)
 ```
 
-ฟังก์ชันนี้ยังคงสามารถเรียกใช้ได้ เนื่องจากว่าเราจองชื่อ `f` ไว้ให้มันแล้ว (ซึ่งไม่ใช่สิ่งที่เราต้องการ) นั่นหมายความว่าชื่อ `f` ต้องมีปรากฏอยู่ใน scope นี้จึงจะทำ recursion ได้ และมันมีอีกวิธีนึงที่จะทำให้ `f` ปรากฏอยู่ภายใน scope นี้โดยไม่ต้องจองชื่อหรือส่งผ่านเป็นตัวแปรใน scope เดียวกัน คือ
+This function works. Since we already reserve the name `f` for it (although not what we want). That is the name `f` must exists in this [scope][] in order for this function to works properly. And there's another way to make `f` exists without allocating the name in the global scope.
 
 ``` python
 lambda f: lambda x: 1 if x == 0 else x * f(x-1)
 ```
 
-แต่การประกาศเช่นนี้จะทำให้เราไม่สามารถใช้ฟังก์ชันได้ทันที เพราะเราต้องเอาฟังก์ชั่นนี้ส่งไปเป็นตัวแปรให้ตัวมันเองเรื่อยๆ เช่น ถ้าต้องการหา 5 factorial ต้องเขียนออกมาอย่างนี้
+However, this function will not work right away. To make it works, we have to feed the function as an argument repeatedly. For example, to find $5!$, we have to unroll everything:
 
 ``` python
 (lambda f: lambda x: 1 if x == 0 else x * f(x-1))(
@@ -47,18 +48,20 @@ lambda f: lambda x: 1 if x == 0 else x * f(x-1)
       )
     )
   )
-)(5)
+)(5) # i know, its a sin writing lisp-sy code with c style indentation
 ```
 
-นั่นหมายความว่าเราต้องการอะไรซักอย่าง ที่จะทำหน้าที่ generate ฟังก์ชันของเรานี้ออกมาเรื่อยๆ ไม่ว่าจะมีอะไรเกิดขึ้นก็ตาม นี่คือแนวคิดของ [fixed-point combinator][] โดยมีตัวหนึ่งที่เป็นมีชื่อเสียงเป็นที่รู้จักกันมากคือ Y combinator ซึ่งเขียนได้ดังนี้
+That is we have to write `lambda f: ...` again and again by ourselves. In the case of $5!$, we need to write the function at least five (plus one) times. If the factorial is larger, then we need to write the function repeatedly as many times.
+
+So we need something that can *passing* the definition of this recursive function infinitely many times. This is the core concept of [fixed-point combinator][]. Which we have one of the most famous, the Y combinator, which can be code as this.
 
 ``` python
 Y = lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v)))
 ```
 
-หรือนิยามทางคณิตศาสตร์คือ $Y = \lambda f.(\lambda x.f(x\;x))(\lambda x.f(x\;x))$ ซึ่งไม่จำเป็นต้องติดตัวแปร $v$ มาด้วย
+Or with the mathematical definition $Y = \lambda f.(\lambda x.f(x\;x))(\lambda x.f(x\;x))$ so we can ditch $v$.
 
-และเมื่อเราสำรวจการทำงานของมัน จะเห็นได้ว่า
+Try applying a function $g$, we'll see that
 
 $$
 \begin{align}
@@ -69,11 +72,11 @@ Y\;g &= \Big( {\color{blue}\lambda f}.\big(\lambda x.{\color{blue}f}(x\;x)\big) 
      &= g\Big( \big(\lambda x.{\color{green}g}(x\;x)\big)\;\big(\lambda x.{\color{green}g}(x\;x)\big) \Big) \\
      &= g\Big( \Big( {\color{blue}\lambda f}. \big(\lambda x.{\color{blue}f}(x\;x)\big)\;\big(\lambda x.{\color{blue}f}(x\;x)\big) \Big) \; {\color{red}g} \Big) \\
      &= g \big( Y\;g \big) \\
-     &= g \big( g \big( Y\;g \big) \big) = g \big( g \big( g \big( Y\;g \big) \big) \big) = g \big( g \big( g \big( g \big( \cdots \big) \big) \big) \big)
+     &= g \big( g \big( Y\;g \big) \big) = g \big( g \big( g \big( Y\;g \big) \big) \big) = g \big( g \big( g \big( g \big( \cdots \big) \big) \big) \big).
 \end{align}
 $$
 
-วิธีเอามาใช้งานก็ไม่ยุ่งยาก เพียง
+To apply it in programming, just write:
 
 ``` python
 (lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))( # Y
@@ -82,7 +85,7 @@ $$
   )(5)                                               # applying argument
 ```
 
-ลองเปลี่ยนมาหา Fibonacci บ้าง ก็แค่เปลี่ยนเป็น
+What about a Fibonacci number...
 
 ``` python
 (lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(
@@ -91,9 +94,13 @@ $$
   )(5)
 ```
 
-ง่ายจริงป่ะ?
+Isn't it easy?
 
 
-[recursive lambda]: /2012/08/21/recursion-on-lambda.html
 
+[self lambda recursion]: /2012/08/21/recursion-on-lambda.html
+
+[recursion]: //en.wikipedia.org/wiki/Recursion
+[lambda]: //en.wikipedia.org/wiki/Anonymous_function
+[scope]: //en.wikipedia.org/wiki/Scope_(computer_science)
 [fixed-point combinator]: //en.wikipedia.org/wiki/Fixed-point_combinator

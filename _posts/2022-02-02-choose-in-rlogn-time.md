@@ -1,15 +1,16 @@
 ---
-title: เขียนหนึ่งเซตย่อยใน $\binom{n}{r}$ ด้วยความเร็ว $O(r\log n)$
+title: Write a Subset of $\binom{n}{r}$ in $O(r\log n)$ Time
 tags:
   - Combinatorics
   - Algorithm
   - Mathematics
+  - English Post
 date: 2022-02-02 22:02:02 +0700
 ---
 
-ส่วนใหญ่เวลาเราคำนวณเกี่ยวกับการนับ เช่น $n!$ หรือ $\binom{n}{r}$ เรามักสนใจแค่ผลลัพธ์เชิงตัวเลขของมันว่าให้ค่าเป็นเท่าไหร่ อย่างเช่น $\binom{8}{3} = 56$ ที่ตีความได้ว่า เซตของสมาชิก $8$ ตัวเมื่อต้องการเลือกเซตย่อยที่มีสมาชิก $3$ ตัวจะสามารถทำได้ทั้งหมด $56$ วิธีไม่ซ้ำกัน
+When dealing with combinatorics computation, like $n!$ or $\binom{n}{r}$, we often interest in the numerical outcome. For example, $\binom{8}{3} = 56$, which means given a set of $8$ elements, there are $56$ distinct ways to choose $3$ elements from it.
 
-ว่าแต่ว่า แต่ละวิธีที่หยิบสมาชิกได้นั้นมันหยิบสมาชิกตัวไหนออกมาบ้างหละ? เพื่อให้เราไล่เขียนทุกวิธีได้อย่างมีระเบียบไม่ต้องสับสนกังวลว่าจะเขียนซ้ำ เราจะสนใจการไล่เขียนเรียงตาม[ลำดับพจนานุกรม][lexicographic] เช่น สมมติให้เซตของสมาชิกทั้ง $8$ ตัวนั้นคือตัวอักษรภาษาอังกฤษ $ABCDEFGH$ การไล่เขียนเซตย่อยของตัวอักษรมา $3$ ตัว วิธีแรกจะเขียนได้ว่า $ABC$ ตามด้วย $ABD$ ไล่ไปเรื่อยๆ จนจบที่ $FGH$ หรือไล่ให้ดูทั้งหมดได้ว่า
+But for each way to choose those elements, what are the chosen elements? To enumerating in a nice-looking order, we may interest in the [lexicographic][] order. For example, let the set of those $8$ elements consist of the very first Latin alphabet, $ABCDEFGH$. The first way of choosing $3$ alphabets is $ABC$, follow by $ABD$, all the way to down to $FGH$. The next figure list all of such combinations.
 
 $$
 \begin{array}{c}
@@ -37,15 +38,15 @@ FGH
 \end{array}
 $$
 
-จากตัวอย่างง่ายๆ ข้างต้น สังเกตว่ามีถึง $21$ วิธีที่เขียนขึ้นต้นด้วยตัว $A$ แต่หลังจากนั้นมีเพียงแค่ $15$ วิธีที่ขึ้นต้นด้วยตัว $B$ และลดหลั่นลงไปเรื่อยๆ จนถึงตัว $F$ ที่ขึ้นต้นได้แค่วิธีเดียว
+Observe that there are $21$ distinct ways to starts with $A$. After that only $15$ distinct ways to starts with $B$. Down to the final $F$ that can be starts with only one way.
 
-อนึ่ง เราอาจมองภาพข้างต้นเป็นพีระมิดหัวกลับที่แบ่งเป็นชั้นๆ เมื่อเริ่มต้นด้วยตัวอักษรใหม่ก็ย่อมได้ ซึ่งเมื่อดูให้ลึกลงไป (no pun intended) จะเห็นว่าการขึ้นต้นด้วยตัว $A$ นั้นมีจำนวนวิธีเท่ากับ $\binom{8}{3}{-}\binom{7}{3}$ ซึ่งก็คือผลต่างของพีระมิดสองชั้นที่ติดกัน ทำให้ได้เป็นขนาดของชั้นหนึ่งๆ นั่นเอง
+We may also view the above figure as the inverted pyramid such that each layer separated by a starting alphabet. When we look deep down (no pun intended) we'll se that the distinct ways that starts with $A$ is equal to $\binom{8}{3}{-}\binom{7}{3}$. That is the size of an interested layer can be found by substracting a larger pyramid with that layer at the top, with a smaller pyramid before that layer.
 
-ยิ่งไปกว่านั้น เมื่อระลึกถึง[สามเหลี่ยมปัสกาล][pascal triangle] เรายังได้อีกว่า $\binom{8}{3}{-}\binom{7}{3} = \binom{7}{2}$ หรือหากจะตีความหมายในที่นี้ก็คือ *บังคับเลือก*ตัวอักษร $A$ ดังนั้นจะเหลือตัวอักษรอีก $7$ ตัวซึ่งเราต้องเลือกเพิ่มอีก $2$ ตัว และทำให้ได้ว่ามี $\binom{7}{2}$ วิธีที่*ต้อง*เลือกตัวอักษร $A$ เป็นตัวแรกสุดนั่นเอง
+Furthermore, by realizing [Pascal's triangle][pascal triangle], we'll see that $\binom{8}{3}{-}\binom{7}{3} = \binom{7}{2}$. In other words, *force* choose $A$ so now we have $7$ alphabets left to choose $2$ more. Thus there are $\binom{7}{2}$ distinct ways that have $A$ as a starting alphabet.
 
-เรายังใช้การวิเคราะห์ในทำนองเดียวกันกับตัวอักษรอื่นๆ ได้ เช่น $B$ ที่มีวิธีเลือก $\binom{7}{3}{-}\binom{6}{3}=\binom{6}{2}$ วิธี
+We can generally applied this technique, e.g., starts with $B$ are $\binom{7}{3}{-}\binom{6}{3}=\binom{6}{2}$ distinct ways.
 
-จากข้อสังเกตข้างต้น จึงทำให้เราได้อัลกอริทึมที่ตรงไปตรงมาสำหรับเลือกเซตย่อย ณ ตำแหน่งที่ $i$ ตามลำดับพจนานุกรมดังนี้
+From this observation, we have a straightforward algorithm for enumerating such subset at an index $i$, according to the lex order.
 
 ``` python
 from math import comb    # comb(n, r) = n!/(r!(n-r)!)
@@ -60,9 +61,9 @@ def choose(n, r, i, x=0):
     return [x] + choose(n-1, r-1, i, x+1)
 ```
 
-น่าเสียดายที่อัลกอริทึมดังกล่าวทำงานที่ความเร็วแค่ $O(n)$ เพราะว่ามันอาจจะต้องเรียกตัวเองลึกลงไปจนถึงค่า $n$ ที่น้อยที่สุดจึงจะได้คำตอบ ... แล้วเราทำดีกว่านี้ได้หรือเปล่า?
+Too bad that this algorithm runs in $O(n)$ time, since it might recurse down at most $n$ steps to find the final element... So, can we speed this up?
 
-แน่นอนว่าเมื่อเจอปัญหาที่แบ่งเป็นชั้นๆ แบบนี้ เราควรจะลอง[ค้นหาแบบทวิภาค][binary search]ดูซักหน่อย สังเกตว่าถ้าเราไม่หาขนาดของชั้นเพียงชั้นเดียวในพีระมิด แต่หาขนาดของหลายๆ ชั้นที่ติดกันไปเลย เราสามารถทำได้โดยเอาพีระมิดที่ใหญ่ที่สุดไปลบพิระมิดระหว่างทางได้ ดังนั้นเราอาจตัดจำนวนชั้นที่ไม่ใช่ไปได้ถึงครึ่งหนึ่ง ซึ่งนี่เป็นหัวใจสำคัญของการค้นหาทวิภาคนั่นเอง และมันก็ทำให้เราได้โค้ดนี้ออกมา
+A searching problem on a sorted data! Yes, let's applying the [binary search][]. Notice that if we want to find the size of consecutive layers, we can substract the larger pyramid with a lot smaller pyramid. Thus we might throw away around half of the layer one at a time. Which is the core concept of binary search. Hence we arrived at this improved code.
 
 ``` python
 def binsearch(n, r, i, lo, hi):
@@ -83,9 +84,9 @@ def choose(n, r, i, x=0):
     return [y] + choose(k-1, r-1, j, y+1)
 ```
 
-น่าเสียดายที่ยังไงเราก็ต้องค่อยๆ แกะสมาชิกตัวแรกในเซตย่อยที่เป็นคำตอบออกมาทีละตัว ซึ่งก็คือแม้เราจะใช้เวลาเพียง $O(\log n)$ ในการหาสมาชิกที่ถูกต้องตัวหนึ่งๆ แต่เราก็ยังต้องทำแบบเดียวกันกับสมาชิกให้ครบ $r$ ตัวอยู่ดี ดังนั้นจึงได้เวลารวมเป็น $O(r \log n)$
+Too bad that this binary search gives us an element one at a time. That is we might speed up the search for a correct element in $O(\log n)$ time. But to find all of $r$ elements, the total time will grow to $O(r \log n)$ anyway.
 
-แล้ว $O(r \log n)$ มันดีกว่า $O(n)$ หรือเปล่า? ถ้า $r \to n$ หละก็ไม่ดีแน่ๆ แต่ในโลกจริงแล้วเรามักจะสนใจกรณีที่ $r \ll n$ เสียเป็นส่วนใหญ่ นอกจากนี้หาก $r >n/2$ เราก็สามารถใช้เทคนิคการสลับด้านสามเหลี่ยมปัสกาลได้ ซึ่งก็คือจะเห็นได้ไม่ยากว่า
+Is $O(r \log n)$ better than $O(n)$ ? If $r \to n$, then it is worse. However, in the real world application, we often interest only the case where $r \ll n$. And when $r >n/2$, we can also apply a *flip* technique on the Pascal's triangle, that is:
 
 ``` python
 set(range(n)) == set(choose(n, r, i) + choose(n, n-r, comb(n,r)-1-i))

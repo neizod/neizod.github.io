@@ -1,5 +1,5 @@
 ---
-title: คำนวณค่าฟีโบนัชชีอย่างเร็วด้วยเมทริกซ์
+title: Fast Fibonacci with Matrix
 tags:
   - Algorithm
   - Fibonacci
@@ -7,26 +7,27 @@ tags:
   - Optimization
   - Time Complexity
   - Computer Science
+  - English Post
 date: 2017-11-10 13:49:30 +0700
 ---
 
-1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ... แม้ว่าหลายคนจะไม่ถนัดคณิตศาสตร์และการคำนวณ แต่ก็น่าจะคุ้นเคยกับตัวเลขชุดนี้ที่ใครต่อใครต่างชมว่าเป็นรากฐานความงามในธรรมชาติอย่างแน่นอน หลักการคำนวณลำดับตัวเลขดังกล่าวก็อธิบายได้ไม่ยุ่งยากแต่อย่างใด "เมื่อต้องการคำนวณหาตัวเลขถัดไปในลำดับ ให้นำตัวเลขสองตัวก่อนหน้ามาบวกกัน (โดยกำหนดให้เลขสองตัวแรกในลำดับคือ 1)"
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ... Even though most of us aren't good at math and calculation, but we might familiar with this sequence that people consider it the most beautiful sequence in the nature. The instruction to find the sequence is actually not that complicate: to find the next number is to find a sum of the two previous numbers, where the very first two numbers are defined as 1.
 
-หรือเขียนเป็นสมการคณิตศาสตร์ได้เป็น
+In other equations,
 
 $$
-F_n = F_{n-1} + F_{n-2}
+F_n = F_{n-1} + F_{n-2}.
 $$
 
-เมื่อ $F_n$ คือค่าของตัวเลขฟีโบนัชชีตำแหน่งที่ $n$ โดยมี $F_1=1$ และ $F_2=1$
+When $F_n$ is a number in the Fibonacci sequence at index $n$. Where $F_1=1$ and $F_2=1$.
 
-ถึงตรงนี้ถ้าใครเรียนเขียนโปรแกรมมา ควรคุ้นหน้าคุ้นตาว่าการคำนวณข้างต้นใช้เทคนิค recursive นั่นเอง แต่ถ้านำไป implement ตรงๆ ก็คงคำนวณได้ไม่ไกล เพราะการคำนวณค่าฟีโบนัชชีตำแหน่งสูงๆ จะเสียเวลาไปกับการคำนวณค่าตำแหน่งก่อนหน้าซ้ำๆ จนทำให้เวลาที่ใช้เป็น $O(2^n)​$ ปัญหานี้สามารถแก้ได้ด้วยเทคนิค dynamic programming คือจดค่าในลำดับทั้งหมดที่เคยคำนวณเก็บไว้ เมื่อต้องการนำค่าเดิมมาใช้คำนวณค่าถัดไป ก็แค่เรียกค่าที่เคยจดไว้มาใช้ไม่ต้องคำนวณซ้ำอีก เทคนิคนี้สามารถลดเวลาได้เหลือ $O(n)​$
+Students in computer-science should recognize that the above equation *is* a [recursion][]. However, if we implement it as-is, we'll run out of time even though we compute only around half-a-hundred $n$. That's because this equation compute most of the intermediate numbers again and again, resulting in $O(2^n)$ time complexity. We can overcome the problem easily with [dynamic programming][] technique. That is we'll store every calculated number of the sequence somewhere. When we want to find a number in the sequence again, we just look it up instead of re-computing it. This technique speed up the algorithm to $O(n)$.
 
-แล้วเราสามารถทำให้การคำนวณค่าฟีโบนัชชีเร็วขึ้นได้หรือไม่?
+Can we find the Fibonacci number faster?
 
-หากต้องการหาลำดับฟีโบนัชชีทั้งลำดับ (ไล่มาตั้งแต่ตัวแรกจนถึงตำแหน่งที่สนใจ) วิธี dynamic programming ข้างต้นก็เหมาะสมกับการคำนวณอยู่แล้ว
+If we want the whole sequence (from the first index to our interesting index), the above dynamic programming is already satisfactory fast.
 
-แต่ถ้าต้องการค่าฟีโบนัชชีตำแหน่งที่ $n$ เพียงตัวเดียว โดยไม่สนใจค่าฟีโบนัชชีที่ตำแหน่งอื่นๆ เลย ก็สามารถเร่งความเร็วการคำนวณได้โดยนำเมทริกซ์เข้ามาช่วย วิธีคิดหาสูตรที่สำหรับคำนวณก็มีอยู่หลากหลายวิธี ในที่นี้จะเสนอวิธีการคูณเมทริกซ์กับเวกเตอร์ (ซึ่งมีข้อดีคือสามารถนำหลักการนี้ไปประยุกต์ใช้กับลำดับที่นิยามด้วย recursive แบบคล้ายกันได้) โดยเริ่มจากการเขียนค่าฟีโบนัชชีตำแหน่งต่างๆ ให้อยู่ในรูปของเวกเตอร์ที่ถูกคูณด้วยเมทริกซ์ ดังนี้
+However, if we just want a Fibonacci number at index $n$, ignoring other numbers in between. We still can speed this up with the help of a matrix. And there are so many way to approach this. Here, let me show an approach using matrix-vector multiplication (can be easily adapt to other sequence in the same manner). We starts by writing down some Fibonacci number in the vector form
 
 $$
 \mathbf{M}
@@ -38,20 +39,20 @@ F_{n-2}
 \begin{bmatrix}
 F_{n} \\
 F_{n-1}
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
-โดยที่ $\mathbf{M}$ คือเมทริกซ์มิติ $2\times2$ ที่เราต้องการหาเพื่อให้สมการข้างต้นเป็นจริง ซึ่งเมื่อนำไปพิจารณาด้วยสมการดั้งเดิมในตอนต้นของบล็อกนี้แล้ว จะหาคำตอบได้ไม่ยากว่า
+Where $\mathbf{M}$ is a matrix of dimension $2\times2$ that we want to find in order to make this equation hold. It is trivial to see that
 
 $$
 \mathbf{M} =
 \begin{bmatrix}
 1 & 1 \\
 1 & 0
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
-แต่ส่วนที่สำคัญที่ของสมการนี้ อยู่ที่รูปแบบการเรียงค่าฟีโบนัชชีในเวกเตอร์ทั้งทางซ้ายและขวามือของสมการ จึงสามารถนำผลลัพธ์มาคำนวณต่อเนื่องได้ ดังตัวอย่างนี้
+However, the core idea of this equation is the position of Fibonacci vectors. It enable us to *chain* the sequence of computation, like this
 
 $$
 \mathbf{M}^2
@@ -69,10 +70,10 @@ F_{n-1}
 \begin{bmatrix}
 F_{n+1} \\
 F_{n}
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
-หรือสรุปได้สำหรับกรณีทั่วไปว่า
+Generally, we say that for every $k\in\mathbb{N}$, we have
 
 $$
 \mathbf{M}^k
@@ -84,10 +85,10 @@ F_{n-2}
 \begin{bmatrix}
 F_{n-1+k} \\
 F_{n-2+k}
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
-สำหรับ $k\in\mathbb{Z}^\ge$ และเมื่อแทน $n=3$ เข้าไป จะได้ว่า
+The formula is already pretty. But we can use it more efficiently, that is we will eliminate a variable $n$ by evaluating $n=3$,
 
 $$
 \mathbf{M}^k
@@ -114,10 +115,10 @@ F_1
 \begin{bmatrix}
 F_{k+2} \\
 F_{k+1}
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
-ถึงตรงนี้เราก็จะสามารถคำนวณค่าฟีโบนัชชีที่ตำแหน่งใดๆ ได้ด้วยสมการ
+Rename $k$ back to $n$ for maximized aesthetics. Thus we arrived at the equation
 
 $$
 \begin{bmatrix}
@@ -132,12 +133,12 @@ F_n
 \begin{bmatrix}
 1 \\
 1
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
-สังเกตว่าส่วนที่กินเวลาการคำนวณมากที่สุดในสมการดังกล่าว คือการยกกำลังของเมทริกซ์ ซึ่งมีเทคนิคมากมายมาช่วยลดจำนวนการคูณที่ต้องทำ เช่น [จับคู่เพียงพจน์ที่เหมือนกันมาคูณกัน แล้วแทนค่าคู่พจน์อื่นๆ ที่เหมือนกันด้วยค่าที่เพิ่งคำนวณไป][exponentiation by squaring] จึงลดเหลือเวลาเพียง $O(\log n)$
+Observe that the exponentiation takes the most time in the computation. Which we'll employ an [exponentiation by squaring][] -- divide the exponent a half recursively so we can cache the same terms. Hence the time is reduced to $O(\log n)$ eventually.
 
-ป.ล. หากสมการข้างต้นยังไม่สวยพอ ฝาการบ้านให้คิดต่อจนได้รูปนี้ดู
+P.S. *feel* that result is not beauty enough? Then use this equivalent formula instead (the proof is left as an exercise to the reader)
 
 $$
 \begin{bmatrix}
@@ -148,8 +149,11 @@ F_n & F_{n-1}
 \begin{bmatrix}
 1 & 1\\
 1 & 0
-\end{bmatrix}^n
+\end{bmatrix}^n.
 $$
 
 
+
+[recursion]: //en.wikipedia.org/wiki/Recursion
+[dynamic programming]: //en.wikipedia.org/wiki/Dynamic_programming
 [exponentiation by squaring]: //en.m.wikipedia.org/wiki/Exponentiation_by_squaring
