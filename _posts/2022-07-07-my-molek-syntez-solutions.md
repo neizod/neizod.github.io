@@ -4,6 +4,7 @@ tags:
   - Chemistry
   - Game
   - Puzzle
+  - Mechanics
   - Optimization
   - Zachtronics
   - English Post
