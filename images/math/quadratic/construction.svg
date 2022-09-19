@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="-200 -160 400 240" font-family="monospace" font-size="7pt" dominant-baseline="middle" text-anchor="middle">
+
+<g transform="translate(-150 0)">
+<g stroke="#ccc">
+<line x1="0" y1="500" x2="0" y2="-500" />
+<line x1="75" y1="0" x2="-500" y2="0" />
+</g>
+<g stroke="#999" fill="#999" >
+<path d="M-200,-520.0 Q-62.52,194.91 75,-73.06" fill="none" />
+<line x1="-200" y1="440.00" x2="75" y2="-82.5" />
+</g>
+<g stroke="#c00" fill="#c00">
+<line x1="19.23" x2="19.23" y1="60.00" y2="23.46" />
+<circle cx="19.23" cy="23.46" r="1" />
+<text stroke="none" x="25" y="42">1</text>
+</g>
+<g stroke="#fa0" fill="#fa0">
+<line x1="0" x2="0" y1="0" y2="-19.23" />
+<circle cx="0" cy="-19.23" r="1" />
+<text stroke="none" x="-6" y="-9">1</text>
+<line x1="0" x2="19.23" y1="60.00" y2="60.00" />
+<circle cx="19.23" cy="60.00" r="1" />
+<text stroke="none" x="10" y="68">1</text>
+</g>
+<g stroke="#00c" fill="#00c">
+<line x1="0" x2="0" y1="0" y2="60.00" />
+<circle cx="0" cy="60.00" r="1" />
+<text stroke="none" x="-6" y="33">1</text>
+</g>
+</g>
+
+<g transform="translate(-42 -50)">
+<polygon points="-20,10 0,10 0,18 20,0 0,-18 0,-10 -20,-10" stroke="#333" fill="#abc" />
+</g>
+
+<g transform="translate(60 0)">
+<g stroke="#ccc">
+<line x1="0" y1="500" x2="0" y2="-500" />
+<line x1="500" y1="0" x2="-75" y2="0" />
+</g>
+<g stroke="#ccc" stroke-dasharray="1 1">
+<line x1="46.15" x2="46.15" y1="-200" y2="100" />
+<line x1="100.00" x2="100.00" y1="-200" y2="100" />
+</g>
+<g stroke="#ccc" fill="#ccc" stroke-dasharray="3 2">
+<path d="M-75,-73.06 Q62.52,194.91 200,-520.0" fill="none" />
+<line x1="-200" y1="440.00" x2="200" y2="-320.00" />
+</g>
+<g stroke="#00c" fill="#00c">
+<line x1="73.08" x2="73.08" y1="-9.62" y2="-129.62" />
+<circle cx="73.08" cy="-129.62" r="1" />
+<text stroke="none" x="79" y="-65">2</text>
+</g>
+<g stroke="#fa0" fill="#fa0">
+<line x1="0" x2="0" y1="0" y2="-19.23" />
+<circle cx="0" cy="-19.23" r="1" />
+<text stroke="none" x="-6" y="-9">1</text>
+<line x1="73.08" x2="73.08" y1="0" y2="-9.62" />
+<circle cx="73.08" cy="-9.62" r="1" />
+<text stroke="none" x="79" y="-5">½</text>
+</g>
+<g stroke="#c00" fill="#c00">
+<line x1="0" x2="73.08" y1="0" y2="0" />
+<circle cx="73.08" cy="0" r="1" />
+<text stroke="none" x="34" y="8">2</text>
+</g>
+
+  <!-- the compass -->
+  <g transform="translate(73.08 -129.62)">
+  <g transform="rotate(-50)">
+  <g transform="translate(-65 -60)">
+
+  <!-- pencil leg -->
+  <g transform="rotate(52)">
+  <rect x="-5.5" width="6" height="67" stroke="#333" fill="#ccc" />
+  <rect x="-6" y="57" width="7" height="16" stroke="#000" fill="#000" />
+  </g>
+  <g transform="rotate(20 -67 60)">
+  <polygon points="-63,47 -67,59 -71,47" stroke="#eb2" fill="#eb2" />
+  <polygon points="-65,53 -67,59 -69,53" stroke="#000" fill="#000" />
+  <rect x="-71" y="12" width="8" height="35" stroke="#70b" fill="#70b" />
+  <rect x="-72" y="25" width="10" height="18" stroke="#000" fill="#000" />
+  </g>
+
+  <!-- needle leg -->
+  <g transform="rotate(-52)">
+  <rect x="-1.5" width="6" height="72" stroke="#333" fill="#ccc" />
+  <rect x="-2" y="59" width="7" height="15" stroke="#000" fill="#000" />
+  </g>
+  <g transform="rotate(-20 65 60)">
+  <polygon points="63,50 65,59 67,50" stroke="#888" fill="#888" />
+  <rect x="62" y="33" width="6" height="17" stroke="#000" fill="#000" />
+  </g>
+
+  <!-- handle -->
+  <rect x="-4" y="-30" width="8" height="30" stroke="#333" fill="#000" />
+  <circle r="8" stroke="#000" fill="#000" />
+  <circle r="4" stroke="#000" fill="#888" />
+  </g>
+  <animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" values="-50;-55;-65;-80;-95;-105;-110;-110;-110;-110;-105;-95;-80;-65;-55;-50;-50;-50" />
+  </g>
+  </g>
+
+<g stroke="#000" fill="#000">
+<path d="M -10.34 -26.82 A 132.38 132.38 0 0 0 116.03 -4.40" fill="none" />
+<text stroke="none" x="53" y="6">x₁</text>
+<text stroke="none" x="108" y="6">x₂</text>
+<text stroke="none" x="73" y="-137">A</text>
+<text stroke="none" x="77" y="-138">＊</text>
+</g>
+</g>
+
+</svg>

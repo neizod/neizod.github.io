@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="-200 -160 400 240" font-family="monospace" font-size="7pt" dominant-baseline="middle" text-anchor="middle">
+<defs>
+<path id="parabola" d="M-500,-3250.0 Q0,3250.0 500,-3250.0" fill="none" />
+</defs>
+<g stroke="#ccc" fill="#ccc">
+<line x1="0" y1="500" x2="0" y2="-500" />
+<line x1="500" y1="0" x2="-500" y2="0" />
+<text stroke="none" x="-14" y="8">(0,0)</text>
+<text stroke="none" x="194" y="8">X</text>
+<text stroke="none" x="-6" y="-152">Y</text>
+</g>
+<g stroke="#ccc" stroke-dasharray="1 1">
+<line x1="46.15" x2="46.15" y1="-200" y2="100" />
+<line x1="100.00" x2="100.00" y1="-200" y2="100" />
+</g>
+<g stroke="#000" fill="#000">
+<use href="#parabola" x="0" y="0" />
+<line x1="-200" y1="440" x2="200" y2="-320.0" />
+</g>
+<g stroke="#000" fill="#000">
+<text stroke="none" x="-90" y="-80" transform="rotate(66 -90 -80)">f₂(x) = ax²</text>
+<text stroke="none" x="105" y="-110" transform="rotate(-66 105 -110)">f₁(x) = -(bx + c)</text>
+<circle cx="0" cy="-19.23" r="1" />
+<circle cx="0" cy="60.00" r="1" />
+<text stroke="none" x="-14" y="-19">1/4a</text>
+<text stroke="none" x="-9" y="60">-c</text>
+<circle cx="46.15" cy="0" r="1" />
+<circle cx="100" cy="0" r="1" />
+<text stroke="none" x="53" y="6">x₁</text>
+<text stroke="none" x="108" y="6">x₂</text>
+</g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="-136.92 -265 400 280" font-family="monospace" font-size="7pt" dominant-baseline="middle" text-anchor="middle">
+<g stroke="#ccc" fill="#ccc">
+<line x1="0" y1="500" x2="0" y2="-500" />
+<line x1="500" y1="0" x2="-500" y2="0" />
+<text stroke="none" x="-14" y="8">(0,0)</text>
+<text stroke="none" x="258" y="8">X</text>
+<text stroke="none" x="-6" y="-258">Y</text>
+</g>
+<g stroke="#ccc" stroke-dasharray="1 1">
+<line x1="46.15" x2="46.15" y1="-500" y2="100" />
+<line x1="100.00" x2="100.00" y1="-500" y2="100" />
+</g>
+<g stroke="#ccc" fill="#ccc" stroke-dasharray="3 2">
+<path d="M-200,-520.0 Q0,520.0 200,-520.0" fill="none" />
+<line x1="-200" y1="440.00" x2="200" y2="-320.00" />
+</g>
+<g stroke="#333" fill="#333">
+<line x1="0" y1="-19.23" x2="146.15" y2="-240.00" />
+<line x1="0" y1="-19.23" x2="100" y2="0" />
+<line x1="100" y1="0" x2="146.15" y2="-240.00" />
+<polyline points="93.30,-1.28 95.17,-8.14, 101.13,-6.33" fill="none" />
+<text stroke="none" x="73" y="-137">A</text>
+<text stroke="none" x="77" y="-138">＊</text>
+<circle cx="73.08" cy="-129.62" r="1" />
+<circle cx="73.08" cy="-129.62" r="132.38" fill="none" stroke-dasharray="2 1" />
+</g>
+<g stroke="#00c" fill="#00c">
+<line x1="146.15" x2="146.15" y1="0" y2="-240.00" />
+<circle cx="146.15" cy="-240.00" r="1" />
+<text stroke="none" x="155" y="-110">4c</text>
+</g>
+<g stroke="#fa0" fill="#fa0">
+<line x1="0" x2="0" y1="0" y2="-19.23" />
+<circle cx="0" cy="-19.23" r="1" />
+<text stroke="none" x="-14" y="-9">1/4a</text>
+</g>
+<g stroke="#c00" fill="#c00">
+<line x1="0" x2="146.15" y1="0" y2="0" />
+<circle cx="146.15" cy="0" r="1" />
+<text stroke="none" x="73" y="8">-b/a</text>
+</g>
+</svg>

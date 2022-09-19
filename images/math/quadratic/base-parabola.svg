@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="-200 -160 400 240" font-family="monospace" font-size="7pt" dominant-baseline="middle" text-anchor="middle">
+<defs>
+<path id="parabola" d="M-500,-3250.0 Q0,3250.0 500,-3250.0" fill="none" />
+</defs>
+<g stroke="#ccc" fill="#ccc">
+<line x1="0" y1="500" x2="0" y2="-500" />
+<line x1="500" y1="0" x2="-500" y2="0" />
+<text stroke="none" x="-14" y="8">(0,0)</text>
+<text stroke="none" x="194" y="8">X</text>
+<text stroke="none" x="-6" y="-152">Y</text>
+</g>
+<g stroke="#ccc" stroke-dasharray="1 1">
+<line x1="46.15" x2="46.15" y1="-200" y2="100" />
+<line x1="100.00" x2="100.00" y1="-200" y2="100" />
+</g>
+<use href="#parabola" x="73.08" y="9.42" stroke="#000" />
+<g stroke="#000" fill="#000">
+<text stroke="none" x="-35" y="-110" transform="rotate(66 -35 -110)">f(x) = ax² + bx + c</text>
+<circle cx="46.15" cy="0" r="1" />
+<circle cx="100" cy="0" r="1" />
+<text stroke="none" x="40" y="6">x₁</text>
+<text stroke="none" x="108" y="6">x₂</text>
+</g>
+</svg>
