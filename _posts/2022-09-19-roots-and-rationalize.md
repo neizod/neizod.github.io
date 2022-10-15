@@ -152,7 +152,7 @@ Can we avoid the infinity? Consider the horrible formula $\eqref{eq:quadratic}$,
 {: .figure}
 > ![](/images/math/quadratic/right-triangle.svg)
 >
-> Roots via a pair of right triangles, note that triangle's apex no need to lands on the parabola
+> Roots via a pair of right triangles, note that triangle's apex is not on the parabola
 >
 
 This specific triangle is useless. But again, there are infinitely many triangles in the same manner. That is if we *fix* the base but *vary* the height to a variable $h$. The length of the hypothenuse, now named $r$, will became
@@ -251,13 +251,13 @@ $$
 x = \tan\theta.
 $$
 
-This interpretation gives us a lot of insight. Such as if the circle is not large enough to cross the (extension) of the middle rod, then the equation must have no solution (in real realm). And when we face a negative value $c$, we construct the last rod downward, which also tells us that the equation always have roots!
+This interpretation gives us a lot of insight. Such as if the circle is not large enough to cross the (extension of the) middle rod, then the equation must have no solution (in real realm). And when we face a negative value $c$, we construct the last rod downward, which also tells us that the equation always have roots!
 
 The ancient Greek, evidently [Eratosthenes][] (prime-sieve guy), known this method for quite a long time, despite limited to polynomial of degree three. It was not until 1867 that Eduard Lill finally [generalized the concept][Lill's method] to polynomial of any degree.
 
 Arguably, these methods are still in the theme of *memorization*, like the formula $\eqref{eq:quadratic}$ have done for decades. And teaching these methods could be a lot worse should it falls into the wrong hands. Still, I find that it is simpler yet more elegant than the algebraic counterpart. Also the explanation can be made a lot easier, ditching the whole parabola thing and just go straightforward to Lill's method, because it uses only right-angle construction and a very simple trigonometry concept.
 
-So why are we still teaching ordinary student with the overly complicated formula $\eqref{eq:quadratic}$ such that it drives away people to appreciate the beauty of mathematics. In daily life, we don't need infinite digits of $\sqrt2$ anyway, $1.4$ will do.
+So why are we still teaching *ordinary students* with the overly complicated formula $\eqref{eq:quadratic}$ such that it drives away people to appreciate the beauty of mathematics. In daily life, we don't need infinite digits of $\sqrt2$ anyway, $1.4$ will do.
 
 
 ## References

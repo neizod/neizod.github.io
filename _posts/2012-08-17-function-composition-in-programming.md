@@ -1,5 +1,5 @@
 ---
-title: Function Composition กับ Programming
+title: Function Composition and Programming
 tags:
   - Programming
   - Functional

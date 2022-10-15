@@ -20,7 +20,7 @@ And this is the folding method suggested by Hisashi Abe that can trisect any arb
 >
 > Folding animation for fiding an angle $\theta/3$
 
-The intriguing property of origami technique emerged from, given a piece of paper with a point and a straight line, folding the paper such that the point lies on the line. With no other constraints, we may fold that in infinitly different ways. When we traces all the creases from every possible folds, we get a [parabola][] (the same technique as finding [envelope][]), such that the point is a focus and the line is a directrix!
+The intriguing property of origami technique emerged from, given a piece of paper with a point and a straight line, folding the paper such that the point lies on the line. With no other constraints, we may fold that in infinitely different ways. When we traces all the creases from every possible folds, we get a [parabola][] (the same technique as finding [envelope][]), such that the point is a focus and the line is a directrix!
 
 {: .figure}
 > ![](/images/math/origami/envelope-parabola.svg)
