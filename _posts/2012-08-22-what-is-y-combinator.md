@@ -9,6 +9,9 @@ tags:
   - Computer Science
   - English Post
 date: 2012-08-22 13:34:00 +0700
+revise:
+  - date: 2022-12-12
+    note: Add link to Sorawee
 ---
 
 Now we can do a [recursion][] on [lambda][] function. (If not, read [the previous entry][self lambda recursion].)
@@ -27,13 +30,13 @@ Take one step back and re-write the factorial function in a sanity manner.
 f = lambda x: 1 if x == 0 else x * f(x-1)
 ```
 
-This function works. Since we already reserve the name `f` for it (although not what we want). That is the name `f` must exists in this [scope][] in order for this function to works properly. And there's another way to make `f` exists without allocating the name in the global scope.
+This function works. Since we already reserve the name `f` for it (although it's not what we want). That is the name `f` must exists in this [scope][] in order for this function to works properly. And there's another way to make `f` exists without allocating the name in the global scope.
 
 ``` python
 lambda f: lambda x: 1 if x == 0 else x * f(x-1)
 ```
 
-However, this function will not work right away. To make it works, we have to feed the function as an argument repeatedly. For example, to find $5!$, we have to unroll everything:
+However, this function will not work right away. To make it works, we have to feed the function as an argument repeatedly. For example, to find $5!$, we have to unroll everything into:
 
 ``` python
 (lambda f: lambda x: 1 if x == 0 else x * f(x-1))(
@@ -48,12 +51,12 @@ However, this function will not work right away. To make it works, we have to fe
       )
     )
   )
-)(5) # i know, its a sin writing lisp-sy code with c style indentation
+)(5)     # i know, its a sin writing lisp-sy code with c style indentation
 ```
 
 That is we have to write `lambda f: ...` again and again by ourselves. In the case of $5!$, we need to write the function at least five (plus one) times. If the factorial is larger, then we need to write the function repeatedly as many times.
 
-So we need something that can *passing* the definition of this recursive function infinitely many times. This is the core concept of [fixed-point combinator][]. Which we have one of the most famous, the Y combinator, which can be code as this.
+So we need something that can *passing* the definition of this recursive function infinitely many times. This is the core concept of [fixed-point combinator][]. Which-- I failed to derived it[^1] --we have one of the most famous, the Y combinator, which can be implement in Python[^2] as:
 
 ``` python
 Y = lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v)))
@@ -96,9 +99,13 @@ What about a Fibonacci number...
 
 Isn't it easy?
 
+[^1]: Still curious on how we get it? Read [Sorawee's article][sorawee y-comb], which walkthrough us step by step until we finally deriving the Y combinator.
+[^2]: Actually, this code is Z combinator, which applied `x(x)(v)` right away.
 
 
 [self lambda recursion]: /2012/08/21/recursion-on-lambda.html
+
+[sorawee y-comb]://homes.cs.washington.edu/~sorawee/en/blog/2017/10-05-deriving-Y.html
 
 [recursion]: //en.wikipedia.org/wiki/Recursion
 [lambda]: //en.wikipedia.org/wiki/Anonymous_function

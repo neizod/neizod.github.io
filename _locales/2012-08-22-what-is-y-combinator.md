@@ -8,6 +8,9 @@ tags:
   - Recursion
   - Computer Science
 date: 2012-08-22 13:34:00 +0700
+revise:
+  - date: 2022-12-12
+    note: เพิ่มลิงก์ไปยังเว็บของสรวีย์
 ---
 
 ถึงตอนนี้เราคง[เรียกตัวเอง][recursion]บน[แลมบ์ดา][lambda]เป็นกันแล้ว (ถ้ายังไม่เป็น แนะนำให้อ่าน[ตอนก่อน][self lambda recursion])
@@ -47,12 +50,12 @@ lambda f: lambda x: 1 if x == 0 else x * f(x-1)
       )
     )
   )
-)(5) # i know, its a sin writing lisp-sy code with c style indentation
+)(5)     # i know, its a sin writing lisp-sy code with c style indentation
 ```
 
 ซึ่งก็คือเราต้องซ้อนการเขียน `lambda f: ...` ด้วยตนเอง ในกรณีของ $5!$ นั้นเราต้องซ้อนไปอย่างน้อยๆ ห้า(บวกหนึ่ง)ครั้ง และยิ่งต้องการหาค่าแฟคทอเรียลสูงๆ เราก็ยิ่งต้องซ้อนมันมากขึ้นเป็นเงาตามตัว
 
-นั่นหมายความว่าเราต้องการอะไรซักอย่างที่จะทำหน้าที่*ส่งผ่าน*ฟังก์ชันที่นิยามการเรียกตัวเองต่อไปเรื่อยๆ เป็นอนันต์ครั้งโดยอัตโนมัติ นี่คือแนวคิดของคอมบิเนเตอร์จุดตรึง ([fixed-point combinator][]) โดยมีตัวหนึ่งที่เป็นมีชื่อเสียงเป็นที่รู้จักกันมากคือ Y combinator ซึ่งเขียนได้ดังนี้
+นั่นหมายความว่าเราต้องการอะไรซักอย่างที่จะทำหน้าที่*ส่งผ่าน*ฟังก์ชันที่นิยามการเรียกตัวเองต่อไปเรื่อยๆ เป็นอนันต์ครั้งโดยอัตโนมัติ นี่คือแนวคิดของคอมบิเนเตอร์จุดตรึง ([fixed-point combinator][]) โดยมีตัวหนึ่ง (เสียดายที่ไล่เองไม่ออก[^1]) ที่เป็นมีชื่อเสียงเป็นที่รู้จักกันมากคือ Y combinator ซึ่งเขียนเป็นโค้ด Python[^2] ได้ดังนี้
 
 ``` python
 Y = lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v)))
@@ -95,9 +98,13 @@ $$
 
 ง่ายจริงป่ะ?
 
+[^1]: ถ้าใครติดใจว่าเราได้ฟังก์ชันหน้าตานี้มายังไง แนะนำให้อ่าน[บทความของสรวีย์][sorawee y-comb]ที่จะพาเราไปค่อยๆ ไล่แกะการเรียกตัวเองจนได้พจน์ Y combinator ออกมาในที่สุด
+[^2]: จริงๆ แล้วส่วนโค้ดนั้นคือ Z combinator ซึ่งมีจุดแตกต่างตรงที่ต้องส่งค่า `x(x)(v)` ในทันที
 
 
 [self lambda recursion]: /2012/08/21/recursion-on-lambda.html
+
+[sorawee y-comb]://homes.cs.washington.edu/~sorawee/en/blog/2017/10-05-deriving-Y.html
 
 [recursion]: //en.wikipedia.org/wiki/Recursion
 [lambda]: //en.wikipedia.org/wiki/Anonymous_function
