@@ -3,7 +3,7 @@ title: ความมืดของเงา Umbra/Penumbra/Antumbra
 tags:
   - Astronomy
   - Geometry
-  - Simulator
+  - Simulation
 date: 2020-03-02 14:26:44 +0700
 thumbnail: /images/program/umbra-penumbra-antumbra/model.png
 origin:
