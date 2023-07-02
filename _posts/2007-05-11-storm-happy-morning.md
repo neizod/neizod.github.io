@@ -1,8 +1,8 @@
 ---
 title: พายุ ตื่นเช้า อารมณ์ดี
 tags:
+  - Life Chapter
   - Nature
-  - Observation Series
 date: 2007-05-11 06:23:00 +0700
 ---
 
