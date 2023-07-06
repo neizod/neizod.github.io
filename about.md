@@ -4,6 +4,8 @@ title: Nattawut Phetmak (@neizod)
 
 Odinary one who question about everything in the universe (and multiverse).
 
+You can contact me at: `neizod (at) gmail.com`, or for academic purpose: `nattawut.p (at) ku.th`
+
 {: .oversized .figure}
 > ![](/images/neizod/with-paper-mache-elephant.jpg)
 >
