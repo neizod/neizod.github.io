@@ -3,7 +3,7 @@ title: 秒速5センチメートル
 tags:
   - Book
   - Japanese
-  - Translate
+  - Translation
   - Review
   - Romance
 date: 2018-09-01 23:59:59 +0700

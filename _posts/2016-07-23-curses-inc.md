@@ -3,7 +3,7 @@ title: คำสาปออนไลน์ (เกลียดใครต้�
 tags:
   - Book
   - Review
-  - Translate
+  - Translation
   - English
 date: 2016-07-23 23:59:59 +0700
 origin:

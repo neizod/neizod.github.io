@@ -3,7 +3,7 @@ title: 7 สุดยอดไซฟายแฟนตาซี
 tags:
   - Book
   - Review
-  - Translate
+  - Translation
   - English
   - Sci-Fi
 date: 2016-06-12 23:59:59 +0700

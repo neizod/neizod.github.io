@@ -4,6 +4,8 @@ tags:
   - English
   - Book
   - Review
+  - Quote
+  - Self-Reflection
 date: 2022-08-20 21:11:00 +0700
 origin:
   - name: Facebook
@@ -11,7 +13,8 @@ origin:
 ---
 
 {: .quote}
-> To write is not necessary to communicate. Communication occur in the mind of the reader.
+> To write is not necessary to communicate.  
+> Communication occur in the mind of the reader.
 >
 > Gary Provost
 

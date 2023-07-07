@@ -2,7 +2,7 @@
 title: マンガで読む人生がときめく片づけの魔法
 tags:
   - Book
-  - Translate
+  - Translation
   - Japanese
   - Quote
 date: 2019-10-11 23:59:59 +0700

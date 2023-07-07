@@ -4,6 +4,7 @@ tags:
   - Mathematics
   - Optimization
   - Event
+  - Invited Talk
 date: 2023-06-01 23:59:59 +0700
 ---
 
