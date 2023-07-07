@@ -1,5 +1,5 @@
 ---
-title: ぼっち・ざ・ろっく!
+title: ぼっち・ざ・ろっく！
 tags:
   - Japanese
   - Anime

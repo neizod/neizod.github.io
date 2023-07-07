@@ -5,7 +5,7 @@ tags:
   - Thai
   - Book
   - Poetry
-  - Translate
+  - Translation
 date: 2022-12-05 12:26:00
 origin:
   - name: Facebook

@@ -2,7 +2,7 @@
 title: O Alquimista
 tags:
   - Book
-  - Translate
+  - Translation
   - Brazilian
   - Portuguese
   - Review

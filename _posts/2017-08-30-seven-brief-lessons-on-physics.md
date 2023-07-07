@@ -3,7 +3,7 @@ title: Sette brevi lezioni di fisica
 tags:
   - Book
   - Italian
-  - Translate
+  - Translation
   - Review
   - Physics
   - Rant

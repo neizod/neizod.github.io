@@ -2,7 +2,7 @@
 title: สูญเสียแค่ไหน ก็ไม่เสียศูนย์
 tags:
   - Book
-  - Translate
+  - Translation
   - English
   - Review
   - Romance

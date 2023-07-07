@@ -166,7 +166,7 @@ def farey(n):
         b = k * g.denominator - f.denominator
         f, g = g, Fraction(a, b)
         sequence += [g]
-return sequence
+    return sequence
 ```
 
 

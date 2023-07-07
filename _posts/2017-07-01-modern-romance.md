@@ -3,7 +3,7 @@ title: ถอดรหัสรักออนไลน์
 tags:
   - Book
   - English
-  - Translate
+  - Translation
   - Review
   - Romance
 date: 2017-07-01 23:59:59 +0700

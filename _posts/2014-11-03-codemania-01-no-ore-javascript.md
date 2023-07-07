@@ -1,10 +1,11 @@
 ---
 title: Code Mania 01 และทำไมถึงควรเลิกเขียน JavaScript
 tags:
-  - Event
   - JavaScript
   - CoffeeScript
   - Programming
+  - Event
+  - Invited Talk
 date: 2014-11-03 20:52:00 +0700
 ---
 
