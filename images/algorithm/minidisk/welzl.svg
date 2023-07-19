@@ -1,0 +1,696 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" font-family="monospace" text-anchor="middle">
+
+<!-- candidates -->
+<g fill="#fc6" stroke="#960" opacity="0.5">
+  <circle id="q3"   cx=" 46.00" cy="169.00" r=" 24.000"  opacity="0" />
+  <circle id="q6"   cx="239.00" cy="321.00" r=" 24.000"  opacity="0" />
+  <circle id="q7"   cx="282.00" cy="112.00" r=" 24.000"  opacity="0" />
+  <circle id="q43"  cx="184.50" cy="178.50" r="138.825" opacity="0" />
+  <circle id="q63"  cx="142.50" cy="245.00" r="122.834" opacity="0" />
+  <circle id="q643" cx="183.51" cy="192.93" r="139.577" opacity="0" />
+  <circle id="q73"  cx="164.00" cy="140.50" r="121.393" opacity="0" />
+  <circle id="q76"  cx="260.50" cy="216.00" r="106.689" opacity="0" />
+  <circle id="q763" cx="178.27" cy="199.58" r="135.759" opacity="0" />
+</g>
+
+<!-- points -->
+<g id="p1" fill="#333">
+  <circle cx="134" cy="86"  r="3" />
+  <text id="t1" x="144" y="101" opacity="0">p1</text>
+  <text id="a1" x="420" y="100" opacity="0">p1</text>
+</g>
+<g id="p2" fill="#333">
+  <circle cx="102" cy="275" r="3" />
+  <text id="t2" x="112" y="290" opacity="0">p2</text>
+  <text id="a2" x="420" y="135" opacity="0">p2</text>
+</g>
+<g id="p3" fill="#333">
+  <circle cx="46"  cy="169" r="3" />
+  <text id="t3" x="56"  y="184" opacity="0">p3</text>
+  <text id="a3" x="420" y="170" opacity="0">p3</text>
+</g>
+<g id="p4" fill="#333">
+  <circle cx="323" cy="188" r="3" />
+  <text id="t4" x="333" y="203" opacity="0">p4</text>
+  <text id="a4" x="420" y="205" opacity="0">p4</text>
+</g>
+<g id="p5" fill="#333">
+  <circle cx="186" cy="151" r="3" />
+  <text id="t5" x="196" y="166" opacity="0">p5</text>
+  <text id="a5" x="420" y="240" opacity="0">p5</text>
+</g>
+<g id="p6" fill="#333">
+  <circle cx="239" cy="321" r="3" />
+  <text id="t6" x="249" y="336" opacity="0">p6</text>
+  <text id="a6" x="420" y="275" opacity="0">p6</text>
+</g>
+<g id="p7" fill="#333">
+  <circle cx="282" cy="112" r="3" />
+  <text id="t7" x="292" y="127" opacity="0">p7</text>
+  <text id="a7" x="420" y="310" opacity="0">p7</text>
+</g>
+
+<g fill="#333">
+  <!-- table -->
+  <text x="420" y="60">point</text>
+  <text x="525" y="60">disk</text>
+  <text x="630" y="60">(borders)</text>
+  <line x1="395" y1="75" x2="666" y2="75" stroke="#333" />
+  <!-- disk -->
+  <text id="d1"    x="525" y="100" opacity="0">D()</text>
+  <text id="d2"    x="525" y="135" opacity="0">D()</text>
+  <text id="d3"    x="525" y="170" opacity="0">D()</text>
+  <text id="d4"    x="525" y="205" opacity="0">D()</text>
+  <text id="d5"    x="525" y="240" opacity="0">D()</text>
+  <text id="d6"    x="525" y="275" opacity="0">D()</text>
+  <text id="d6643" x="525" y="275" opacity="0">D(p3,p4,p6)</text>
+  <text id="d7"    x="525" y="310" opacity="0">D()</text>
+  <text id="d73"   x="525" y="310" opacity="0">D(p3)</text>
+  <text id="d743"  x="525" y="310" opacity="0">D(p3,p4)</text>
+  <text id="d76"   x="525" y="310" opacity="0">D(p6)</text>
+  <text id="d77"   x="525" y="310" opacity="0">D(p7)</text>
+  <text id="d763"  x="525" y="310" opacity="0">D(p3,p6)</text>
+  <text id="d773"  x="525" y="310" opacity="0">D(p3,p7)</text>
+  <text id="d776"  x="525" y="310" opacity="0">D(p6,p7)</text>
+  <text id="d7763" x="525" y="310" opacity="0">D(p3,p6,p7)</text>
+  <!-- borders -->
+  <text id="b1"    x="630" y="100" opacity="0">{}</text>
+  <text id="b2"    x="630" y="135" opacity="0">{}</text>
+  <text id="b3"    x="630" y="170" opacity="0">{}</text>
+  <text id="b33"   x="630" y="170" opacity="0">{p3}</text>
+  <text id="b4"    x="630" y="205" opacity="0">{}</text>
+  <text id="b43"   x="630" y="205" opacity="0">{p3}</text>
+  <text id="b443"  x="630" y="205" opacity="0">{p3,p4}</text>
+  <text id="b5"    x="630" y="240" opacity="0">{}</text>
+  <text id="b53"   x="630" y="240" opacity="0">{p3}</text>
+  <text id="b543"  x="630" y="240" opacity="0">{p3,p4}</text>
+  <text id="b6"    x="630" y="275" opacity="0">{}</text>
+  <text id="b63"   x="630" y="275" opacity="0">{p3}</text>
+  <text id="b643"  x="630" y="275" opacity="0">{p3,p4}</text>
+  <text id="b66"   x="630" y="275" opacity="0">{p6}</text>
+  <text id="b663"  x="630" y="275" opacity="0">{p3,p6}</text>
+  <text id="b6643" x="630" y="275" opacity="0">{p3,p4,p6}</text>
+  <text id="b7"    x="630" y="310" opacity="0">{}</text>
+  <text id="b73"   x="630" y="310" opacity="0">{p3}</text>
+  <text id="b743"  x="630" y="310" opacity="0">{p3,p4}</text>
+  <text id="b76"   x="630" y="310" opacity="0">{p6}</text>
+  <text id="b77"   x="630" y="310" opacity="0">{p7}</text>
+  <text id="b763"  x="630" y="310" opacity="0">{p3,p6}</text>
+  <text id="b773"  x="630" y="310" opacity="0">{p3,p7}</text>
+  <text id="b776"  x="630" y="310" opacity="0">{p6,p7}</text>
+  <text id="b7763" x="630" y="310" opacity="0">{p3,p6,p7}</text>
+  <!-- arrows -->
+  <text id="bd1" x="575" y="100" opacity="0">←-</text>
+  <text id="bd2" x="575" y="135" opacity="0">←-</text>
+  <text id="bd3" x="575" y="170" opacity="0">←-</text>
+  <text id="bd4" x="575" y="205" opacity="0">←-</text>
+  <text id="bd5" x="575" y="240" opacity="0">←-</text>
+  <text id="bd6" x="575" y="275" opacity="0">←-</text>
+  <text id="bd7" x="575" y="310" opacity="0">←-</text>
+</g>
+
+<g fill="#06f">
+  <text id="ab1" x="525" y="100" opacity="0">-----------→</text>
+  <text id="ab2" x="525" y="135" opacity="0">-----------→</text>
+  <text id="ab3" x="525" y="170" opacity="0">-----------→</text>
+  <text id="ab4" x="525" y="205" opacity="0">-----------→</text>
+  <text id="ab5" x="525" y="240" opacity="0">-----------→</text>
+  <text id="ab6" x="525" y="275" opacity="0">-----------→</text>
+  <text id="ab7" x="525" y="310" opacity="0">-----------→</text>
+  <text id="ie1" x="465" y="100" opacity="0">∈</text>
+  <text id="ie2" x="465" y="135" opacity="0">∈</text>
+  <text id="ie3" x="465" y="170" opacity="0">∈</text>
+  <text id="ie4" x="465" y="205" opacity="0">∈</text>
+  <text id="ie5" x="465" y="240" opacity="0">∈</text>
+  <text id="ie6" x="465" y="275" opacity="0">∈</text>
+  <text id="ie7" x="465" y="310" opacity="0">∈</text>
+</g>
+
+<g fill="#f03">
+  <text id="ne1" x="465" y="100" opacity="0">∉</text>
+  <text id="ne2" x="465" y="135" opacity="0">∉</text>
+  <text id="ne3" x="465" y="170" opacity="0">∉</text>
+  <text id="ne4" x="465" y="205" opacity="0">∉</text>
+  <text id="ne5" x="465" y="240" opacity="0">∉</text>
+  <text id="ne6" x="465" y="275" opacity="0">∉</text>
+  <text id="ne7" x="465" y="310" opacity="0">∉</text>
+</g>
+
+
+
+<!-- animation -->
+
+<!-- p1 -->
+<animate dur="2s" begin="0s; f62.end" attributeName="x" id="f1" />
+<animate dur="0.25s" begin="f1.begin+0.0s" href="#t1" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f1.begin+0.5s" href="#a1" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.50s" begin="f1.begin+0.5s" href="#a1" attributeName="x" from="144" to="420" fill="freeze" />
+<animate dur="0.50s" begin="f1.begin+0.5s" href="#a1" attributeName="y" from="101" to="100" fill="freeze" />
+<animate dur="0.25s" begin="f1.begin+1.0s" href="#b1" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f1.begin+1.0s" href="#b1" attributeName="y" from="65" to="100" fill="freeze" />
+
+
+<!-- p2 -->
+<animate dur="2s" begin="f1.end" attributeName="x" id="f2" />
+<animate dur="0.25s" begin="f2.begin+0.0s" href="#t2" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f2.begin+0.5s" href="#a2" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.50s" begin="f2.begin+0.5s" href="#a2" attributeName="x" from="112" to="420" fill="freeze" />
+<animate dur="0.50s" begin="f2.begin+0.5s" href="#a2" attributeName="y" from="290" to="135" fill="freeze" />
+<animate dur="0.25s" begin="f2.begin+1.0s" href="#b2" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f2.begin+1.0s" href="#b2" attributeName="y" from="100" to="135" fill="freeze" />
+
+
+<!-- p3 -->
+<animate dur="2s" begin="f2.end" attributeName="x" id="f3" />
+<animate dur="0.25s" begin="f3.begin+0.0s" href="#t3" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f3.begin+0.5s" href="#a3" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.50s" begin="f3.begin+0.5s" href="#a3" attributeName="x" from="56"  to="420" fill="freeze" />
+<animate dur="0.50s" begin="f3.begin+0.5s" href="#a3" attributeName="y" from="184" to="170" fill="freeze" />
+<animate dur="0.25s" begin="f3.begin+1.0s" href="#b3" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f3.begin+1.0s" href="#b3" attributeName="y" from="135" to="170" fill="freeze" />
+
+
+<!-- p4 -->
+<animate dur="2s" begin="f3.end" attributeName="x" id="f4" />
+<animate dur="0.25s" begin="f4.begin+0.0s" href="#t4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f4.begin+0.5s" href="#a4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.50s" begin="f4.begin+0.5s" href="#a4" attributeName="x" from="333" to="420" fill="freeze" />
+<animate dur="0.50s" begin="f4.begin+0.5s" href="#a4" attributeName="y" from="203" to="205" fill="freeze" />
+<animate dur="0.25s" begin="f4.begin+1.0s" href="#b4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f4.begin+1.0s" href="#b4" attributeName="y" from="170" to="205" fill="freeze" />
+
+
+<!-- p5 -->
+<animate dur="2s" begin="f4.end" attributeName="x" id="f5" />
+<animate dur="0.25s" begin="f5.begin+0.0s" href="#t5" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f5.begin+0.5s" href="#a5" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.50s" begin="f5.begin+0.5s" href="#a5" attributeName="x" from="196" to="420" fill="freeze" />
+<animate dur="0.50s" begin="f5.begin+0.5s" href="#a5" attributeName="y" from="166" to="240" fill="freeze" />
+<animate dur="0.25s" begin="f5.begin+1.0s" href="#b5" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f5.begin+1.0s" href="#b5" attributeName="y" from="205" to="240" fill="freeze" />
+
+
+<!-- p6 -->
+<animate dur="2s" begin="f5.end" attributeName="x" id="f6" />
+<animate dur="0.25s" begin="f6.begin+0.0s" href="#t6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f6.begin+0.5s" href="#a6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.50s" begin="f6.begin+0.5s" href="#a6" attributeName="x" from="249" to="420" fill="freeze" />
+<animate dur="0.50s" begin="f6.begin+0.5s" href="#a6" attributeName="y" from="336" to="275" fill="freeze" />
+<animate dur="0.25s" begin="f6.begin+1.0s" href="#b6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f6.begin+1.0s" href="#b6" attributeName="y" from="240" to="275" fill="freeze" />
+
+
+<!-- p7 -->
+<animate dur="2s" begin="f6.end" attributeName="x" id="f7" />
+<animate dur="0.25s" begin="f7.begin+0.0s" href="#t7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f7.begin+0.5s" href="#a7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.50s" begin="f7.begin+0.5s" href="#a7" attributeName="x" from="292" to="420" fill="freeze" />
+<animate dur="0.50s" begin="f7.begin+0.5s" href="#a7" attributeName="y" from="127" to="310" fill="freeze" />
+<animate dur="0.25s" begin="f7.begin+1.0s" href="#b7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f7.begin+1.0s" href="#b7" attributeName="y" from="275" to="310" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f7.end" attributeName="x" id="f8" />
+<animate dur="0.25s" begin="f8.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f8.begin+0.0s" href="#d7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f8.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f8.end+0.5s" attributeName="x" id="f9" />
+<animate dur="0.25s" begin="f9.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f9.begin+0.0s" href="#ne7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f9.begin+1.0s" href="#ne7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f9.begin+1.0s" href="#p7" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f9.begin+1.0s" href="#d7" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f9.end+0.5s" attributeName="x" id="f10" />
+<animate dur="0.25s" begin="f10.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f10.begin+0.0s" href="#ie7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f10.begin+0.0s" href="#ab7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f10.begin+0.0s" href="#b7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f10.begin+0.0s" href="#b77" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f10.begin+0.5s" href="#ab7" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f10.end" attributeName="x" id="f11" />
+<animate dur="0.25s" begin="f11.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f11.begin+0.0s" href="#d77" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f11.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f11.begin+0.0s" href="#q7" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f11.end" attributeName="x" id="f12" />
+<animate dur="0.25s" begin="f12.begin+0.5s" href="#ie7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f12.begin+0.5s" href="#b77" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f12.begin+0.5s" href="#d77" attributeName="y" from="310" to="275" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f12.end+0.5s" attributeName="x" id="f13" />
+<animate dur="0.25s" begin="f13.begin+0.0s" href="#p6" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f13.begin+0.0s" href="#ne6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f13.begin+1.0s" href="#ne6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f13.begin+1.0s" href="#p6" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f13.begin+1.0s" href="#d77" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f13.begin+1.0s" href="#q7" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f13.end+0.5s" attributeName="x" id="f14" />
+<animate dur="0.25s" begin="f14.begin+0.0s" href="#p6" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f14.begin+0.0s" href="#ie6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f14.begin+0.0s" href="#ab6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f14.begin+0.0s" href="#b6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f14.begin+0.0s" href="#b66" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f14.begin+0.5s" href="#ab6" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f14.end" attributeName="x" id="f15" />
+<animate dur="0.25s" begin="f15.begin+0.0s" href="#p7" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f15.begin+0.0s" href="#b76" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f15.begin+0.0s" href="#b76" attributeName="y" from="275" to="310" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f15.end" attributeName="x" id="f16" />
+<animate dur="0.25s" begin="f16.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f16.begin+0.0s" href="#d76" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f16.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f16.begin+0.0s" href="#q6" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f16.end+0.5s" attributeName="x" id="f17" />
+<animate dur="0.25s" begin="f17.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f17.begin+0.0s" href="#ne7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f17.begin+1.0s" href="#ne7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f17.begin+1.0s" href="#p7" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f17.begin+1.0s" href="#d76" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f17.begin+1.0s" href="#q6" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f17.end+0.5s" attributeName="x" id="f18" />
+<animate dur="0.25s" begin="f18.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f18.begin+0.0s" href="#ie7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f18.begin+0.0s" href="#ab7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f18.begin+0.0s" href="#b76" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f18.begin+0.0s" href="#b776" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f18.begin+0.5s" href="#ab7" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f18.end" attributeName="x" id="f19" />
+<animate dur="0.25s" begin="f19.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f19.begin+0.0s" href="#d776" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f19.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f19.begin+0.0s" href="#q76" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f19.end" attributeName="x" id="f20" />
+<animate dur="0.25s" begin="f20.begin+0.5s" href="#ie7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f20.begin+0.5s" href="#b776" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f20.begin+0.5s" href="#d776" attributeName="y" from="310" to="275" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f20.end" attributeName="x" id="f21" />
+<animate dur="0.25s" begin="f21.begin+0.5s" href="#ie6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f21.begin+0.5s" href="#b66" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f21.begin+0.5s" href="#d776" attributeName="y" from="275" to="240" fill="freeze" />
+
+
+<!-- pass -->
+<animate dur="1s" begin="f21.end" attributeName="x" id="f22" />
+<animate dur="0.25s" begin="f22.begin+0.0s" href="#p5" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f22.begin+0.0s" href="#ie5" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f22.begin+0.5s" href="#ie5" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f22.begin+0.5s" href="#b5" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f22.begin+0.5s" href="#d776" attributeName="y" from="240" to="205" fill="freeze" />
+
+
+<!-- pass -->
+<animate dur="1s" begin="f22.end" attributeName="x" id="f23" />
+<animate dur="0.25s" begin="f23.begin+0.0s" href="#p4" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f23.begin+0.0s" href="#ie4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f23.begin+0.5s" href="#ie4" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f23.begin+0.5s" href="#b4" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f23.begin+0.5s" href="#d776" attributeName="y" from="205" to="170" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f23.end" attributeName="x" id="f24" />
+<animate dur="0.25s" begin="f24.begin+0.0s" href="#p3" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f24.begin+0.0s" href="#ne3" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f24.begin+1.0s" href="#ne3" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f24.begin+1.0s" href="#p3" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f24.begin+1.0s" href="#d776" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f24.begin+1.0s" href="#q76" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f24.end+0.5s" attributeName="x" id="f25" />
+<animate dur="0.25s" begin="f25.begin+0.0s" href="#p3" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f25.begin+0.0s" href="#ie3" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f25.begin+0.0s" href="#ab3" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f25.begin+0.0s" href="#b3" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f25.begin+0.0s" href="#b33" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f25.begin+0.5s" href="#ab3" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f25.end" attributeName="x" id="f26" />
+<animate dur="0.25s" begin="f26.begin+0.0s" href="#p4" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f26.begin+0.0s" href="#b43" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f26.begin+0.0s" href="#b43" attributeName="y" from="170" to="205" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f26.end" attributeName="x" id="f27" />
+<animate dur="0.25s" begin="f27.begin+0.0s" href="#p5" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f27.begin+0.0s" href="#b53" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f27.begin+0.0s" href="#b53" attributeName="y" from="205" to="240" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f27.end" attributeName="x" id="f28" />
+<animate dur="0.25s" begin="f28.begin+0.0s" href="#p6" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f28.begin+0.0s" href="#b63" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f28.begin+0.0s" href="#b63" attributeName="y" from="240" to="275" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f28.end" attributeName="x" id="f29" />
+<animate dur="0.25s" begin="f29.begin+0.0s" href="#p7" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f29.begin+0.0s" href="#b73" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f29.begin+0.0s" href="#b73" attributeName="y" from="275" to="310" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f29.end+0.5s" attributeName="x" id="f30" />
+<animate dur="0.25s" begin="f30.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f30.begin+0.0s" href="#d73" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f30.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f30.begin+0.0s" href="#q3" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f30.end+0.5s" attributeName="x" id="f31" />
+<animate dur="0.25s" begin="f31.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f31.begin+0.0s" href="#ne7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f31.begin+1.0s" href="#ne7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f31.begin+1.0s" href="#p7" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f31.begin+1.0s" href="#d73" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f31.begin+1.0s" href="#q3" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f31.end+0.5s" attributeName="x" id="f32" />
+<animate dur="0.25s" begin="f32.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f32.begin+0.0s" href="#ie7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f32.begin+0.0s" href="#ab7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f32.begin+0.0s" href="#b73" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f32.begin+0.0s" href="#b773" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f32.begin+0.5s" href="#ab7" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f32.end" attributeName="x" id="f33" />
+<animate dur="0.25s" begin="f33.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f33.begin+0.0s" href="#d773" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f33.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f33.begin+0.0s" href="#q73" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f33.end" attributeName="x" id="f34" />
+<animate dur="0.25s" begin="f34.begin+0.5s" href="#ie7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f34.begin+0.5s" href="#b773" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f34.begin+0.5s" href="#d773" attributeName="y" from="310" to="275" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f34.end" attributeName="x" id="f35" />
+<animate dur="0.25s" begin="f35.begin+0.0s" href="#p6" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f35.begin+0.0s" href="#ne6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f35.begin+1.0s" href="#ne6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f35.begin+1.0s" href="#p6" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f35.begin+1.0s" href="#d773" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f35.begin+1.0s" href="#q73" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f35.end+0.5s" attributeName="x" id="f36" />
+<animate dur="0.25s" begin="f36.begin+0.0s" href="#p6" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f36.begin+0.0s" href="#ie6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f36.begin+0.0s" href="#ab6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f36.begin+0.0s" href="#b63" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f36.begin+0.0s" href="#b663" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f36.begin+0.5s" href="#ab6" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f36.end" attributeName="x" id="f37" />
+<animate dur="0.25s" begin="f37.begin+0.0s" href="#p7" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f37.begin+0.0s" href="#b763" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f37.begin+0.0s" href="#b763" attributeName="y" from="275" to="310" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f37.end" attributeName="x" id="f38" />
+<animate dur="0.25s" begin="f38.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f38.begin+0.0s" href="#d763" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f38.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f38.begin+0.0s" href="#q63" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f38.end+0.5s" attributeName="x" id="f39" />
+<animate dur="0.25s" begin="f39.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f39.begin+0.0s" href="#ne7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f39.begin+1.0s" href="#ne7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f39.begin+1.0s" href="#p7" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f39.begin+1.0s" href="#d763" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f39.begin+1.0s" href="#q63" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f39.end+0.5s" attributeName="x" id="f40" />
+<animate dur="0.25s" begin="f40.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f40.begin+0.0s" href="#ie7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f40.begin+0.0s" href="#ab7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f40.begin+0.0s" href="#b763" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f40.begin+0.0s" href="#b7763" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f40.begin+0.5s" href="#ab7" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f40.end" attributeName="x" id="f41" />
+<animate dur="0.25s" begin="f41.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f41.begin+0.0s" href="#d7763" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f41.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f41.begin+0.0s" href="#q763" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f41.end" attributeName="x" id="f42" />
+<animate dur="0.25s" begin="f42.begin+0.5s" href="#ie7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f42.begin+0.5s" href="#b7763" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f42.begin+0.5s" href="#d7763" attributeName="y" from="310" to="275" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f42.end" attributeName="x" id="f43" />
+<animate dur="0.25s" begin="f43.begin+0.5s" href="#ie6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f43.begin+0.5s" href="#b663" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f43.begin+0.5s" href="#d7763" attributeName="y" from="275" to="240" fill="freeze" />
+
+
+<!-- pass -->
+<animate dur="1s" begin="f43.end" attributeName="x" id="f44" />
+<animate dur="0.25s" begin="f44.begin+0.0s" href="#p5" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f44.begin+0.0s" href="#ie5" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f44.begin+0.5s" href="#ie5" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f44.begin+0.5s" href="#b53" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f44.begin+0.5s" href="#d7763" attributeName="y" from="240" to="205" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f44.end" attributeName="x" id="f45" />
+<animate dur="0.25s" begin="f45.begin+0.0s" href="#p4" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f45.begin+0.0s" href="#ne4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f45.begin+1.0s" href="#ne4" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f45.begin+1.0s" href="#p4" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f45.begin+1.0s" href="#d7763" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f45.begin+1.0s" href="#q763" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f45.end+0.5s" attributeName="x" id="f46" />
+<animate dur="0.25s" begin="f46.begin+0.0s" href="#p4" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f46.begin+0.0s" href="#ie4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f46.begin+0.0s" href="#ab4" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f46.begin+0.0s" href="#b43" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f46.begin+0.0s" href="#b443" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f46.begin+0.5s" href="#ab4" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f46.end" attributeName="x" id="f47" />
+<animate dur="0.25s" begin="f47.begin+0.0s" href="#p5" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f47.begin+0.0s" href="#b543" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f47.begin+0.0s" href="#b543" attributeName="y" from="205" to="240" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f47.end" attributeName="x" id="f48" />
+<animate dur="0.25s" begin="f48.begin+0.0s" href="#p6" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f48.begin+0.0s" href="#b643" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f48.begin+0.0s" href="#b643" attributeName="y" from="240" to="275" fill="freeze" />
+
+
+<!-- recursive -->
+<animate dur="1s" begin="f48.end" attributeName="x" id="f49" />
+<animate dur="0.25s" begin="f49.begin+0.0s" href="#p7" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f49.begin+0.0s" href="#b743" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f49.begin+0.0s" href="#b743" attributeName="y" from="275" to="310" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f49.end" attributeName="x" id="f50" />
+<animate dur="0.25s" begin="f50.begin+0.0s" href="#bd7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f50.begin+0.0s" href="#d743" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f50.begin+0.5s" href="#bd7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f50.begin+0.0s" href="#q43" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- pass -->
+<animate dur="1s" begin="f50.end+0.5s" attributeName="x" id="f51" />
+<animate dur="0.25s" begin="f51.begin+0.0s" href="#p7" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f51.begin+0.0s" href="#ie7" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f51.begin+0.5s" href="#ie7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f51.begin+0.5s" href="#b743" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f51.begin+0.5s" href="#d743" attributeName="y" from="310" to="275" fill="freeze" />
+
+
+<!-- fail -->
+<animate dur="1.5s" begin="f51.end" attributeName="x" id="f52" />
+<animate dur="0.25s" begin="f52.begin+0.0s" href="#p6" attributeName="fill" from="#333" to="#f03" fill="freeze" />
+<animate dur="0.25s" begin="f52.begin+0.0s" href="#ne6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f52.begin+1.0s" href="#ne6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f52.begin+1.0s" href="#p6" attributeName="fill" from="#f03" to="#333" fill="freeze" />
+<animate dur="0.25s" begin="f52.begin+1.0s" href="#d743" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f52.begin+1.0s" href="#q43" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- add -->
+<animate dur="1.5s" begin="f52.end+0.5s" attributeName="x" id="f53" />
+<animate dur="0.25s" begin="f53.begin+0.0s" href="#p6" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f53.begin+0.0s" href="#ie6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f53.begin+0.0s" href="#ab6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f53.begin+0.0s" href="#b643" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f53.begin+0.0s" href="#b6643" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f53.begin+0.5s" href="#ab6" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- make -->
+<animate dur="1s" begin="f53.end" attributeName="x" id="f54" />
+<animate dur="0.25s" begin="f54.begin+0.0s" href="#bd6" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f54.begin+0.0s" href="#d6643" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f54.begin+0.5s" href="#bd6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f54.begin+0.0s" href="#q643" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f54.end" attributeName="x" id="f55" />
+<animate dur="0.25s" begin="f55.begin+0.5s" href="#ie6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f55.begin+0.5s" href="#b6643" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f55.begin+0.5s" href="#d6643" attributeName="y" from="275" to="240" fill="freeze" />
+
+
+<!-- pass -->
+<animate dur="1s" begin="f55.end" attributeName="x" id="f56" />
+<animate dur="0.25s" begin="f56.begin+0.0s" href="#p5" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f56.begin+0.0s" href="#ie5" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f56.begin+0.5s" href="#ie5" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f56.begin+0.5s" href="#b543" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f56.begin+0.5s" href="#d6643" attributeName="y" from="240" to="205" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f56.end" attributeName="x" id="f57" />
+<animate dur="0.25s" begin="f57.begin+0.5s" href="#ie4" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f57.begin+0.5s" href="#b443" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f57.begin+0.5s" href="#d6643" attributeName="y" from="205" to="170" fill="freeze" />
+
+
+<!-- bypass -->
+<animate dur="1s" begin="f57.end" attributeName="x" id="f58" />
+<animate dur="0.25s" begin="f58.begin+0.5s" href="#ie3" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f58.begin+0.5s" href="#b33" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f58.begin+0.5s" href="#d6643" attributeName="y" from="170" to="135" fill="freeze" />
+
+
+<!-- pass -->
+<animate dur="1s" begin="f58.end" attributeName="x" id="f59" />
+<animate dur="0.25s" begin="f59.begin+0.0s" href="#p2" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f59.begin+0.0s" href="#ie2" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f59.begin+0.5s" href="#ie2" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f59.begin+0.5s" href="#b2" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.50s" begin="f59.begin+0.5s" href="#d6643" attributeName="y" from="135" to="100" fill="freeze" />
+
+
+<!-- pass -->
+<animate dur="1s" begin="f59.end" attributeName="x" id="f60" />
+<animate dur="0.25s" begin="f60.begin+0.0s" href="#p1" attributeName="fill" from="#333" to="#06f" fill="freeze" />
+<animate dur="0.25s" begin="f60.begin+0.0s" href="#ie1" attributeName="opacity" from="0" to="1" fill="freeze" />
+<animate dur="0.25s" begin="f60.begin+0.5s" href="#ie1" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f60.begin+0.5s" href="#b1" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- clean up -->
+<animate dur="1s" begin="f60.end+1s" attributeName="x" id="f61" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#t1" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#t2" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#t3" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#t4" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#t5" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#t6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#t7" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#a1" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#a2" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#a3" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#a4" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#a5" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#a6" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.25s" begin="f61.begin+0.0s" href="#a7" attributeName="opacity" from="1" to="0" fill="freeze" />
+
+
+<!-- fin -->
+<animate dur="2s" begin="f61.end+1s" attributeName="x" id="f62" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#p1" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#p2" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#p3" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#p4" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#p5" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#p6" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#p7" attributeName="fill" from="#06f" to="#333" fill="freeze" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#d6643" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f62.begin+0.0s" href="#q643" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.1s" begin="f62.begin+1.0s" href="#d6643" attributeName="y" to="275" fill="freeze" />
+<animate dur="0.1s" begin="f62.begin+1.0s" href="#d77" attributeName="y" to="310" fill="freeze" />
+<animate dur="0.1s" begin="f62.begin+1.0s" href="#d743" attributeName="y" to="310" fill="freeze" />
+<animate dur="0.1s" begin="f62.begin+1.0s" href="#d773" attributeName="y" to="310" fill="freeze" />
+<animate dur="0.1s" begin="f62.begin+1.0s" href="#d776" attributeName="y" to="310" fill="freeze" />
+<animate dur="0.1s" begin="f62.begin+1.0s" href="#d7763" attributeName="y" to="310" fill="freeze" />
+
+
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="400" font-family="monospace" text-anchor="middle">
+
+<circle cx="277.63" cy="200.39" r="196.27" fill="#f66" stroke="#f00" opacity="0.5" />
+<circle cx="165.67" cy="163.76" r="156.89" fill="#66f" stroke="#00f" opacity="0.5" />
+
+<polygon points="117,313 214,15 108,102" fill="none" stroke="#333" stroke-dasharray="8 8" />
+<path d="M 127.42 85.90 A 25 25 0 0 1 109.13 126.72" fill="none" stroke="#333" />
+
+<circle cx="116.94" cy="312.89" r="3" />
+<circle cx="214.39" cy="14.63"  r="3" />
+<circle cx="108.08" cy="101.75" r="3" />
+
+<rect x="20" y="355" width="80" height="40" fill="none" stroke="#000" />
+<text x="120" y="112">θ</text>
+<text x="60" y="380">θ > π/2</text>
+
+<text x="112" y="327">p1</text>
+<text x="215" y="9"  >p2</text>
+<text x="99"  y="97" >p3</text>
+
+</svg>
