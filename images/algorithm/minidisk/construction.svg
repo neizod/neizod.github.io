@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" font-family="monospace" text-anchor="middle">
+
+<circle id="d" cx="200" cy="200" r="194.63" fill="#fc6" stroke="#ea0" opacity="0" />
+
+<circle id="p0" cx="200"    cy="200"    r="3" opacity="0" />
+<circle id="p1" cx="233.09" cy="391.80" r="3" />
+<circle id="p2" cx="6.10"   cy="216.86" r="3" />
+<circle id="p3" cx="272.84" cy="19.51"  r="3" />
+
+<line id="l12" x1="233.09" y1="391.80" x2="233.09" y2="391.80" stroke="#33c" />
+<line id="l21" x1="6.10"   y1="216.86" x2="6.10"   y2="216.86" stroke="#33c" />
+<line id="l23" x1="6.10"   y1="216.86" x2="6.10"   y2="216.86" stroke="#c33" />
+<line id="l32" x1="272.84" y1="19.51"  x2="272.84" y2="19.51"  stroke="#c33" />
+<line id="c1" stroke="#33c" opacity="0" />
+<line id="c2" stroke="#c33" opacity="0" />
+
+<animate dur="0.65s" begin="0s; f9.end" attributeName="x" id="f1" />
+<animate dur="0.65s" begin="f1.begin" href="#l12" attributeName="x2" from="233.09" to="119.59" fill="freeze" />
+<animate dur="0.65s" begin="f1.begin" href="#l12" attributeName="y2" from="391.80" to="304.33" fill="freeze" />
+<animate dur="0.65s" begin="f1.begin" href="#l21" attributeName="x2" from="6.10"   to="119.59" fill="freeze" />
+<animate dur="0.65s" begin="f1.begin" href="#l21" attributeName="y2" from="216.86" to="304.33" fill="freeze" />
+
+<animate dur="0.9s" begin="f1.end" attributeName="x" id="f2" />
+<animate dur="0.9s" begin="f2.begin" href="#c1" attributeName="x1" from="119.59" to="-124.58" fill="freeze" />
+<animate dur="0.9s" begin="f2.begin" href="#c1" attributeName="y1" from="304.33" to="621.15" fill="freeze" />
+<animate dur="0.9s" begin="f2.begin" href="#c1" attributeName="x2" from="119.59" to="363.77" fill="freeze" />
+<animate dur="0.9s" begin="f2.begin" href="#c1" attributeName="y2" from="304.33" to="-12.49" fill="freeze" />
+<animate dur="0.01s" begin="f2.begin" href="#c1" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+<animate dur="0.65s" begin="f2.end-0.5s" attributeName="x" id="f3" />
+<animate dur="0.65s" begin="f3.begin" href="#l12" attributeName="x1" from="233.09" to="119.59" fill="freeze" />
+<animate dur="0.65s" begin="f3.begin" href="#l12" attributeName="y1" from="391.80" to="304.33" fill="freeze" />
+<animate dur="0.65s" begin="f3.begin" href="#l21" attributeName="x1" from="6.10"   to="119.59" fill="freeze" />
+<animate dur="0.65s" begin="f3.begin" href="#l21" attributeName="y1" from="216.86" to="304.33" fill="freeze" />
+
+<animate dur="0.75s" begin="f3.end+0.5s" attributeName="x" id="f4" />
+<animate dur="0.75s" begin="f4.begin" href="#l32" attributeName="x2" from="272.84" to="139.47" fill="freeze" />
+<animate dur="0.75s" begin="f4.begin" href="#l32" attributeName="y2" from="19.51"  to="118.19" fill="freeze" />
+<animate dur="0.75s" begin="f4.begin" href="#l23" attributeName="x2" from="6.10"   to="139.47" fill="freeze" />
+<animate dur="0.75s" begin="f4.begin" href="#l23" attributeName="y2" from="216.86" to="118.19" fill="freeze" />
+
+<animate dur="0.9s" begin="f4.end" attributeName="x" id="f5" />
+<animate dur="0.9s" begin="f5.begin" href="#c2" attributeName="x1" from="139.47" to="-98.43" fill="freeze" />
+<animate dur="0.9s" begin="f5.begin" href="#c2" attributeName="y1" from="118.19" to="-203.37" fill="freeze" />
+<animate dur="0.9s" begin="f5.begin" href="#c2" attributeName="x2" from="139.47" to="377.38" fill="freeze" />
+<animate dur="0.9s" begin="f5.begin" href="#c2" attributeName="y2" from="118.19" to="439.75" fill="freeze" />
+<animate dur="0.01s" begin="f5.begin" href="#c2" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+<animate dur="0.75s" begin="f5.end-0.5s" attributeName="x" id="f6" />
+<animate dur="0.75s" begin="f6.begin" href="#l32" attributeName="x1" from="272.84" to="139.47" fill="freeze" />
+<animate dur="0.75s" begin="f6.begin" href="#l32" attributeName="y1" from="19.51"  to="118.19" fill="freeze" />
+<animate dur="0.75s" begin="f6.begin" href="#l23" attributeName="x1" from="6.10"   to="139.47" fill="freeze" />
+<animate dur="0.75s" begin="f6.begin" href="#l23" attributeName="y1" from="216.86" to="118.19" fill="freeze" />
+
+<animate dur="1.0s" begin="f6.end-0.8s" attributeName="x" id="f7" />
+<animate dur="0.5s" begin="f7.begin" href="#p0" attributeName="opacity" from="0" to="1" fill="freeze" />
+
+<animate dur="2.0s" begin="f7.end+0.5s" attributeName="x" id="f8" />
+<animate dur="0.5s" begin="f8.begin" href="#c1" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f8.begin" href="#c2" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f8.begin" href="#d"  attributeName="r" from="0" to="194.63" fill="freeze" />
+<animate dur="0.01s" begin="f8.begin" href="#d" attributeName="opacity" from="0" to="0.5" fill="freeze" />
+
+<animate dur="1.0s" begin="f8.end" attributeName="x" id="f9" />
+<animate dur="0.5s" begin="f9.begin" href="#d" attributeName="opacity" from="0.5" to="0" fill="freeze" />
+<animate dur="0.5s" begin="f9.begin" href="#p0" attributeName="opacity" from="1" to="0" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l12" attributeName="x1" from="119.59" to="233.09" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l12" attributeName="x2" from="119.59" to="233.09" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l12" attributeName="y1" from="304.33" to="391.80" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l12" attributeName="y2" from="304.33" to="391.80" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l21" attributeName="x1" from="119.59" to="6.10"   fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l21" attributeName="x2" from="119.59" to="6.10"   fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l21" attributeName="y1" from="304.33" to="216.86" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l21" attributeName="y2" from="304.33" to="216.86" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l23" attributeName="x1" from="139.47" to="6.10"   fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l23" attributeName="x2" from="139.47" to="6.10"   fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l23" attributeName="y1" from="118.19" to="216.86" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l23" attributeName="y2" from="118.19" to="216.86" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l32" attributeName="x1" from="139.47" to="272.84" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l32" attributeName="x2" from="139.47" to="272.84" fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l32" attributeName="y1" from="118.19" to="19.51"  fill="freeze" />
+<animate dur="0.1s" begin="f9.begin" href="#l32" attributeName="y2" from="118.19" to="19.51"  fill="freeze" />
+
+</svg>
