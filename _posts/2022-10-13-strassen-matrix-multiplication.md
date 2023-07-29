@@ -2,6 +2,7 @@
 title: คูณเมทริกซ์แบบ Strassen
 tags:
   - Linear Algebra
+  - Divide and Conquer
   - Computer Science
   - Optimization
   - SVG

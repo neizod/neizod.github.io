@@ -4,6 +4,7 @@ tags:
   - Platforming
   - Game
   - Review
+  - English Post
 date: 2022-12-19 21:49:00 +0700
 origin:
   - name: Steam

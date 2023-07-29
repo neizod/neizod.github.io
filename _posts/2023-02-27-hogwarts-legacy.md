@@ -4,6 +4,7 @@ tags:
   - Open World
   - Game
   - Review
+  - English Post
 date: 2023-02-27 21:46:00 +0700
 origin:
   - name: Steam
