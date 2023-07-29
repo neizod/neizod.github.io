@@ -63,12 +63,12 @@ $$
 
 สังเกตว่าคราวนี้เราไม่ได้ปัดแต่ละพจน์ขึ้นเป็น $\log k$ แล้ว แต่เขียนเป็นผลรวม[อนุกรมเรขาคณิต][geometric series]แทน ทำให้ได้ผลลัพธ์สุดท้ายมาว่าอัลกอริทึมของเราเร็วเป็น $O(n \log k)$ ตามที่ต้องการ
 
-อัลกอริทึมที่ใช้เทคนิคนี้ เช่น [อัลกอริทึม convex hull ของ Timothy M. Chen][chen's algo]
+อัลกอริทึมที่ใช้เทคนิคนี้ เช่น [อัลกอริทึมคอนเวกซ์ฮัลล์ของ Timothy M. Chan][chan's algo]
 
 {: .figure}
-> ![](/images/algorithm/misc/convex-hull-chen.gif)
+> ![](/images/algorithm/misc/convex-hull-chan.gif)
 >
-> ตัวอย่างการสร้าง convex hull ของ Chen -- สร้างภาพโดยอาศัยโค้ดต้นฉบับจาก [Wikipedia][chen's algo animation]
+> ตัวอย่างการสร้างคอนเวกซ์ฮัลล์ของ Chan -- สร้างภาพโดยอาศัยโค้ดต้นฉบับจาก [Wikipedia][chan's algo animation]
 
 
 [output sensitive]: //en.wikipedia.org/wiki/Output-sensitive_algorithm
@@ -76,5 +76,5 @@ $$
 [exponential]: //en.wikipedia.org/wiki/Exponentiation
 [double exponential]: //en.wikipedia.org/wiki/Double_exponential_function
 [geometric series]: //en.wikipedia.org/wiki/Geometric_series
-[chen's algo]: //en.wikipedia.org/wiki/Chan%27s_algorithm
-[chen's algo animation]: //en.wikipedia.org/wiki/File:ChanAlgDemo.gif
+[chan's algo]: //en.wikipedia.org/wiki/Chan%27s_algorithm
+[chan's algo animation]: //en.wikipedia.org/wiki/File:ChanAlgDemo.gif

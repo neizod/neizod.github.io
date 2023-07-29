@@ -4,6 +4,7 @@ tags:
   - Sailing
   - Game
   - Review
+  - English Post
 date: 2022-12-26 21:13:00 +0700
 origin:
   - name: Steam

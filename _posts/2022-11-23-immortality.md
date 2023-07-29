@@ -4,6 +4,7 @@ tags:
   - Detective
   - Game
   - Review
+  - English Post
 date: 2022-11-23 02:40:00 +0700
 origin:
   - name: Steam
