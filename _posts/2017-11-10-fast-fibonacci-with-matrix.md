@@ -5,7 +5,7 @@ tags:
   - Fibonacci
   - Linear Algebra
   - Optimization
-  - Time Complexity
+  - Complexity
   - Computer Science
   - English Post
 date: 2017-11-10 13:49:30 +0700

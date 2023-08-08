@@ -6,7 +6,7 @@ tags:
   - Algorithm
   - Computer Science
   - Computational Geometry
-  - Time Complexity
+  - Complexity
   - Math Animation
 date: 2018-09-18 22:22:22 +0700
 ---

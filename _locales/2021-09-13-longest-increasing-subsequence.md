@@ -3,7 +3,7 @@ title: ลำดับย่อยค่าเพิ่มขึ้นที่�
 tags:
   - Dynamic Programming
   - Graph Theory
-  - Time Complexity
+  - Complexity
   - Python
   - SVG
   - Math Animation

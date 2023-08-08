@@ -4,7 +4,7 @@ tags:
   - Python
   - Algorithm
   - Computer Science
-  - Time Complexity
+  - Complexity
 date: 2018-09-20 23:58:30 +0700
 ---
 
