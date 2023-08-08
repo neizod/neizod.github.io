@@ -2,7 +2,7 @@
 title: ค้นหาผลลัพธ์อย่างรวดเร็ว เมื่อเริ่มด้วยอัลกอริทึมที่กำหนดขนาดคำตอบ
 tags:
   - Algorithm
-  - Time Complexity
+  - Complexity
   - Computer Science
   - Math Animation
 date: 2018-08-20 15:32:27 +0700

@@ -4,8 +4,7 @@ tags:
   - Python
   - Algorithm
   - Randomness
-  - Time Complexity
-  - Space Complexity
+  - Complexity
   - Computer Science
 date: 2018-09-05 02:34:05 +0700
 ---

@@ -2,6 +2,7 @@
 title: ปัญหาดิสก์ปิดครอบเล็กที่สุด
 tags:
   - Computational Geometry
+  - Complexity
   - Linear Algebra
   - Mathematics
   - SVG

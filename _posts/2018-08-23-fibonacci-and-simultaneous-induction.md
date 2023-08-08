@@ -6,7 +6,7 @@ tags:
   - Induction
   - Recursion
   - Algorithm
-  - Time Complexity
+  - Complexity
   - Computer Science
   - Math Animation
 date: 2018-08-23 08:11:15 +0700

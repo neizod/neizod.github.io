@@ -3,7 +3,7 @@ title: Longest Increasing Subsequence
 tags:
   - Dynamic Programming
   - Graph Theory
-  - Time Complexity
+  - Complexity
   - Python
   - SVG
   - Math Animation
