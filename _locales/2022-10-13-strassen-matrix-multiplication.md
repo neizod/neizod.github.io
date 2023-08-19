@@ -1,5 +1,5 @@
 ---
-title: Strassen's matrix multiplication
+title: คูณเมทริกซ์แบบ Strassen
 tags:
   - Linear Algebra
   - Divide and Conquer
@@ -7,12 +7,11 @@ tags:
   - Optimization
   - SVG
   - Interactive
-  - English Post
 date: 2022-10-13 23:32:23 +0700
 thumbnail: /images/math/strassen.png
 ---
 
-Consider two matrices, $A=[\;\begin{smallmatrix}a_{11}&a_{12} \newline a_{21}&a_{22}\end{smallmatrix}\;]$ and $B=[\;\begin{smallmatrix}b_{11}&b_{12} \newline b_{21}&b_{22}\end{smallmatrix}\;]$. The matrix multiplication $C=AB$ can be computed using the following expression:
+เวลาเรามีเมทริกซ์สองตัว $A=[\;\begin{smallmatrix}a_{11}&a_{12} \newline a_{21}&a_{22}\end{smallmatrix}\;]$ กับ $B=[\;\begin{smallmatrix}b_{11}&b_{12} \newline b_{21}&b_{22}\end{smallmatrix}\;]$ เราสามารหาผลคูณ $C=AB$ ได้ว่า
 
 $$
 \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix}
@@ -21,14 +20,14 @@ $$
 \begin{bmatrix}
 a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\
 a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{22}b_{22}
-\end{bmatrix}.
+\end{bmatrix}
 $$
 
-Note that each element in the resulting matrix is in the form $c_{ij} = a_{i1}b_{1j}+a_{i2}b_{2j}$. Thus, there are two *basic* multiplications between numbers before they are summed up. (For matrices of dimension $n{\times}n$, we have $c_{ij} = \sum_1^n a_{i\square}b_{\square j}$ instead.)
+จะเห็นว่าแต่ละสมาชิกในเมทริกซ์ผลลัพธ์นั้นอยู่ในรูป $c_{ij} = a_{i1}b_{1j}+a_{i2}b_{2j}$ ซึ่งก็คือมีการคูณกันสองครั้ง แล้วหลังจากนั้นจึงนำผลคูณมารวมกัน (สำหรับเมทริกซ์ขนาด $n{\times}n$ จะได้ $c_{ij} = \sum_1^n a_{i\square}b_{\square j}$ แทน)
 
-The advantage of this equation is that each $a_{ij}$ and $b_{ij}$ doesn't have to be just scalars. They can also be submatrices of $A$ and $B$ that are equally partitioned.
+ความเจ๋งของสมการข้างต้นก็คือ แต่ละค่า $a_{ij}$ และ $b_{ij}$ มันไม่ถูกจำกัดให้ต้องเป็นสเกลาร์เท่านั้น แต่ยังสามารถเป็นเมทริกซ์ย่อยของ $A$ และ $B$ ที่พาร์ทิชันมาให้มีขนาดเท่ากันได้อีกด้วย
 
-For instance, when $A$ and $B$ are both $4{\times}4$ matrices, We have
+ตัวอย่างเช่นเมื่อ $A$ และ $B$ เป็นเมทริกซ์ขนาด $4{\times}4$ เราจะได้
 
 $$
 \begin{align}
@@ -83,35 +82,35 @@ $$
 \hdashline
 \vdots && \ddots \\
 \sum_1^4 a_{4\square}b_{\square1} &&& \sum_1^4 a_{4\square}b_{\square4}
-\end{array}\;\right].
+\end{array}\;\right]
 \end{align}
 $$
 
-Thus, we can applied [divide and conquer][] technique to derive an algorithm for this problem.
+นั่นก็คือเราสามารถประยุกต์ใช้เทคนิค[แบ่งแยกและเอาชนะ][divide and conquer]เพื่อแก้ปัญหานี้ได้
 
-Naturally, the next question is: what is the complexity of this algorithm? The simplest analysis involves counting how many times the basic multiplication between numbers occurs.
+แล้วอัลกอริทึมแบบดังกล่าวนั้นมีความซับซ้อนเป็นอย่างไร? ถ้าจะวิเคราะห์ให้ง่ายที่สุด เราก็อาจใช้วิธีนับว่ามีการคูณพื้นฐานระหว่างตัวเลขสองตัวเกิดขึ้นกี่ครั้ง
 
-Let's consider $n{\times}n$ matrices. When $n=2$, based on the previous observation that each element in the result matrix involves two basic multiplications, we end up with a total eight basic multiplications. Now, when $n=4$, we can observe that the problem is divided into eight subproblems of $2{\times}2$ matrix multiplication. This result in a total number of $8\cdot8=64$ basic multiplications.
+เริ่มจากเมทริกซ์ $n{\times}n$ เมื่อ $n=2$ จากข้อสังเกตที่ว่าแต่ละสมาชิกในเมทริกซ์มีการคูณสองครั้ง ดังนั้นการคูณกันรวมทั้งหมดจึงเป็นแปดครั้ง ต่อมาเมื่อเราเพิ่มขนาดเมทริกซ์เป็น $n=4$ จะได้ว่าเราเรียกตัวเองเป็นการคูณเมทริกซ์ย่อยขนาด $2{\times}2$ เป็นจำนวนแปดครั้ง ดังนั้นการคูณพื้นฐานรวมคือ $8\cdot8=64$ ครั้ง
 
-Roughly speaking, we can conclude that with this basic multiplication counting, the complexity of the algorithm is $O(n^3)$. This complexity aligns well with the definition of matrix multiplication, suggesting that it might be an optimal solution that cannot be further improved...
+เราจึงอาจสรุปได้คร่าวๆ ว่าความซับซ้อนของอัลกอริทึมคือ $O(n^3)$ ด้วยการนับจำนวนการคูณพื้นฐาน กอปรกับเมื่อเราย้อนกลับไปดูนิยามการคูณเมทริกซ์ข้างต้นแล้ว ความซับซ้อนที่ได้นี้ก็ดูจะสอดคล้องและไม่น่าจะถูกปรับปรุงให้ดีขึ้นกว่าเดิมได้อีก ...
 
-However, it was not until 1969 that Volker Strassen propose a matrix multiplication algorithm that uses only seven multiplications in each layer. This technique relies on the observation that we don't need to compute each of $c_{ij}$ right away. Instead, we can find *a little bit* complicated intermediate results that intertwine with many elements. We can then combine these intermediate results into $c_{ij}$ later. Furthermore, we *must* reuse these intermediate results for different elements, thus reducing the number of multiplication used.
+จนกระทั่ง Volker Strassen เสนออัลกอริทึมสำหรับคูณเมทริกซ์ในปี 1969 ที่สามารถลดจำนวนการคูณในแต่ละชั้นให้ลดลงเหลือเพียงแค่เจ็ดครั้งได้ โดยอาศัยข้อสังเกตว่าเราไม่จำเป็นต้องคำนวณแต่ละ $c_{ij}$ ตรงๆ แต่เราจะเดินอ้อมด้วยการคำนวณผลคูณระหว่างทางที่ซับซ้อนกว่าเดิมเล็กน้อยเก็บไว้ก่อน แล้วค่อยนำผลคูณเหล่านั้นมาบวกกันเพื่อสร้างเป็นแต่ละ $c_{ij}$ ทีหลัง ซึ่งจุดสำคัญคือเราจะใช้ผลคูณบางค่าซ้ำในหลายที่ จึงทำให้เราประหยัดการคูณลงไปได้นั่นเอง
 
-Precisely, we compute these intermediate results:
+เขียนให้ชัดๆ ก็คือ เราจะเริ่มคำนวณผลคูณระหว่างทางเหล่านี้ทิ้งไว้
 
 $$
 \begin{align}
-m_1 &= (a_{11}+a_{22})(b_{11}+b_{22}), \\
-m_2 &= (a_{21}+a_{22})b_{11}, \\
-m_3 &= a_{11}(b_{12}-b_{22}), \\
-m_4 &= a_{22}(b_{21}-b_{11}), \\
-m_5 &= (a_{11}+a_{12})b_{22}, \\
-m_6 &= (a_{21}-a_{11})(b_{11}+b_{12}), \\
-m_7 &= (a_{12}-a_{22})(b_{21}+b_{22}).
+m_1 &= (a_{11}+a_{22})(b_{11}+b_{22}) \\
+m_2 &= (a_{21}+a_{22})b_{11} \\
+m_3 &= a_{11}(b_{12}-b_{22}) \\
+m_4 &= a_{22}(b_{21}-b_{11}) \\
+m_5 &= (a_{11}+a_{12})b_{22} \\
+m_6 &= (a_{21}-a_{11})(b_{11}+b_{12}) \\
+m_7 &= (a_{12}-a_{22})(b_{21}+b_{22})
 \end{align}
 $$
 
-Then we find $C=AB$ with
+แล้วจึงหา $C=AB$ จาก
 
 $$
 \begin{bmatrix} c_{11} & c_{12} \\ c_{21} & c_{22} \end{bmatrix}
@@ -121,12 +120,12 @@ m_1 + m_4 - m_5 + m_7 &
 m_3 + m_5 \\
 m_2 + m_4 &
 m_1 - m_2 + m_3 + m_6
-\end{bmatrix}.
+\end{bmatrix}
 $$
 
-By reducing the number of multiplications to seven, the complexity is lowered to $O(n^{\log_27}) \approx O(n^{2.8})$.
+เนื่องจากเราลดการคูณเหลือเพียงเจ็ดครั้ง จึงได้ว่าความซับซ้อนลดเหลือ $O(n^{\log_27}) \approx O(n^{2.8})$
 
-The above system of equations can be complicated to understand. However, I found that [an explanatory picture on Wikipedia][wiki image strassen] helped me *visualize* the main concept of this algorithm. It's like a building block game where we need to build the correct building. Each building block occupies cells on a $4{\times}4$ table in the permutation grid between $A$ and $B$. We construct each $c_{ij}$ by selecting a combination of building blocks from $m_1$ to $m_7$.
+ชุดสมการข้างต้นนั้นจะว่าไปก็ดูซับซ้อนพอสมควร แต่ผมพบว่า[ภาพประกอบบนวิกิพีเดีย][wiki image strassen]นั้นช่วยให้*เห็นภาพ*แนวคิดหลักของอัลกอริทึมได้ดีมากๆ ซึ่งก็คือเราอาจมองมันเป็นเกมประกอบตัวต่อให้ได้รูปทรงตามที่ต้องการก็ได้ โดยตัวต่อที่เราสนใจนั้นมีรูปร่างเป็นตารางขนาด $4{\times}4$ ของทุกความเป็นไปได้ของการจับคู่คูณกันระหว่างทุกสมาชิกใน $A$ กับ $B$ และเราจะสร้างแต่ละ $c_{ij}$ ผ่านการจับตัวต่อ $m_1$ ถึง $m_7$ มาประกอบกัน
 
 {: .flex.column.align-center .oversized}
 > <div class="horizontal">
@@ -425,7 +424,7 @@ The above system of equations can be complicated to understand. However, I found
 > </style>
 > <script defer src="/scripts/strassen-matmul-block-game.js"></script>
 
-While Strassen's algorithm seems to be only a slightly improvement, it marks a significant milestone that paved the path for the study of matrix multiplication algorithms. Over the past half-century, extensive research has been conducted in this area. (Even Strassen himself later purposed another faster algorithm, although his first algorithm is generally more well-known.) In the latest advancements in 2020, Josh Alman and Virginia Vassilevska Williams develop novel techniques that further reduce the complexity to $O(n^{2.3728596})$.
+แม้อัลกอริทึมของ Strassen จะดูว่าเป็นการปรับปรุงความซับซ้อนเพียงเล็กน้อย แต่ก็นับเป็นหมุดหมายสำคัญของการเริ่มต้นศึกษาวิจัยการคูณเมทริกซ์ กว่าครึ่งศตวรรษที่ผ่านมาก็มีการพัฒนามาตลอดโดยนักวิจัยที่หลากหลาย (Strassen เองก็เสนออัลกอริทึมที่ดีกว่าเดิมอีกด้วย แต่ทั่วไปแล้วเมื่อพูดถึงอัลกอริทึมของ Strassen ก็จะหมายถึงอัลกอริทึมแรกสุดที่เขานำเสนอ) โดยล่าสุดเมื่อปี 2020 ที่ผ่านมา ทีมวิจัยที่ประกอบด้วย Josh Alman และ Virginia Vassilevska Williams ได้พัฒนาเทคนิคใหม่ๆ ซึ่งสามารถปรับปรุงความซับซ้อนของการคูณเมทริกซ์ให้เหลือเพียง $O(n^{2.3728596})$
 
 
 

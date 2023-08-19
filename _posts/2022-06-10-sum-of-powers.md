@@ -7,6 +7,8 @@ tags:
   - Proof Without Words
   - Induction
   - Math Animation
+  - Interactive
+  - Summer of Math Exposition
   - English Post
 date: 2022-06-10 15:04:36 +0700
 thumbnail: /images/math/proof-without-words/square-pyramidal-number.png
