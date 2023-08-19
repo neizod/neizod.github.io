@@ -1,12 +1,13 @@
 ---
-title: แก้ระบบสมการเชิงเส้นด้วยดีเทอร์มิแนนต์
+title: Solve system of linear equation with determinant
 tags:
   - Linear Algebra
   - Mathematics
+  - English Post
 date: 2023-06-30 21:21:21 +0700
 ---
 
-เวลาเรามีระบบสมการเชิงเส้น $n$ ตัวแปร เราสามารถจับมันมาเขียนให้อยู่ในรูปเมทริกซ์ $A\vec{x} = \vec{y}$ ได้ ซึ่งก็คือ
+Consider a system of linear equations with $n$ variables. We can express this system as a matrix equation, $A\vec{x} = \vec{y}$, which is
 
 $$
 \begin{bmatrix}
@@ -21,11 +22,11 @@ x_1 \\ x_2 \\ \vdots \\ x_n
 =
 \begin{bmatrix}
 y_1 \\ y_2 \\ \vdots \\ y_n
-\end{bmatrix}
+\end{bmatrix}.
 \tag{1}\label{eq:system-equations}
 $$
 
-ในทางปฏิบัติ (ที่มีการแทนค่า $a_{ij}$ เป็นตัวเลขมาเรียบร้อยแล้ว) เราก็แค่ทำ[การกำจัดแบบ Gauss-Jordan][gauss-jordan elimination] บนตัวเมทริกซ์ดังกล่าว นั่นคือเริ่มจากสร้าง[เมทริกซ์แต่งเติม][augmented matrix] $[A \mid \vec{y}]$ มาก่อน แล้วแก้เมทริกซ์จนฝั่งซ้ายกลายเป็น[เมทริกซ์เอกลักษณ์][identity matrix] เราก็จะได้ว่าฝั่งขวาของเมทริกซ์จะกลายเป็นคำตอบของระบบสมการนั่นเอง
+In practice (where we work with $a_{ij}$ numerically), we just perform [Gauss-Jordan elimination][] on the matrix. This involves constructing an [augmented matrix][] $[A \mid \vec{y}]$, and then applying row operations until the submatrix on left became the [identity matrix][]. As a result, the column vector on the right became the solution of the system,
 
 $$
 \left[
@@ -44,29 +45,29 @@ a_{n1} & a_{n2} & \cdots & a_{nn} & y_n
 \vdots &   & \ddots & \vdots & \vdots \\
 0      & 0 & \cdots & 1      & x_n
 \end{array}
-\right]
+\right].
 $$
 
-ในทางทฤษฎีที่เรามองว่า $a_{ij}$ เป็นตัวแปร เราก็ยังสามารถแก้เมทริกซ์ดังกล่าวจนไปถึงคำตอบได้อยู่ดี แต่ความแย่ก็คือคำตอบที่ได้จะติดตัวแปรยุบยับเต็มไปหมด -- พูดอย่างเจาะจงคือ ที่แต่ละคำตอบ $x_i$ จำนวนพจน์ที่บวกลบบนตัวแปร $a_{ij}$ ก็มีจำนวนเป็น $O(n!)$ พจน์แล้ว
+In theory, when we treat $a_{ij}$ as variables, we can still solve the matrix equation for a solution. However, the solution will involve a large number of variables. Specifically, each $x_i$ will have the variables $a_{ij}$ appears $O(n!)$ times.
 
-อย่างไรก็ตาม คำตอบเชิงทฤษฎีที่ติดตัวแปรจำนวนมากเช่นนี้ก็ไม่ได้แย่ไปหมดซะทีเดียว เพราะมันก็ยังสามารถลดรูปลงมาให้~~จดจำ~~เข้าใจง่ายได้อยู่ โดยเราจะดึงเอาแนวคิดของการเขียนทับเมทริกซ์มาช่วย เราจะพูดว่าเมทริกซ์ $M$ ถูกแก้ไขค่าในหลักที่ $k$ ด้วยการนำเวกเตอร์ $\vec{v}$ เขียนทับลงไป ดังนี้
+Nevertheless, this theoretical solution is not overly complicated. Since it can be summarized down for the sake of ~~memorization~~ clarity. To achieve thai, we'll introduce the concept of overwriting a matrix with a vector. Overwriting matrix $M$ with vector $\vec{v}$ at column $k$ is denoted as
 
 $$
 M(k:\vec{v}) = \begin{bmatrix}
 m_{1,1} & \cdots & m_{1,k-1} & {\color{red}v_1}    & m_{1,k+1} & \cdots & m_{1,n} \\
 \vdots  & \ddots & \vdots    & {\color{red}\vdots} & \vdots    & \ddots & \vdots \\
 m_{n,1} & \cdots & m_{n,k-1} & {\color{red}v_n}    & m_{n,k+1} & \cdots & m_{n,n}
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
-เช่นนี้แล้วเราจะได้คำตอบของระบบสมการที่สรุปสั้นๆ ผ่าน[ดีเทอร์มิแนนต์][determinant]ได้ว่าคือ
+Thus, a summarized formula for the solution can be expressed using the [determinant][] as
 
 $$
-x_k = \frac{\det A(k:\vec{y})}{\det A}
+x_k = \frac{\det A(k:\vec{y})}{\det A}.
 \tag{2}\label{eq:cramer}
 $$
 
-ตัวอย่างเช่น $A$ เป็นเมทริกซ์ขนาด $2{\times}2$ เราจะได้
+For example, when $A$ is $2{\times}2$ matrix, we get
 
 $$
 \begin{align}
@@ -76,11 +77,11 @@ x_1 &= \det\begin{bmatrix} {\color{red}y_1} & a_{12} \\ {\color{red}y_2} & a_{22
      , \\
 x_2 &= \det\begin{bmatrix} a_{11} & {\color{red}y_1} \\ a_{21} & {\color{red}y_2} \end{bmatrix}
      / \det\begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22}\end{bmatrix}
-     = \frac{a_{11}y_2 - a_{21}y_1}{a_{11}a_{22}-a_{21}a_{12}}
+     = \frac{a_{11}y_2 - a_{21}y_1}{a_{11}a_{22}-a_{21}a_{12}}.
 \end{align}
 $$
 
-การพิสูจน์ก็น่าจะมีหลากหลายวิธี แต่อันที่ผมไปเจอมาแล้วรู้สึกเข้าใจได้ง่ายสุดคงหนีไม่พ้น[คำตอบของคุณ Rene Schipperus][math.sx why cramer] ที่เริ่มจากการเปลี่ยน $\vec{x}$ ในสมการที่ $\eqref{eq:system-equations}$ ให้เป็นเมทริกซ์เอกลักษณ์ที่ถูกเขียนทับด้วย $\vec{x}$ แทน ซึ่งจะเห็นว่าเวกเตอร์ $\vec{y}$ เดิมด้านขวามือของสมการก็จะเปลี่ยนไปเป็นเมทริกซ์เช่นกัน
+This identity can be proven in various ways. One approach that I particularly appreciate is [an answer by Rene Schipperus][math.sx why cramer], where we first transform the vector $\vec{x}$ in equation $\eqref{eq:system-equations}$ into an identity matrix overwritten by $\vec{x}$. It follows that we need to transform $\vec{y}$ as well, which is
 
 $$
 \begin{bmatrix}
@@ -103,33 +104,33 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \cdots & a_{k,k-1}   & {\color{red}y_k}     & a_{k,k+1} & \cdots \\
        & a_{k+1,k-1} & {\color{red}y_{k+1}} & a_{k+1,k+1} & \\
        &             & {\color{red}\vdots}  &             & \\
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
-หรือก็คือ $AI(k:\vec{x}) = A(k:\vec{y})$ นั่นเอง
+In other words, $AI(k:\vec{x}) = A(k:\vec{y})$.
 
-ซึ่งเหตุผลที่เรา*เลือก*เอา $\vec{x}$ ไปเขียนทับบนเมทริกซ์เอกลักษณ์เช่นนั้น ก็เพราะว่า
+The reason that we *choose* $\vec{x}$ to write over the identity matrix is
 
 $$
-\det I(k:\vec{x}) = x_k
+\det I(k:\vec{x}) = x_k.
 $$
 
-และก็เพราะว่าดีเทอร์มิแนนต์เป็น[ฟังก์ชันเชิงการคูณ][multiplicative function] จึงทำให้เราได้ข้อสรุปตามสมการ $\eqref{eq:cramer}$ ในที่สุด
+Given that determinants are [multiplicative function][], this leads us to the equation $\eqref{eq:cramer}$.
 
-ผลลัพธ์สมการ $\eqref{eq:cramer}$ นี้เรียกว่า[กฎของ Cramer][cramer's rule] และถึงแม้มันจะดูเรียบง่ายสวยงาม (จนไปถึงขั้นน่าทึ่งว่าอยู่ดีๆ ก็มีดีเทอร์มิแนนต์หลุดออกมาได้ไง) แต่ก็[มีคนให้ข้อสังเกต][math.sx determinant origin]ว่า ถ้าไล่ดูตามประวัติศาสตร์คณิตศาสตร์ตะวันตก ดีเทอร์มิแนนต์นี่เป็นผลลัพธ์โดยตรงจากการพยายามแก้ระบบสมการเชิงเส้นหลายตัวแปรตามข้างต้นเลย
+The result $\eqref{eq:cramer}$ is known as [Cramer's rule][]. While it's simple and elegant (to the point that its simplification surprises me), [some observations][math.sx determinant origin] suggest that in the history of Western mathematics, determinant actually emerged as a byproduct of efforts to solve systems of equations in the first place.
 
-และถ้าเรายังจำกันได้ว่า คำตอบของแต่ละ $x_k$ มันถูกเขียนอยู่ในรูปผลรวมที่มีจำนวน $O(n!)$ พจน์ นั่นเพราะจริงๆ แล้วค่า $\det A$ เป็นผลรวมที่แต่ละพจน์ถูกเขียนอยู่ในรูปของ $\prod_{k=1}^n a_{k,\ell_k}$ โดยที่ $\ell_u=\ell_v$ เมื่อและก็ต่อเมื่อ $u=v$ ดังนั้นมันก็คือการเรียงสับเปลี่ยนสิ่งของ $n$ ชิ้นที่มีวิธีที่แตกต่างกันทั้งหมด $n!$ แบบ ซึ่งตีความได้ว่าเมื่อเราหยิบ $a_{ij}$ มาใช้แล้ว เราจะไม่สามารถหยิบช่องอื่นในเมทริกซ์ตรงหลักที่ $i$ หรือแถวที่ $j$ มาใช้งานได้อีก (สะท้อนผ่าน[ไมเนอร์/โคแฟคเตอร์][minor matrix]ว่าทำไมเราถึงต้องทำลายหลักที่ $i$ และแถวที่ $j$ ทิ้ง) ส่วนการที่บางพจน์นั้นเป็นบวกหรือลบก็เป็นไปในทำนองเดียวกับหลักการเพิ่มเข้าและตัดออกเพื่อดุลค่าของเมทริกซ์นั่นเอง
+Also, recalled that each $x_k$ can be expressed as a sum of $O(n!)$ terms. This stems from the fact that $\det A$ must enumerate all of permutations of variables in different rows/columns, i.e., $\prod_{k=1}^n a_{k,\ell_k}$ where $\ell_u=\ell_v$ iff $u=v$. This results in $n!$ distinct terms. (Reflected via [minor/cofactor expansion][minor matrix] on why we need to destroy column $i$ and row $j$.) Furthermore, the positive/negative signs for each term arise from the inclusion-exclusion principle.
 
-รู้สึกว่าเป็นเรื่องที่ต้องมือเปื้อนด้วยตัวเองตั้งแต่ต้นถึงจะเก็ต ถ้าโผล่มาเจอนิยาม/สูตรดีเทอร์มิแนนต์เลยนี่โคตรงง ... จริงๆ อยากเอากระดาษทดตรงช่วงที่โซ้วสมการเมทริกซ์มาลงด้วย แต่คิดว่าปล่อยไว้เป็นการบ้านน่าจะเป็นผลดีกับผู้อ่านมากกว่า 5555555
+This topic is something that I truly needed to engage with in order to fully comprehend. I really hate that some textbook just throw sanitized definitions and equations right at me, which does not addressing the underlying reasons on why it is the way it is... Actually, I'd like to dive into a more in-depth analysis; however, I guess it'd be better if I just leave those details as an exercise to the reader lol
 
 
 
-[gauss-jordan elimination]: //en.wikipedia.org/wiki/Gaussian_elimination
+[Gauss-Jordan elimination]: //en.wikipedia.org/wiki/Gaussian_elimination
 [augmented matrix]: //en.wikipedia.org/wiki/Augmented_matrix
 [identity matrix]: //en.wikipedia.org/wiki/Identity_matrix
 [determinant]: //en.wikipedia.org/wiki/Determinant
 [multiplicative function]: //en.wikipedia.org/wiki/Multiplicative_function
-[cramer's rule]: //en.wikipedia.org/wiki/Cramer%27s_rule
+[Cramer's rule]: //en.wikipedia.org/wiki/Cramer%27s_rule
 [minor matrix]: //en.wikipedia.org/wiki/Minor_(linear_algebra)
 [math.sx why cramer]: //math.stackexchange.com/a/1941606/26082
 [math.sx determinant origin]: //math.stackexchange.com/a/1977593/26082

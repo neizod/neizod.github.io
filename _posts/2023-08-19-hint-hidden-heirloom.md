@@ -4,7 +4,8 @@ tags:
   - Information Theory
   - Divide and Conquer
   - Math Magic
-  - Experimental
+  - Interactive
+  - Summer of Math Exposition
   - English Post
 date: 2023-08-19 06:48:23 +0700
 thumbnail: /images/math/hidden-treasure-magic.png
