@@ -7,7 +7,7 @@ tags:
 date: 2023-07-25 22:31:42 +0700
 ---
 
-Consider a sphere in $n$ dimension (an [$n$-sphere][n-sphere]) with an unknown focus and radius. However, if we randomly choose $n{+}1$ points on its boundary, we can deduce this information. The system of equations for this calculation is:
+Consider a sphere in $n$ dimension (an [$(n{-}1)$-sphere][n-sphere]) with an unknown focus and radius. However, if we randomly choose $n{+}1$ points on its boundary, we can deduce this information. The system of equations for this calculation is:
 
 $$
 (a_{k1}-x_1)^2 + (a_{k2}-x_2)^2 + \cdots + (a_{kn}-x_n)^2 = r^2.
