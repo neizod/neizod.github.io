@@ -88,7 +88,7 @@ origin:
 แต่เอาตรงๆ เลยนะ รู้สึกดีเป็นบ้าเลยหว่ะที่ผู้สร้างหนังใส่ใจแม้แต่ในรายละเอียดเล็กน้อยจนหนังออกมา "สมจริง" เช่นนี้
 
 
-### อ้างอิง:
+## เชิงอรรถ:
 
 [^1]: Olympics, 2016, Japan PM Abe Shinzo steals the show in Rio
 [^2]: GMTK, 2016, Nintendo - Putting Play First
