@@ -26,7 +26,7 @@ y_1 \\ y_2 \\ \vdots \\ y_n
 \tag{1}\label{eq:system-equations}
 $$
 
-In practice (where we work with $a_{ij}$ numerically), we just perform [Gauss-Jordan elimination][] on the matrix. This involves constructing an [augmented matrix][] $[A \mid \vec{y}]$, and then applying row operations until the submatrix on left became the [identity matrix][]. As a result, the column vector on the right became the solution of the system,
+In practice (where we work with $a_{ij}$ numerically), we just perform [Gauss-Jordan elimination][] on the matrix. This involves constructing an [augmented matrix][] $[A \mid \vec{y}]$, and then applying row operations until the submatrix on the left became the [identity matrix][]. As a result, the column vector on the right became the solution of the system,
 
 $$
 \left[
@@ -50,7 +50,7 @@ $$
 
 In theory, when we treat $a_{ij}$ as variables, we can still solve the matrix equation for a solution. However, the solution will involve a large number of variables. Specifically, each $x_i$ will have the variables $a_{ij}$ appears $O(n!)$ times.
 
-Nevertheless, this theoretical solution is not overly complicated. Since it can be summarized down for the sake of ~~memorization~~ clarity. To achieve thai, we'll introduce the concept of overwriting a matrix with a vector. Overwriting matrix $M$ with vector $\vec{v}$ at column $k$ is denoted as
+Nevertheless, this theoretical solution is not overly complicated. Since it can be summarized down for the sake of ~~memorization~~ clarity. To achieve this, we'll introduce the concept of overwriting a matrix with a vector. Overwriting matrix $M$ with vector $\vec{v}$ at column $k$ is denoted as
 
 $$
 M(k:\vec{v}) = \begin{bmatrix}

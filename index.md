@@ -16,6 +16,7 @@ feature:
       - "/2020/08/08/cutting-cone-with-cone-alternative-conic-section"
       - "/2021/10/27/stirling-1st-take-higest-cards"
       - "/2022/01/14/wordle-in-3.7-guesses"
+      - "/2023/07/25/hypersphere-and-resizing-determinant-dimension"
   projects:
     latest: 0
     list:
