@@ -2,6 +2,7 @@
 title: ความว่างเปล่าของเมืองหลวง
 tags:
   - Chinese
+  - Travel
   - Humanity
   - City Building
 date: 2023-09-09 10:29:00 +0800

@@ -148,13 +148,12 @@ $$
 เมื่อได้ฟังก์ชันหลักแล้ว ก็ลุยเขียนโค้ดกันเลย
 
 ``` haskell
-import Text.Printf
-import Data.List.Split (splitOn)
+import Text.Printf (printf)
 
 getInts :: IO [Int]
 getInts = do
     it <- getLine
-    return $ [read n | n <- splitOn " " it]
+    return $ [read n | n <- words it]
 
 printList :: [Int] -> IO ()
 printList [] = do printf "\n"

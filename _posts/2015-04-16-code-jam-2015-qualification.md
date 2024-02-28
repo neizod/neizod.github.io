@@ -21,7 +21,6 @@ date: 2015-04-16 08:00:00 +0700
 
 ``` haskell
 import Text.Printf (printf)
-import Data.List.Split (splitOn)
 
 invites audience =
     let aux []     _   _   inv = inv
@@ -31,7 +30,7 @@ invites audience =
 
 test t = do
     it <- getLine
-    let [_, ps] = splitOn " " it
+    let [_, ps] = words it
     printf "Case #%d: %d\n" t $ invites [read [p] :: Integer | p <- ps]
 
 main = do
