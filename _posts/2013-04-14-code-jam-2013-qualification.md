@@ -94,8 +94,6 @@ for case in range(int(input())):
 ข้อที่ 3 ให้ว่ามีเลข palindrome ที่รากที่สองของมันก็ยังเป็น palindrome ด้วยทั้งหมดกี่ตัวในช่วงที่กำหนด ซึ่งมีความรู้สึกว่าถ้าเล่นกับ palindrome แล้ว Haskell จะสวยงามมาก แต่ก็ไปตายที่ test กลางเลยกลับไปใช้ Python แทน
 
 ``` haskell
-import Data.List.Split (splitOn)
-
 boolAsNum b = if b then 1 else 0
 
 isSquare x = root^2 == x
@@ -110,7 +108,7 @@ countFair x y
 
 eachLoop nosLoop = do
     raw <- getLine
-    let rawSqrtNum = [sqrt $ read x | x <- splitOn " " raw]
+    let rawSqrtNum = [sqrt $ read x | x <- words raw]
         [start, stop] = [f x | (f,x) <- zip [ceiling, floor] rawSqrtNum]
     putStrLn $ "Case #" ++ (show nosLoop) ++ ": " ++ (show $ countFair start stop)
 

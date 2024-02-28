@@ -61,7 +61,7 @@ Y[0] &= X[0] \\
 Y[1] &= X[0] + X[1]        &&{\color{grey}= Y[0] + X[1]} \\
 Y[2] &= X[0] + X[1] + X[2] &&{\color{grey}= Y[1] + X[2]} \\
 &\;\;\vdots &&{\color{grey}\;\vdots} \\
-Y[n{-}1] &= X[0] + X[1] + X[2] + \cdots X[n{-}1]
+Y[n{-}1] &= X[0] + X[1] + X[2] + \cdots + X[n{-}1]
 \end{align}
 $$
 
