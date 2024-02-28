@@ -6,6 +6,9 @@ tags:
   - Event
   - Python
 date: 2012-06-30 23:59:59 +0700
+origin:
+  - name: Google+
+    url: //plus.google.com/+neizod/posts/4GRCAoVc2Ey
 ---
 
 พบกันอีกครั้งกับ BarCamp เชียงใหม่ครั้งที่ 5 งานนี้จัดที่ CAMT ม.ช. ซึ่งก็ยังคึกคักเหมือนเช่นเคย
