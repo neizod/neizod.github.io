@@ -2,6 +2,7 @@
 title: การเข้ารหัสลับแบบสัมพรรค
 tags:
   - Cryptography
+  - Linear Algebra
 date: 2010-11-21 23:45:00 +0700
 ---
 

@@ -2,11 +2,12 @@
 title: ใบเฟิร์น Barnsley
 tags:
   - Fractal
-  - Mathematics
   - Recursion
+  - Linear Algebra
   - Python
   - Thought
   - Algorithm
+  - Mathematics
   - Computer Science
 date: 2016-03-23 06:43:08 +0700
 thumbnail: /images/algorithm/misc/barnsley-fern-23it.png
