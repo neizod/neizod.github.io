@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="337.334px" height="533.334px" viewBox="0 0 337.334 533.334" enable-background="new 0 0 337.334 533.334" xml:space="preserve">
+  <circle fill="#CCCCCC" stroke="#000000" stroke-miterlimit="10" cx="81.328" cy="300.001" r="42.667"/>
+  <rect x="46.782" y="382.826" fill="#98D8E4" stroke="#000000" stroke-miterlimit="10" width="69.015" height="44.864"/>
+  <circle fill="#F5EA14" stroke="#000000" stroke-miterlimit="10" cx="81.29" cy="397.229" r="12.083"/>
+  <g>
+    <g>
+      <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M95.174,271.205c10.697,5.167,18.077,16.12,18.077,28.796 c0,17.651-14.309,31.961-31.961,31.961c-17.651,0-31.961-14.31-31.961-31.961c0-13.677,8.591-25.348,20.671-29.91"/>
+      <g>
+        <polygon fill="#000000" points="98.898,276.908 99.631,276.228 95.178,271.424 101.677,272.24 101.802,271.249 92.577,270.09"/>
+      </g>
+    </g>
+  </g>
+  <text transform="matrix(1 0 0 1 65 288.8369)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">m</text>
+  <text transform="matrix(1 0 0 1 70.4014 253.3369)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">S</text>
+  <circle fill="#CCCCCC" stroke="#000000" stroke-miterlimit="10" cx="215.164" cy="254.335" r="42.666"/>
+  <text transform="matrix(1 0 0 1 218.9014 233.0029)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">m</text>
+  <text transform="matrix(1 0 0 1 217.9014 208.1709)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">S</text>
+  <g>
+    <g>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="81.329" y1="61.667" x2="81.329" y2="41.989"/>
+      <g>
+        <path fill="#000000" d="M81.329,43.784l-3.603,2.191l-0.082-0.123l2.333-5.875c0.45-2.047,0.9-4.094,1.351-6.141 c0.45,2.047,0.9,4.094,1.351,6.141l2.333,5.875l-0.062,0.123L81.329,43.784z"/>
+      </g>
+    </g>
+  </g>
+  <text transform="matrix(1 0 0 1 42.4399 27.3369)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">distant star</text>
+  <line fill="none" stroke="#999966" stroke-miterlimit="10" x1="288" y1="348.337" x2="288" y2="223.838"/>
+  <line fill="none" stroke="#999966" stroke-miterlimit="10" x1="215.164" y1="348.337" x2="215.164" y2="322.338"/>
+  <polygon fill="#FF9933" stroke="#000000" stroke-miterlimit="10" points="81.329,5.657 82.53,9.354 86.417,9.354 83.272,11.64 84.474,15.337 81.329,13.052 78.184,15.337 79.385,11.64 76.24,9.354 80.127,9.354"/>
+  <g>
+    <polygon fill="#FF9933" points="81.29,392.39 82.491,396.087 86.378,396.087 83.233,398.372 84.435,402.069 81.29,399.784 78.145,402.069 79.346,398.372 76.201,396.087 80.088,396.087"/>
+    <g>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="81.212,392.627 81.29,392.39 81.367,392.627"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.4839,0.4839" x1="81.517" y1="393.088" x2="82.339" y2="395.619"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="82.414,395.849 82.491,396.087 82.741,396.087"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.4839,0.4839" x1="83.225" y1="396.087" x2="85.887" y2="396.087"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="86.128,396.087 86.378,396.087 86.176,396.234"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.4839,0.4839" x1="85.785" y1="396.519" x2="83.631" y2="398.083"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="83.436,398.225 83.233,398.372 83.311,398.61"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.4839,0.4839" x1="83.46" y1="399.07" x2="84.283" y2="401.602"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="84.358,401.832 84.435,402.069 84.233,401.922"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.484,0.484" x1="83.841" y1="401.638" x2="81.688" y2="400.073"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="81.492,399.931 81.29,399.784 81.087,399.931"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.4839,0.4839" x1="80.696" y1="400.216" x2="78.542" y2="401.78"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="78.347,401.922 78.145,402.069 78.222,401.832"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.4839,0.4839" x1="78.371" y1="401.371" x2="79.194" y2="398.84"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="79.269,398.61 79.346,398.372 79.144,398.225"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.4839,0.4839" x1="78.752" y1="397.94" x2="76.599" y2="396.376"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="76.403,396.234 76.201,396.087 76.451,396.087"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.484,0.484" x1="76.935" y1="396.087" x2="79.596" y2="396.087"/>
+      <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="79.838,396.087 80.088,396.087 80.166,395.849"/>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="0.4839,0.4839" x1="80.315" y1="395.389" x2="81.138" y2="392.857"/>
+    </g>
+  </g>
+  <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="81.328" y1="80.335" x2="81.275" y2="300.001"/>
+  <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="81.328" y1="80.335" x2="215.164" y2="254.336"/>
+  <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="81.328" y1="80.335" x2="287.676" y2="155.837"/>
+  <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="81.328" y1="257.334" x2="81.328" y2="300.001"/>
+  <g>
+    <g>
+      <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M188.628,208.447c6.237-3.614,13.279-5.994,20.792-6.804"/>
+      <g>
+        <polygon fill="#000000" points="195.404,208.458 195.245,207.47 188.777,208.506 193.066,203.555 192.311,202.9 186.223,209.928"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="215.164" y1="175.487" x2="215.164" y2="254.336"/>
+      <g>
+        <path fill="#000000" d="M215.164,177.282l3.604,2.191l0.081-0.123l-2.333-5.875c-0.451-2.047-0.9-4.094-1.352-6.141 c-0.45,2.047-0.9,4.094-1.352,6.141l-2.333,5.875l0.062,0.123L215.164,177.282z"/>
+      </g>
+    </g>
+  </g>
+  <path fill="#FF9933" stroke="#000000" stroke-linejoin="bevel" stroke-miterlimit="10" d="M215.164,254.336v-42.667 c-9.792,0-18.813,3.299-26.015,8.846L215.164,254.336z"/>
+  <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="215.164" y1="211.669" x2="215.164" y2="254.336"/>
+  <circle fill="#CCCCCC" stroke="#000000" stroke-miterlimit="10" cx="287.664" cy="155.835" r="42.666"/>
+  <text transform="matrix(1 0 0 1 256.5986 161.5811)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">m</text>
+  <text transform="matrix(1 0 0 1 238.7666 134.8574)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">S</text>
+  <g>
+    <g>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="287.664" y1="76.988" x2="287.664" y2="155.837"/>
+      <g>
+        <path fill="#000000" d="M287.664,78.783l3.604,2.191l0.081-0.123l-2.333-5.875c-0.451-2.047-0.9-4.094-1.352-6.141 c-0.45,2.047-0.9,4.094-1.352,6.141l-2.333,5.875l0.062,0.123L287.664,78.783z"/>
+      </g>
+    </g>
+  </g>
+  <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="247.597" y1="141.172" x2="287.664" y2="155.837"/>
+  <path fill="#FF9933" stroke="#000000" stroke-linejoin="bevel" stroke-miterlimit="10" d="M112.933,121.425l-31.604-41.09v51.836 C93.225,132.171,104.185,128.163,112.933,121.425z"/>
+  <g>
+    <g>
+      <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M167.702,272.176c-12.423,5.603-25.488,10.033-39.055,13.151"/>
+      <g>
+        <polygon fill="#000000" points="160.99,271.571 161.052,272.57 167.59,272.165 162.842,276.678 163.531,277.402 170.27,270.997"/>
+      </g>
+    </g>
+  </g>
+  <rect x="46.782" y="412.947" fill="#6FBD44" stroke="#000000" stroke-miterlimit="10" width="69.015" height="14.743"/>
+  <polygon fill="#CCCCCC" stroke="#000000" stroke-linejoin="bevel" stroke-miterlimit="10" points="81.29,412.947 46.782,427.69 115.797,427.69"/>
+  <text transform="matrix(1 0 0 1 77.0654 425.3359)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">S</text>
+  <rect x="180.657" y="382.826" fill="#98D8E4" stroke="#000000" stroke-miterlimit="10" width="69.015" height="44.864"/>
+  <circle fill="#F5EA14" stroke="#000000" stroke-miterlimit="10" cx="194.885" cy="397.229" r="12.084"/>
+  <polygon fill="#FF9933" stroke="#000000" stroke-miterlimit="10" points="215.164,392.39 216.365,396.087 220.253,396.087 217.107,398.372 218.31,402.069 215.164,399.784 212.02,402.069 213.221,398.372 210.075,396.087 213.963,396.087"/>
+  <rect x="180.657" y="412.947" fill="#6FBD44" stroke="#000000" stroke-miterlimit="10" width="69.015" height="14.743"/>
+  <polygon fill="#CCCCCC" stroke="#000000" stroke-linejoin="bevel" stroke-miterlimit="10" points="215.164,412.947 180.657,427.69 249.672,427.69"/>
+  <text transform="matrix(1 0 0 1 210.9014 425.3359)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">S</text>
+  <rect x="253.492" y="382.826" fill="#98D8E4" stroke="#000000" stroke-miterlimit="10" width="69.016" height="44.864"/>
+  <circle fill="#F5EA14" stroke="#000000" stroke-miterlimit="10" cx="288" cy="397.229" r="12.084"/>
+  <polygon fill="#FF9933" stroke="#000000" stroke-miterlimit="10" points="313.279,392.39 314.48,396.087 318.368,396.087 315.223,398.372 316.425,402.069 313.279,399.784 310.135,402.069 311.336,398.372 308.19,396.087 312.078,396.087"/>
+  <rect x="253.492" y="412.947" fill="#6FBD44" stroke="#000000" stroke-miterlimit="10" width="69.016" height="14.743"/>
+  <polygon fill="#CCCCCC" stroke="#000000" stroke-linejoin="bevel" stroke-miterlimit="10" points="288,412.947 253.492,427.69 322.508,427.69"/>
+  <text transform="matrix(1 0 0 1 283.4014 425.3359)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">S</text>
+  <g>
+    <g>
+      <path fill="none" stroke="#333333" stroke-width="0.5" stroke-miterlimit="10" d="M290.209,12.157 c0.31,0.949,0.613,1.901,0.91,2.856"/>
+      <path fill="none" stroke="#333333" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="5.9318,5.9318" d="M292.803,20.699c5.337,18.963,8.192,38.966,8.192,59.636c0,121.318-98.348,219.666-219.667,219.666 c-22.687,0-44.569-3.439-65.156-9.824"/>
+      <path fill="none" stroke="#333333" stroke-width="0.5" stroke-miterlimit="10" d="M13.341,289.277 c-0.951-0.309-1.9-0.624-2.845-0.946"/>
+    </g>
+  </g>
+  <text transform="matrix(1 0 0 1 50.9063 370.3369)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">12:00:00</text>
+  <text transform="matrix(1 0 0 1 184.7422 370.3369)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">11:56:04</text>
+  <text transform="matrix(1 0 0 1 257.5781 370.3369)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">12:00:00</text>
+  <text transform="matrix(1 0 0 1 126.8174 323.5869)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">Earth</text>
+  <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="81.275" y1="448.337" x2="81.275" y2="520.337"/>
+  <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="288" y1="448.337" x2="288" y2="520.337"/>
+  <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="215.164" y1="448.337" x2="215.164" y2="484.337"/>
+  <text transform="matrix(1 0 0 1 231.2178 458.6992)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">3′ 56″</text>
+  <text transform="matrix(1 0 0 1 108.2734 458.6992)"><tspan x="0" y="0" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">23h 56′ 04″</tspan><tspan x="-7.087" y="14.4" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">a sidereal day</tspan></text>
+  <text transform="matrix(1 0 0 1 171.832 508.5869)"><tspan x="0" y="0" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">24h</tspan><tspan x="-44.798" y="14.4" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">a mean solar day</tspan></text>
+  <g>
+    <g>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="205.318" y1="503.337" x2="269.166" y2="503.337"/>
+      <g>
+        <path fill="#000000" d="M267.371,503.337l-2.191-3.604l0.123-0.081l5.875,2.333c2.047,0.451,4.094,0.9,6.141,1.352 c-2.047,0.45-4.094,0.9-6.141,1.352l-5.875,2.333l-0.123-0.062L267.371,503.337z"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="163.956" y1="503.337" x2="100.108" y2="503.337"/>
+      <g>
+        <path fill="#000000" d="M101.903,503.337l2.191,3.604l-0.123,0.081l-5.875-2.333c-2.047-0.451-4.094-0.9-6.141-1.352 c2.047-0.45,4.094-0.9,6.141-1.352l5.875-2.333l0.123,0.062L101.903,503.337z"/>
+      </g>
+    </g>
+  </g>
+  <text transform="matrix(1 0 0 1 38.522 84)" fill="#000000" font-family="Verdana, sans-serif" font-weight="bold" font-size="12">Sun</text>
+  <circle fill="#F5EA14" stroke="#000000" stroke-miterlimit="10" cx="81.29" cy="80.335" r="12.083"/>
+</svg>
