@@ -51,7 +51,7 @@ people:
   $$
 
 {: .oversized .figure}
-> ![](/images/math/affine-lisa.png)
+> ![](/images/math/transformation-matrix/affine-lisa.png)
 >
 > ตัวอย่างการแปลงพื้นฐานแบบต่างๆ บนภาพ [Mona Lisa][mona lisa] ขอขอบคุณภาพจาก [@srakrn][]
 
