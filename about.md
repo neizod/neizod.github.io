@@ -34,13 +34,15 @@ The alias "เนยสด" ([/nɤːjsot/][ipa], stylized in ascii as neizod) wa
     - 2003: Astrophysics Olympiad, 2nd camp, Chiang Mai University.
 
 
-## Publication
+## Publications
 
-- Nattawut Phetmak. Random derangement with fixed number of cycles.  In *23rd Thailand-Japan Conference on Discrete and Computational Geometry, Graphs, and Games (TJCDCGGG'20+1)*, pages 34--35, 2021.
-- Chawin Aiemvaravutigul, Jittat Fakcharoenphol, and Nattawut Phetmak. Building two communication towers over a terrain. In *2020 17th International Joint Conference on Computer Science and Software Engineering (JCSSE'20)*, pages 150--154. IEEE, 2020.
-- Supanut Chaidee, Shuto Nishida, and Nattawut Phetmak. Geometrical analysis of crane game in two dimensions.  In *21st Japan Conference on Discrete and Computational Geometry, Graphs, and Games (JCDCGGG'18)*, pages 43--45, 2018.
-- Nattawut Phetmak, Wason Liwlompaisan, and Pruet Boonma. Travel password: A secure and memorable password scheme. In *Asian Conference on Intelligent Information and Database Systems (ACIIDS'14)*, pages 402--411. Springer, 2014.
-
+- **Nattawut Phetmak** and Jittat Fakcharoenphol. Uniformly generating derangements with fixed number of cycles in polynomial time. *Thai Journal of Mathematics*, 21(4):899--915, Dec. 2023. [🔗][2023journal derangements]
+- **Nattawut Phetmak** and Jittat Fakcharoenphol. Folding every point on a polygon boundary to a point. *Algorithms*, 16(6):281, 2023. [🔗][2023journal folding]
+- Nonthaphat Wongwattanakij, **Nattawut Phetmak**, Chaiporn Jaikaeo, and Jittat Fakcharoenphol. An improved PTAS for covering targets with mobile sensors. *arXiv preprint arXiv:2305.03946*, 2023. [🔗][2023arxiv ptas sensors]
+- **Nattawut Phetmak**. Random derangement with fixed number of cycles. In *23st Thailand-Japan Conference on Discrete and Computational Geometry, Graphs, and Games (TJCDCGGG'20+1)*, pages 34--35, 2021.
+- Chawin Aiemvaravutigul, Jittat Fakcharoenphol, and **Nattawut Phetmak**. Building two communication towers over a terrain. In *17th International Joint Conference on Computer Science and Software Engineering (JCSSE'20)*, pages 150--154. IEEE, 2020. [🔗][2020conf building 2 towers]
+- Supanut Chaidee, Shuto Nishida, and **Nattawut Phetmak**. Geometrical analysis of crane game in two dimensions.  In *21st Japan Conference on Discrete and Computational Geometry, Graphs, and Games (JCDCGGG'18)*, pages 43--45, 2018.
+- **Nattawut Phetmak**, Wason Liwlompaisan, and Pruet Boonma. Travel password: A secure and memorable password scheme. In *Asian Conference on Intelligent Information and Database Systems (ACIIDS'14)*, pages 402--411. Springer, 2014. [🔗][2014conf travel password]
 
 
 [ipa]: //en.wikipedia.org/wiki/International_Phonetic_Alphabet
@@ -52,3 +54,11 @@ The alias "เนยสด" ([/nɤːjsot/][ipa], stylized in ascii as neizod) wa
 [ku]: https://en.wikipedia.org/wiki/Kasetsart_University
 [cmu]: //en.wikipedia.org/wiki/Chiang_Mai_University
 [prc]: //en.wikipedia.org/wiki/Prince_Royal%27s_College
+
+
+
+[2023journal derangements]: //thaijmath2.in.cmu.ac.th/index.php/thaijmath/article/view/1555
+[2023journal folding]: //www.mdpi.com/1999-4893/16/6/281
+[2023arxiv ptas sensors]: //arxiv.org/abs/2305.03946
+[2020conf building 2 towers]: //ieeexplore.ieee.org/document/9268436
+[2014conf travel password]: //link.springer.com/chapter/10.1007/978-3-319-05476-6_41
