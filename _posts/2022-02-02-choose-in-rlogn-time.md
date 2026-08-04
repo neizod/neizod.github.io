@@ -40,7 +40,7 @@ $$
 
 Observe that there are $21$ distinct ways to starts with $A$. After that only $15$ distinct ways to starts with $B$. Down to the final $F$ that can be starts with only one way.
 
-We may also view the above figure as the inverted pyramid such that each layer separated by a starting alphabet. When we look deep down (no pun intended) we'll se that the distinct ways that starts with $A$ is equal to $\binom{8}{3}{-}\binom{7}{3}$. That is the size of an interested layer can be found by substracting a larger pyramid with that layer at the top, with a smaller pyramid before that layer.
+We may also view the above figure as the inverted pyramid such that each layer separated by a starting alphabet. When we look deep down (no pun intended) we'll see that the distinct ways that starts with $A$ is equal to $\binom{8}{3}{-}\binom{7}{3}$. That is the size of an interested layer can be found by subtracting a larger pyramid with that layer at the top, with a smaller pyramid before that layer.
 
 Furthermore, by realizing [Pascal's triangle][pascal triangle], we'll see that $\binom{8}{3}{-}\binom{7}{3} = \binom{7}{2}$. In other words, *force* choose $A$ so now we have $7$ alphabets left to choose $2$ more. Thus there are $\binom{7}{2}$ distinct ways that have $A$ as a starting alphabet.
 
@@ -63,7 +63,7 @@ def choose(n, r, i, x=0):
 
 Too bad that this algorithm runs in $O(n)$ time, since it might recurse down at most $n$ steps to find the final element... So, can we speed this up?
 
-A searching problem on a sorted data! Yes, let's applying the [binary search][]. Notice that if we want to find the size of consecutive layers, we can substract the larger pyramid with a lot smaller pyramid. Thus we might throw away around half of the layer one at a time. Which is the core concept of binary search. Hence we arrived at this improved code.
+A searching problem on a sorted data! Yes, let's apply the [binary search][]. Notice that if we want to find the size of consecutive layers, we can subtract the larger pyramid with a lot smaller pyramid. Thus we might throw away around half of the layer one at a time. Which is the core concept of binary search. Hence we arrived at this improved code.
 
 ``` python
 def binsearch(n, r, i, lo, hi):

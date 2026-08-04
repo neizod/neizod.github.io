@@ -15,11 +15,11 @@ Consider a two-player game on a (possibly infinite) 2D [square grid][square tili
 {: .figure}
 > ![](/images/math/tiling/romeo-and-juliet.png)
 >
-> Can Romeo and Juliet ever met?
+> Can Romeo and Juliet ever meet?
 
-One might observe that the game is unwinnable in some scenarios. For example, when both pieces are spawned on adjacent tiles. Since game's rule force both players to move every turn, they'll keep passing each other forever.
+One might observe that the game is unwinnable in some scenarios. For example, when both pieces are spawned on adjacent tiles. Since the game's rules force both players to move every turn, they'll keep passing each other forever.
 
-Can we determine the winnability for far away pieces? Certainly! Just draw a path joining both pieces. The game is winnable iff the path's length is even. Because, in each turn *both* players can alter the path length by an even amount. Thus, an odd path is never winnable, i.e., the distant between the two pieces can never reach zero.
+Can we determine the winnability for far away pieces? Certainly! Just draw a path joining both pieces. The game is winnable iff the path's length is even. Because, in each turn *both* players can alter the path length by an even amount. Thus, an odd path is never winnable, i.e., the distance between the two pieces can never reach zero.
 
 Finding a path that joins the pieces can be mundane and prone to error, from human's perspective. So, a quick and simple way to *aid* us humans is to color the grid with a checkerboard pattern.
 
@@ -32,7 +32,7 @@ Now we know right away whether the game is winnable or not: The game is winnable
 
 ---
 
-The square grid is nice, but what about the other grids / meshs / lattices / tessellations? Starting with the regular ones, we can see that the [triangular tiling][] can be colored similarly to the checkerboard pattern too.
+The square grid is nice, but what about the other grids / meshes / lattices / tessellations? Starting with the regular ones, we can see that the [triangular tiling][] can be colored similarly to the checkerboard pattern too.
 
 {: .figure}
 > ![](/images/math/tiling/triangular-tiling.png)
@@ -57,7 +57,7 @@ What is the essence that determines the winnability of this game? Which properti
 
 One way to do this is to view the tiling as a graph where each tile is a vertex; edges in the graph represent the sides joining two tiles in the original grid (which is, precisely, the dual graph). Thus, the original grid can be painted with the even-odd pattern iff its corresponding graph is bipartite (so, time to hone your depth-first search skills).
 
-Or we can going back to the even-odd path length framework, but now we're focused on a single tile and asking: does a cycle loop back to this tile is of odd length? And the answer is quite simple! Consider one corner of the tile. We can see that the odd cycle exists if this corner has an odd degree. Thus, the tiling can be painted in the even-odd pattern iff every corner has an even degree.
+Or we can go back to the even-odd path length framework, but now we're focused on a single tile and asking: is a cycle that loops back to this tile of odd length? And the answer is quite simple! Consider one corner of the tile. We can see that the odd cycle exists if this corner has an odd degree. Thus, the tiling can be painted in the even-odd pattern iff every corner has an even degree.
 
 ---
 
@@ -70,7 +70,7 @@ Looking back at its corners again, all of them have a degree of 3. What if we us
 >
 > Hexagonal tiling, painted alternatively with 3 colors
 
-We can see that this pattern encodes information that helps us find a way to win the game. If both players are spawned on tiles of different colors, then they should move to the 3rd color on the next turn. It also sheds light on the general case where there're more than just two players: some game cannot be won in just one turn, although they are spawned closely together, because we cannot move everyone from 3 different colored tiles to met at the same tile in just one turn!
+We can see that this pattern encodes information that helps us find a way to win the game. If both players are spawned on tiles of different colors, then they should move to the 3rd color on the next turn. It also sheds light on the general case where there're more than just two players: some game cannot be won in just one turn, although they are spawned closely together, because we cannot move everyone from 3 different colored tiles to meet at the same tile in just one turn!
 
 Beautiful!
 

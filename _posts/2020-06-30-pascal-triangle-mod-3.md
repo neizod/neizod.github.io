@@ -18,7 +18,7 @@ I think I have drawn [Pascal's triangle][pascal triangle] numerous times in this
 {: .oversized .figure}
 > ![](/images/math/pascal-mod3.png)
 >
-> Pascal's triangle modulo three; where white, black, and red represent 0, 1, and 2 repectively[^1]
+> Pascal's triangle modulo three; where white, black, and red represent 0, 1, and 2 respectively[^1]
 
 We still get a fractal shape! Observe that the base triangle is the top 3 rows, where every dots is black except for the red center bottom. We may reconstruct the fractal triangle with iteration, by expanding each black dot with the exact base triangle, and expand each red dot with the black-red swap.
 
@@ -52,7 +52,7 @@ def choose_mod3(n, k):
 
 Don't forget that $n$ has a binary representation of length $O(\log n)$ bits. Thus the algorithm is actually run in linear time. Which is faster that computing the whole factorial/combination using many multiplication/division.
 
-Now (it's time to bed) I still can't rest my mind with the thought, what wll Pascal's triangle with other modulo value would look like...?
+Now (it's time to bed) I still can't rest my mind with the thought, what will Pascal's triangle with other modulo value look like...?
 
 
 [^1]: [Python script][self script] for generating the image

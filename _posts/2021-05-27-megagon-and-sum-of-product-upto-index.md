@@ -122,11 +122,11 @@ def iter_primes(memo=namespace(pi=0, ps=[2, 3])):
             head = memo.ps[memo.pi]**2 + 1
             memo.pi += 1
             tail = memo.ps[memo.pi]**2
-            seive = list(range(head, tail))
+            sieve = list(range(head, tail))
             for p in memo.ps[:memo.pi]:
                 size = 1 + (tail - head + (head%-p)) // p
-                seive[-head%p::p] = [0] * size
-            memo.ps += (p for p in seive if p)
+                sieve[-head%p::p] = [0] * size
+            memo.ps += (p for p in sieve if p)
         yield memo.ps[k]
         k += 1
 

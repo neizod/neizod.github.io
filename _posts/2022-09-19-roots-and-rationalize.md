@@ -155,7 +155,7 @@ Can we avoid the infinity? Consider the horrible formula $\eqref{eq:quadratic}$,
 > Roots via a pair of right triangles, note that triangle's apex is not on the parabola
 >
 
-This specific triangle is useless. But again, there are infinitely many triangles in the same manner. That is if we *fix* the base but *vary* the height to a variable $h$. The length of the hypothenuse, now named $r$, will became
+This specific triangle is useless. But again, there are infinitely many triangles in the same manner. That is if we *fix* the base but *vary* the height to a variable $h$. The length of the hypotenuse, now named $r$, will become
 
 $$
 r = \sqrt{\left(\frac{b}{2a}\right)^2 - \frac{c}{a} + h^2}.
@@ -230,7 +230,7 @@ $$
 
 In other words, $\ell(x) = 4f(x)$. Which is *why* the position of the right angle can be used to calculate the root to the original quadratic equation.
 
-We can even make the construction simpler. Firstly, notice that the first rod is $1/4a$ and the last rod is $4c$. It hints us that we may fix the middle rod while alter the rest. So if we multiply the first rod by $\delta$ and the last rod by $1/\delta$, then the missing distance function will became
+We can even make the construction simpler. Firstly, notice that the first rod is $1/4a$ and the last rod is $4c$. It hints us that we may fix the middle rod while alter the rest. So if we multiply the first rod by $\delta$ and the last rod by $1/\delta$, then the missing distance function will become
 
 $$
 \ell(x)=(4/\delta)f(x).
@@ -245,7 +245,7 @@ Lastly, fixing the last rod and also the function $\ell$. Observe that if we str
 >
 > Lill's method for solving quadratic
 
-Choose $\gamma=a$ and everything will resolved to the simplest form. All rods of length $a$, $-b$, and $c$. Only now the position of the right angle is relatively scaled up by $a$. Thus the correct absolute position of the root must be scaled down, i.e.
+Choose $\gamma=a$ and everything will resolve to the simplest form. All rods of length $a$, $-b$, and $c$. Only now the position of the right angle is relatively scaled up by $a$. Thus the correct absolute position of the root must be scaled down, i.e.
 
 $$
 x = \tan\theta.

@@ -1,7 +1,7 @@
 ---
 title: La Marche de l'empereur
 tags:
-  - Advertisment
+  - Advertisement
   - Movie
   - French
   - Classical Music

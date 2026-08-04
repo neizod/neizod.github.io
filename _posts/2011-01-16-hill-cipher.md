@@ -81,7 +81,7 @@ def matrix_inv(m):
 ``` python
 def hill(pain_text, key_matrix):
     if len(pain_text)%2 != 0:
-        raise ValueError('text lenght must be even number')
+        raise ValueError('text length must be even number')
     cipher_text = ''
     char_num = [[0, 0]]
     for i in range(len(pain_text)//2):

@@ -83,7 +83,7 @@ def lis_count(xs):
     return lis_signature(xs)[-1][-1].acc
 ```
 
-Although there are exponentially large number of distinct answers. But one angle to tackle this kind of problem is to write an exact answer at the given index of some sort order (typically the lexicography order). Which should be done as fast as $O(n)$ per one answer, after preprocessing a signature graph. The next code shows the concept of retriving one answer of a given index, mind that the index order is reversed!
+Although there are an exponentially large number of distinct answers. But one angle to tackle this kind of problem is to write an exact answer at the given index of some sort order (typically the lexicography order). Which should be done as fast as $O(n)$ per one answer, after preprocessing a signature graph. The next code shows the concept of retrieving one answer of a given index, mind that the index order is reversed!
 
 ``` python
 def lis_index(xs, index=0):

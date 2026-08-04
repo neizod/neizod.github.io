@@ -61,7 +61,7 @@ There’s also [control flow][] functionality, which operates through 2 sets of 
 There are also more powerful icons that are useful for solving this problem, such as:
 
 - **Obstructors:** Hold a UBIT in place for a specified number of cycles, or until receiving a true trigger.
-- **Writers:** Overwritten a value of another *icon* with a numerical value from a UBIT that activates them.
+- **Writers:** Overwrite a value of another *icon* with a numerical value from a UBIT that activates them.
 - **Pseudo Ports:** Emit a blank UBIT when receiving a true trigger.
 
 While these icons can be quite powerful, the main limitation might be the size of the board. In most levels, the grid is around 8x8 tiles. For this level, it's a bit more generous with 8x11 tiles.

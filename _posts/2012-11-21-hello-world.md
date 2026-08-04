@@ -72,7 +72,7 @@ print 'Hello, world!'
 
 ``` haskell
 main = do
-    putStrLn "Hello, wolrd!"
+    putStrLn "Hello, world!"
 ```
 
 อันที่จริง ภาษาขั้นสูงก็ควรจะช่วยโปรแกรมเมอร์ให้ทำงานได้ง่ายขึ้นอยู่แล้ว เพราะถ้าเจอแบบ Brainfuck เข้าไปคงมึน

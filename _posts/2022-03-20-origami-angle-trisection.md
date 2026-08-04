@@ -37,7 +37,7 @@ However, the part that makes this technique more *powerful* than the standard SE
 Recalled that the act of folding is nothing more than geometric reflection, where the crease is the reflex axis, it's not hard to see why this method actually trisect the angle. 😊
 
 
-## Referrence
+## Reference
 
 - Hull, Thomas C. *Origametry: Mathematical Methods in Paper Folding*. Cambridge University Press, 2020.
 

@@ -82,7 +82,7 @@ The same approach applies to the radius, only that we have to change the last co
 
 This method is ok, for the most part. However, I sense a slight inconsistency when calculating for $r$. For instance, we must solve for all $x_i$ first (so we have $\abs{f}^2$). Additionally, the determinant pattern for solving $r$ is not quite similar to that for other $x_i$. Moreover, in practice, we don't necessarily need the determinant; [Pythagorean theorem][] is often more than enough.
 
-Thus, we may reframe this problem to focus solely on finding the focus (no pun intended). That involves reducing the problem to a system of equations of $n$ variables. It's worth noting that each equation in $\eqref{eq:row}$ contains the exact same variable $(r^2{-}\abs{f}^2)$. To solve this, we can use the equation with $p_0$ as the minuend and substract the remaining equations, resulting in
+Thus, we may reframe this problem to focus solely on finding the focus (no pun intended). That involves reducing the problem to a system of equations of $n$ variables. It's worth noting that each equation in $\eqref{eq:row}$ contains the exact same variable $(r^2{-}\abs{f}^2)$. To solve this, we can use the equation with $p_0$ as the minuend and subtract the remaining equations, resulting in
 
 $$
 2(a_{01}{-}a_{k1})x_1 + 2(a_{02}{-}a_{k2})x_2 + \cdots + 2(a_{0n}{-}a_{kn})x_n = \abs{p_0}^2{-}\abs{p_k}^2.

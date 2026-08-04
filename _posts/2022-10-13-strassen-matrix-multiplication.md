@@ -87,7 +87,7 @@ $$
 \end{align}
 $$
 
-Thus, we can applied [divide and conquer][] technique to derive an algorithm for this problem.
+Thus, we can apply [divide and conquer][] technique to derive an algorithm for this problem.
 
 Naturally, the next question is: what is the complexity of this algorithm? The simplest analysis involves counting how many times the basic multiplication between numbers occurs.
 

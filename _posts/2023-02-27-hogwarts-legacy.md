@@ -41,4 +41,4 @@ It's not really a *bad* game, at least that's something you can expect from AAA 
 Holding hand, I'd say that. Like watching a movie with interaction. While it's might be fun for some people, this is just not work for me.
 
 
-[^1]: (Spoiler) I'm mostly disturbed by Sebastian's questline and wish they are not mandatory; or the Polyjuice Plot that should be skipable since you can fly and land on the balcony of the headmaster's office.
+[^1]: (Spoiler) I'm mostly disturbed by Sebastian's questline and wish they are not mandatory; or the Polyjuice Plot that should be skippable since you can fly and land on the balcony of the headmaster's office.
