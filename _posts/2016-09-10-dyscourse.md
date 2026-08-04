@@ -37,6 +37,6 @@ Despite this major issue, you may be aware of:
 - *Art style*: Most people like it, but I'm not. Why render everything so rigid and so square? Pentagon frying pan! Square shape airplane body?
 - *Inhuman speaking*: Every character has their own voices, or rather noises, because you can't understand it! That's hardly developing compassion toward them.
 - *Joke*: I know you can't stress out all the time, but seriously, at this time you still play those lame joke?
-- *Price*: $15 is too much for a very short game. It's true that this game is replayable, but as I said about annoying character design, I hardly find reasons to play it a second time.
+- *Price*: \$15 is too much for a very short game. It's true that this game is replayable, but as I said about annoying character design, I hardly find reasons to play it a second time.
 
 By all of these, I can not recommend this game to anyone.
