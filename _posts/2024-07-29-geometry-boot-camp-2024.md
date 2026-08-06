@@ -5,6 +5,7 @@ tags:
   - Event
   - Geometry
   - Thai
+  - Chulalongkorn University
 date: 2024-07-29 23:59:59 +0700
 thumbnail: /images/event/cu-geometry-2024/group-photo.jpg
 ---
@@ -37,14 +38,14 @@ thumbnail: /images/event/cu-geometry-2024/group-photo.jpg
 
 {: .figure}
 > | ![](/images/event/cu-geometry-2024/are-we-living-in-virtual-world.jpg) | ![](/images/event/cu-geometry-2024/bryde-whale.jpg) |
-> | ![](/images/event/cu-geometry-2024/boats-on-shore.jpg) | ![](/images/event/cu-geometry-2024/asdang-bridge.jpg ) |
+> | ![](/images/event/cu-geometry-2024/boats-on-shore.jpg) | ![](/images/event/cu-geometry-2024/asdang-bridge.jpg) |
 
 แต่ส่วนที่ฮาที่สุดก็คงหนีไม่พ้นเล่นเกมกันตอนค่ำๆ โดยคราวนี้หวยออก [Gartic Phone][] กับหัวข้อที่ให้วาดภาพลอกลายคนก่อนหน้า
 
 {: .figure}
 > ![](/images/event/cu-geometry-2024/morphing-trefoil.gif)
 >
-> นักคณิตศาสตร์พิสูจน์แล้วว่า เงื่อน trefoil นั้น isomorphism กับเค้กวันเกิด 😆😂🤣
+> นักคณิตศาสตร์พิสูจน์แล้วว่า เงื่อน trefoil นั้น isomorphic กับเค้กวันเกิด 😆😂🤣
 
 ความเจ๋งของค่ายคือปีนี้คนเยอะขึ้นมากๆ ได้ข่าวว่าปีแรกสุดนั้นมีแค่ 10 กว่าคน ส่วนปีนี้เกือบ 30 แล้ว ... นับว่าเป็นนิมิตหมายอันดีที่จะได้เห็นวงการคณิตศาสตร์ไทยเติบโตยิ่งใหญ่ขึ้นต่อไป
 
@@ -55,7 +56,7 @@ thumbnail: /images/event/cu-geometry-2024/group-photo.jpg
 
 ยินดีที่ได้พบกับทุกคนครับ 😊
 
-[wacharin]: //facebook.com/wacharin.wichiramala/
+[wacharin]: //facebook.com/wacharin.wichiramala
 [kirati]: //facebook.com/kirati.sriamorn
 [amonthep]: //facebook.com/profile.php?id=100008363713107
 [phapaengmuangs]: //facebook.com/phapaengmuangs
