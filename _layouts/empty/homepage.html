@@ -9,8 +9,6 @@ layout: default
     {% include config/empty/unconfig.md %}
   {% elsif homepage-empty %}
     {% include config/empty/homepage.md %}
-  {% else %}
-    {% assign selection = page.feature %}
   {% endif %}
   {% if unconfig-empty or homepage-empty %}
     {% assign article_class = 'page' %}
@@ -23,4 +21,61 @@ layout: default
   {% endif %}
 {% endcapture %}
 {% include article.html class=article_class title=the_title content=the_content %}
-{% include listing.html selection=selection %}
+
+{% unless unconfig-empty or homepage-empty %}
+<main class="homepage">
+  <section>
+    {% assign latest-post = site.posts.first %}
+    {% include article.html class='post'
+               title=latest-post.title content=latest-post.excerpt
+               date=latest-post.date tags=latest-post.tags path=latest-post.path
+               url=latest-post.url %}
+
+    <div class="grid">
+      {% assign recent-count = page.latest | default: 3 | minus: 1 %}
+      {% for post in site.posts offset: 1 limit: recent-count %}
+        {% assign card-tags = post.tags | slice: 0, 2 %}
+        <article class="excerpt post">
+          {% include article/title.html title=post.title url=post.url %}
+          {% include article/info.html tags=card-tags path=post.path date=post.date format='short' %}
+        </article>
+      {% endfor %}
+    </div>
+
+    <nav><a href="{{ '/posts/' | prepend: site.baseurl }}">View all posts</a></nav>
+  </section>
+
+  <hr /><hr />
+
+  <section>
+    {% for category in page.selected %}
+      <h1>Selected posts: {{ category.name }}</h1>
+      <div class="grid">
+        {% for post-id in category.posts %}
+          {% assign post = site.posts | where: 'id', post-id | first %}
+          {% if post %}
+            {% assign card-tags = post.tags | slice: 0, 2 %}
+            <article class="excerpt post">
+              {% include article/title.html title=post.title url=post.url %}
+              {% include article/info.html tags=card-tags %}
+              <div class="entry">
+                {{ post.excerpt }}
+                {% include article/read_more.html url=post.url %}
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </section>
+
+  <nav>
+    Browse by
+    <a href="{{ '/archive.html' | prepend: site.baseurl }}">archive</a>
+    &middot;
+    <a href="{{ '/tags.html' | prepend: site.baseurl }}">tags</a>
+    &middot;
+    <a href="{{ '/projects/' | prepend: site.baseurl }}">projects</a>
+  </nav>
+</main>
+{% endunless %}

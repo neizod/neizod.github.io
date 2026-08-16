@@ -28,5 +28,6 @@ $font-mono-line-height: {{ font_mono_line_height }};
 @use "classes";
 @use "header";
 @use "article";
+@use "homepage";
 @use "footer";
 @use "{{ site.data.theme.color.highlight | default: 'custom' | prepend: 'highlight/' }}";

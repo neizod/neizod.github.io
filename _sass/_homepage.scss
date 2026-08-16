@@ -1,0 +1,52 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.homepage .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 0;
+    row-gap: 1.5em;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+.homepage .grid > article {
+    padding: 0 1.5em;
+
+    &:nth-child(odd) {
+        border-right: 1px solid $border-color;
+        padding-left: 0;
+    }
+
+    &:nth-child(even) {
+        padding-right: 0;
+    }
+
+    @include mobile {
+        border-right: none;
+        padding: 0;
+    }
+}
+
+.homepage .grid > article h1 {
+    font-size: 1.5em;
+}
+
+.homepage > section:first-of-type > article {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.homepage > section:first-of-type > nav {
+    text-align: center;
+}
+
+.homepage > nav {
+    border-top: 1px solid $border-color;
+    margin-top: 2.5em;
+    padding-top: 1em;
+    text-align: center;
+}
